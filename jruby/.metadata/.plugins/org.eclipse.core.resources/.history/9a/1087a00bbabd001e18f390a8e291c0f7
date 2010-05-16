@@ -1,5 +1,0 @@
-class HelloJob < Jobs::BaseJob
-  def perform_job
-    logger.info "HELLO"
-  end
-end

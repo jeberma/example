@@ -1,8 +1,0 @@
-package com.example;
-class User {
-
-	String userId
-	
-    static constraints = {
-    }
-}

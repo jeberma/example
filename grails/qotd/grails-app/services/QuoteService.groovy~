@@ -1,8 +1,0 @@
-class QuoteService {
-
-    boolean transactional = true
-
-    def serviceMethod() {
-
-    }
-}

@@ -1,3 +1,0 @@
-if RUBY_PLATFORM =~ /java/
-  HelloJobScheduler.new("0 0/1 * * * ?").schedule!(HelloJob)
-end

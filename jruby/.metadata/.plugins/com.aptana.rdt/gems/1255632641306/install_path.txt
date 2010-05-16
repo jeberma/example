@@ -1,1 +1,0 @@
-["/Users/jesse/.gem/ruby/1.8", "/Library/Ruby/Gems/1.8", "/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8"]

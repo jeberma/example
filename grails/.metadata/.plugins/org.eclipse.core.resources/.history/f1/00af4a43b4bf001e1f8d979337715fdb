@@ -1,7 +1,0 @@
-package com.example
-
-class Tag {
-
-    static constraints = {
-    }
-}

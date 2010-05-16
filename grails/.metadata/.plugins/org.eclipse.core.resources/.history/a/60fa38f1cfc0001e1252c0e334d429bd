@@ -1,6 +1,0 @@
-package com.example
-
-class UserController {
-
-    def index = { }
-}

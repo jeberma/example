@@ -1,7 +1,0 @@
-require 'java'
-
-class HelloJob < Jobs::BaseJob
-  def perform_job
-    System.out.println 'HELLO'
-  end
-end

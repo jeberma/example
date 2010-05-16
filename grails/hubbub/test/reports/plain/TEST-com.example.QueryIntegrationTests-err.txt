@@ -1,2 +1,0 @@
---Output from testBasicDynamicFinders--
---Output from testQueryByExample--
