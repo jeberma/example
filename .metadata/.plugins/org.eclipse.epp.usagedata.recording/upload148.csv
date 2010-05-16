@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Resource '/order-processor' does not exist.",1255037730545
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037731816
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037864802
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037867987
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037889717
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1255037889748
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1255037889749
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255037890157
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255037901074
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255037903345
+opened,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255037922496
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255037922541
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037925401
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037974604
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037976916
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255037999083
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038001987
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255038297474
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038297533
+opened,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255038299549
+activated,perspective,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.PerspectiveRails",1255038299623
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255038299647
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038300356
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038300365
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038300367

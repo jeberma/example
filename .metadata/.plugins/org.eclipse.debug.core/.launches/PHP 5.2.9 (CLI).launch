@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.aptana.php.debug.core.launching.PHPExeLaunchConfigurationType">
+<stringAttribute key="ATTR_FILE" value=""/>
+<stringAttribute key="ATTR_FILE_FULL_PATH" value=""/>
+<stringAttribute key="ATTR_INI_LOCATION" value="/eclipse-3.5/plugins/com.aptana.ide.php.interpreters.macosx_5.4.2.v20090528/resources/php_xdebug/php.ini"/>
+<stringAttribute key="ATTR_LOCATION" value="/eclipse-3.5/plugins/com.aptana.ide.php.interpreters.macosx_5.4.2.v20090528/resources/php5/php"/>
+<booleanAttribute key="ATTR_USE_SPECIFIC_FILE" value="false"/>
+<stringAttribute key="com.aptana.ide.php.debug.coreconfiguration_delegate_class" value="org.eclipse.php.internal.debug.core.launching.XDebugExeLaunchConfigurationDelegate"/>
+<stringAttribute key="com.aptana.ide.php.debug.corephp_debugger_id" value="org.eclipse.php.debug.core.xdebugDebugger"/>
+<booleanAttribute key="firstLineBreakpoint" value="true"/>
+<booleanAttribute key="org.eclipse.php.debug.core.RunWithDebugInfo" value="true"/>
+</launchConfiguration>

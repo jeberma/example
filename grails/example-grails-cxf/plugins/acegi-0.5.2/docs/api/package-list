@@ -1,0 +1,3 @@
+org.codehaus.groovy.grails.plugins.springsecurity
+org.codehaus.groovy.grails.plugins.springsecurity.facebook
+org.codehaus.groovy.grails.plugins.springsecurity.ldap

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0"
+           xmlns:tuscany="http://tuscany.apache.org/xmlns/sca/1.0"
+		   targetNamespace="http://sample"
+           name="order-service">
+
+    <component name="OrderServiceComponent">
+    	<implementation.java class="com.originatelabs.example.tuscany.OrderServiceImpl"/>
+		<service name="OrderService">
+			<interface.java interface="com.originatelabs.example.tuscany.OrderService"/>
+			
+			<!-- this binding allows us to specify an endpoint url independent of the wsdl service definition -->
+			<binding.ws wsdlElement="http://example.originatelabs.com/service#wsdl.binding(OrderServiceSoapBinding)"
+			     uri="http://localhost:8080/example-tuscany-service/OrderService"/>
+				 
+			<!-- this binding assumes we want to use the endpoint url specified in the wsdl service definition -->
+			<!--binding.ws wsdlElement="http://example.originatelabs.com/service#wsdl.port(OrderService/OrderSericeSoapPort)"/-->
+		</service>
+	</component>
+	
+</composite>

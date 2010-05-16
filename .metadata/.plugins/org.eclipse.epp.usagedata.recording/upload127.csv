@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023508173
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.smartEnter",1255023565609
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1255023584090
+started,bundle,org.eclipse.mylyn.java.tasks,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.java.tasks",1255023584117
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1255023586728
+error,log,,,"Can't update view",1255023668420
+error,log,,,"Can't update view",1255023677431
+error,log,,,"Can't update view",1255023689846
+error,log,,,"Can't update view",1255023693196
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255023695679
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023698376
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023716443
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023751064
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1255023754650
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255023760450
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023762219
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023762619
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023840163
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023844491
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023855160
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255023857550
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023859151
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023859681
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023935144
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023936227

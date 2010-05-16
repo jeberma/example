@@ -1,0 +1,314 @@
+<?php
+//===========================================================================
+//
+// Utilities.php
+//
+//===========================================================================
+require_once('lib/ProviderFactory.php');
+require_once('lib/FieldClass.php');
+require_once('lib/DisplayUtility.php');
+//===========================================================================
+// UTILITIES
+//===========================================================================
+/**
+ * Collection of functions for various frequent tasks performed in business layer
+ *
+ * @author   Clayton
+ */
+class Utilities
+{
+
+	//=======================================================================
+	// METHODS
+	//=======================================================================
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) GENERATE ID
+	//-----------------------------------------------------------------------
+	/**
+	 * Generates an id for a new post
+	 */
+	public static function generateId()
+	{
+		return uniqid();
+	}
+	
+	public static function generateDeleteId()
+	{
+		return uniqid();
+	}
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) GENERATE CONFIRMATION EMAIL TEXT
+	//-----------------------------------------------------------------------
+	/**
+	 * Generates the text of an email for a new post confirmation email
+	 *
+	 *@param   id the id of the post   
+	 *@param   siteURL the url of the site
+	 */
+	public static function generateConfirmationEmailText($id, $deleteID, $siteURL)
+	{
+		$text = "This is a notification email.  Please do not reply.\n\n";
+		$text .= "Thank you for posting on Used Girlfriend.  Please click on the link below, ";
+		$text .= "or copy and paste it into your browser to confirm and finalize your post:\n\n";
+		$text .= $siteURL."confirm.php?postID=".$id."\n\n";
+		$text .= "Also, you can use the following link if you wish to delete your post (note that this happens automatically after 60 days):\n\n";
+		$text .= $siteURL."confirm.php?postID=".$id."&deleteID=".$deleteID."\n\n";
+		$text .= "If there are any problems with your post, please contact support@usedgirlfriend.com\n\n";
+		$text .= "Thanks,\nThe Used Girlfriend Team";
+		return $text;
+	}
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) SEND EMAIL
+	//-----------------------------------------------------------------------
+	/**
+	 * Wraps php's email API
+	 *
+	 *@param   to   
+	 *@param   from
+	 *@param   subject
+	 *@param   message
+	 */
+	public static function sendEmail($to, $from, $subject, $message)
+	{
+		$headers = "From: $from\n";
+		$headers .= "MIME-Version: 1.0\n";
+		$headers .= "Content-Type: text/plain; charset=UTF-8\n";
+		$params = "-f$from";
+		
+		//Preprocess the subject.
+		$subject = str_replace("\n", "", $subject);
+		$subject = str_replace("\r", "", $subject);
+		
+		//Preprocess the message.
+		$message = str_replace("\r", "", $message);
+		$message = wordwrap($message, 70, "\n");
+		
+		$result = mail($to, $subject, $message, $headers, $params);
+		return $result;
+	}
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) PRINT POST FIELDS
+	//-----------------------------------------------------------------------
+	/**
+	 * Prints all of the fields that make up the post form.
+	 *
+	 */
+	public static function printPostFields(){
+		$fieldsProvider = ProviderFactory::getPostFieldsProvider();
+		$fields = $fieldsProvider->getFields();
+		$DU = new DisplayUtility;
+		
+		for($i=0; $i<count($fields); $i++){
+			if($fields[$i]->getDisplay() == "true"){
+				$DU->printHeaderBlack($fields[$i]->getTitle().":", $fields[$i]->getName()."_HEADER");
+				switch($fields[$i]->getType()){
+					case "text":
+						echo '<input type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" /><br /><br />';
+						break;
+					case "select":
+						echo'<select size="0" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" >';
+						echo '<option></option>';
+						$options = $fields[$i]->getOptions();
+						for($j=0; $j<count($options); $j++)
+						{	
+							echo '<option value="'.$options[$j].'">'.$options[$j].'</option>';
+						}
+						echo '</select><br /><br />';
+						break;
+					case "textarea":
+						echo '<textarea rows="'.$fields[$i]->getRows().'" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" onkeypress="return imposeMaxLength(this, '.$fields[$i]->getMaxlength().');"></textarea><br /><br />';
+						break;
+					case "file":
+						echo'<input type="file" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" /><br /><br />';
+						break;
+				}
+			}
+		}
+	}
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) PRINT POST FIELDS
+	//-----------------------------------------------------------------------
+	/**
+	 * Prints a given field to be used on search form
+	 *
+	 */
+	public static function printSearchField($name){
+		$fieldsProvider = ProviderFactory::getPostFieldsProvider();
+		$fields = $fieldsProvider->getFields();
+		$DU = new DisplayUtility;
+		
+		for($i=0; $i<count($fields); $i++){
+			if($fields[$i]->getDisplay() == "true" && $fields[$i]->getName() == $name){
+				switch($fields[$i]->getType()){
+					case "text":
+						echo'<input type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" />';
+						break;
+					case "select":
+						echo'<select size="0" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" >';
+						echo '<option></option>';
+						$options = $fields[$i]->getOptions();
+						for($j=0; $j<count($options); $j++)
+						{	
+							echo '<option value="'.$options[$j].'">'.$options[$j].'</option>';
+						}
+						echo '</select>';
+						break;
+				}
+			}
+		}
+	}
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) PRINT CONFIRM FIELDS
+	//-----------------------------------------------------------------------
+	/**
+	 * Prints all of the fields that make up the confirm form with their values as submitted by user in the post form.
+	 *
+	 */
+	public static function printConfirmFields($newPost){
+		$fieldsProvider = ProviderFactory::getPostFieldsProvider();
+		$fields = $fieldsProvider->getFields();
+		$DU = new DisplayUtility;
+
+		for($i=0; $i<count($fields); $i++){
+			if($fields[$i]->getDisplay() == "true"){
+				$DU->printHeaderBlack($fields[$i]->getTitle().":", $fields[$i]->getName()."_HEADER");
+				switch($fields[$i]->getType()){
+					case "text":
+						if($fields[$i]->getName() != "email"){
+							echo'<input type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" value="'.$newPost->getField($fields[$i]->getName()).'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" /><br /><br />';
+						}
+						else{
+							echo $newPost->getField($fields[$i]->getName()) ."<br /><br />";
+							echo'<input type="hidden" name="email" id="email" value="'.$newPost->getField($fields[$i]->getName()).'"/>';
+						}
+						break;
+					case "select":
+						echo'<select size="0" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" >';
+						echo '<option></option>';
+						$options = $fields[$i]->getOptions();
+						for($j=0; $j<count($options); $j++)
+						{	
+							if($newPost->getField($fields[$i]->getName()) == $options[$j]){
+								echo '<option value="'.$options[$j].'" selected="yes">'.$options[$j].'</option>';
+							}
+							else{
+								echo '<option value="'.$options[$j].'">'.$options[$j].'</option>';
+							}
+						}
+						echo '</select><br /><br />';
+						break;
+					case "textarea":
+						echo '<textarea rows="'.$fields[$i]->getRows().'" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" onkeypress="return imposeMaxLength(this, '.$fields[$i]->getMaxlength().');">'.$newPost->getField($fields[$i]->getName()).'</textarea><br /><br />';
+						break;
+					case "file":
+						echo '<img src="'.$newPost->getField($fields[$i]->getName()).'" alt="No Photo Uploaded" id="confirm_photo_pane" /><br /><br />';
+						$DU->printHeaderBlack("Change Photo", "0");
+						echo '<input type="hidden" id="photo" name="photo" value="'.$newPost->getField($fields[$i]->getName()).'" />';
+						echo'<input type="file" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" /><br /><br />';
+						break;
+				}
+			}
+		}
+	}
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) PRINT OUTSOURCE FIELDS
+	//-----------------------------------------------------------------------
+	/**
+	 * Prints all of the fields that make up the post form.
+	 *
+	 */
+	public static function printOutsourceFields(){
+		$fieldsProvider = ProviderFactory::getOrderFieldsProvider();
+		$fields = $fieldsProvider->getFields();
+		$DU = new DisplayUtility;
+		
+		for($i=0; $i<count($fields); $i++){
+			if($fields[$i]->getDisplay() == "true"){
+				if($fields[$i]->getType() != "phone2" && $fields[$i]->getType() != "phone3"){
+					$DU->printHeaderBlack($fields[$i]->getTitle().":", $fields[$i]->getName()."_HEADER");
+				}
+				switch($fields[$i]->getType()){
+					case "text":
+						if($fields[$i]->getName() == 'cc_cvv2'){
+							echo'<input type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" /><br /><a style="font-size: 8;" href="JavaScript:showSecurityCode()" >What is the security code?</a><br /><br />';
+							break;
+						}
+						echo'<input type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" /><br /><br />';
+						break;
+						
+					case "select":
+						echo'<select size="0" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" >';
+						echo '<option></option>';
+						$options = $fields[$i]->getOptions();
+						for($j=0; $j<count($options); $j++)
+						{	
+							echo '<option value="'.$options[$j].'">'.$options[$j].'</option>';
+						}
+						echo '</select><br /><br />';
+						break;
+						
+					case "textarea":
+						echo '<textarea rows="'.$fields[$i]->getRows().'" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" onkeypress="return imposeMaxLength(this, '.$fields[$i]->getMaxlength().');"></textarea><br /><br />';
+						break;
+						
+					case "file":
+						echo'<input type="file" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" class="post_input '.$fields[$i]->getClass().'" maxlength="'.$fields[$i]->getMaxlength().'" /><br /><br />';
+						break;
+						
+					case "phone1":
+						echo '(<input class="post_input '.$fields[$i]->getClass().'" type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" size="3" maxlength="'.$fields[$i]->getMaxlength().'"/>)';
+						break;
+						
+					case "phone2":	
+						echo'&nbsp;<input class="post_input '.$fields[$i]->getClass().'" type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" size="3" maxlength="'.$fields[$i]->getMaxlength().'"/> - ';
+						break;
+						
+					case "phone3":
+						echo'<input class="post_input '.$fields[$i]->getClass().'" type="text" name="'.$fields[$i]->getName().'" id="'.$fields[$i]->getName().'" size="4" maxlength="'.$fields[$i]->getMaxlength().'"/><br /><br />';
+						break;
+						
+				}
+			}
+		}
+	}
+	
+	
+	//-----------------------------------------------------------------------
+	// (STATIC) GET POST FIELDS FROM FORM
+	//-----------------------------------------------------------------------
+	/**
+	 * Gets all of the values from the POST array that were just submitted on form
+	 *
+	 * @return   An array of fields (strings)
+	 */
+	public static function getPostFieldsFromForm(){
+		$postFields = array();
+		$keys = array_keys($_POST);	
+		foreach($keys as $key){
+			if(!strstr($key, "button") && !strstr($key, "terms") && !strstr($key, "certify")){
+				$postFields[$key] = $_POST[$key];
+			}
+		}
+		return $postFields;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

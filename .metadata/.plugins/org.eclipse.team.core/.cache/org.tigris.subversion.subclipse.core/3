@@ -1,0 +1,102 @@
+<?php
+//===========================================================================
+//
+// _outsource.php
+//
+//===========================================================================
+/**
+ * Outsource processing page.
+ *
+ * @author	bandur, Clayton
+ */
+require_once('lib/Utilities.php');
+require_once('lib/OrderUtilities.php');
+require_once('lib/DisplayUtility.php');
+
+//---------------------------------------------------------------------------
+// MAIN
+//---------------------------------------------------------------------------
+function _outsource_main()
+{	
+	_outsource_render();
+}
+function _outsource_render()
+{
+	if($_SERVER['SERVER_PORT'] != 443){
+		$url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		header("Location: $url");
+	}
+	header("Content-Type: text/html; charset=UTF-8");
+
+//...........................................................................
+
+	$DU = new DisplayUtility;
+	
+	//Process the order.
+	$orderFields = Utilities::getPostFieldsFromForm();
+	$newOrder = new Order($orderFields);
+	
+	if(!$newOrder->checkFields() || !$newOrder->checkLanguage() || $_POST['terms'] != "on" || $_POST['certify'] != "on"){
+	?>
+		<!DOCTYPE html
+		PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html>
+			<head>
+				<title>UsedGirlfriend | Outsource My Breakup</title>
+				<link rel="shortcut icon" href="favicon.ico" />
+				 <link href="style/style.css" rel="stylesheet" type="text/css" />
+				 <script src="scripts/scripts.js" language="javascript" type="text/javascript"></script>
+			</head>
+			<body>
+			<?php include('inc/GoogleAnalytics.php');?>
+				<div class="all_content">
+					<div id="OUTSOURCE_LEFT" class="left">
+						<?php include('inc/LeftMenu.php'); ?>
+					</div>
+					<div id="OUTSOURCE_CENTER" class="center">
+						<a href="index.php" class="logo_link">
+						<img src="style/logo.gif" alt="UsedGirlfriend Logo" id="logo" />
+						</a><br /><br />
+						<img src="style/outsource_header.gif" class="page_title" alt="" /><br /><br />
+						<hr id="header_line" />
+					<?php
+						$DU->printPageHeader("Please fill out all required fields correctly and make sure that there is no inappropriate language in your order.");
+						echo'<p class="contact_link"><a href="javascript: goBack()" class="contact_link">Go Back<a/></p>';
+					?>
+					</div>
+					<div id="OUTSOURCE_RIGHT" class="right">
+						
+					</div>
+					<?php include('inc/Footer.php');?>
+				</div>
+			</body>
+		</html>
+	<?php
+	}
+	else{
+		OrderUtilities::sendOrder($orderFields);
+		
+		//Show the confirmation page.
+		_outsource_redirect("outsourced.php");
+	}
+}
+//---------------------------------------------------------------------------
+// REDIRECT
+//---------------------------------------------------------------------------
+function _outsource_redirect($url)
+{
+	if (null == $url || "" == $url)
+		return;
+
+	$locHeader = "Location: $url";
+	header($locHeader);
+
+	exit();
+}
+
+//===========================================================================
+
+_outsource_main();
+
+?>

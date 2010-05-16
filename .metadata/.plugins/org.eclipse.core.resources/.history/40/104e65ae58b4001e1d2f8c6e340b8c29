@@ -1,0 +1,36 @@
+<style type="text/css">
+	.orders .header{
+		font-size:large;
+		margin-right:20px;
+	}
+	.orders .button-to, .orders .button-to div {
+		display:inline;
+	}
+	.orders table {
+		margin-top:20px;
+	}
+</style>
+<div class="orders">
+	<div>
+		<span class="header">Orders</span>
+		<%= button_to('Create', :action=>'create') %>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>description</th>
+				<th>status</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% @orders.each do |order| %>
+			<tr>
+				<td><%= order.id %></td>
+				<td><%= order.description %></td>
+				<td><%= order.status %></td>
+			</tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>

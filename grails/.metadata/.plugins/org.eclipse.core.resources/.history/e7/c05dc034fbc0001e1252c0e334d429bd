@@ -1,0 +1,15 @@
+package com.example
+
+class PostService {
+
+    boolean transactional = true
+
+    def serviceMethod() {
+
+    }
+}
+
+class PostException {
+	String message
+	Post post
+}

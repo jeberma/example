@@ -1,0 +1,5 @@
+Couldn't open the index:
+/Users/jesse/.fastri-index
+
+The index needs to be rebuilt with
+   fastri-server -b

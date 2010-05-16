@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254938465493
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938465694
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938469835
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938472881
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938480318
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938481769
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938489082
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938496789
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938498222
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938505710
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254938507917
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254938513418
+started,bundle,org.eclipse.jdt.debug,3.5.0.v20090526,"org.eclipse.jdt.debug",1254938513624
+started,bundle,org.eclipse.jdt.debug.ui,3.4.1.v20090811_r351,"org.eclipse.jdt.debug.ui",1254938513668
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254938513698
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254938520220
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254938520221
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254938521963
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254938522362
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254938522460
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254938528308
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254938528308
+activated,editor,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1254938548829
+closed,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254938548829
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254938550358

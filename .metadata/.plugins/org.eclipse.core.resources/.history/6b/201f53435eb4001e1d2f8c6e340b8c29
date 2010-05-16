@@ -1,0 +1,31 @@
+<style type="text/css">
+	.orders .header{
+		font-size:large;
+		margin-right:20px;
+		margin-top:40px;
+	}
+	.orders table {
+		margin-top:20px;
+	}
+</style>
+<div class="orders">
+	<div class="header">Orders</div>
+	<table>
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>description</th>
+				<th>status</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% orders.each do |order| %>
+			<tr>
+				<td><%= order.id %></td>
+				<td><%= order.description %></td>
+				<td><%= order.status %></td>
+			</tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>

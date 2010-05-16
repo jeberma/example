@@ -1,0 +1,10 @@
+package com.example
+
+class PostService {
+
+    boolean transactional = true
+
+    def serviceMethod() {
+
+    }
+}

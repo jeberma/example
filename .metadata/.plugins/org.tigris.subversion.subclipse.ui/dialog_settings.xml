@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="CommitDialog.location.y" value="247"/>
+	<item key="CommitDialog.weights.1" value="500"/>
+	<item key="CommitDialog.location.x" value="366"/>
+	<item key="CommitDialog.size.x" value="1124"/>
+	<item key="CommitDialog.weights.0" value="500"/>
+	<item key="CommitDialog.size.y" value="443"/>
+	<section name="CommitWizard">
+		<item key="VWeight1" value="500"/>
+		<item key="ShowCompare" value="false"/>
+		<item key="VWeight2" value="500"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="svn://olsc.originatelabs.com:8800/bt"/>
+		</list>
+	</section>
+</section>

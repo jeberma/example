@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1255022547438
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1255022547463
+started,bundle,com.collabnet.subversion.merge,1.10.0,"com.collabnet.subversion.merge",1255022547528
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1255022547594
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1255022547608
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1255022548258
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022548298
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022548298
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022548300
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022548300
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022548301
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022548327
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022548727
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1255022548733
+started,bundle,com.aptana.ide.professional.licensing,1.5.0.25826,"com.aptana.ide.professional.licensing",1255022555476
+started,bundle,com.aptana.ide.scripting,1.5.0.24993,"com.aptana.ide.scripting",1255022555508
+started,bundle,org.eclipse.eclipsemonkey,1.5.0.24896,"org.eclipse.eclipsemonkey",1255022555560
+started,bundle,org.eclipse.eclipsemonkey.lang.javascript,1.5.0.24896,"org.eclipse.eclipsemonkey.lang.javascript",1255022555565
+started,bundle,org.eclipse.eclipsemonkey.lang.ruby,1.2.2.25649,"org.eclipse.eclipsemonkey.lang.ruby",1255022555568
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255022556390
+started,bundle,org.eclipse.eclipsemonkey.doms,1.5.0.24896,"org.eclipse.eclipsemonkey.doms",1255022556521
+started,bundle,org.eclipse.jst.j2ee.ejb,1.1.300.v200904230730,"org.eclipse.jst.j2ee.ejb",1255022556731
+started,bundle,org.eclipse.jst.j2ee.jca,1.1.300.v200903120000,"org.eclipse.jst.j2ee.jca",1255022556735
+started,bundle,org.eclipse.jst.jee.ejb,1.0.201.v200908101600,"org.eclipse.jst.jee.ejb",1255022556741
+started,bundle,org.eclipse.jst.jee.web,1.0.200.v200904130912,"org.eclipse.jst.jee.web",1255022556742

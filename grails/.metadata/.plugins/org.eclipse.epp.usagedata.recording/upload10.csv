@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277324908
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277325002
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277333830
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.properties",1256277333863
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277334878
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277342818
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277354174
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277357051
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277370563
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277371981
+started,bundle,org.codehaus.groovy.eclipse.refactoring,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.refactoring",1256277385513
+started,bundle,org.eclipse.jdt.debug,3.5.0.v20090526,"org.eclipse.jdt.debug",1256277386153
+started,bundle,org.eclipse.jdt.debug.ui,3.4.1.v20090811_r351,"org.eclipse.jdt.debug.ui",1256277386250
+started,bundle,org.eclipse.compare.core,3.5.0.I20090430-0408,"org.eclipse.compare.core",1256277386567
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256277386664
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256277386980
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256277390558
+closed,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256277390558
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277393699
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277395162
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277395241
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277397711
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.properties",1256277397785
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277401414
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277412356

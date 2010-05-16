@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254955127843
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254956319751
+started,bundle,com.aptana.ide.parsing,1.5.0.25384,"com.aptana.ide.parsing",1254956321738
+started,bundle,com.aptana.ide.editor.html,1.5.0.25643,"com.aptana.ide.editor.html",1254956321776
+started,bundle,com.aptana.ide.editor.erb,1.2.3.26264,"com.aptana.ide.editor.erb",1254956321787
+started,bundle,com.aptana.ide.editor.php,1.1.0.25789,"com.aptana.ide.editor.php",1254956321795
+started,bundle,com.aptana.ide.editor.smarty,1.1.0.25789,"com.aptana.ide.editor.smarty",1254956322253
+started,bundle,com.aptana.ide.parsing.eclipse,1.0.0.25428,"com.aptana.ide.parsing.eclipse",1254956322266
+started,bundle,org.eclipse.wst.sse.ui,1.1.101.v200908261807,"org.eclipse.wst.sse.ui",1254956322469
+started,bundle,com.aptana.ide.editors.codeassist,1.5.0.25664,"com.aptana.ide.editors.codeassist",1254956322551
+started,bundle,com.aptana.ide.core.spellcheck,1.5.0.24896,"com.aptana.ide.core.spellcheck",1254956322644
+opened,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254956322696
+started,bundle,com.aptana.ide.editor.css,1.5.0.25458,"com.aptana.ide.editor.css",1254956322824
+started,bundle,com.aptana.ide.editor.js,1.5.0.25395,"com.aptana.ide.editor.js",1254956322858
+started,bundle,com.aptana.ide.editor.json,1.5.0.26125,"com.aptana.ide.editor.json",1254956322879
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254956323013
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254956324028
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254956339659
+opened,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254956342808
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254956342869
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254956455597
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254960214977
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254960218608
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254960222066
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254960222595

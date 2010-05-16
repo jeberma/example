@@ -1,0 +1,5 @@
+class HelloJob < Jobs::BaseJob
+  def perform_job
+    puts "HELLO"
+  end
+end

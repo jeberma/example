@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.equinox.p2.metadata,1.0.100.v20090525,"org.eclipse.equinox.p2.metadata",1254937982614
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1254937982636
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1254937982680
+started,bundle,org.eclipse.equinox.p2.ui,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.ui",1254937982711
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254937982750
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254937982751
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254937982751
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254937982752
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254937982752
+started,bundle,org.eclipse.core.variables,3.2.200.v20090521,"org.eclipse.core.variables",1254937982786
+started,bundle,org.radrails.db.core,2.0.0.25649,"org.radrails.db.core",1254937982804
+opened,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1254937983027
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1254937983143
+started,bundle,com.aptana.ide.professional.licensing,1.5.0.25826,"com.aptana.ide.professional.licensing",1254937992373
+started,bundle,com.aptana.ide.editors,1.5.0.25476,"com.aptana.ide.editors",1254937992403
+started,bundle,com.aptana.ide.scripting,1.5.0.24993,"com.aptana.ide.scripting",1254937992405
+started,bundle,org.eclipse.eclipsemonkey,1.5.0.24896,"org.eclipse.eclipsemonkey",1254937992430
+started,bundle,org.eclipse.eclipsemonkey.lang.javascript,1.5.0.24896,"org.eclipse.eclipsemonkey.lang.javascript",1254937992437
+started,bundle,org.eclipse.eclipsemonkey.lang.ruby,1.2.2.25649,"org.eclipse.eclipsemonkey.lang.ruby",1254937992440
+started,bundle,org.eclipse.eclipsemonkey.doms,1.5.0.24896,"org.eclipse.eclipsemonkey.doms",1254937992665
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938131077
+started,bundle,org.eclipse.ui.navigator,3.4.1.M20090911-1550,"org.eclipse.ui.navigator",1254938142217
+started,bundle,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.resources",1254938142222
+started,bundle,org.eclipse.wst.jsdt.core,1.0.201.v200908101420,"org.eclipse.wst.jsdt.core",1254938142750
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.100.v200809240707,"org.eclipse.wst.jsdt.manipulation",1254938142784

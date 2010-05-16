@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289136372
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289136424
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256289181177
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289328792
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256289339743
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289345042
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256289538926
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256289542189
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256289663327
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289665082
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256289673896
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256289678902
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289679214
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256289681288
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289681618
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256289788679
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256289792172
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256289814566
+activated,editor,org.eclipse.ui.browser,3.2.300.v20090526,"org.eclipse.ui.browser.editor",1256289815425
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256289826040
+error,log,,,"Groovy bug when compiling.",1256289831143
+error,log,,,"Groovy bug when compiling.",1256289831145
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256289831145
+error,log,,,"Groovy bug when compiling.",1256289831147
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256289836053

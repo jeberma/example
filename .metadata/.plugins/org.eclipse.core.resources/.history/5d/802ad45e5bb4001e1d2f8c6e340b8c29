@@ -1,0 +1,10 @@
+class OrdersController < ApplicationController
+  
+  def index
+    @orders = Order.find(:all)
+  end
+  
+  def create
+  end
+  
+end

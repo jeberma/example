@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255047369139
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255047402826
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1255047405703
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255047419082
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255047423990
+opened,editor,com.aptana.ide.editor.yml,1.2.2.25649,"com.aptana.ide.editors.YMLEditor",1255047449872
+activated,editor,com.aptana.ide.editor.yml,1.2.2.25649,"com.aptana.ide.editors.YMLEditor",1255047449948
+activated,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255047452225
+closed,editor,com.aptana.ide.editor.yml,1.2.2.25649,"com.aptana.ide.editors.YMLEditor",1255047452225
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255047457861
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255047472389
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255047491310
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255047492547
+error,log,,,"No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject",1255047493141
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255047494322
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255047496161
+opened,editor,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.browser.BrowserEditor",1255047497262
+activated,editor,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.browser.BrowserEditor",1255047498518
+activated,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255047500812
+closed,editor,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.browser.BrowserEditor",1255047500812
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255047502452
+opened,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255047512638
+activated,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255047512748
+activated,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255047514745
+closed,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255047514745

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="88" version="2.0">
+<workbenchAdvisor/>
+<window height="1063" maximized="true" width="1796" x="43" y="26">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.ide.editor.php.phpCANavigator" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="com.aptana.ide.editor.php.phpNavigator" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="com.aptana.ide.editors.actionSet" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="70" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.ide.editors.XMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.ide.editors.HTMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.codehaus.groovy.eclipse.editor.GroovyEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - Java EE">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="UserIntegrationTests.groovy" partName="UserIntegrationTests.groovy" path="/Users/jesse/work/example/grails/hubbub/test/integration/com/example/UserIntegrationTests.groovy" title="UserIntegrationTests.groovy" tooltip="hubbub/test/integration/com/example/UserIntegrationTests.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/test/integration/com/example/UserIntegrationTests.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2247" selectionTopPixel="674"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="Post.groovy" partName="Post.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/domain/com/example/Post.groovy" title="Post.groovy" tooltip="hubbub/grails-app/domain/com/example/Post.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/domain/com/example/Post.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="226" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="Tag.groovy" partName="Tag.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/domain/com/example/Tag.groovy" title="Tag.groovy" tooltip="hubbub/grails-app/domain/com/example/Tag.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/domain/com/example/Tag.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="183" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="UserController.groovy" partName="UserController.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/controllers/com/example/UserController.groovy" title="UserController.groovy" tooltip="hubbub/grails-app/controllers/com/example/UserController.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/controllers/com/example/UserController.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="546" selectionTopPixel="273"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="User.groovy" partName="User.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/domain/com/example/User.groovy" title="User.groovy" tooltip="hubbub/grails-app/domain/com/example/User.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/domain/com/example/User.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="467" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="timeline.gsp" partName="timeline.gsp" path="/Users/jesse/work/example/grails/hubbub/grails-app/views/post/timeline.gsp" title="timeline.gsp" tooltip="hubbub/grails-app/views/post/timeline.gsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/views/post/timeline.gsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="211" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="PostService.groovy" partName="PostService.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/services/com/example/PostService.groovy" title="PostService.groovy" tooltip="hubbub/grails-app/services/com/example/PostService.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/services/com/example/PostService.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="516" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="register.gsp" partName="register.gsp" path="/Users/jesse/work/example/grails/hubbub/grails-app/views/user/register.gsp" title="register.gsp" tooltip="hubbub/grails-app/views/user/register.gsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/views/user/register.gsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="830" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="register2.gsp" partName="register2.gsp" path="/Users/jesse/work/example/grails/hubbub/grails-app/views/user/register2.gsp" title="register2.gsp" tooltip="hubbub/grails-app/views/user/register2.gsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/views/user/register2.gsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="580" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ImageController.groovy" partName="ImageController.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/controllers/com/example/ImageController.groovy" title="ImageController.groovy" tooltip="hubbub/grails-app/controllers/com/example/ImageController.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/controllers/com/example/ImageController.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="299" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="form.gsp" partName="form.gsp" path="/Users/jesse/work/example/grails/hubbub/grails-app/views/image/form.gsp" title="form.gsp" tooltip="hubbub/grails-app/views/image/form.gsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/views/image/form.gsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="297" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="LameSecurityFilters.groovy" partName="LameSecurityFilters.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/conf/LameSecurityFilters.groovy" title="LameSecurityFilters.groovy" tooltip="hubbub/grails-app/conf/LameSecurityFilters.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/conf/LameSecurityFilters.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="174" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="UrlMappings.groovy" partName="UrlMappings.groovy" path="/Users/jesse/work/example/grails/hubbub/grails-app/conf/UrlMappings.groovy" title="UrlMappings.groovy" tooltip="hubbub/grails-app/conf/UrlMappings.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/conf/UrlMappings.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="196" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="results.gsp" partName="results.gsp" path="/Users/jesse/work/example/grails/hubbub/grails-app/views/user/results.gsp" title="results.gsp" tooltip="hubbub/grails-app/views/user/results.gsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hubbub/grails-app/views/user/results.gsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="416" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
+</view>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
+<view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
+<expanded>&#x0A;<category IMemento.internal.id="Java Exception Breakpoints (2 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.allSeverityField="300" org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" showCategories="true"/>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
+<alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.ui.navigation"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.actionSet"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.help.actionSet"/>
+<alwaysOnActionSet id="a.com.aptana.ide.core.ui.actionSet.myaptana"/>
+<alwaysOnActionSet id="x.com.aptana.ide.core.ui.actionSet.myaptana"/>
+<alwaysOnActionSet id="c.com.aptana.ide.server.cloud.actionSet1"/>
+<alwaysOnActionSet id="y.com.aptana.ide.server.cloud.actionSet1"/>
+<alwaysOnActionSet id="eclipsemonkeyAction.actionSet"/>
+<alwaysOnActionSet id="org.rubypeople.rdt.debug.ui.RDTDebugActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.editor.php.phpNavigator"/>
+<alwaysOnActionSet id="com.aptana.ide.editor.php.phpLibrariesBuilding"/>
+<alwaysOnActionSet id="com.aptana.ide.editor.php.phpCANavigator"/>
+<alwaysOnActionSet id="com.aptana.ide.editor.php.contentassist.refactoring"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.ui.groovyElementCreation"/>
+<alwaysOnActionSet id="org.eclipse.jst.j2ee.J2eeMainActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.core.ui.actionSet.aptanamenu"/>
+<alwaysOnActionSet id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView"/>
+<alwaysOnActionSet id="com.aptana.ide.desktop.integration.protocolhandler.actionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.core.ui.actionSet.documentation"/>
+<alwaysOnActionSet id="com.aptana.ide.installer.actionSet"/>
+<alwaysOnActionSet id="p.com.aptana.ide.installer.toolbar.actionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.intro.menuActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.intro.licenseActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.messagecenter.ui.messageCenterActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.pathtools.actionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.server.cloud.ActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.intro.menuActionSet.MyAccount"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.conversion"/>
+<alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.ws.explorer.explorer"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
+<show_view_action id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<show_view_action id="org.eclipse.ui.views.AllMarkersView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<new_wizard_action id="org.codehaus.groovy.eclipse.ui.groovyClassWizard"/>
+<new_wizard_action id="org.codehaus.groovy.eclipse.ui.groovyProjectWizard"/>
+<new_wizard_action id="org.codehaus.groovy.eclipse.ui.groovyJUnitWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newJpaProject"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.EarProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.project.facet.EjbProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.jca.ui.internal.wizard.ConnectorProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.appclient.AppClientProjectWizard"/>
+<new_wizard_action id="org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.internal.wizard.AddServletWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddSessionBeanWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddMessageDrivenBeanWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newEntity"/>
+<new_wizard_action id="org.eclipse.jst.ws.creation.ui.wizard.serverwizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.jpt.ui.jpaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.wst.web.ui.webDevPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.AllMarkersView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@344072" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.68" ratioLeft="663" ratioRight="312" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.69947505" ratioLeft="533" ratioRight="229" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" path="/hubbub/grails-app/controllers/com/example/UserController.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/hubbub/grails-app/views/user/register.gsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/hubbub/grails-app/views/user/register2.gsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" path="/hubbub/grails-app/controllers/com/example/ImageController.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/hubbub/grails-app/views/image/form.gsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" path="/hubbub/grails-app/conf/LameSecurityFilters.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" path="/hubbub/grails-app/conf/UrlMappings.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/hubbub/grails-app/views/index.gsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.XMLEditor" path="/hubbub/web-app/WEB-INF/applicationContext.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/hubbub/grails-app/views/user/results.gsp"/>
+</editors>
+<item historyLabel="UserController.groovy" index="0">
+<position/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position/>
+</item>
+<item historyLabel="register.gsp" index="1">
+<position info="not_deleted" x="830" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="308" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1054" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1221" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1282" y="37"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1375" y="37"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1437" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1647" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1494" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1529" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1552" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1577" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1603" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="1646" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="649" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="650" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="673" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="723" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="768" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="786" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="787" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="878" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="879" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="944" y="0"/>
+</item>
+<item historyLabel="register2.gsp" index="2">
+<position info="not_deleted" x="276" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="625" y="0"/>
+</item>
+<item historyLabel="register2.gsp" index="2">
+<position info="not_deleted" x="580" y="0"/>
+</item>
+<item historyLabel="UserController.groovy" index="0">
+<position info="not_deleted" x="546" y="0"/>
+</item>
+<item historyLabel="ImageController.groovy" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ImageController.groovy" index="3">
+<position info="not_deleted" x="342" y="0"/>
+</item>
+<item historyLabel="ImageController.groovy" index="3">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+<item historyLabel="ImageController.groovy" index="3">
+<position info="not_deleted" x="199" y="0"/>
+</item>
+<item historyLabel="ImageController.groovy" index="3">
+<position info="not_deleted" x="267" y="0"/>
+</item>
+<item historyLabel="ImageController.groovy" index="3">
+<position info="not_deleted" x="299" y="0"/>
+</item>
+<item historyLabel="form.gsp" index="4">
+<position/>
+</item>
+<item historyLabel="register2.gsp" index="2">
+<position info="not_deleted" x="580" y="0"/>
+</item>
+<item historyLabel="form.gsp" index="4">
+<position info="not_deleted" x="297" y="0"/>
+</item>
+<item historyLabel="LameSecurityFilters.groovy" index="5">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="UrlMappings.groovy" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.gsp" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UrlMappings.groovy" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="8">
+<position/>
+</item>
+<item historyLabel="UrlMappings.groovy" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UrlMappings.groovy" index="6">
+<position info="not_deleted" x="196" y="0"/>
+</item>
+<item active="true" historyLabel="results.gsp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="com.aptana.ide.intro.StartPageAction"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="results.gsp" tooltip="hubbub/grails-app/views/user/results.gsp">
+<persistable path="/hubbub/grails-app/views/user/results.gsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.XMLEditor" name="applicationContext.xml" tooltip="hubbub/web-app/WEB-INF/applicationContext.xml">
+<persistable path="/hubbub/web-app/WEB-INF/applicationContext.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.gsp" tooltip="hubbub/grails-app/views/index.gsp">
+<persistable path="/hubbub/grails-app/views/index.gsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="UrlMappings.groovy" tooltip="hubbub/grails-app/conf/UrlMappings.groovy">
+<persistable path="/hubbub/grails-app/conf/UrlMappings.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="LameSecurityFilters.groovy" tooltip="hubbub/grails-app/conf/LameSecurityFilters.groovy">
+<persistable path="/hubbub/grails-app/conf/LameSecurityFilters.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="form.gsp" tooltip="hubbub/grails-app/views/image/form.gsp">
+<persistable path="/hubbub/grails-app/views/image/form.gsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ImageController.groovy" tooltip="hubbub/grails-app/controllers/com/example/ImageController.groovy">
+<persistable path="/hubbub/grails-app/controllers/com/example/ImageController.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="register2.gsp" tooltip="hubbub/grails-app/views/user/register2.gsp">
+<persistable path="/hubbub/grails-app/views/user/register2.gsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="PostService.groovy" tooltip="hubbub/grails-app/services/com/example/PostService.groovy">
+<persistable path="/hubbub/grails-app/services/com/example/PostService.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="Profile.groovy" tooltip="hubbub/grails-app/domain/com/example/Profile.groovy">
+<persistable path="/hubbub/grails-app/domain/com/example/Profile.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="timeline.gsp" tooltip="hubbub/grails-app/views/post/timeline.gsp">
+<persistable path="/hubbub/grails-app/views/post/timeline.gsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="BootStrap.groovy" tooltip="hubbub/grails-app/conf/BootStrap.groovy">
+<persistable path="/hubbub/grails-app/conf/BootStrap.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="index.html" tooltip="hubbub/test/reports/html/index.html">
+<persistable path="/hubbub/test/reports/html/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="QueryIntegrationTests.groovy" tooltip="hubbub/test/integration/com/example/QueryIntegrationTests.groovy">
+<persistable path="/hubbub/test/integration/com/example/QueryIntegrationTests.groovy"/>
+</file>
+</mruList>
+</workbench>

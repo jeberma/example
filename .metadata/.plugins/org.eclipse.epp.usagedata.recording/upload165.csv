@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042725141
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042736039
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042756138
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042775830
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255042781728
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255042784953
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042787727
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042802117
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255042806126
+opened,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255042807231
+activated,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255042807353
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255042867748
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1255042887636
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1255042888958
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255042922053
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042924591
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255042945227
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255042979764
+no handler,command,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.edit.text.java.rename.element",1255043122794
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255043137317
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255043160566
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255043179864
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255043187484
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255043217970
+opened,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255043218270

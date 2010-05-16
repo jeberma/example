@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="jesse.local" name="com.example.PostIntegrationTests" tests="3" time="0.905" timestamp="2009-10-24T20:59:04">
+  <properties />
+  <testcase classname="com.example.PostIntegrationTests" name="testFirstPost" time="0.832" />
+  <testcase classname="com.example.PostIntegrationTests" name="testAccessingPosts" time="0.011" />
+  <testcase classname="com.example.PostIntegrationTests" name="testPostWithTags" time="0.015" />
+  <system-out><![CDATA[--Output from testFirstPost--
+--Output from testAccessingPosts--
+--Output from testPostWithTags--
+]]></system-out>
+  <system-err><![CDATA[--Output from testFirstPost--
+--Output from testAccessingPosts--
+--Output from testPostWithTags--
+]]></system-err>
+</testsuite>

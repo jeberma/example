@@ -1,0 +1,28 @@
+package com.originatelabs.example.jms;
+
+import java.io.UnsupportedEncodingException;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.jms.core.JmsTemplate;
+
+public class OrderProcessor {
+	
+	private static final Log log = LogFactory.getLog(OrderProcessor.class);
+	
+	private JmsTemplate output;
+	
+	public void setOutput(JmsTemplate value) {
+		output = value;
+	}
+	
+	public void handleMessage(byte[] bytes) throws UnsupportedEncodingException {
+		String orderId = new String(bytes,"utf-8");
+		log.info(orderId);
+		
+		// DO SOME PROCESSING HERE
+		
+		// put message on output channel
+		output.convertAndSend(orderId+",COMPLETE");
+	}
+}

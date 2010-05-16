@@ -1,0 +1,4 @@
+#Fri Dec 19 01:22:39 PST 2008
+classpath.helper/org.eclipse.jdt.launching.JRE_CONTAINER\:\:org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType\:\:jdk1.5.0_14/owners=jst.java\:5.0
+classpath.helper/org.eclipse.jdt.launching.JRE_CONTAINER\:\:org.eclipse.jdt.internal.launching.macosx.MacOSXType\:\:JVM\ 1.5.0\ (MacOS\ X\ Default)/owners=jst.java\:5.0
+eclipse.preferences.version=1

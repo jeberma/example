@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.wst.validation,1.2.102.v200905201610,"org.eclipse.wst.validation",1254938144448
+started,bundle,org.eclipse.jst.j2ee,1.1.301.v200909030330,"org.eclipse.jst.j2ee",1254938144463
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938144777
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938144787
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938144788
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938144789
+opened,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254938144997
+activated,perspective,org.eclipse.jst.j2ee.ui,1.1.301.v200909020100,"org.eclipse.jst.j2ee.J2EEPerspective",1254938145041
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254938145499
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938148910
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938151049
+started,bundle,org.maven.ide.eclipse.jdt,0.9.8.200905041413,"org.maven.ide.eclipse.jdt",1254938168468
+started,bundle,org.eclipse.jdt.launching,3.5.0.v20090527,"org.eclipse.jdt.launching",1254938168486
+started,bundle,org.eclipse.jdt.launching.macosx,3.2.0.v20090527,"org.eclipse.jdt.launching.macosx",1254938168497
+started,bundle,org.eclipse.jst.servlet.ui,1.1.301.v200908101600,"org.eclipse.jst.servlet.ui",1254938168617
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938168791
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1254938168837
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1254938168839
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.5,"org.tigris.subversion.clientadapter.javahl",1254938168847
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1254938168849
+started,bundle,org.tmatesoft.svnkit,1.3.0.5847,"org.tmatesoft.svnkit",1254938168903
+started,bundle,org.eclipse.jdt.apt.core,3.3.201.R35x_v20090818-0235,"org.eclipse.jdt.apt.core",1254938169502
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938169679
+started,bundle,org.eclipse.jst.jsp.core,1.2.203.v200908241513,"org.eclipse.jst.jsp.core",1254938169762
+started,bundle,org.eclipse.wst.ws.service.policy,1.0.103.v200905151848,"org.eclipse.wst.ws.service.policy",1254938174371

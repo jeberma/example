@@ -1,0 +1,4 @@
+#Tue Oct 20 13:56:43 PDT 2009
+com.aptana.ide.php.debug.core.xdebug_port=9003
+com.aptana.ide.php.debug.corezend_debug_port=10003
+eclipse.preferences.version=1

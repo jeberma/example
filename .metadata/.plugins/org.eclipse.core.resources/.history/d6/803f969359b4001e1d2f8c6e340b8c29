@@ -1,0 +1,8 @@
+<h3>Send a new order</h3>
+<% form_for(:order) do |form| %>
+	<p>
+		<label for="order_description">Description</label>
+		<%= form.text_field(:description) %>
+	</p>
+	<%= submit_tag('Save') %>
+<% end %>

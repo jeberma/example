@@ -1,0 +1,10 @@
+Testsuite: QuoteServiceIntegrationTestTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.119 sec
+------------- Standard Output ---------------
+--Output from testStaticQuote--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testStaticQuote--
+------------- ---------------- ---------------
+
+Testcase: testStaticQuote took 0.088 sec

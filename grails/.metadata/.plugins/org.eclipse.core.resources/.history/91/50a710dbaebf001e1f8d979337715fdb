@@ -1,0 +1,18 @@
+package com.example
+
+class Profile {
+
+	static belongsTo = User
+
+	byte[] photo
+	String fullname
+	String bio
+	String homepage
+	String email
+	String timezone
+	String country
+	String jabberAddress
+
+    static constraints = {
+    }
+}

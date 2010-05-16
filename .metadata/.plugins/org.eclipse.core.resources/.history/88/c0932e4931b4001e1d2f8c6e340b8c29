@@ -1,0 +1,35 @@
+package com.originatelabs.example.jms;
+
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
+
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
+
+public class MessageProducer {
+	
+	private Destination destination;
+	
+	private JmsTemplate jmsTemplate;
+	
+	public void setDestination(Destination value) {
+		destination = value;
+	}
+	
+	public void setJmsTemplate(JmsTemplate value) {
+		jmsTemplate = value;
+	}
+	
+	public void send() {
+		/*
+		jmsTemplate.send(destination, new MessageCreator(){
+			public Message createMessage(Session session) throws JMSException {
+				return session.createTextMessage("HELLO!");
+			}
+		});
+		*/
+	}
+
+}

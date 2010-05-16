@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256416591237
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256416611690
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256416647109
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256416663026
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256416663147
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1256416667297
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256416691059
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256416693087
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1256416693154
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256416695274
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256416695331
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256416718294
+error,log,,,"Groovy bug when compiling.",1256416732518
+error,log,,,"Groovy bug when compiling.",1256416732529
+error,log,,,"Groovy bug when compiling.",1256416732535
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256416812357
+started,bundle,org.eclipse.ecf.presence,2.0.0.v20090916-2238,"org.eclipse.ecf.presence",1256416817413
+started,bundle,org.eclipse.ecf.presence.ui,2.0.0.v20090916-2238,"org.eclipse.ecf.presence.ui",1256416817441
+started,bundle,com.aptana.ide.editor.php,1.1.0.25789,"com.aptana.ide.editor.php",1256416819325
+started,bundle,com.aptana.ide.editor.smarty,1.1.0.25789,"com.aptana.ide.editor.smarty",1256416819749
+started,bundle,com.aptana.ide.parsing,1.5.0.25384,"com.aptana.ide.parsing",1256416819828
+started,bundle,org.eclipse.wst.validation.ui,1.2.104.v200904232035,"org.eclipse.wst.validation.ui",1256416820402
+activated,editor,org.eclipse.jst.jsp.ui,1.1.401.v200908111935,"org.eclipse.jst.jsp.core.jspsource.source",1256416822590
+closed,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256416822590
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256416824297

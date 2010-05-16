@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.tigris.subversion.clientadapter,1.6.4.1,"org.tigris.subversion.clientadapter",1255023120825
+started,bundle,org.tigris.subversion.subclipse.core,1.6.5,"org.tigris.subversion.subclipse.core",1255023121320
+started,bundle,com.aptana.ide.debug.core,1.5.0.25240,"com.aptana.ide.debug.core",1255023121362
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.ui",1255023121514
+started,bundle,org.eclipse.mylyn.team.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.team.ui",1255023121548
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1255023121563
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1255023121575
+started,bundle,org.eclipse.jst.j2ee.web,1.1.301.v200908270924,"org.eclipse.jst.j2ee.web",1255023121675
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1255023121688
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1255023121688
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1255023121700
+started,bundle,com.collabnet.subversion.merge,1.10.0,"com.collabnet.subversion.merge",1255023121715
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1255023121760
+started,bundle,org.radrails.db.core,2.0.0.25649,"org.radrails.db.core",1255023121828
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1255023122013
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1255023122514
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1255023122580
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1255023122656
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023122674
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023122675
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023122675
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023122676
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023122676
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023122777
+started,bundle,com.aptana.ide.desktop.integration.protocolhandler,1.5.0.25611,"com.aptana.ide.desktop.integration.protocolhandler",1255023122817

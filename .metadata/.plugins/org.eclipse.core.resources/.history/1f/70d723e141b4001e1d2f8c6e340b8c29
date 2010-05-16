@@ -1,0 +1,18 @@
+package com.originatelabs.example.jms;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class MessageConsumer {
+	
+	private static final Log log = LogFactory.getLog(MessageConsumer.class);
+	
+	public void handleMessage(String msg) {
+		log.info("\n"+msg);
+	}
+	
+	/** for stomp messages */
+	public void handleMessage(byte[] msg) {
+		log.info("\n"+new String(msg));
+	}
+}

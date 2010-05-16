@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<!-- inherit gwt core -->
+	<inherits name="com.google.gwt.user.User"/>
+	
+	<!-- inherit i18n -->
+	<inherits name="com.google.gwt.i18n.I18N"/>
+	<extend-property name="locale" values="fr"/>
+	
+	<!-- inherit css based theme -->
+	<inherits name="com.google.gwt.user.theme.standard.Standard"/>
+	<!--inherits name="com.google.gwt.user.theme.chrome.Chrome"/-->
+	<!--inherits name="com.google.gwt.user.theme.dark.Dark"/-->
+	
+	<!-- specify the app entry point class -->
+	<entry-point class="com.originatelabs.example.gwt.client.Application"/>
+	
+	<!-- specify the application specific style sheet -->
+	<stylesheet src="Application.css"/>
+	
+	<!-- service servlet mapping -->
+	<servlet path="/sampleRemoteService" class="com.originatelabs.example.gwt.server.SampleRemoteServiceImpl"/>
+	
+</module>

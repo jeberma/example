@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254947808333
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254947888676
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254947891553
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948166126
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254948172858
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948174508
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948902581
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254948905119
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254948905438
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254948913329
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254948921579
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254948925182
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254948928524
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948928895
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948931788
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254948939926
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948944384
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948952914
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948956448
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948961954
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254948962209
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254948962294
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254948964305
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949296247
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254949301135

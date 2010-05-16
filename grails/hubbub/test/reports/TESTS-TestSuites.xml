@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="jesse.local" id="0" name="PostIntegrationTests" package="com.example" tests="3" time="0.905" timestamp="2009-10-24T20:59:04">
+      <properties />
+
+      <testcase classname="com.example.PostIntegrationTests" name="testFirstPost" time="0.832" />
+
+      <testcase classname="com.example.PostIntegrationTests" name="testAccessingPosts" time="0.011" />
+
+      <testcase classname="com.example.PostIntegrationTests" name="testPostWithTags" time="0.015" />
+
+      <system-out><![CDATA[--Output from testFirstPost--
+--Output from testAccessingPosts--
+--Output from testPostWithTags--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testFirstPost--
+--Output from testAccessingPosts--
+--Output from testPostWithTags--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="jesse.local" id="1" name="QueryIntegrationTests" package="com.example" tests="2" time="0.367" timestamp="2009-10-24T20:59:05">
+      <properties />
+
+      <testcase classname="com.example.QueryIntegrationTests" name="testBasicDynamicFinders" time="0.296" />
+
+      <testcase classname="com.example.QueryIntegrationTests" name="testQueryByExample" time="0.066" />
+
+      <system-out><![CDATA[--Output from testBasicDynamicFinders--
+--Output from testQueryByExample--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testBasicDynamicFinders--
+--Output from testQueryByExample--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="jesse.local" id="2" name="UserIntegrationTests" package="com.example" tests="6" time="0.161" timestamp="2009-10-24T20:59:05">
+      <properties />
+
+      <testcase classname="com.example.UserIntegrationTests" name="testCreate" time="0.0090" />
+
+      <testcase classname="com.example.UserIntegrationTests" name="testUpdate" time="0.039" />
+
+      <testcase classname="com.example.UserIntegrationTests" name="testDelete" time="0.025" />
+
+      <testcase classname="com.example.UserIntegrationTests" name="testValidationsFail" time="0.031" />
+
+      <testcase classname="com.example.UserIntegrationTests" name="testValidationsCorrected" time="0.013" />
+
+      <testcase classname="com.example.UserIntegrationTests" name="testFollowing" time="0.015" />
+
+      <system-out><![CDATA[--Output from testCreate--
+--Output from testUpdate--
+--Output from testDelete--
+--Output from testValidationsFail--
+--Output from testValidationsCorrected--
+--Output from testFollowing--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreate--
+--Output from testUpdate--
+--Output from testDelete--
+--Output from testValidationsFail--
+--Output from testValidationsCorrected--
+--Output from testFollowing--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

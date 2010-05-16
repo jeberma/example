@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server-manager>
+<server type="Mongrel">
+<project>/Users/jesse/work/example/jruby/example-rails-quartz</project>
+<name>example-rails-quartz</name>
+<host>0.0.0.0</host>
+<port>3001</port>
+<environment>development</environment>
+<runMode>run</runMode>
+</server>
+<server type="Mongrel">
+<project>/Users/jesse/work/example/jruby/example-rails-polymorphic-model</project>
+<name>example-rails-polymorphic-model</name>
+<host>0.0.0.0</host>
+<port>3000</port>
+<environment>development</environment>
+<runMode>run</runMode>
+</server>
+</server-manager>

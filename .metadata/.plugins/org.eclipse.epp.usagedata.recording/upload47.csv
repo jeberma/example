@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949822514
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949824081
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254949833233
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949833411
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254949843587
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949843984
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949845992
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254949846100
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254949846100
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254949852481
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949854683
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949855391
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949860408
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254950051088
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254950052943
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254950056306
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254950060967
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254950063183
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1254950063231
+opened,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254950078297
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254950078394
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254950080426
+closed,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254950080426
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254950083882
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254950084201

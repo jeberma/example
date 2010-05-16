@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1254910656300
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1254910656488
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1254910656732
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1254910657275
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254910657384
+started,bundle,com.aptana.rdt.ui,1.3.1.26356,"com.aptana.rdt.ui",1254910658016
+started,bundle,org.eclipse.jdt.apt.core,3.3.201.R35x_v20090818-0235,"org.eclipse.jdt.apt.core",1254910658690
+started,bundle,org.eclipse.core.variables,3.2.200.v20090521,"org.eclipse.core.variables",1254910659730
+error,log,,,"Failed to retrieve default libraries for /eclipse-3.5/plugins/org.jruby_1.2.0.9419p1",1254910660743
+started,bundle,org.eclipse.jst.servlet.ui,1.1.301.v200908101600,"org.eclipse.jst.servlet.ui",1254910663840
+started,bundle,org.eclipse.wst.html.core,1.1.300.v200903120608,"org.eclipse.wst.html.core",1254910675456
+started,bundle,org.eclipse.wst.css.core,1.1.300.v200904131653,"org.eclipse.wst.css.core",1254910675740
+started,bundle,org.eclipse.pde.core,3.5.100.v20090821,"org.eclipse.pde.core",1254910692047
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.5,"org.tigris.subversion.clientadapter.javahl",1254910695464
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1254910695466
+started,bundle,org.tmatesoft.svnkit,1.3.0.5847,"org.tmatesoft.svnkit",1254910695898
+started,bundle,com.aptana.ide.professional.licensing,1.5.0.25826,"com.aptana.ide.professional.licensing",1254910698520
+started,bundle,com.aptana.ide.editors,1.5.0.25476,"com.aptana.ide.editors",1254910698620
+started,bundle,com.aptana.ide.scripting,1.5.0.24993,"com.aptana.ide.scripting",1254910698620
+started,bundle,org.eclipse.eclipsemonkey,1.5.0.24896,"org.eclipse.eclipsemonkey",1254910698754
+started,bundle,org.eclipse.eclipsemonkey.lang.javascript,1.5.0.24896,"org.eclipse.eclipsemonkey.lang.javascript",1254910698795
+started,bundle,org.eclipse.eclipsemonkey.lang.ruby,1.2.2.25649,"org.eclipse.eclipsemonkey.lang.ruby",1254910698798
+opened,editor,com.aptana.ide.server.portal,1.5.0.26171,"com.aptana.ide.server.portal.ui.MyAptanaEditor",1254910700108
+activated,editor,com.aptana.ide.server.portal,1.5.0.26171,"com.aptana.ide.server.portal.ui.MyAptanaEditor",1254910700500
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254910700518

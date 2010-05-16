@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254955112037
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254955112166
+started,bundle,com.aptana.ide.professional.licensing,1.5.0.25826,"com.aptana.ide.professional.licensing",1254955119030
+started,bundle,com.aptana.ide.editors,1.5.0.25476,"com.aptana.ide.editors",1254955119042
+started,bundle,com.aptana.ide.scripting,1.5.0.24993,"com.aptana.ide.scripting",1254955119043
+started,bundle,org.eclipse.eclipsemonkey,1.5.0.24896,"org.eclipse.eclipsemonkey",1254955119058
+started,bundle,org.eclipse.eclipsemonkey.lang.javascript,1.5.0.24896,"org.eclipse.eclipsemonkey.lang.javascript",1254955119063
+started,bundle,org.eclipse.eclipsemonkey.lang.ruby,1.2.2.25649,"org.eclipse.eclipsemonkey.lang.ruby",1254955119065
+started,bundle,org.eclipse.eclipsemonkey.doms,1.5.0.24896,"org.eclipse.eclipsemonkey.doms",1254955119192
+started,bundle,com.aptana.ide.server.core,1.5.0.24896,"com.aptana.ide.server.core",1254955119332
+started,bundle,com.aptana.ide.editor.php.preview,1.1.0.25774,"com.aptana.ide.editor.php.preview",1254955119396
+started,bundle,com.aptana.ide.interpreters,1.5.0.24896,"com.aptana.ide.interpreters",1254955119405
+started,bundle,com.aptana.ide.php.interpreters.macosx,5.4.2.v20090528,"com.aptana.ide.php.interpreters.macosx",1254955119416
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254955119419
+started,bundle,com.aptana.ide.php.interpreters,1.1.0.25774,"com.aptana.ide.php.interpreters",1254955119470
+started,bundle,org.eclipse.jst.j2ee.ejb,1.1.300.v200904230730,"org.eclipse.jst.j2ee.ejb",1254955120486
+started,bundle,org.eclipse.jst.j2ee.jca,1.1.300.v200903120000,"org.eclipse.jst.j2ee.jca",1254955120495
+started,bundle,org.eclipse.jst.jee.ejb,1.0.201.v200908101600,"org.eclipse.jst.jee.ejb",1254955120499
+started,bundle,org.eclipse.jst.jee.web,1.0.200.v200904130912,"org.eclipse.jst.jee.web",1254955120501
+started,bundle,org.radrails.server.ui,1.3.0.25649,"org.radrails.server.ui",1254955120550
+started,bundle,org.radrails.server.core,1.2.2.26357,"org.radrails.server.core",1254955120555
+started,bundle,com.aptana.ide.php.debug.core,1.1.0.25774,"com.aptana.ide.php.debug.core",1254955120577
+started,bundle,org.eclipse.xsd,2.5.0.v200906151043,"org.eclipse.xsd",1254955120589
+started,bundle,com.aptana.ide.php.debug.ui,1.1.0.25777,"com.aptana.ide.php.debug.ui",1254955120610
+started,bundle,org.eclipse.jst.servlet.ui,1.1.301.v200908101600,"org.eclipse.jst.servlet.ui",1254955120984

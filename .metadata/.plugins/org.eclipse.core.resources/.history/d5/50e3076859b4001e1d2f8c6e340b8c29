@@ -1,0 +1,4 @@
+<% form_for(:order) do |form| %>
+	<%= form.text_area(:description) %>
+	<%= submit_tag('Save') %>
+<% end %>

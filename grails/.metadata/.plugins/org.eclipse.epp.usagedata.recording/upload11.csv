@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277417094
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277423568
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277423619
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277432396
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.properties",1256277432468
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256277436143
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256277436188
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256277440465
+closed,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256277440465
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277442205
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277454912
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277456533
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277467251
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1256277478536
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277478593
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277483871
+executed,command,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.project.properties",1256277483940
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277487437
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277489137
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277491157
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277519563
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277521324
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256277634302
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1256277636524
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256277643267

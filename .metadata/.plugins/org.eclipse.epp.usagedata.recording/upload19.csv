@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1254937982004
+java.specification.version,sysinfo,,,"1.5",1254937982004
+java.vendor,sysinfo,,,"Apple Inc.",1254937982004
+java.version,sysinfo,,,"1.5.0_16",1254937982004
+java.vm.info,sysinfo,,,"mixed mode",1254937982004
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1254937982004
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1254937982004
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1254937982004
+java.vm.specification.version,sysinfo,,,"1.0",1254937982004
+java.vm.vendor,sysinfo,,,"Apple Inc.",1254937982004
+java.vm.version,sysinfo,,,"1.5.0_16-133",1254937982004
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1254937982034
+started,bundle,org.tigris.subversion.clientadapter,1.6.4.1,"org.tigris.subversion.clientadapter",1254937982041
+started,bundle,org.tigris.subversion.subclipse.core,1.6.5,"org.tigris.subversion.subclipse.core",1254937982070
+started,bundle,com.aptana.ide.desktop.integration.protocolhandler,1.5.0.25611,"com.aptana.ide.desktop.integration.protocolhandler",1254937982098
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1254937982098
+started,bundle,com.aptana.ide.desktop.integration.server,1.5.0.25497,"com.aptana.ide.desktop.integration.server",1254937982114
+started,bundle,com.aptana.ide.installer,1.5.0.25382,"com.aptana.ide.installer",1254937982162
+started,bundle,com.collabnet.subversion.merge,1.10.0,"com.collabnet.subversion.merge",1254937982555
+started,bundle,com.aptana.ide.update.eclipse34,1.5.0.26125,"com.aptana.ide.update.eclipse34",1254937982567
+started,bundle,com.aptana.ide.update.eclipse35,1.5.0.26125,"com.aptana.ide.update.eclipse35",1254937982584
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1254937982585
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1254937982594
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1254937982595
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1254937982598

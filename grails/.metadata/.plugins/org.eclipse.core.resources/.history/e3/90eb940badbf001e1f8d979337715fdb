@@ -1,0 +1,46 @@
+package com.example
+
+import grails.test.*
+
+class UserIntegrationTests extends GrailsUnitTestCase {
+	
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testCreate() {
+		def u = new User(userId:'joe', password:'secret', homepage:'http://www.grailsinaction.com')
+		assertNotNull u.save(flush:true)
+		assertNotNull u.id
+
+		def found = User.get(u.id)
+		assertNotNull found
+		assertEquals 'joe', found.userId
+    }
+
+    void testUpdate() {
+    	def u = new User(userId:'joe', password:'secret', homepage:'http://www.grailsinaction.com')
+    	assertNotNull u.save(flush:true)
+
+    	def found = User.get(u.id)
+    	found.password = 'sesame'
+    	found.save(flush:true)
+
+    	found = User.get(u.id)
+    	assertEquals 'sesame', found.password
+    }
+
+    void testDelete() {
+    	def user = new User(userId:'joe', password:'secret', homepage:'http://www.grailsinaction.com')
+    	assertNotNull user.save(flush:true)
+
+    	def found = User.get(user.id)
+    	found.delete()
+
+    	assertFalse User.exists(found.id)
+    }
+}

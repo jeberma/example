@@ -1,0 +1,44 @@
+==============================================================================
+							OVERVIEW
+==============================================================================
+
+This example illustrates how to send and receive messages on a jms queue.  
+
+
+==============================================================================
+							QUICK START
+==============================================================================
+1. Open two terminal windows at the project basedir.
+
+2. In the first terminal window, start an activemq broker by typing:
+mvn activemq:run
+
+3. In the second terminal window, start the jetty server by typing:
+mvn jetty:run
+
+You should 'HELLO' printed continuously in the jetty window.
+
+
+==============================================================================
+				GERONIMO DEPLOYMENT (tested on v2.1.4 tomcat)
+==============================================================================
+1. $GERONIMO_HOME/bin/deploy.sh deploy src/main/geronimo/geronimo-jms.xml $GERONIMO_HOME/repository/org/apache/geronimo/modules/geronimo-activemq-ra/2.1.4/geronimo-activemq-ra-2.1.4.rar
+
+2. mvn package
+
+3. $GERONIOM_HOME/bin/deploy.sh deploy ./target/example-jms-simple-0.0.1-SNAPSHOT.war
+
+
+==============================================================================
+						STOMP CLIENT EXAMPLE
+==============================================================================
+The ruby file src/test/ruby/stomp_sender.rb illustrates how to send a stomp
+message to the exampleQueue. 
+
+1. Deploy the web application to geronimo.
+
+2. gem install stomp
+
+3. ruby -S src/test/ruby/stomp_sender.rb
+
+You should see 'HELLO STOMP!' appear in $GERONIMO_HOME/var/log/geronimo.log

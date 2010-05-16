@@ -1,0 +1,33 @@
+<style type="text/css">
+	.orders .header{
+		font-size:large;
+		margin-right:20px;
+		margin-top:40px;
+	}
+	.orders table {
+		margin-top:20px;
+	}
+</style>
+<div class="orders">
+	<div class="header">Orders</div>
+	<table>
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>description</th>
+				<th>status</th>
+				<th>action</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% orders.each do |order| %>
+			<tr>
+				<td><%= order.id %></td>
+				<td><%= order.description %></td>
+				<td><%= order.status %></td>
+				<td><%= button_to_remote('Delete', :url=>{:action=>:delete, :id=>order.id}%></td>
+			</tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>

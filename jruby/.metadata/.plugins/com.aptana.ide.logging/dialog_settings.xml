@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.aptana.ide.logging.viewer.section">
+		<list key="org.aptana.ide.logging.viewer.section.tabs.uris">
+			<item value="file:/Users/jesse/work/example/jruby/example-rails-polymorphic-model/log/development.log"/>
+		</list>
+		<list key="org.aptana.ide.logging.viewer.section.tabs.names">
+			<item value="example-rails-polymorphic-model Log"/>
+		</list>
+		<list key="org.aptana.ide.logging.viewer.section.tabs.supportsErasing">
+			<item value="true"/>
+		</list>
+	</section>
+</section>

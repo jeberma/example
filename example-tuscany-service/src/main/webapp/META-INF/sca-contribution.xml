@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contribution xmlns="http://www.osoa.org/xmlns/sca/1.0"
+    xmlns:order="http://sample">
+    
+    <deployable composite="order:order-service"/>
+	
+</contribution>

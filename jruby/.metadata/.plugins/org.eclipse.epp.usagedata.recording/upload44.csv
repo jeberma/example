@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+arch,sysinfo,,,"x86",1256070438120
+ws,sysinfo,,,"cocoa",1256070438120
+locale,sysinfo,,,"en_US",1256070438120
+processors,sysinfo,,,"2",1256070438120
+java.runtime.name,sysinfo,,,"Java(TM) 2 Runtime Environment, Standard Edition",1256070438120
+java.runtime.version,sysinfo,,,"1.5.0_16-b06-284",1256070438120
+java.specification.name,sysinfo,,,"Java Platform API Specification",1256070438120
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1256070438120
+java.specification.version,sysinfo,,,"1.5",1256070438120
+java.vendor,sysinfo,,,"Apple Inc.",1256070438120
+java.version,sysinfo,,,"1.5.0_16",1256070438120
+java.vm.info,sysinfo,,,"mixed mode",1256070438120
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1256070438120
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1256070438120
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1256070438120
+java.vm.specification.version,sysinfo,,,"1.0",1256070438120
+java.vm.vendor,sysinfo,,,"Apple Inc.",1256070438120
+java.vm.version,sysinfo,,,"1.5.0_16-133",1256070438120
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1256070438146
+started,bundle,org.eclipse.mylyn.context.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.core",1256070438214
+started,bundle,org.eclipse.mylyn.context.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.ui",1256070438225
+started,bundle,org.radrails.server.ui,1.3.0.25649,"org.radrails.server.ui",1256070438269
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1256070438363
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.ui",1256070438451
+started,bundle,org.eclipse.mylyn.team.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.team.ui",1256070438471

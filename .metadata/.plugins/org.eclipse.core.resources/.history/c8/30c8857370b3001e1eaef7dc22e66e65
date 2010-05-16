@@ -1,0 +1,13 @@
+
+This example illustrates deployment of a single jms queue.
+
+
+* JETTY DEPLOYMENT
+1. mvn jetty:run
+
+* GERONIMO DEPLOYMENT (tested on v2.1.4 tomcat)
+1. $GERONIMO_HOME/bin/deploy.sh deploy src/main/geronimo/geronimo-jms.xml $GERONIMO_HOME/repository/org/apache/geronimo/modules/geronimo-activemq-ra/2.1.4/geronimo-activemq-ra-2.1.4.rar
+
+2. mvn package
+
+3. $GERONIOM_HOME/bin/deploy.sh deploy ./target/example-jms-simple-0.0.1-SNAPSHOT.war

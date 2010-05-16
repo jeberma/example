@@ -1,0 +1,6 @@
+package com.example
+
+class PostController {
+
+    def index = { }
+}

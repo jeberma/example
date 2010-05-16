@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940501336
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940511530
+started,bundle,org.eclipse.ecf.presence,2.0.0.v20090916-2238,"org.eclipse.ecf.presence",1254940512215
+started,bundle,org.eclipse.ecf.presence.ui,2.0.0.v20090916-2238,"org.eclipse.ecf.presence.ui",1254940512217
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254940516157
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254940542256
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1254940553721
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254940555151
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254940556601
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254940574526
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254940642364
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254940644598
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940654400
+started,bundle,com.sun.jna,3.0.9,"com.sun.jna",1254940701063
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940702430
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254940703415
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940704663
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254940704944
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940707294
+opened,view,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.sync.views.SynchronizeView",1254940708306
+opened,view,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui.GenericHistoryView",1254940708358
+opened,view,org.eclipse.mylyn.tasks.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.ui.views.repositories",1254940708388
+activated,perspective,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui.TeamSynchronizingPerspective",1254940708415
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254940708441
+activated,view,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.sync.views.SynchronizeView",1254940708490

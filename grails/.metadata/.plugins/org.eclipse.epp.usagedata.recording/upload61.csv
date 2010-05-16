@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256426720690
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256426762292
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256426763863
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256426767459
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256426942933
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256426952584
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256427062344
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256427068550
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256427069378
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256427069438
+activated,editor,org.eclipse.jst.jsp.ui,1.1.401.v200908111935,"org.eclipse.jst.jsp.core.jspsource.source",1256427073143
+closed,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256427073143
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256427083981
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256427085314
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256427096090
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256427097422
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256427099235
+error,log,,,"Groovy bug when compiling.",1256427143468
+error,log,,,"Groovy bug when compiling.",1256427143481
+error,log,,,"Groovy bug when compiling.",1256427143485
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256427206530
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256427208621
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256427224034
+activated,editor,org.eclipse.jst.jsp.ui,1.1.401.v200908111935,"org.eclipse.jst.jsp.core.jspsource.source",1256427337915
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256427365146

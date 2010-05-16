@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038300368
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038300369
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038300370
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255038301916
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255038305973
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255038306051
+closed,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255038306051
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038306642
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038307334
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038310395
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038365815
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038367008
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038368783
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255038369866
+opened,editor,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.browser.BrowserEditor",1255038372114
+activated,editor,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.browser.BrowserEditor",1255038372153
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038381879
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1255038390134
+activated,editor,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.browser.BrowserEditor",1255038392894
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1255038392969
+closed,editor,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.browser.BrowserEditor",1255038392977
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1255038398106
+opened,view,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.ViewGenerators",1255038400432
+activated,view,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.ViewGenerators",1255038400451
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255038408114

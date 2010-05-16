@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254955110254
+started,bundle,com.aptana.ide.io.file,1.5.0.25645,"com.aptana.ide.io.file",1254955110269
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1254955110387
+started,bundle,org.tigris.subversion.clientadapter,1.6.4.1,"org.tigris.subversion.clientadapter",1254955110424
+started,bundle,com.aptana.ide.debug.core,1.5.0.25240,"com.aptana.ide.debug.core",1254955110480
+started,bundle,org.tigris.subversion.subclipse.core,1.6.5,"org.tigris.subversion.subclipse.core",1254955110573
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1254955110612
+started,bundle,com.aptana.ide.desktop.integration.protocolhandler,1.5.0.25611,"com.aptana.ide.desktop.integration.protocolhandler",1254955111226
+started,bundle,org.radrails.db.core,2.0.0.25649,"org.radrails.db.core",1254955111256
+started,bundle,com.aptana.ide.desktop.integration.server,1.5.0.25497,"com.aptana.ide.desktop.integration.server",1254955111264
+started,bundle,com.aptana.ide.installer,1.5.0.25382,"com.aptana.ide.installer",1254955111274
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1254955111280
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1254955111280
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1254955111548
+started,bundle,com.aptana.ide.update.eclipse34,1.5.0.26125,"com.aptana.ide.update.eclipse34",1254955111553
+started,bundle,com.aptana.ide.update.eclipse35,1.5.0.26125,"com.aptana.ide.update.eclipse35",1254955111559
+started,bundle,org.eclipse.equinox.p2.metadata,1.0.100.v20090525,"org.eclipse.equinox.p2.metadata",1254955111564
+started,bundle,org.eclipse.equinox.p2.ui,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.ui",1254955111578
+started,bundle,com.collabnet.subversion.merge,1.10.0,"com.collabnet.subversion.merge",1254955111580
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1254955111823
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1254955111957
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254955112028
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254955112030
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254955112032
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254955112033

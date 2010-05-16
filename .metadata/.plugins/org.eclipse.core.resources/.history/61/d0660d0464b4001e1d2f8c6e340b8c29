@@ -1,0 +1,12 @@
+class OrderProcessor < ApplicationProcessor
+
+  subscribes_to :orders_output
+
+  def on_message(message)
+    logger.debug "OrderProcessor received: " + message
+    id, status = message.split(',')
+    order = Order.find(id)
+    order.status = status
+    order.save!
+  end
+end

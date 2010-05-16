@@ -1,0 +1,18 @@
+class OrdersController < ApplicationController
+  
+  def index
+    @orders = Order.find(:all)
+  end
+  
+  def create
+    if request.xhr?
+      order = Order.new(params[:order])
+      order.status = 'PROCESSING'
+      order.save!
+      render(:update) do |page|
+        page.replace_html('orders_container', :partial=>'orders', :object=>Orders.find(:all))
+      end
+    end
+  end
+  
+end

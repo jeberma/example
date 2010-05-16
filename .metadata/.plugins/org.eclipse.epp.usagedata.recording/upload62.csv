@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.info,sysinfo,,,"mixed mode",1254952296888
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1254952296888
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1254952296888
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1254952296888
+java.vm.specification.version,sysinfo,,,"1.0",1254952296888
+java.vm.vendor,sysinfo,,,"Apple Inc.",1254952296888
+java.vm.version,sysinfo,,,"1.5.0_16-133",1254952296888
+started,bundle,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui",1254952297026
+started,bundle,org.rubypeople.rdt.debug.ui,1.3.1.26263,"org.rubypeople.rdt.debug.ui",1254952297026
+started,bundle,com.aptana.rdt.ui,1.3.1.26356,"com.aptana.rdt.ui",1254952297028
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1254952297038
+started,bundle,org.radrails.rails.core,1.3.1.26264,"org.radrails.rails.core",1254952297045
+started,bundle,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui",1254952297046
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1254952297067
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254952297073
+started,bundle,com.aptana.ide.io.file,1.5.0.25645,"com.aptana.ide.io.file",1254952297093
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1254952297734
+started,bundle,org.tigris.subversion.clientadapter,1.6.4.1,"org.tigris.subversion.clientadapter",1254952297790
+started,bundle,com.aptana.ide.debug.core,1.5.0.25240,"com.aptana.ide.debug.core",1254952297839
+started,bundle,com.aptana.ide.desktop.integration.protocolhandler,1.5.0.25611,"com.aptana.ide.desktop.integration.protocolhandler",1254952298003
+started,bundle,com.aptana.ide.desktop.integration.server,1.5.0.25497,"com.aptana.ide.desktop.integration.server",1254952298020
+started,bundle,com.aptana.ide.installer,1.5.0.25382,"com.aptana.ide.installer",1254952298033
+started,bundle,org.radrails.db.core,2.0.0.25649,"org.radrails.db.core",1254952298054
+started,bundle,com.aptana.ide.update.eclipse34,1.5.0.26125,"com.aptana.ide.update.eclipse34",1254952298076
+started,bundle,com.aptana.ide.update.eclipse35,1.5.0.26125,"com.aptana.ide.update.eclipse35",1254952298088

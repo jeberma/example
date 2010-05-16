@@ -1,0 +1,10 @@
+package com.originatelabs.example.jms;
+
+public class StompTest {
+	
+	@Test
+	public void send() {
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+== Overview
+
+This example illustrates how to configure camel to act as a service mediator/proxy/esb.  
+
+In this architecture, the camel message router acts as an itermediary between client requests and the service being proxied.  
+
+Client -> Camel -> PingService
+
+== Usage
+
+cd example-service
+mvn jetty:run
+
+cd example-camel
+mvn jetty:run
+
+Open web services explorer or soap ui and test the wsdl in example-service/src/main/resources/ping.wsdl.  Send a request to http://localhost:8080/ws/PingService.jws and watch camel forward it to the actual service running on port 8081.
+
+

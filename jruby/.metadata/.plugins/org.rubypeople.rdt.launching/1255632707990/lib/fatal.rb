@@ -1,0 +1,3 @@
+class Fatal < Exception
+
+end

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.tigris.subversion.subclipse.core,1.6.5,"org.tigris.subversion.subclipse.core",1256276958515
+started,bundle,org.codehaus.groovy,1.7.0.xx-20091006-1400-e35,"org.codehaus.groovy",1256276958542
+started,bundle,org.codehaus.groovy.eclipse.core,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.core",1256276958543
+started,bundle,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.ui",1256276958543
+started,bundle,org.eclipse.jdt.core,3.5.1.xx-20091006-1400-e35,"org.eclipse.jdt.core",1256276958581
+started,bundle,org.eclipse.egit.core,0.5.0.200908282229,"org.eclipse.egit.core",1256276958582
+started,bundle,org.eclipse.egit.ui,0.5.0.200908282229,"org.eclipse.egit.ui",1256276958582
+started,bundle,org.spearce.jgit,0.5.0.200908282229,"org.spearce.jgit",1256276958583
+os,sysinfo,,,"macosx",1256276958588
+arch,sysinfo,,,"x86",1256276958588
+ws,sysinfo,,,"cocoa",1256276958588
+locale,sysinfo,,,"en_US",1256276958588
+processors,sysinfo,,,"2",1256276958588
+java.runtime.name,sysinfo,,,"Java(TM) 2 Runtime Environment, Standard Edition",1256276958588
+java.runtime.version,sysinfo,,,"1.5.0_16-b06-284",1256276958588
+java.specification.name,sysinfo,,,"Java Platform API Specification",1256276958588
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1256276958588
+java.specification.version,sysinfo,,,"1.5",1256276958588
+java.vendor,sysinfo,,,"Apple Inc.",1256276958588
+java.version,sysinfo,,,"1.5.0_16",1256276958588
+java.vm.info,sysinfo,,,"mixed mode",1256276958588
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1256276958588
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1256276958588
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1256276958588
+java.vm.specification.version,sysinfo,,,"1.0",1256276958588

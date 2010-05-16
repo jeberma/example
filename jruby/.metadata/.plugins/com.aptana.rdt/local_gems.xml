@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gems>
+	<gem>
+		<name>json_pure</name>
+		<version>1.1.6</version>
+		<description>A JSON implementation in Ruby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>highline</name>
+		<version>1.5.1</version>
+		<description>HighLine is a high-level command-line IO library.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-scp</name>
+		<version>1.0.1</version>
+		<description>A pure Ruby implementation of the SCP client protocol</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rails</name>
+		<version>2.3.4</version>
+		<description>Web-application framework with template engine, control-flow layer, and ORM.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activeresource</name>
+		<version>2.3.4</version>
+		<description>Think Active Record for web resources.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activerecord-jdbcmysql-adapter</name>
+		<version>0.9.1</version>
+		<description>MySQL JDBC adapter for JRuby on Rails.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activerecord</name>
+		<version>2.2.2</version>
+		<description>Implements the ActiveRecord pattern for ORM.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-ssh</name>
+		<version>2.0.4</version>
+		<description>Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rubyforge</name>
+		<version>2.0.0</version>
+		<description>A script which automates a limited set of rubyforge operations</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>jdbc-mysql</name>
+		<version>5.0.4</version>
+		<description>MySQL JDBC driver for Java and MySQL/ActiveRecord-JDBC.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activerecord-jdbcderby-adapter</name>
+		<version>0.9.2</version>
+		<description>Derby JDBC adapter for JRuby on Rails.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>jdbc-sqlite3</name>
+		<version>3.6.3.054</version>
+		<description>SQLite3 JDBC driver for Java and SQLite3/ActiveRecord-JDBC.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activesupport</name>
+		<version>2.3.4</version>
+		<description>Support and utility classes used by the Rails framework.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-ssh-gateway</name>
+		<version>1.0.0</version>
+		<description>A simple library to assist in establishing tunneled Net::SSH connections</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>actionmailer</name>
+		<version>2.3.4</version>
+		<description>Service layer for easy email delivery and testing.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>jdbc-derby</name>
+		<version>10.5.3.0</version>
+		<description>Derby/JavaDB JDBC driver for Java and Derby/ActiveRecord-JDBC.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>actionpack</name>
+		<version>2.3.4</version>
+		<description>Web-flow and rendering framework putting the VC in MVC.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rubyforge</name>
+		<version>2.0.3</version>
+		<description>A script which automates a limited set of rubyforge operations</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>columnize</name>
+		<version>0.3.0</version>
+		<description>Read file with caching</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>gem_plugin</name>
+		<version>0.2.3</version>
+		<description>A plugin system based on rubygems that uses dependencies only</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activerecord-jdbcsqlite3-adapter</name>
+		<version>0.9.2</version>
+		<description>SQLite3 JDBC adapter for JRuby on Rails.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-ssh</name>
+		<version>2.0.15</version>
+		<description>Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>json-jruby</name>
+		<version>1.1.6</version>
+		<description>A JSON implementation as a JRuby extension</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>json_pure</name>
+		<version>1.1.9</version>
+		<description>A JSON implementation in Ruby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rack</name>
+		<version>1.0.0</version>
+		<description>a modular Ruby webserver interface</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activerecord-jdbc-adapter</name>
+		<version>0.9.2</version>
+		<description>JDBC adapter for ActiveRecord, for use within JRuby on Rails.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rake</name>
+		<version>0.8.7</version>
+		<description>Ruby based make-like utility.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activesupport</name>
+		<version>2.2.2</version>
+		<description>Support and utility classes used by the Rails framework.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>jruby-openssl</name>
+		<version>0.3</version>
+		<description>OpenSSL add-on for JRuby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-sftp</name>
+		<version>2.0.2</version>
+		<description>A pure Ruby implementation of the SFTP client protocol</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-ssh-gateway</name>
+		<version>1.0.1</version>
+		<description>A simple library to assist in establishing tunneled Net::SSH connections</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>sources</name>
+		<version>0.0.1</version>
+		<description>This package provides download sources for remote gem installation</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>sinatra</name>
+		<version>0.9.4</version>
+		<description>Classy web-development dressed in a DSL</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>mikewadhera-jetty-rails</name>
+		<version>0.9.3</version>
+		<description>jetty server for rails applications</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>jruby-openssl</name>
+		<version>0.5.2</version>
+		<description>OpenSSL add-on for JRuby</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>mongrel</name>
+		<version>1.1.5</version>
+		<description>A small fast HTTP library and server that runs Rails, Camping, Nitro and Iowa apps.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-sftp</name>
+		<version>2.0.1</version>
+		<description>A pure Ruby implementation of the SFTP client protocol</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activerecord-jdbc-adapter</name>
+		<version>0.9.1</version>
+		<description>JDBC adapter for ActiveRecord, for use within JRuby on Rails.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>hpricot</name>
+		<version>0.6.164</version>
+		<description>a swift, liberal HTML parser with a fantastic library</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>capistrano-ext</name>
+		<version>1.2.1</version>
+		<description>Useful task libraries and methods for Capistrano</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>net-scp</name>
+		<version>1.0.2</version>
+		<description>A pure Ruby implementation of the SCP client protocol</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>activerecord</name>
+		<version>2.3.4</version>
+		<description>Implements the ActiveRecord pattern for ORM.</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>rspec</name>
+		<version>1.2.6</version>
+		<description>rspec 1.2.6</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>engineyard-eycap</name>
+		<version>0.4.1</version>
+		<description>Capistrano tasks for Engine Yard slices</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>hoe</name>
+		<version>2.3.3</version>
+		<description>Hoe is a rake/rubygems helper for project Rakefiles</description>
+		<platform>ruby</platform>
+	</gem>
+	<gem>
+		<name>capistrano</name>
+		<version>2.5.0</version>
+		<description>Capistrano is a utility and framework for executing commands in parallel on multiple remote machines, via SSH.</description>
+		<platform>ruby</platform>
+	</gem>
+</gems>

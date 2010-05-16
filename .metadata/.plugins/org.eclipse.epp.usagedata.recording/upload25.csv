@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254938264770
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1254938278465
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254938282644
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254938283608
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938287173
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1254938288501
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254938292974
+opened,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProblemView",1254938293665
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938294224
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938295488
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254938311675
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938311838
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254938311867
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254938312739
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254938315270
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938316831
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938341380
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938349906
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938352337
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938352444
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938353084
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254938353090
+opened,editor,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1254938355086
+activated,editor,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1254938355154
+executed,command,org.eclipse.wst.sse.ui,1.1.101.v200908261807,"org.eclipse.wst.sse.ui.format.document",1254938366385

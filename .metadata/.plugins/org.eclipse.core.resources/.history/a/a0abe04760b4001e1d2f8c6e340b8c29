@@ -1,0 +1,14 @@
+==============================================================================
+							OVERVIEW
+==============================================================================
+This example illustrates how to connect to a message queue using stomp and
+the rails ActiveMessaging plugin.  
+
+==============================================================================
+							INSTALLATION
+==============================================================================
+1. ruby -S rake gems:install
+2. ruby -S rake db:create
+3. ruby -S rake db:migrate
+4. ruby -S script/server
+5. browse to http://localhost:3000/orders

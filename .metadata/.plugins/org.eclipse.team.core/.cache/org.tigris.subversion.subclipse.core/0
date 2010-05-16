@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<connector xmlns="http://geronimo.apache.org/xml/ns/j2ee/connector-1.1">
+
+	<dep:environment xmlns:dep="http://geronimo.apache.org/xml/ns/deployment-1.1">
+		<dep:moduleId>
+			<dep:groupId>com.originatelabs.usedgirlfriend</dep:groupId>
+			<dep:artifactId>backend-queues</dep:artifactId>
+			<dep:version>0.0.0</dep:version>
+			<dep:type>rar</dep:type>
+		</dep:moduleId>
+		<dep:dependencies>
+			<dep:dependency>
+				<dep:groupId>geronimo</dep:groupId>
+				<dep:artifactId>activemq-broker</dep:artifactId>
+				<dep:type>car</dep:type>
+			</dep:dependency>
+		</dep:dependencies>
+	</dep:environment>
+
+	<resourceadapter>
+		<resourceadapter-instance>
+			<resourceadapter-name>UsedgirlfriendQueues</resourceadapter-name>
+			<config-property-setting name="Password">geronimo</config-property-setting>
+			<config-property-setting name="UserName">geronimo</config-property-setting>
+			<nam:workmanager xmlns:nam="http://geronimo.apache.org/xml/ns/naming-1.1">
+				<nam:gbean-link>DefaultWorkManager</nam:gbean-link>
+			</nam:workmanager>
+		</resourceadapter-instance>
+		<outbound-resourceadapter>
+			<connection-definition>
+				<connectionfactory-interface>javax.jms.QueueConnectionFactory</connectionfactory-interface>
+				<connectiondefinition-instance>
+					<name>DefaultConnectionFactory</name>
+					<connectionmanager>
+						<xa-transaction>
+							<transaction-caching />
+						</xa-transaction>
+						<single-pool>
+							<match-one />
+						</single-pool>
+					</connectionmanager>
+				</connectiondefinition-instance>
+			</connection-definition>
+		</outbound-resourceadapter>
+	</resourceadapter>
+	<adminobject>
+		<adminobject-interface>javax.jms.Queue</adminobject-interface>
+		<adminobject-class>org.activemq.message.ActiveMQQueue</adminobject-class>
+		<adminobject-instance>
+			<message-destination-name>PreProcessingQueue</message-destination-name>
+			<config-property-setting name="PhysicalName">PreProcessingQueue</config-property-setting>
+		</adminobject-instance>
+	</adminobject>
+	<adminobject>
+		<adminobject-interface>javax.jms.Queue</adminobject-interface>
+		<adminobject-class>org.activemq.message.ActiveMQQueue</adminobject-class>
+		<adminobject-instance>
+			<message-destination-name>DeliveryProcessingQueue</message-destination-name>
+			<config-property-setting name="PhysicalName">DeliveryProcessingQueue</config-property-setting>
+		</adminobject-instance>
+	</adminobject>
+	<adminobject>
+		<adminobject-interface>javax.jms.Queue</adminobject-interface>
+		<adminobject-class>org.activemq.message.ActiveMQQueue</adminobject-class>
+		<adminobject-instance>
+			<message-destination-name>PostProcessingQueue</message-destination-name>
+			<config-property-setting name="PhysicalName">PostProcessingQueue</config-property-setting>
+		</adminobject-instance>
+	</adminobject>
+	<adminobject>
+		<adminobject-interface>javax.jms.Queue</adminobject-interface>
+		<adminobject-class>org.activemq.message.ActiveMQQueue</adminobject-class>
+		<adminobject-instance>
+			<message-destination-name>MessagingQueue</message-destination-name>
+			<config-property-setting name="PhysicalName">MessagingQueue</config-property-setting>
+		</adminobject-instance>
+	</adminobject>
+	<adminobject>
+		<adminobject-interface>javax.jms.Topic</adminobject-interface>
+		<adminobject-class>org.activemq.message.ActiveMQTopic</adminobject-class>
+    </adminobject>
+
+</connector>

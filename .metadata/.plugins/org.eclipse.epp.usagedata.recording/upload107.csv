@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1255022585931
+started,bundle,org.tmatesoft.svnkit,1.3.0.5847,"org.tmatesoft.svnkit",1255022585972
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022587245
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022592435
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022597688
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022599601
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022717527
+started,bundle,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor",1255022724357
+started,bundle,org.maven.ide.eclipse.refactoring,0.9.8.200905041414,"org.maven.ide.eclipse.refactoring",1255022724359
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022728147
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022730657
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1255022730696
+started,bundle,org.eclipse.ui.views.log,1.0.100.v20090731,"org.eclipse.ui.views.log",1255022736506
+started,bundle,org.eclipse.pde.ui,3.5.0.v20090821,"org.eclipse.pde.ui",1255022736514
+started,bundle,org.eclipse.pde.core,3.5.100.v20090821,"org.eclipse.pde.core",1255022736549
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022741473
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022743371
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1255022743408
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022748045
+started,bundle,org.eclipse.ant.ui,3.4.1.v20090901_r351,"org.eclipse.ant.ui",1255022762877
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022763517
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.renameResource",1255022763563
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.rename",1255022763564
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022766564
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255022774646

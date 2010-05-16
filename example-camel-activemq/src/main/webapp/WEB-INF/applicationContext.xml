@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+    http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+	http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core-5.2.0.xsd">
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:environment.properties"/>
+	</bean>
+
+	<camelContext xmlns="http://camel.apache.org/schema/spring">
+		<route>
+			<from uri="activemq:queue:esb.log"/>
+			<to uri="log:com.example.esb?showAll=true&amp;multiline=true"/>
+		</route>
+	</camelContext>
+	
+    <broker xmlns="http://activemq.apache.org/schema/core" 
+		brokerName="localhost" 
+		dataDirectory="${amq.dataDir}">
+        <persistenceAdapter>
+            <amqPersistenceAdapter syncOnWrite="false" directory="${amq.persistenceAdapter.dir}" maxFileLength="20 mb"/>
+        </persistenceAdapter>
+        <systemUsage>
+            <systemUsage>
+                <memoryUsage>
+                    <memoryUsage limit="20 mb"/>
+                </memoryUsage>
+                <storeUsage>
+                    <storeUsage limit="1 gb" name="foo"/>
+                </storeUsage>
+                <tempUsage>
+                    <tempUsage limit="100 mb"/>
+                </tempUsage>
+            </systemUsage>
+        </systemUsage>
+        <transportConnectors>
+            <transportConnector name="openwire" uri="tcp://localhost:61616"/>
+            <transportConnector name="stomp" uri="stomp://localhost:61613"/>
+        </transportConnectors>
+    </broker>
+   
+   	<!-- this bean id becomes the namespace prefix for jms routes.  eg. uri="acitvemq:queue:xxx" -->
+    <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+        <property name="connectionFactory">
+            <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+                <property name="brokerURL" value="vm://localhost?create=false&amp;waitForStart=10000"/>
+            </bean>
+        </property>
+    </bean>
+    
+</beans>

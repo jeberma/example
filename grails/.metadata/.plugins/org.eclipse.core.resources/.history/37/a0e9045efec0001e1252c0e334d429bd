@@ -1,0 +1,28 @@
+package com.example
+
+class UserController {
+	
+	def scaffold = true
+	
+	//def index = { }
+	
+	def search = {
+	}
+	
+	def results = {
+		def users = User.findAllByUserIdLike("%${params.userId}%")
+		return [users: users, term: params.userId]
+	}
+
+	def register = {
+		def user = new User(params)
+		if(user.validate()) {
+			user.save()
+			flash.message = 'Successfully created user'
+			redirect(uri:'/')
+		} else {
+			flash.message = 'Error Registering User'
+			return [user:user]
+		}
+	}
+}

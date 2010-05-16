@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema targetNamespace="http://example.originatelabs.com/order"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://example.originatelabs.com/order"
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified">
+    
+    <xsd:complexType name="OrderType">
+        <xsd:sequence>
+            <xsd:element name="description" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+</xsd:schema>

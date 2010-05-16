@@ -1,0 +1,25 @@
+Testsuite: com.example.UserIntegrationTests
+Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.161 sec
+------------- Standard Output ---------------
+--Output from testCreate--
+--Output from testUpdate--
+--Output from testDelete--
+--Output from testValidationsFail--
+--Output from testValidationsCorrected--
+--Output from testFollowing--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreate--
+--Output from testUpdate--
+--Output from testDelete--
+--Output from testValidationsFail--
+--Output from testValidationsCorrected--
+--Output from testFollowing--
+------------- ---------------- ---------------
+
+Testcase: testCreate took 0.009 sec
+Testcase: testUpdate took 0.039 sec
+Testcase: testDelete took 0.025 sec
+Testcase: testValidationsFail took 0.031 sec
+Testcase: testValidationsCorrected took 0.013 sec
+Testcase: testFollowing took 0.015 sec

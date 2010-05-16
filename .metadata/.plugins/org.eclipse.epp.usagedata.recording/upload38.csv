@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+closed,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254941959066
+error,log,,,"Resource '/java-app' does not exist.",1254941959200
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254941959240
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1254941959280
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1254941959281
+opened,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254941961285
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254941961325
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254941970987
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254941981236
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254941984949
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254941990877
+executed,command,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui.commit",1254941990976
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254941991402
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254941992347
+opened,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254942004964
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254942004997
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1254942094550
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254942096456
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1254942099057
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254942123241
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254942209265
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254942214452
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254942298553
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.newWizard",1254942298607
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254942300611

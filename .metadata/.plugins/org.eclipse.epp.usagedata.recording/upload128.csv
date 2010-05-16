@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023940801
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255023948474
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023949564
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023950745
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255024029959
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255024067200
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255024069329
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255024074794
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255024083347
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1255024089333
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255024097611
+opened,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProblemView",1255024108439
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255024110194
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255024115769
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255024117560
+opened,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255024118088
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255024118142
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255024155835
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255024232412
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255024465060
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.smartEnter",1255024593493
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255024594509
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255024597337
+started,bundle,org.eclipse.wst.ws.service.policy,1.0.103.v200905151848,"org.eclipse.wst.ws.service.policy",1255024597466
+started,bundle,org.eclipse.wst.command.env,1.0.408.v200903110045,"org.eclipse.wst.command.env",1255024597476

@@ -1,0 +1,98 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    /* Copyright 2006-2009 the original author or authors.<a name="line.1"></a>
+<FONT color="green">002</FONT>     *<a name="line.2"></a>
+<FONT color="green">003</FONT>     * Licensed under the Apache License, Version 2.0 (the "License");<a name="line.3"></a>
+<FONT color="green">004</FONT>     * you may not use this file except in compliance with the License.<a name="line.4"></a>
+<FONT color="green">005</FONT>     * You may obtain a copy of the License at<a name="line.5"></a>
+<FONT color="green">006</FONT>     *<a name="line.6"></a>
+<FONT color="green">007</FONT>     *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.7"></a>
+<FONT color="green">008</FONT>     *<a name="line.8"></a>
+<FONT color="green">009</FONT>     * Unless required by applicable law or agreed to in writing, software<a name="line.9"></a>
+<FONT color="green">010</FONT>     * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.10"></a>
+<FONT color="green">011</FONT>     * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.11"></a>
+<FONT color="green">012</FONT>     * See the License for the specific language governing permissions and<a name="line.12"></a>
+<FONT color="green">013</FONT>     * limitations under the License.<a name="line.13"></a>
+<FONT color="green">014</FONT>     */<a name="line.14"></a>
+<FONT color="green">015</FONT>    package org.codehaus.groovy.grails.plugins.springsecurity;<a name="line.15"></a>
+<FONT color="green">016</FONT>    <a name="line.16"></a>
+<FONT color="green">017</FONT>    import org.springframework.security.userdetails.UserDetails;<a name="line.17"></a>
+<FONT color="green">018</FONT>    <a name="line.18"></a>
+<FONT color="green">019</FONT>    /**<a name="line.19"></a>
+<FONT color="green">020</FONT>     * Extends Spring Security's {@link UserDetails} interface to set Grails Domain<a name="line.20"></a>
+<FONT color="green">021</FONT>     * Class at login, to load auth class from context.<a name="line.21"></a>
+<FONT color="green">022</FONT>     *<a name="line.22"></a>
+<FONT color="green">023</FONT>     * @author &lt;a href='mailto:beckwithb@studentsonly.com'&gt;Burt Beckwith&lt;/a&gt;<a name="line.23"></a>
+<FONT color="green">024</FONT>     */<a name="line.24"></a>
+<FONT color="green">025</FONT>    public interface GrailsUser extends UserDetails {<a name="line.25"></a>
+<FONT color="green">026</FONT>    <a name="line.26"></a>
+<FONT color="green">027</FONT>            /**<a name="line.27"></a>
+<FONT color="green">028</FONT>             * Get the domain object representing the user.<a name="line.28"></a>
+<FONT color="green">029</FONT>             * @return  the user<a name="line.29"></a>
+<FONT color="green">030</FONT>             */<a name="line.30"></a>
+<FONT color="green">031</FONT>            Object getDomainClass();<a name="line.31"></a>
+<FONT color="green">032</FONT>    }<a name="line.32"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>

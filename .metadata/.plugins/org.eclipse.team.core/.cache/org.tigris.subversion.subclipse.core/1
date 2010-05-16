@@ -1,0 +1,290 @@
+<?php
+//===========================================================================
+//
+// StompConnection.php
+//
+//===========================================================================
+
+//===========================================================================
+// STOMP CONNECTION
+//===========================================================================
+class StompConnection
+{
+	//=======================================================================
+	// MEMBERS
+	//=======================================================================
+	private $_socket;
+
+
+	//=======================================================================
+	// METHODS
+	//=======================================================================
+
+	//-----------------------------------------------------------------------
+	// CONSTRUCTOR
+	//-----------------------------------------------------------------------
+	public function __construct()
+	{
+	}
+
+	//-----------------------------------------------------------------------
+	// OPEN
+	//-----------------------------------------------------------------------
+	public function open($host, $port = 61613)
+	{
+		$this->_socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+		$result = socket_connect($this->_socket, $host, $port);
+	}
+
+	//-----------------------------------------------------------------------
+	// CLOSE
+	//-----------------------------------------------------------------------
+	public function close()
+	{
+		socket_close($this->_socket);
+	}
+
+	//-----------------------------------------------------------------------
+	// CONNECT
+	//-----------------------------------------------------------------------
+	public function connect($username = null, $password = null)
+	{
+		$frame = new StompFrame();
+		$frame->command = "CONNECT";
+		$frame->headers = array();
+		$frame->body = null;
+
+		if (isset($username))
+			$frame->headers['login'] = $username;
+		if (isset($password))
+			$frame->headers['passcode'] = $password;
+
+		$this->_writeFrame($frame);
+
+		return $this->_readFrame();
+	}
+
+	//-----------------------------------------------------------------------
+	// SEND
+	//-----------------------------------------------------------------------
+	public function send($destination, $body, $properties = null)
+	{
+		$frame = new StompFrame();
+		$frame->command = "SEND";
+		$frame->headers = array();
+		$frame->body = $body;
+
+		$frame->headers['destination'] = $destination;
+		if (isset($properties))
+		{
+			foreach ($properties as $name => $value)
+			{
+				$frame->headers[$name] = $value;
+			}
+		}
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// SUBSCRIBE
+	//-----------------------------------------------------------------------
+	public function subscribe($destination, $properties = null)
+	{
+		$frame = new StompFrame();
+		$frame->command = "SUBSCRIBE";
+		$frame->headers = array();
+		$frame->body = null;
+
+		$frame->headers['destination'] = $destination;
+		$frame->headers['ack'] = 'client';
+		if (isset($properties))
+		{
+			foreach ($properties as $name => $value)
+			{
+				$frame->headers[$name] = $value;
+			}
+		}
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// UNSUBSCRIBE
+	//-----------------------------------------------------------------------
+	public function unsubscribe($destination, $properties = null)
+	{
+		$frame = new StompFrame();
+		$frame->command = "UNSUBSCRIBE";
+		$frame->headers = array();
+		$frame->body = null;
+
+		$frame->headers['destination'] = $destionation;
+		if (isset($properties))
+		{
+			foreach ($properties as $name => $value)
+			{
+				$frame->headers[$name] = $value;
+			}
+		}
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// BEGIN
+	//-----------------------------------------------------------------------
+	public function begin($transactionId)
+	{
+		$frame = new StompFrame();
+		$frame->command = "BEGIN";
+		$frame->headers = array();
+		$frame->body = null;
+
+		$frame->headers['transaction'] = $transactionId;
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// COMMIT
+	//-----------------------------------------------------------------------
+	public function commit($transactionId)
+	{
+		$frame = new StompFrame();
+		$frame->command = "BEGIN";
+		$frame->headers = array();
+		$frame->body = null;
+
+		$frame->headers['transaction'] = $transactionId;
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// ACK
+	//-----------------------------------------------------------------------
+	public function ack($messageId, $transactionId = null)
+	{
+		$frame = new StompFrame();
+		$frame->command = "ACK";
+		$frame->headers = array();
+		$frame->body = null;
+
+		$frame->headers['message-id'] = $messageId;
+		if (isset($transactionId))
+			$frame->headers['transaction'] = $transactionId;
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// ABORT
+	//-----------------------------------------------------------------------
+	public function abort($transactionId)
+	{
+		$frame = new StompFrame();
+		$frame->command = "ABORT";
+		$frame->headers = array();
+		$frame->body = null;
+
+		$frame->headers['transaction'] = $transactionId;
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// DISCONNECT
+	//-----------------------------------------------------------------------
+	public function disconnect()
+	{
+		$frame = new StompFrame();
+		$frame->command = "DISCONNECT";
+		$frame->headers = array();
+		$frame->body = null;
+
+		$this->_writeFrame($frame);
+	}
+
+	//-----------------------------------------------------------------------
+	// READ FRAME
+	//-----------------------------------------------------------------------
+	public function readFrame()
+	{
+		return $this->_readFrame();
+	}
+
+
+	//=======================================================================
+	// PRIVATE IMPLEMENTATION
+	//=======================================================================
+
+	//-----------------------------------------------------------------------
+	// WRITE FRAME
+	//-----------------------------------------------------------------------
+	private function _writeFrame(StompFrame $frame)
+	{
+		$data = $frame->command . "\r\n";
+		if (isset($frame->headers))
+		{
+			foreach ($frame->headers as $name => $value)
+			{
+				$data .= $name . ": " . $value . "\r\n";
+			}
+		}
+		$data .= "\r\n";
+		if (isset($frame->body))
+		{
+			$data .= $frame->body;
+		}
+		$data .= "\x00\r\n";
+
+		socket_write($this->_socket, $data, strlen($data));
+	}
+
+	//-----------------------------------------------------------------------
+	// READ FRAME
+	//-----------------------------------------------------------------------
+	private function _readFrame()
+	{
+		$buffer = socket_read($this->_socket, 2048, PHP_BINARY_READ);
+
+		//Parse the frame.
+		list($header, $body) = explode("\n\n", $buffer, 2);
+		$header = explode("\n", $header);
+
+		$command = null;
+		$headers = array();
+		foreach ($header as $v)
+		{
+			if (!isset($command))
+			{
+				$command = $v;
+			}
+			else
+			{
+				list($name, $value) = explode(':', $v, 2);
+				$headers[$name] = $value;
+			}
+		}
+
+		$frame = new StompFrame();
+		$frame->command = $command;
+		$frame->headers = $headers;
+		$frame->body = $body;
+
+		return $frame;
+	}
+}
+
+//===========================================================================
+// STOMP FRAME
+//===========================================================================
+class StompFrame
+{
+	public $command;
+	public $headers;
+	public $body;
+}
+
+?>

@@ -1,0 +1,1317 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (111.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateOrders (20091008214704)
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `status` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091008214704')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (21.7ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:02:49) [GET]
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:04:09) [GET]
+  [4;35;1mOrder Load (0.5ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:04:10) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:04:38) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:04:38) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:06:43) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:06:54) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 62ms (View: 59, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:08:03) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 76ms (View: 72, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:08:04) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:08:51) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:08:52) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:09:19) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:09:20) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:09:33) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:09:34) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:09:37) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:09:41) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:09:42) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:10:22) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:11:08) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 47ms (View: 44, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:11:09) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:11:23) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:11:33) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `status` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20091008214704')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (12.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (40.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateOrders (20091008214704)
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `status` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091008214704')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:23) [GET]
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:24) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:24) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:26) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:26) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:26) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:26) [GET]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:27) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:27) [GET]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:28) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:28) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 44ms (View: 1, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:28) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:28) [GET]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:29) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:29) [GET]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:30) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:30) [GET]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:32) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:32) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:32) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:32) [GET]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:37) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:37) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:18:38) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:18:38) [GET]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:19:55) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:20:00) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "method"=>"GET"}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create?method=GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:20:00) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:20:01) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "method"=>"GET"}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create?method=GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:20:01) [GET]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:20:02) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "method"=>"GET"}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create?method=GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:20:02) [GET]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:20:03) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "method"=>"GET"}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create?method=GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:20:03) [GET]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:20:04) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "method"=>"GET"}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create?method=GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:20:04) [GET]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:20:04) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "method"=>"GET"}
+Redirected to http://localhost:3000/orders
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/orders/create?method=GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:20:04) [GET]
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:24:09) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "method"=>"GET"}
+Rendering template within layouts/application
+Rendering orders/create
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/orders/create?method=GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:25:03) [GET]
+Rendering template within layouts/application
+Rendering orders/create
+Completed in 47ms (View: 45, DB: 0) | 200 OK [http://localhost/orders/create]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:25:19) [GET]
+Rendering template within layouts/application
+Rendering orders/create
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:25:52) [GET]
+Rendering template within layouts/application
+Rendering orders/create
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/orders/create]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:25:58) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:25:59) [GET]
+Rendering template within layouts/application
+Rendering orders/create
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:41:40) [GET]
+
+ActionView::MissingTemplate (Missing template orders/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:41:43) [GET]
+  [4;35;1mOrder Load (1.1ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:42:20) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:42:32) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:42:41) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 46ms (View: 43, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:42:56) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:42:57) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:44:04) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:45:50) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:49:30) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.8ms)
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:49:31) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.1ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:52:33) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (1.1ms)
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:52:37) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.1ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:52:39) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.1ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:53:44) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.1ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:53:46) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.1ms)
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:55:27) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:55:42) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+Rendered orders/_orders (0.1ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:55:43) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Columns (12.3ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (32.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (33.4ms)[0m   [0;1mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PROCESSING', '2009-10-08 22:55:43', 'foo', '2009-10-08 22:55:43')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+
+NameError (uninitialized constant OrdersController::Orders):
+  app/controllers/orders_controller.rb:13:in `__instance_exec0'
+  app/controllers/orders_controller.rb:12:in `create'
+
+Rendered rescues/_trace (35.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:56:15) [GET]
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (12.1ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.3ms)
+Completed in 21ms (View: 5, DB: 13) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 15:56:36) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Columns (13.1ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (0.3ms)[0m   [0;1mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PROCESSING', '2009-10-08 22:56:36', 'foo', '2009-10-08 22:56:36')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.2ms)
+Completed in 24ms (View: 3, DB: 15) | 200 OK [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 15:59:50) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;36;1mOrder Columns (13.3ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (16.5ms)
+Completed in 25ms (View: 7, DB: 14) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 16:02:07) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"2"}
+  [4;35;1mOrder Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (31.7ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Destroy (0.3ms)[0m   [0;1mDELETE FROM `orders` WHERE `id` = 2[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.2ms)
+Completed in 54ms (View: 3, DB: 46) | 200 OK [http://localhost/orders/delete/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 16:02:11) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;35;1mOrder Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Create (0.2ms)[0m   [0mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PROCESSING', '2009-10-08 23:02:11', 'foo', '2009-10-08 23:02:11')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.4ms)
+Completed in 21ms (View: 2, DB: 13) | 200 OK [http://localhost/orders/create]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 16:02:12) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"3"}
+  [4;36;1mOrder Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Destroy (0.2ms)[0m   [0mDELETE FROM `orders` WHERE `id` = 3[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.1ms)
+Completed in 20ms (View: 2, DB: 14) | 200 OK [http://localhost/orders/delete/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 16:06:21) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Columns (12.4ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (0.2ms)[0m   [0;1mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PENDING', '2009-10-08 23:06:21', 'foo', '2009-10-08 23:06:21')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.4ms)
+Completed in 22ms (View: 2, DB: 14) | 200 OK [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 16:06:22) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"4"}
+  [4;35;1mOrder Columns (11.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.6ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Destroy (0.2ms)[0m   [0;1mDELETE FROM `orders` WHERE `id` = 4[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.1ms)
+Completed in 20ms (View: 2, DB: 14) | 200 OK [http://localhost/orders/delete/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 16:06:24) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;35;1mOrder Columns (11.4ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Create (0.2ms)[0m   [0mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PENDING', '2009-10-08 23:06:24', 'foo', '2009-10-08 23:06:24')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.4ms)
+Completed in 21ms (View: 2, DB: 13) | 200 OK [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 16:06:25) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"5"}
+  [4;36;1mOrder Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Destroy (0.2ms)[0m   [0mDELETE FROM `orders` WHERE `id` = 5[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.1ms)
+Completed in 19ms (View: 1, DB: 13) | 200 OK [http://localhost/orders/delete/5]
+Rails available: Adding reload hooks.
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: no '/Users/jesse/work/example/example-rails-jms/order-web/config/messaging.rb' file to load
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/application.rb
+Rails available: Adding dispatcher prepare callback.
+ActiveMessaging: no '/Users/jesse/work/example/example-rails-jms/order-web/config/messaging.rb' file to load
+Rails available: Adding reload hooks.
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/application.rb
+Rails available: Adding dispatcher prepare callback.
+Rails available: Adding reload hooks.
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/application.rb
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/order_processor.rb
+Rails available: Adding dispatcher prepare callback.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 16:37:27) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (0.3ms)[0m   [0;1mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PENDING', '2009-10-08 23:37:27', 'foo', '2009-10-08 23:37:27')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (1.6ms)
+Completed in 61ms (View: 8, DB: 3) | 200 OK [http://localhost/orders/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 16:37:39) [GET]
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;36;1mOrder Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.3ms)
+Completed in 60ms (View: 44, DB: 13) | 200 OK [http://localhost/orders/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 16:37:42) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"6"}
+  [4;35;1mOrder Columns (12.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.5ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 6) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Destroy (0.2ms)[0m   [0;1mDELETE FROM `orders` WHERE `id` = 6[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.2ms)
+Completed in 24ms (View: 3, DB: 15) | 200 OK [http://localhost/orders/delete/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 17:00:40) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;35;1mOrder Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Create (0.3ms)[0m   [0mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PENDING', '2009-10-09 00:00:40', 'foo', '2009-10-09 00:00:40')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.6ms)
+Completed in 27ms (View: 3, DB: 14) | 200 OK [http://localhost/orders/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:45) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (12.3ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.4ms)
+Completed in 20ms (View: 4, DB: 14) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:46) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (13.9ms)
+Completed in 20ms (View: 4, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:47) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.3ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (13.7ms)
+Completed in 20ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:48) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.4ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.1ms)
+Completed in 20ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:49) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.6ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (13.9ms)
+Completed in 57ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:50) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (10.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (13.0ms)
+Completed in 19ms (View: 5, DB: 11) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:51) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (12.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (15.5ms)
+Completed in 21ms (View: 5, DB: 13) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:52) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (12.2ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.5ms)
+Completed in 21ms (View: 5, DB: 13) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:54) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.1ms)
+Completed in 20ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:55) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.5ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.3ms)
+Completed in 20ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:57) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (12.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.9ms)
+Completed in 21ms (View: 5, DB: 13) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:58) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.1ms)
+Completed in 57ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:00:59) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.5ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (13.9ms)
+Completed in 20ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:01:06) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.7ms)
+Completed in 21ms (View: 5, DB: 13) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:01:08) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.1ms)
+Completed in 20ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:01:09) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.2ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (13.6ms)
+Completed in 19ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:02:23) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.6ms)
+Completed in 21ms (View: 5, DB: 13) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:02:26) [GET]
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (11.4ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (14.2ms)
+Completed in 21ms (View: 5, DB: 12) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 17:02:41) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Columns (12.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (0.3ms)[0m   [0;1mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PENDING', '2009-10-09 00:02:41', 'foo', '2009-10-09 00:02:41')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.9ms)
+Completed in 64ms (View: 4, DB: 14) | 200 OK [http://localhost/orders/create]
+Rails available: Adding reload hooks.
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/application.rb
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/orders_output_processor.rb
+Rails available: Adding dispatcher prepare callback.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 17:05:46) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (0.3ms)[0m   [0;1mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PENDING', '2009-10-09 00:05:46', 'foo', '2009-10-09 00:05:46')[0m
+  [4;35;1mSQL (49.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (0.3ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (1.9ms)
+Completed in 114ms (View: 8, DB: 52) | 200 OK [http://localhost/orders/create]
+Rails available: Adding reload hooks.
+ActiveMessaging: adapter reliable_msg not loaded: no such file to load -- reliable-msg
+ActiveMessaging: adapter wmq not loaded: no such file to load -- wmq/wmq
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/application.rb
+ActiveMessaging: Loading /Users/jesse/work/example/example-rails-jms/order-web/app/processors/orders_output_processor.rb
+Rails available: Adding dispatcher prepare callback.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2009-10-08 17:12:50) [GET]
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendering template within layouts/application
+Rendering orders/index
+  [4;35;1mOrder Columns (13.5ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendered orders/_orders (18.7ms)
+Completed in 34ms (View: 17, DB: 14) | 200 OK [http://localhost/orders/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 17:12:52) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"7"}
+  [4;36;1mOrder Columns (12.2ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Destroy (0.3ms)[0m   [0mDELETE FROM `orders` WHERE `id` = 7[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (1.4ms)
+Completed in 66ms (View: 3, DB: 14) | 200 OK [http://localhost/orders/delete/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 17:12:52) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"8"}
+  [4;36;1mOrder Columns (11.5ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.7ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 8) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Destroy (0.2ms)[0m   [0mDELETE FROM `orders` WHERE `id` = 8[0m
+  [4;36;1mSQL (37.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (1.4ms)
+Completed in 60ms (View: 4, DB: 51) | 200 OK [http://localhost/orders/delete/8]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#delete (for 127.0.0.1 at 2009-10-08 17:12:53) [POST]
+  Parameters: {"authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U=", "id"=>"9"}
+  [4;36;1mOrder Columns (11.5ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.4ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 9) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Destroy (0.2ms)[0m   [0mDELETE FROM `orders` WHERE `id` = 9[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mOrder Load (0.2ms)[0m   [0mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.1ms)
+Completed in 20ms (View: 2, DB: 13) | 200 OK [http://localhost/orders/delete/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2009-10-08 17:12:54) [POST]
+  Parameters: {"commit"=>"Save", "order"=>{"description"=>"foo"}, "authenticity_token"=>"mdZcBDUUXlT0vFU84o5oOl6pc0adT8ZdccchMjmmd4U="}
+  [4;36;1mOrder Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (0.2ms)[0m   [0;1mINSERT INTO `orders` (`status`, `updated_at`, `description`, `created_at`) VALUES('PENDING', '2009-10-09 00:12:54', 'foo', '2009-10-09 00:12:54')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mOrder Load (1.7ms)[0m   [0;1mSELECT * FROM `orders` [0m
+Rendered orders/_orders (0.5ms)
+Completed in 32ms (View: 3, DB: 15) | 200 OK [http://localhost/orders/create]

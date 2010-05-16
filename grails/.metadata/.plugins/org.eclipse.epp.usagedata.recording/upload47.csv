@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.wst.ws,1.1.103.v200903111822,"org.eclipse.wst.ws",1256410861216
+started,bundle,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor",1256410861969
+started,bundle,org.maven.ide.eclipse.refactoring,0.9.8.200905041414,"org.maven.ide.eclipse.refactoring",1256410862103
+started,bundle,org.eclipse.jdt.junit,3.5.1.r351_v20090708-0800,"org.eclipse.jdt.junit",1256410864005
+started,bundle,com.aptana.ide.pathtools,1.5.0.26125,"com.aptana.ide.pathtools",1256410865389
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256410870072
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256410949773
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1256410952202
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256410952843
+started,bundle,org.eclipse.jst.servlet.ui,1.1.301.v200908101600,"org.eclipse.jst.servlet.ui",1256410955891
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.5,"org.tigris.subversion.clientadapter.javahl",1256410956714
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1256410956816
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256410956945
+started,bundle,org.tmatesoft.svnkit,1.3.0.5847,"org.tmatesoft.svnkit",1256410957217
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256410964585
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256410964816
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256410994164
+error,log,,,"Groovy bug when compiling.",1256410995452
+error,log,,,"Groovy bug when compiling.",1256410995773
+closed,editor,com.aptana.ide.server.portal,1.5.0.26171,"com.aptana.ide.server.portal.ui.MyAptanaEditor",1256410995939
+error,log,,,"Groovy bug when compiling.",1256410996141
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256410997551
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256410998149
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256410998698
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256411006032

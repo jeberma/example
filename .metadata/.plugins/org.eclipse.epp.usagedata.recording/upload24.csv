@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.wst.dtd.core,1.1.300.v200904181727,"org.eclipse.wst.dtd.core",1254938184826
+started,bundle,org.eclipse.jst.jsf.ui,1.2.1.v20090827,"org.eclipse.jst.jsf.ui",1254938184847
+started,bundle,org.eclipse.wst.jsdt.web.core,1.0.200.v200905120445,"org.eclipse.wst.jsdt.web.core",1254938184863
+started,bundle,org.eclipse.jst.j2ee.ejb,1.1.300.v200904230730,"org.eclipse.jst.j2ee.ejb",1254938184902
+started,bundle,org.eclipse.jst.common.frameworks,1.1.300.v200904132230,"org.eclipse.jst.common.frameworks",1254938184907
+started,bundle,org.eclipse.wst.html.ui,1.0.401.v200908111935,"org.eclipse.wst.html.ui",1254938184922
+started,bundle,org.eclipse.jst.j2ee.jca,1.1.300.v200903120000,"org.eclipse.jst.j2ee.jca",1254938185394
+started,bundle,org.eclipse.wst.wsdl.validation,1.1.401.v200902271605,"org.eclipse.wst.wsdl.validation",1254938185418
+opened,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254938185428
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254938185563
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254938193164
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938194996
+started,bundle,com.aptana.ide.editors.codeassist,1.5.0.25664,"com.aptana.ide.editors.codeassist",1254938196398
+started,bundle,com.aptana.ide.parsing,1.5.0.25384,"com.aptana.ide.parsing",1254938196481
+started,bundle,com.aptana.ide.editor.html,1.5.0.25643,"com.aptana.ide.editor.html",1254938196514
+started,bundle,com.aptana.ide.editor.erb,1.2.3.26264,"com.aptana.ide.editor.erb",1254938196523
+started,bundle,com.aptana.ide.parsing.eclipse,1.0.0.25428,"com.aptana.ide.parsing.eclipse",1254938196527
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938201729
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.properties",1254938201772
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254938202240
+executed,command,org.eclipse.wst.sse.ui,1.1.101.v200908261807,"org.eclipse.wst.sse.ui.format.document",1254938203744
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254938205711
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254938207699
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938209413
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254938259938

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1254952373767
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254952374077
+started,bundle,org.eclipse.jst.jsp.core,1.2.203.v200908241513,"org.eclipse.jst.jsp.core",1254952375008
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254952377549
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952416466
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952422907
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952431483
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952435112
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952443946
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952446224
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952463388
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952467668
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952496829
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952499838
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254952502369
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952504584
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952531137
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254952547198
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952548990
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952558622
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254952598238
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952599917
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952625176
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254952629376
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254952631140

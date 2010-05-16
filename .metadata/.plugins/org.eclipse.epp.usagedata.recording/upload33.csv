@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,perspective,org.eclipse.jst.j2ee.ui,1.1.301.v200909020100,"org.eclipse.jst.j2ee.J2EEPerspective",1254940722734
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254940722746
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254940724452
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940729120
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940730454
+executed,command,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui.ignore",1254940730495
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254940732296
+executed,command,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui.synchronize",1254940742783
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940743070
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940743268
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254940743284
+activated,perspective,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui.TeamSynchronizingPerspective",1254940743311
+activated,view,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.sync.views.SynchronizeView",1254940743350
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254940744917
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940751857
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254940755384
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940760202
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940760375
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940760867
+executed,command,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui.commit",1254940760873
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940761146
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254940765083
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254940766349
+activated,perspective,org.eclipse.jst.j2ee.ui,1.1.301.v200909020100,"org.eclipse.jst.j2ee.J2EEPerspective",1254940768543
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1254940768556

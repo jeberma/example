@@ -1,0 +1,14 @@
+class OrdersController < ApplicationController
+  
+  def index
+    @orders = Order.find(:all)
+  end
+  
+  def create
+    if request.post?
+      order = Order.new(params[:order])
+      order.status = 'SENT'
+    end
+  end
+  
+end

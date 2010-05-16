@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.vendor,sysinfo,,,"Apple Inc.",1256276958588
+java.vm.version,sysinfo,,,"1.5.0_16-133",1256276958588
+started,bundle,org.eclipse.mylyn.context.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.core",1256276958694
+started,bundle,org.eclipse.mylyn.context.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.ui",1256276958704
+started,bundle,com.collabnet.subversion.merge,1.10.0,"com.collabnet.subversion.merge",1256276958710
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1256276958779
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.ui",1256276958851
+started,bundle,org.eclipse.mylyn.team.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.team.ui",1256276958853
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1256276958955
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1256276958955
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1256276958971
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1256276959172
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1256276959230
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1256276959290
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1256276959315
+started,bundle,com.aptana.ide.debug.core,1.5.0.25240,"com.aptana.ide.debug.core",1256276959543
+started,bundle,com.aptana.ide.desktop.integration.protocolhandler,1.5.0.25611,"com.aptana.ide.desktop.integration.protocolhandler",1256276959887
+started,bundle,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui",1256276960232
+started,bundle,com.aptana.ide.desktop.integration.server,1.5.0.25497,"com.aptana.ide.desktop.integration.server",1256276960308
+started,bundle,com.aptana.ide.installer,1.5.0.25382,"com.aptana.ide.installer",1256276960309
+started,bundle,com.aptana.ide.update.eclipse34,1.5.0.26125,"com.aptana.ide.update.eclipse34",1256276960309
+started,bundle,com.aptana.ide.update.eclipse35,1.5.0.26125,"com.aptana.ide.update.eclipse35",1256276960347
+started,bundle,org.eclipse.equinox.p2.metadata,1.0.100.v20090525,"org.eclipse.equinox.p2.metadata",1256276960375
+started,bundle,org.eclipse.equinox.p2.ui,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.ui",1256276960502
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256276963365

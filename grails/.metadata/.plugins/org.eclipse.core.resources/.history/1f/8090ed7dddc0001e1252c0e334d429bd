@@ -1,0 +1,19 @@
+package com.example;
+import grails.test.*
+
+class QueryIntegrationTests extends GrailsUnitTestCase {
+	
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testBasicDynamicFinders() {
+    	new User(userId:'glen', password:'secret', profile: new Profile(email:'glen@glensmith.com')).save()
+    	new User(userId:'peter', password:'sesame', /*profile:new Proifle(homepage:'http://peter.com/')*/).save()
+    	
+    }
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+<!--
+	jetty-env.xml
+
+	Jetty environment configuration file for configuring for use with the
+	Jetty Maven Plugin.  Note, this file is for development use only! 
+-->
+<Configure id="wac" class="org.mortbay.jetty.webapp.WebAppContext">
+	
+	<!--
+	==========================================================================
+							JTA CONFIGURATION
+	==========================================================================
+	-->
+	<!--
+		Expose UserTransaction as java:comp/UserTransaction
+		Spring: <jee:jndi-lookup id="foo" jndi-name="UserTransaction"/>
+	-->
+	<New id="tx" class="org.mortbay.jetty.plus.naming.Transaction">
+		<Arg>
+			<New class="com.atomikos.icatch.jta.UserTransactionImp"/>
+		</Arg>
+	</New>
+	
+	<!--
+		[Optional] Expose TransactionManager as java:comp/TransactionManager
+		Spring: <jee:jndi-lookup id="foo" jndi-name="TransactionManager"/>
+
+		NOTE: this is only required for (REQUIRES_NEW, NOT_SUPPORTED)
+		transaction suspension.
+	-->
+	<New id="tm" class="org.mortbay.jetty.plus.naming.Resource">
+		<Arg>TransactionManager</Arg>
+		<Arg>
+			<New class="com.atomikos.icatch.jta.UserTransactionManager"/>
+		</Arg>
+	</New>
+	
+	<!--
+	==========================================================================
+							JMS CONFIGURATION
+	==========================================================================
+	-->
+	<!-- 
+		Expose connectionFactory as java:comp/jms/exampleConnectionFactory
+		Spring: <jee:jndi-lookup id="foo" jndi-name="jms/exampleConnectionFactory"/>
+	-->
+	<New id="cf" class="org.mortbay.jetty.plus.naming.Resource">
+		<Arg>jms/exampleConnectionFactory</Arg>
+		<Arg>
+			<New class="org.apache.activemq.ActiveMQConnectionFactory">
+				<Arg>vm://localhost?broker.persistent=false</Arg>
+			</New>
+			<!--
+			<New class="org.apache.activemq.ActiveMQConnectionFactory">
+				<Arg>tcp://localhost:61616</Arg>
+			</New>
+			-->
+		</Arg>
+	</New>
+	
+	<!--  
+		Expose exampleQueue as java:comp/jms/exampleQueue
+		Spring: <jee:jndi-lookup id="foo" jndi-name="jms/exampleQueue"/>
+	-->
+	<New id="queue" class="org.mortbay.jetty.plus.naming.Resource">
+		<Arg>jms/exampleQueue</Arg>
+		<Arg>
+			<New class="org.apache.activemq.command.ActiveMQQueue">
+				<Arg>EXAMPLE</Arg>
+			</New>
+		</Arg>
+	</New>
+	
+</Configure>

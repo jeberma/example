@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255030539387
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1255030571932
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1255030573417
+executed,command,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.edit.text.java.organize.imports",1255030584993
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255030591099
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255030594162
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255030601429
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255030611296
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255030633905
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255030707107
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255030736571
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PropertiesFileEditor",1255030742753
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PropertiesFileEditor",1255030742808
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1255030748759
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PropertiesFileEditor",1255030748760
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255030750607
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255030767989
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255030773110
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1255030773150
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255030775173
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1255030776515
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255030778044
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1255030781318
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1255030786127
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.core.resources"".",1255030789060

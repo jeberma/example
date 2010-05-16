@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254949312094
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949318848
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949436346
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254949438096
+error,log,,,"Plug-in 'org.maven.ide.eclipse.refactoring' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.maven.ide.eclipse.editor.RenamePomAction",1254949438108
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949441770
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949543709
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254949544712
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254949546230
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254949552677
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254949556667
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949556792
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949558171
+activated,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1254949610254
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254949616077
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949618323
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949618666
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254949706059
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1254949708693
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.smartEnter",1254949712250
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254949715341
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949718393
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1254949719307
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949720132
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254949721866

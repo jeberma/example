@@ -1,0 +1,15 @@
+class OrdersController < ApplicationController
+  
+  def index
+    @orders = Order.find(:all)
+  end
+  
+  def create
+    if request.post?
+      order = Order.new(params[:order])
+      order.status = 'PROCESSING'
+      order.save!
+    end
+  end
+  
+end

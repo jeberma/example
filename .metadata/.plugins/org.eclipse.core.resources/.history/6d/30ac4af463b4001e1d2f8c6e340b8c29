@@ -1,0 +1,8 @@
+class OrderProcessor < ApplicationProcessor
+
+  subscribes_to :orders_output
+
+  def on_message(message)
+    logger.debug "OrderProcessor received: " + message
+  end
+end

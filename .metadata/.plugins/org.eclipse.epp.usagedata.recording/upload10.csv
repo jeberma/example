@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1254936206507
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1254936209628
+closed,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1254936209628
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936220999
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936259474
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936259984
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936260825
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936264996
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936302558
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1254936302602
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1254936302603
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936308650
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936313668
+error,log,,,"Plugin org.radrails.rails.ui, extension org.eclipse.ui.perspectiveExtensions, id org.rubypeople.rdt.ui.RubyExplorer: Attribute 'relative' not defined.  This attribute is required when relationship=""left"".",1254936313698
+error,log,,,"Unable to process element: view in perspective extension: null",1254936313708
+opened,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1254936314090
+started,bundle,org.radrails.server.ui,1.3.0.25649,"org.radrails.server.ui",1254936314267
+started,bundle,org.radrails.server.core,1.2.2.26357,"org.radrails.server.core",1254936314272
+started,bundle,com.aptana.ide.logging,1.5.0.24896,"com.aptana.ide.logging",1254936314303
+opened,view,com.aptana.ide.server.ui,1.5.0.24896,"com.aptana.ide.server.ui.serversView",1254936314344
+activated,perspective,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui.PerspectiveRails",1254936314376
+activated,view,com.aptana.ide.server.ui,1.5.0.24896,"com.aptana.ide.server.ui.serversView",1254936314394
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.perspectives.showPerspective",1254936314433
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.perspectives.showPerspective",1254936314434
+activated,view,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.RubyExplorer",1254936315288

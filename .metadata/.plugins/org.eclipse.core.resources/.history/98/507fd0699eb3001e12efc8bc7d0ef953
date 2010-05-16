@@ -1,0 +1,17 @@
+package com.originatelabs.example.jms;
+
+import javax.jms.MessageListener;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class MessageConsumer implements MessageListener {
+	
+	private static final Log log = LogFactory.getLog(MessageConsumer.class);
+	
+	
+	public void handleMessage(String msg) {
+		log.info("MESSAGE RECEIVED:\n"+msg);
+	}
+
+}

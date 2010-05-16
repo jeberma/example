@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.vendor,sysinfo,,,"Apple Inc.",1255022536126
+java.vm.version,sysinfo,,,"1.5.0_16-133",1255022536126
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255022536383
+started,bundle,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui",1255022536394
+started,bundle,org.rubypeople.rdt.debug.ui,1.3.1.26263,"org.rubypeople.rdt.debug.ui",1255022536395
+started,bundle,com.aptana.rdt.ui,1.3.1.26356,"com.aptana.rdt.ui",1255022536395
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1255022536395
+started,bundle,org.radrails.rails.core,1.3.1.26264,"org.radrails.rails.core",1255022536396
+started,bundle,org.radrails.rails.ui,1.3.1.26334,"org.radrails.rails.ui",1255022536396
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1255022536396
+started,bundle,com.aptana.ide.io.file,1.5.0.25645,"com.aptana.ide.io.file",1255022536398
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1255022536837
+started,bundle,com.aptana.ide.debug.core,1.5.0.25240,"com.aptana.ide.debug.core",1255022536951
+started,bundle,org.tigris.subversion.clientadapter,1.6.4.1,"org.tigris.subversion.clientadapter",1255022536969
+started,bundle,com.aptana.ide.desktop.integration.protocolhandler,1.5.0.25611,"com.aptana.ide.desktop.integration.protocolhandler",1255022537097
+started,bundle,com.aptana.ide.desktop.integration.server,1.5.0.25497,"com.aptana.ide.desktop.integration.server",1255022537131
+started,bundle,com.aptana.ide.installer,1.5.0.25382,"com.aptana.ide.installer",1255022537155
+started,bundle,com.aptana.ide.update.eclipse34,1.5.0.26125,"com.aptana.ide.update.eclipse34",1255022537313
+started,bundle,com.aptana.ide.update.eclipse35,1.5.0.26125,"com.aptana.ide.update.eclipse35",1255022537353
+started,bundle,org.eclipse.equinox.p2.metadata,1.0.100.v20090525,"org.eclipse.equinox.p2.metadata",1255022537358
+started,bundle,org.radrails.db.core,2.0.0.25649,"org.radrails.db.core",1255022537474
+started,bundle,org.eclipse.equinox.p2.ui,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.ui",1255022537529
+started,bundle,org.tigris.subversion.subclipse.core,1.6.5,"org.tigris.subversion.subclipse.core",1255022547274
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1255022547328
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1255022547437

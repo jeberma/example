@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,perspective,org.eclipse.jst.j2ee.ui,1.1.301.v200909020100,"org.eclipse.jst.j2ee.J2EEPerspective",1255031422594
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1255031422645
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255031427389
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255031434205
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255031473950
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255031833234
+activated,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255031921646
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255033123729
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036145567
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036147904
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036303572
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255036306365
+closed,editor,org.rubypeople.rdt.ui,1.2.3.26356,"org.rubypeople.rdt.ui.EditorRubyFile",1255036306365
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1255036309282
+closed,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1255036309282
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255036311913
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036328381
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036359444
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036365218
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036366906
+executed,command,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.edit.text.java.rename.element",1255036366948
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1255036370181
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255036371561
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036372292
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255036382904

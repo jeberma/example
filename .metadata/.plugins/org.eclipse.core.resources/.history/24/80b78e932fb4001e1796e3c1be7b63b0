@@ -1,0 +1,11 @@
+import org.springframework.jms.core.JmsTemplate
+import org.apache.activemq.ActiveMQConnectionFactory
+
+def connectionFactory = new ActiveMQConnectionFactory(brokerURL:'tcp://localhost:61616')
+
+def sender = new JmsTemplate(
+    connectionFactory:connectionFactory,
+    defaultDestinationName:'exampleQueue'
+)
+
+sender.convertAndSend(new Date().timeString + ' HELLO')

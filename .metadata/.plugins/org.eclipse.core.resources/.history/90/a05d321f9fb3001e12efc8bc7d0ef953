@@ -1,0 +1,27 @@
+package com.originatelabs.example.jms;
+
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.MessageListener;
+import javax.jms.TextMessage;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class MessageConsumer implements MessageListener {
+	
+	private static final Log log = LogFactory.getLog(MessageConsumer.class);
+	
+	
+	public void onMessage(Message message) {
+		try {
+			if(message instanceof TextMessage) {
+				log.info("MESSAGE RECEIVED:\n"+((TextMessage)message).getText());
+			} else {
+				log.warn("Unexpected message type " + message.getJMSType());
+			}
+		} catch(JMSException e) {
+			log.error(e);
+		}
+	}
+}

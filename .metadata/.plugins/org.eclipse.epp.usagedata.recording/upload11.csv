@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.wst.ws.service.policy,1.0.103.v200905151848,"org.eclipse.wst.ws.service.policy",1254936324180
+started,bundle,org.eclipse.wst.command.env,1.0.408.v200903110045,"org.eclipse.wst.command.env",1254936324194
+started,bundle,org.eclipse.wst.ws,1.1.103.v200903111822,"org.eclipse.wst.ws",1254936324194
+started,bundle,org.maven.ide.eclipse.refactoring,0.9.8.200905041414,"org.maven.ide.eclipse.refactoring",1254936324298
+error,log,,,"Plug-in 'org.maven.ide.eclipse.refactoring' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.maven.ide.eclipse.editor.RenameProjectAction",1254936324621
+executed,command,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.project.closeProject",1254936327755
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254936327907
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1254936328907
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936333359
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936340439
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1254936340463
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936344565
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936447939
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254936456063
+started,bundle,org.eclipse.ui.browser,3.2.300.v20090526,"org.eclipse.ui.browser",1254936952103
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254937508065
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.newWizard",1254937508096
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254937513370
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254937536996
+closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1254937540426
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.406.v200903031852,"org.eclipse.jst.ws.axis.creation.ui",1254937541345
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.405.v200901261650,"org.eclipse.jst.ws.axis.consumption.ui",1254937541346
+stopped,bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.306.v200810082309,"org.eclipse.jst.ws.axis.consumption.core",1254937541346
+stopped,bundle,org.eclipse.jst.ws.axis2.creation.ui,1.0.103.v200807162242,"org.eclipse.jst.ws.axis2.creation.ui",1254937541347
+stopped,bundle,org.eclipse.jst.ws.axis2.consumption.ui,1.0.102.v200807232000,"org.eclipse.jst.ws.axis2.consumption.ui",1254937541350

@@ -1,0 +1,72 @@
+<?php
+//===========================================================================
+// confirm.php
+//===========================================================================
+/**
+* Post confirmation page
+*
+*@author   Clayton
+*/
+//===========================================================================
+// PROCEDURES
+//===========================================================================
+
+//---------------------------------------------------------------------------
+// MAIN
+//---------------------------------------------------------------------------
+
+function Confirm_main()
+{	
+	Confirm_render();
+}
+
+
+//---------------------------------------------------------------------------
+// RENDER
+//---------------------------------------------------------------------------
+function Confirm_render()
+{
+	if($_SERVER['SERVER_PORT'] != 80){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		header("Location: $url");
+	}
+	header("Content-Type: text/html; charset=UTF-8");
+
+//...........................................................................
+?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>UsedGirlfriend | Confirm Your Post</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		 <link href="style/style.css" rel="stylesheet" type="text/css" />
+		 <script src="scripts/scripts.js" language="javascript" type="text/javascript"></script>
+		 <script src="scripts/validator.js" language="javascript" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="all_content">
+			<div id="CONFIRM_LEFT" class="left">
+				<?php include('inc/LeftMenu.php'); ?>
+			</div>
+			<div id="CONFIRM_CENTER" class="center">
+				<?php include('inc/ConfirmCenterContent.php');?>
+			</div>
+			<div id="CONFIRM_RIGHT" class="right">
+				
+			</div>
+			<?php include('inc/Footer.php');?>
+		</div>
+		<?php include('inc/GoogleAnalytics.php');?>
+	</body>
+</html>
+<?php
+//...........................................................................
+}
+
+//===========================================================================
+
+Confirm_main();
+
+?>

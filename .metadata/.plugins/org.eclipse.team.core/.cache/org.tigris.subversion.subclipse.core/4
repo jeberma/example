@@ -1,0 +1,143 @@
+<?php
+//===========================================================================
+// OrderClass.php
+//===========================================================================
+/**
+* Value object containing all the information about an order
+*
+*@author   Clayton
+*/
+require_once('lib/ProviderFactory.php');
+//===========================================================================
+// Order
+//===========================================================================
+
+class Order
+{
+	//=======================================================================
+	// PRIVATE MEMBERS
+	//=======================================================================
+	private $__fields;
+	private $__allOrderFields;  //from xml file
+
+	//=======================================================================
+	// METHODS
+	//=======================================================================
+	
+	//===============================================
+	// PUBLIC METHODS
+	//===============================================
+	//-----------------------------------------------------------------------
+	// CONSTRUCTOR
+	//-----------------------------------------------------------------------
+	public function __construct($orderFieldsFromForm){
+		$fieldsProvider = ProviderFactory::getOrderFieldsProvider();
+		$this->__allOrderFields = $fieldsProvider->getFields();
+		
+		for($i=0; $i<sizeof($this->__allOrderFields); $i++){
+			$this->setField($this->__allOrderFields[$i]->getName(), "");
+		}	
+		
+		$keys = array_keys($orderFieldsFromForm);
+		
+		foreach($keys as $key){
+			$this->setField($key, $orderFieldsFromForm[$key]);
+		}
+	}
+	
+	//-----------------------------------------------------------------------
+	// GETTERS
+	//-----------------------------------------------------------------------
+	public function getFields(){
+		return $this->__fields;
+	}
+	
+	public function getField($fieldName){
+		return $this->__fields[$fieldName];
+	}
+	
+	public function getArray(){
+		$fieldsArray = array();
+		$keys = array_keys($this->__fields);
+		
+		foreach($keys as $key){
+			$fieldsArray[] = $this->getField($key);
+		}
+		return $fieldsArray;
+	}
+	
+	//-----------------------------------------------------------------------
+	// SETTERS
+	//-----------------------------------------------------------------------
+	public function setFields($val){
+		$this->__fields = $val;
+	}
+	
+	public function setField($name, $val){
+		$this->__fields[$name] = $this->removeSpecialChars($val);
+	}
+	
+	//-----------------------------------------------------------------------
+	// CHECK FIELDS
+	//-----------------------------------------------------------------------
+	/**
+	 * Checks that required fields have a value and checks each field against its Regular Expression
+	 *
+	 *@return   A boolean
+	 */
+	public function checkFields(){
+		foreach ($this->__allOrderFields as $field){
+			if($field->getRequired() == "true" && !array_key_exists($field->getName(), $this->__fields)){
+				return false;
+			}
+			if($field->getRequired() == "true" && $this->__fields[$field->getName()] == ""){
+				return false;
+			}
+			if(!preg_match($field->getRegex(), $this->__fields[$field->getName()])){
+				return false;
+			}
+		}
+		return true;
+	}
+
+	//-----------------------------------------------------------------------
+	// CHECKLANGUAGE
+	//-----------------------------------------------------------------------
+	/**
+	 * Checks that user-entered fields (as opposed to select fields) do not contain any bad words
+	 *
+	 *@return   A boolean
+	 */
+	public function checkLanguage(){
+		$languageProvider = ProviderFactory::getLanguageProvider();
+		$words = $languageProvider->getWords();
+		foreach($this->__fields as $field){
+			foreach($words as $word){
+				$check = "/\\b".$word."\\b/i";
+				if(preg_match($check,$field)){
+					return false;
+				}
+				if(preg_match("/.*nigger.*/i", $field) || preg_match("/.*negro.*/i", $field) || preg_match("/.*niger.*/i", $field)){
+					return false;
+				}
+			}	
+		}
+		return true;
+	}
+	
+	//===============================================
+	// PRIVATE METHODS
+	//===============================================
+	
+	//-----------------------------------------------------------------------
+	// REMOVE SPECIAL CHARS
+	//-----------------------------------------------------------------------
+	/**
+	 * Takes out chararcters that shouldn't be displayed when post is rendered
+	 */
+	private function removeSpecialChars($val){
+		return str_replace("\\", "", $val);
+	}
+}
+
+?>

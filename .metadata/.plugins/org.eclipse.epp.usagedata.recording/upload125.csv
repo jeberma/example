@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1255023139079
+closed,editor,org.maven.ide.eclipse.editor,0.9.8.200905041414,"org.maven.ide.eclipse.editor.MavenPomEditor",1255023139079
+started,bundle,com.aptana.ide.parsing,1.5.0.25384,"com.aptana.ide.parsing",1255023147413
+started,bundle,com.aptana.ide.editor.html,1.5.0.25643,"com.aptana.ide.editor.html",1255023147428
+started,bundle,com.aptana.ide.editor.erb,1.2.3.26264,"com.aptana.ide.editor.erb",1255023147435
+started,bundle,com.aptana.ide.editor.php,1.1.0.25789,"com.aptana.ide.editor.php",1255023147442
+started,bundle,com.aptana.ide.editor.smarty,1.1.0.25789,"com.aptana.ide.editor.smarty",1255023147452
+started,bundle,com.aptana.ide.parsing.eclipse,1.0.0.25428,"com.aptana.ide.parsing.eclipse",1255023147472
+started,bundle,com.aptana.ide.editors.codeassist,1.5.0.25664,"com.aptana.ide.editors.codeassist",1255023147663
+started,bundle,com.aptana.ide.core.spellcheck,1.5.0.24896,"com.aptana.ide.core.spellcheck",1255023147710
+opened,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1255023147795
+started,bundle,com.aptana.ide.editor.css,1.5.0.25458,"com.aptana.ide.editor.css",1255023147848
+started,bundle,com.aptana.ide.editor.js,1.5.0.25395,"com.aptana.ide.editor.js",1255023147865
+started,bundle,com.aptana.ide.editor.json,1.5.0.26125,"com.aptana.ide.editor.json",1255023147879
+started,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1255023147972
+activated,editor,com.aptana.ide.editor.xml,1.5.0.25354,"com.aptana.ide.editors.XMLEditor",1255023147981
+error,log,,,"Resource '/example-comet-resteasy' is not open.",1255023149100
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023173650
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1255023175077
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.5,"org.tigris.subversion.clientadapter.javahl",1255023177534
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1255023177535
+started,bundle,org.tmatesoft.svnkit,1.3.0.5847,"org.tmatesoft.svnkit",1255023177568
+started,bundle,com.sun.jna,3.0.9,"com.sun.jna",1255023178264
+started,bundle,org.eclipse.jdt.apt.core,3.3.201.R35x_v20090818-0235,"org.eclipse.jdt.apt.core",1255023178420
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1255023178619

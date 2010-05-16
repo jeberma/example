@@ -1,0 +1,13 @@
+class OrdersController < ApplicationController
+  
+  def index
+    @orders = Order.find(:all)
+  end
+  
+  def create
+    if request.post?
+      redirect_to(:action=>:index)
+    end
+  end
+  
+end

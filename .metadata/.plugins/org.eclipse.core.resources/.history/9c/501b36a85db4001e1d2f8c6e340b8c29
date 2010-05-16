@@ -1,0 +1,13 @@
+<div>
+	<h3>Process a new order</h3>
+	<% remote_form_for(:order, :action=>:create) do |form| %>
+	<p>
+		<label for="order_description">Description</label>
+		<%= form.text_field(:description) %>
+	</p>
+	<%= submit_tag('Save') %>
+<% end %>
+</div>
+<div id="orders_container">
+	<%= render(:partial=>'orders',:object=>@orders)%>
+</div>

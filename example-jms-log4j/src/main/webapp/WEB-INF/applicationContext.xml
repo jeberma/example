@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:jms="http://www.springframework.org/schema/jms"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+		http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-2.5.xsd">
+	
+	<context:component-scan base-package="com.example.jms"/>
+	
+	<!--
+	==========================================================================
+						TRANSACTION MANAGER CONIFG
+	==========================================================================
+	-->
+	<bean id="transactionManager" 
+		class="org.springframework.transaction.jta.JtaTransactionManager"/>
+	
+	<!--
+	==========================================================================
+							JMS CONFIG
+	==========================================================================
+	-->
+	<jee:jndi-lookup id="connectionFactory" jndi-name="jms/ConnectionFactory"/>
+	
+	<jee:jndi-lookup id="logDestination" jndi-name="jms/logTopic"/>
+	
+	<bean id="messageConsumer" class="com.example.jms.MessageConsumer"/>
+	
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="connectionFactory"/>
+	</bean>
+	
+	<bean id="messageProducer" class="com.example.jms.MessageProducer">
+		<property name="jmsTemplate" ref="jmsTemplate"/>
+		<property name="destination" value="logTopic"/>
+	</bean>
+	
+	<!--
+	<jms:listener-container transaction-manager="transactionManager">
+		<jms:listener destination="logTopic" ref="messageConsumer" method="handleMessage"/>
+	</jms:listener-container>
+	-->
+	
+	<bean id="jmsContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="connectionFactory"/>
+		<property name="messageListener">
+			<bean class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
+				<constructor-arg ref="messageConsumer"/>
+			</bean>
+		</property>
+		<!--
+		<property name="destinationName" value="jms/logTopic"/>
+		-->
+		
+		<property name="destination" ref="logDestination"/>
+		
+		<property name="concurrentConsumers" value="1"/>
+		<property name="transactionManager" ref="transactionManager"/>
+	</bean>
+	
+	<!--
+	==========================================================================
+						QUARTZ CONFIG
+	==========================================================================
+	-->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<bean class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+					<property name="startDelay" value="1000"/>
+					<property name="repeatInterval" value="1000"/>
+					<property name="jobDetail">
+						<bean class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+							<property name="targetObject" ref="messageProducer"/>
+							<property name="targetMethod" value="send"/>
+							<property name="concurrent" value="false"/>
+						</bean>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,1536 @@
+!SESSION 2009-10-15 11:50:01.330 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.5.0_16
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/jesse/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data /Users/jesse/work/example/jruby -product org.eclipse.epp.package.jee.product -keyring /Users/jesse/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-10-15 11:50:03.472
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-15 11:50:03.472
+!MESSAGE Conflict for 'com.aptana.ide.editors.views.actions.actionKeyCommand':
+HandlerActivation(commandId=com.aptana.ide.editors.views.actions.actionKeyCommand,
+	handler=com.aptana.ide.editors.views.actions.ActionKeyCommandHandler,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=com.aptana.ide.editors.views.actions.actionKeyCommand,
+	handler=com.aptana.ide.editors.views.actions.ActionKeyCommandHandler,
+	expression=,sourcePriority=0)
+
+!ENTRY org.codehaus.groovy 1 0 2009-10-15 11:50:09.662
+!MESSAGE Starting Groovy compiler version 1.7.0.xx-20091006-1400-e35
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-10-15 11:50:12.894
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-15 11:50:12.894
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.RenameAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2c31da),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.RenameAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2c31da),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-15 11:50:12.894
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2c31da),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2c31da),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-15 11:50:12.894
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.MoveFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2c31da),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.MoveFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2c31da),sourcePriority=16384)
+
+!ENTRY org.eclipse.jface 2 0 2009-10-15 11:50:12.901
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-15 11:50:12.901
+!MESSAGE A conflict occurred for COMMAND+SHIFT+H:
+Binding(COMMAND+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+H,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-15 11:50:12.901
+!MESSAGE A conflict occurred for COMMAND+U:
+Binding(COMMAND+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+U,
+	ParameterizedCommand(Command(org.radrails.rails.ui.command.script_console,script/console,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-15 11:50:12.901
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.edit.text.ruby.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-15 11:50:12.901
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.rubypeople.rdt.debug.ui.RubyShortcut.debug,Debug Ruby Application,
+		Debug Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-15 11:50:12.901
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.call.hierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.edit.text.ruby.open.call.hierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-15 11:50:12.901
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.rubypeople.rdt.debug.ui.RubyShortcut.run,Run Ruby Application,
+		Run Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 0 2009-10-15 11:50:40.904
+!MESSAGE While loading class "org.rubypeople.rdt.internal.core.util.Messages", thread "Thread[Worker-7,5,main]" timed out waiting (5000ms) for thread "Thread[main,6,main]" to finish starting bundle "org.rubypeople.rdt.core_1.3.1.26291 [815]". To avoid deadlock, thread "Thread[Worker-7,5,main]" is proceeding but "org.rubypeople.rdt.internal.core.util.Messages" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.rubypeople.rdt.core_1.3.1.26291.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:374)
+	at org.rubypeople.rdt.internal.core.search.indexing.IndexManager.processName(IndexManager.java:281)
+	at org.rubypeople.rdt.internal.core.search.processing.JobManager.reset(JobManager.java:300)
+	at org.rubypeople.rdt.internal.core.search.indexing.IndexManager.reset(IndexManager.java:794)
+	at org.rubypeople.rdt.internal.core.RubyModelManager.startIndexing(RubyModelManager.java:1036)
+	at org.rubypeople.rdt.internal.core.RubyModelManager.access$2(RubyModelManager.java:1035)
+	at org.rubypeople.rdt.internal.core.RubyModelManager$6.run(RubyModelManager.java:988)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 20 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:374)
+	at org.rubypeople.rdt.internal.core.search.indexing.IndexManager.processName(IndexManager.java:281)
+	at org.rubypeople.rdt.internal.core.search.processing.JobManager.reset(JobManager.java:300)
+	at org.rubypeople.rdt.internal.core.search.indexing.IndexManager.reset(IndexManager.java:794)
+	at org.rubypeople.rdt.internal.core.RubyModelManager.startIndexing(RubyModelManager.java:1036)
+	at org.rubypeople.rdt.internal.core.RubyModelManager.access$2(RubyModelManager.java:1035)
+	at org.rubypeople.rdt.internal.core.RubyModelManager$6.run(RubyModelManager.java:988)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:50:42.473
+!MESSAGE Starting: /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby -r rubygems -e p(Gem.path) -I /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.launching/ruby/flush -rrdt_stream_sync.rb -- /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/gem
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:50:43.101
+!MESSAGE Starting: /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby -I /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.launching/ruby/flush -rrdt_stream_sync.rb -- /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/gem sources -l
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:50:43.177
+!MESSAGE Starting: /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby -I /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.launching/ruby/flush -rrdt_stream_sync.rb -- /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/gem -v
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:50:43.746
+!MESSAGE Starting: /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby -I /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.launching/ruby/flush -rrdt_stream_sync.rb -- /System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/gem query -d
+
+!ENTRY org.eclipse.osgi 2 1 2009-10-15 11:51:26.332
+!MESSAGE NLS unused message: 1) in: org.rubypeople.rdt.internal.debug.ui.RdtDebugUiMessages
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:51:56.593
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:51:56.698
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem -v
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:52:02.539
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:52:02.627
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem query -d
+
+!ENTRY org.eclipse.ui 4 4 2009-10-15 11:52:26.944
+!MESSAGE Plugin org.radrails.rails.ui, extension org.eclipse.ui.perspectiveExtensions, id org.rubypeople.rdt.ui.RubyExplorer: Attribute 'relative' not defined.  This attribute is required when relationship="left".
+
+!ENTRY org.eclipse.ui 4 4 2009-10-15 11:52:26.945
+!MESSAGE Unable to process element: view in perspective extension: null
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:52:56.829
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:52:56.922
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -I /Users/jesse/work/example/jruby/example-rails-polymorphic-model -- /usr/local/jruby-1.3.1/bin/rails example-rails-polymorphic-model -d mysql
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:53:07.540
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:53:07.694
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem dependency rails -v 2.3.4
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:53:14.183
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:53:14.290
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -r rubygems -e p(Gem.path) -- /usr/local/jruby-1.3.1/bin/gem
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:53:19.160
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:53:19.275
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -e p(Process.pid.to_s) -e load(ARGV.shift) -- script/server mongrel --port=3000 --environment=development
+
+!ENTRY org.radrails.rails.core 1 0 2009-10-15 11:53:29.882
+!MESSAGE launching this url: http://0.0.0.0:3000/
+
+!ENTRY org.eclipse.core.expressions 4 201 2009-10-15 11:54:12.992
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:260)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:209)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:199)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:104)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:146)
+	at org.rubypeople.rdt.ui.actions.OpenViewActionGroup.fillContextMenu(OpenViewActionGroup.java:219)
+	at org.rubypeople.rdt.ui.actions.NavigateActionGroup.fillContextMenu(NavigateActionGroup.java:83)
+	at org.rubypeople.rdt.internal.ui.actions.CompositeActionGroup.fillContextMenu(CompositeActionGroup.java:77)
+	at org.rubypeople.rdt.internal.ui.packageview.RubyExplorerActionGroup.fillContextMenu(RubyExplorerActionGroup.java:220)
+	at org.rubypeople.rdt.internal.ui.packageview.PackageExplorerPart.menuAboutToShow(PackageExplorerPart.java:895)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:235)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1254)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:683)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4705)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:68)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:230)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3489)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3093)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-10-15 11:54:12.994
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+
+!ENTRY org.eclipse.core.expressions 4 201 2009-10-15 11:57:56.028
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:260)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:209)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:199)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:104)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:146)
+	at org.rubypeople.rdt.ui.actions.OpenViewActionGroup.fillContextMenu(OpenViewActionGroup.java:219)
+	at org.rubypeople.rdt.ui.actions.NavigateActionGroup.fillContextMenu(NavigateActionGroup.java:83)
+	at org.rubypeople.rdt.internal.ui.actions.CompositeActionGroup.fillContextMenu(CompositeActionGroup.java:77)
+	at org.rubypeople.rdt.internal.ui.packageview.RubyExplorerActionGroup.fillContextMenu(RubyExplorerActionGroup.java:220)
+	at org.rubypeople.rdt.internal.ui.packageview.PackageExplorerPart.menuAboutToShow(PackageExplorerPart.java:895)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:235)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1254)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:683)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4705)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:68)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:230)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3489)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3093)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-10-15 11:57:56.028
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+
+!ENTRY org.eclipse.core.expressions 4 201 2009-10-15 11:58:04.545
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:260)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:209)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:199)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:104)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:146)
+	at org.rubypeople.rdt.ui.actions.OpenViewActionGroup.fillContextMenu(OpenViewActionGroup.java:219)
+	at org.rubypeople.rdt.ui.actions.NavigateActionGroup.fillContextMenu(NavigateActionGroup.java:83)
+	at org.rubypeople.rdt.internal.ui.actions.CompositeActionGroup.fillContextMenu(CompositeActionGroup.java:77)
+	at org.rubypeople.rdt.internal.ui.packageview.RubyExplorerActionGroup.fillContextMenu(RubyExplorerActionGroup.java:220)
+	at org.rubypeople.rdt.internal.ui.packageview.PackageExplorerPart.menuAboutToShow(PackageExplorerPart.java:895)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:235)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1254)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:683)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4705)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:68)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:230)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3489)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3093)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-10-15 11:58:04.546
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+
+!ENTRY org.eclipse.debug.core 4 2 2009-10-15 11:58:21.176
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.xsl.internal.debug.ui.XSLDebugUILaunchListener.launchesTerminated(XSLDebugUILaunchListener.java:69)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:303)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:256)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:991)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:401)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:571)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1110)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:381)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 120 2009-10-15 11:58:21.177
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.xsl.internal.debug.ui.XSLDebugUILaunchListener.launchesTerminated(XSLDebugUILaunchListener.java:69)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:303)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:256)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:991)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:401)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:571)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1110)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:381)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2009-10-15 11:58:21.771
+!MESSAGE An internal error occurred during: "Stopping server".
+!STACK 0
+java.lang.NullPointerException
+	at org.radrails.rails.internal.core.RailsPlugin.getRailsVersion(RailsPlugin.java:333)
+	at org.radrails.server.core.Server.isOldRails(Server.java:884)
+	at org.radrails.server.core.Server.getProgramArguments(Server.java:945)
+	at org.radrails.server.core.Server.grabPid(Server.java:517)
+	at org.radrails.server.core.Server.stopServer(Server.java:474)
+	at org.radrails.server.core.Server.access$0(Server.java:428)
+	at org.radrails.server.core.Server$2.run(Server.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 368 2009-10-15 11:58:22.716
+!MESSAGE Resource '/example-rails-polymorphic-model' does not exist.
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:58:56.850
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:58:56.951
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -I /Users/jesse/work/example/jruby/example-rails-polymorphic-model -- /usr/local/jruby-1.3.1/bin/rails example-rails-polymorphic-model -d sqlite3
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:59:01.678
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:59:01.784
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem dependency rails -v 2.3.4
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 11:59:05.641
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 11:59:05.833
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -e p(Process.pid.to_s) -e load(ARGV.shift) -- script/server mongrel --port=3000 --environment=development
+
+!ENTRY org.radrails.rails.core 1 0 2009-10-15 11:59:14.546
+!MESSAGE launching this url: http://0.0.0.0:3000/
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 12:23:53.251
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 12:23:53.375
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -I /Users/jesse/work/example/jruby/example-rails-polymorphic-model/lib -I /Users/jesse/work/example/jruby/example-rails-polymorphic-model/test -- /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.testunit/ruby/RemoteTestRunner.rb test/unit/article_test.rb 54416 false
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 12:24:59.927
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 12:25:00.051
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -- /usr/local/jruby-1.3.1/bin/rake --tasks
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 12:26:31.679
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 12:26:31.800
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -I /Users/jesse/work/example/jruby/example-rails-polymorphic-model/lib -I /Users/jesse/work/example/jruby/example-rails-polymorphic-model/test -- /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.testunit/ruby/RemoteTestRunner.rb test/unit/article_test.rb 54416 false
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-15 12:36:46.200
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-15 12:36:46.411
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -- /usr/local/jruby-1.3.1/bin/rake db:create:all
+
+!ENTRY org.eclipse.debug.core 4 2 2009-10-15 14:18:40.577
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Display.error(Display.java:961)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:513)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.resetName(ProcessConsole.java:459)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.handleDebugEvents(ProcessConsole.java:441)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1110)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:381)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2009-10-15 14:18:40.578
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Display.error(Display.java:961)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:513)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.resetName(ProcessConsole.java:459)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.handleDebugEvents(ProcessConsole.java:441)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1110)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:381)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.codehaus.groovy 1 0 2009-10-15 14:18:40.688
+!MESSAGE Stopping Groovy compiler version 1.7.0.xx-20091006-1400-e35
+
+!ENTRY com.aptana.ide.core 4 0 2009-10-15 14:18:42.008
+!MESSAGE (Build 1.5.0.26112) [ERROR] An error occurred while shutting down the database
+!STACK 0
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getConnection(DriverManager.java:545)
+	at java.sql.DriverManager.getConnection(DriverManager.java:193)
+	at com.aptana.ide.core.db.AptanaDB.shutdown(AptanaDB.java:320)
+	at com.aptana.ide.core.AptanaCorePlugin.stop(AptanaCorePlugin.java:89)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:474)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:546)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1098)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:593)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:261)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:216)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:685)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:583)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:409)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SESSION 2009-10-20 11:05:52.301 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.5.0_16
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/jesse/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.jee.product -keyring /Users/jesse/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-10-20 11:06:13.103
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 11:06:13.103
+!MESSAGE Conflict for 'com.aptana.ide.editors.views.actions.actionKeyCommand':
+HandlerActivation(commandId=com.aptana.ide.editors.views.actions.actionKeyCommand,
+	handler=com.aptana.ide.editors.views.actions.ActionKeyCommandHandler,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=com.aptana.ide.editors.views.actions.actionKeyCommand,
+	handler=com.aptana.ide.editors.views.actions.ActionKeyCommandHandler,
+	expression=,sourcePriority=0)
+
+!ENTRY org.codehaus.groovy 1 0 2009-10-20 11:06:28.367
+!MESSAGE Starting Groovy compiler version 1.7.0.xx-20091006-1400-e35
+
+!ENTRY org.eclipse.ui 4 4 2009-10-20 11:06:34.420
+!MESSAGE Plug-in 'com.aptana.ide.editors' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): com.aptana.ide.core.ui.FindReplaceAction
+
+!ENTRY org.eclipse.ui 4 4 2009-10-20 11:06:34.429
+!MESSAGE Plug-in 'com.aptana.ide.editors' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): com.aptana.ide.core.ui.FindNextAction
+
+!ENTRY org.eclipse.ui 4 4 2009-10-20 11:06:34.430
+!MESSAGE Plug-in 'com.aptana.ide.editors' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): com.aptana.ide.core.ui.FindPreviousAction
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-10-20 11:06:41.410
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 11:06:41.410
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.RenameAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d8e362),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.RenameAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d8e362),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 11:06:41.411
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d8e362),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d8e362),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 11:06:41.411
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.MoveFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d8e362),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.MoveFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d8e362),sourcePriority=16384)
+
+!ENTRY org.eclipse.jface 2 0 2009-10-20 11:06:41.418
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 11:06:41.418
+!MESSAGE A conflict occurred for COMMAND+SHIFT+H:
+Binding(COMMAND+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+H,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 11:06:41.418
+!MESSAGE A conflict occurred for COMMAND+U:
+Binding(COMMAND+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+U,
+	ParameterizedCommand(Command(org.radrails.rails.ui.command.script_console,script/console,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 11:06:41.418
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.edit.text.ruby.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 11:06:41.418
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.rubypeople.rdt.debug.ui.RubyShortcut.debug,Debug Ruby Application,
+		Debug Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 11:06:41.418
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.call.hierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.edit.text.ruby.open.call.hierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 11:06:41.418
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.rubypeople.rdt.debug.ui.RubyShortcut.run,Run Ruby Application,
+		Run Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.osgi 2 0 2009-10-20 11:06:49.497
+!MESSAGE While loading class "org.rubypeople.rdt.internal.debug.ui.launcher.InstallGemsJob", thread "Thread[Worker-11,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-17,5,main]" to finish starting bundle "org.rubypeople.rdt.debug.ui_1.3.1.26263 [817]". To avoid deadlock, thread "Thread[Worker-11,5,main]" is proceeding but "org.rubypeople.rdt.internal.debug.ui.launcher.InstallGemsJob" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.rubypeople.rdt.debug.ui_1.3.1.26263.jar" by thread "Worker-17".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:33)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:374)
+	at com.aptana.rdt.ui.AptanaRDTUIPlugin.scheduleGemAutoInstall(AptanaRDTUIPlugin.java:42)
+	at com.aptana.rdt.ui.AptanaRDTUIPlugin.start(AptanaRDTUIPlugin.java:37)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:326)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:231)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1193)
+	at com.aptana.rdt.internal.core.gems.RubyGemsInitializer.initialize(RubyGemsInitializer.java:65)
+	at com.aptana.rdt.internal.core.gems.RubyGemsInitializer.run(RubyGemsInitializer.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 38 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:33)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:374)
+	at com.aptana.rdt.ui.AptanaRDTUIPlugin.scheduleGemAutoInstall(AptanaRDTUIPlugin.java:42)
+	at com.aptana.rdt.ui.AptanaRDTUIPlugin.start(AptanaRDTUIPlugin.java:37)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:326)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:231)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1193)
+	at com.aptana.rdt.internal.core.gems.RubyGemsInitializer.initialize(RubyGemsInitializer.java:65)
+	at com.aptana.rdt.internal.core.gems.RubyGemsInitializer.run(RubyGemsInitializer.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 11:07:08.434
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 11:07:08.468
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 11:07:08.502
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 11:07:08.563
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem sources -l
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 11:07:08.641
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -r rubygems -e p(Gem.path) -- /usr/local/jruby-1.3.1/bin/gem
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 11:07:08.794
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem -v
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 11:07:18.821
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 11:07:19.027
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem query -d
+
+!ENTRY org.eclipse.core.expressions 4 201 2009-10-20 11:07:21.949
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:260)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:209)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:199)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:104)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:146)
+	at org.rubypeople.rdt.ui.actions.OpenViewActionGroup.fillContextMenu(OpenViewActionGroup.java:219)
+	at org.rubypeople.rdt.ui.actions.NavigateActionGroup.fillContextMenu(NavigateActionGroup.java:83)
+	at org.rubypeople.rdt.internal.ui.actions.CompositeActionGroup.fillContextMenu(CompositeActionGroup.java:77)
+	at org.rubypeople.rdt.internal.ui.packageview.RubyExplorerActionGroup.fillContextMenu(RubyExplorerActionGroup.java:220)
+	at org.rubypeople.rdt.internal.ui.packageview.PackageExplorerPart.menuAboutToShow(PackageExplorerPart.java:895)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:235)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1254)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:683)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4705)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:68)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:230)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3489)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3093)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-10-20 11:07:21.950
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+
+!ENTRY org.eclipse.core.expressions 4 201 2009-10-20 11:07:21.959
+!MESSAGE No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:91)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:260)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:209)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:199)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:104)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:146)
+	at org.rubypeople.rdt.ui.actions.OpenViewActionGroup.fillContextMenu(OpenViewActionGroup.java:219)
+	at org.rubypeople.rdt.ui.actions.NavigateActionGroup.fillContextMenu(NavigateActionGroup.java:83)
+	at org.rubypeople.rdt.internal.ui.actions.CompositeActionGroup.fillContextMenu(CompositeActionGroup.java:77)
+	at org.rubypeople.rdt.internal.ui.packageview.RubyExplorerActionGroup.fillContextMenu(RubyExplorerActionGroup.java:220)
+	at org.rubypeople.rdt.internal.ui.packageview.PackageExplorerPart.menuAboutToShow(PackageExplorerPart.java:895)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:235)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1254)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:683)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4705)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:68)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:230)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3489)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3093)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-10-20 11:07:21.960
+!MESSAGE No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 11:07:40.872
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 11:07:41.897
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 11:07:41.907
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 11:07:41.907
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 11:07:41.921
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 11:07:41.942
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 11:07:41.945
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 11:07:54.771
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 11:07:54.865
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -I /Users/jesse/work/example/jruby/example-rails-quartz -- /usr/local/jruby-1.3.1/bin/rails example-rails-quartz -d sqlite3
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 11:08:02.756
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 11:08:02.875
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem dependency rails -v 2.3.4
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 11:08:08.011
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 11:08:08.112
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -e p(Process.pid.to_s) -e load(ARGV.shift) -- script/server mongrel --port=3001 --environment=development
+
+!ENTRY org.radrails.rails.core 1 0 2009-10-20 11:08:21.516
+!MESSAGE launching this url: http://0.0.0.0:3001/
+
+!ENTRY org.eclipse.debug.core 4 2 2009-10-20 11:45:44.703
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Display.error(Display.java:961)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:513)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.resetName(ProcessConsole.java:459)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.handleDebugEvents(ProcessConsole.java:441)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1110)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:381)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2009-10-20 11:45:44.772
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Display.error(Display.java:961)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:513)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.resetName(ProcessConsole.java:459)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.handleDebugEvents(ProcessConsole.java:441)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1110)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:381)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.codehaus.groovy 1 0 2009-10-20 11:45:45.643
+!MESSAGE Stopping Groovy compiler version 1.7.0.xx-20091006-1400-e35
+
+!ENTRY com.aptana.ide.core 4 0 2009-10-20 11:45:47.508
+!MESSAGE (Build 1.5.0.26112) [ERROR] An error occurred while shutting down the database
+!STACK 0
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getConnection(DriverManager.java:545)
+	at java.sql.DriverManager.getConnection(DriverManager.java:193)
+	at com.aptana.ide.core.db.AptanaDB.shutdown(AptanaDB.java:320)
+	at com.aptana.ide.core.AptanaCorePlugin.stop(AptanaCorePlugin.java:89)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:474)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:546)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1098)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:593)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:261)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:216)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:685)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:583)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:409)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SESSION 2009-10-20 13:27:04.596 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.5.0_16
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/jesse/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data /Users/jesse/work/example/jruby -product org.eclipse.epp.package.jee.product -keyring /Users/jesse/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-10-20 13:27:07.109
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 13:27:07.109
+!MESSAGE Conflict for 'com.aptana.ide.editors.views.actions.actionKeyCommand':
+HandlerActivation(commandId=com.aptana.ide.editors.views.actions.actionKeyCommand,
+	handler=com.aptana.ide.editors.views.actions.ActionKeyCommandHandler,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=com.aptana.ide.editors.views.actions.actionKeyCommand,
+	handler=com.aptana.ide.editors.views.actions.ActionKeyCommandHandler,
+	expression=,sourcePriority=0)
+
+!ENTRY org.codehaus.groovy 1 0 2009-10-20 13:27:12.204
+!MESSAGE Starting Groovy compiler version 1.7.0.xx-20091006-1400-e35
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-10-20 13:27:15.676
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 13:27:15.676
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.RenameAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a42493),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.RenameAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.RenameAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a42493),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 13:27:15.676
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a42493),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.EncapsulateFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a42493),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-10-20 13:27:15.676
+!MESSAGE Conflict for 'AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction':
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.MoveFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a42493),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.rubypeople.rdt.refactoring.refactoringContext/org.rubypeople.rdt.refactoring.action.MoveFieldAction,
+	handler=ActionDelegateHandlerProxy(null,org.rubypeople.rdt.refactoring.action.MoveFieldAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@a42493),sourcePriority=16384)
+
+!ENTRY org.eclipse.jface 2 0 2009-10-20 13:27:15.683
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 13:27:15.683
+!MESSAGE A conflict occurred for COMMAND+SHIFT+H:
+Binding(COMMAND+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+H,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 13:27:15.683
+!MESSAGE A conflict occurred for COMMAND+U:
+Binding(COMMAND+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+U,
+	ParameterizedCommand(Command(org.radrails.rails.ui.command.script_console,script/console,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 13:27:15.683
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.edit.text.ruby.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 13:27:15.683
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.rubypeople.rdt.debug.ui.RubyShortcut.debug,Debug Ruby Application,
+		Debug Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 13:27:15.683
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.call.hierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.rubypeople.rdt.ui.edit.text.ruby.open.call.hierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 13:27:15.684
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.rubypeople.rdt.debug.ui.RubyShortcut.run,Run Ruby Application,
+		Run Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 13:27:16.858
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:27:17.318
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:27:17.318
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:27:17.381
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:27:17.404
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -r rubygems -e p(Gem.path) -- /usr/local/jruby-1.3.1/bin/gem
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:27:17.434
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem sources -l
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:27:17.471
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem -v
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 13:27:18.878
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 13:27:18.879
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 13:27:18.891
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 13:27:18.892
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.eclipse.core.resources 4 372 2009-10-20 13:27:18.895
+!MESSAGE Resource '/example-rails-polymorphic-model' is not open.
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:27:27.896
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:27:28.012
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -J-Xmx512M -- /usr/local/jruby-1.3.1/bin/gem query -d
+
+!ENTRY org.eclipse.jface 2 0 2009-10-20 13:30:01.404
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-20 13:30:01.404
+!MESSAGE A conflict occurred for COMMAND+W:
+Binding(COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.help.ui.closeTray,Close User Assistance Tray,
+		Close the user assistance tray containing context help information and cheat sheets.,
+		Category(org.eclipse.ui.category.help,Help,null,true),
+		org.eclipse.help.ui.internal.CloseHelpTrayHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialog,,,system)
+Binding(COMMAND+W,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.CloseEditorHandler@38aac4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.expressions 4 201 2009-10-20 13:40:57.691
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:260)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:209)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:199)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:104)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:146)
+	at org.rubypeople.rdt.ui.actions.OpenViewActionGroup.fillContextMenu(OpenViewActionGroup.java:219)
+	at org.rubypeople.rdt.ui.actions.NavigateActionGroup.fillContextMenu(NavigateActionGroup.java:83)
+	at org.rubypeople.rdt.internal.ui.actions.CompositeActionGroup.fillContextMenu(CompositeActionGroup.java:77)
+	at org.rubypeople.rdt.internal.ui.packageview.RubyExplorerActionGroup.fillContextMenu(RubyExplorerActionGroup.java:220)
+	at org.rubypeople.rdt.internal.ui.packageview.PackageExplorerPart.menuAboutToShow(PackageExplorerPart.java:895)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:235)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1254)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:683)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4705)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:68)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:230)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3489)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3093)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-10-20 13:40:57.693
+!MESSAGE No property tester contributes a property com.aptana.ide.core.ui.nature to type class org.rubypeople.rdt.internal.core.RubyProject
+
+!ENTRY org.eclipse.core.expressions 4 201 2009-10-20 13:40:57.694
+!MESSAGE No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:91)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:260)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:209)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:199)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:104)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:146)
+	at org.rubypeople.rdt.ui.actions.OpenViewActionGroup.fillContextMenu(OpenViewActionGroup.java:219)
+	at org.rubypeople.rdt.ui.actions.NavigateActionGroup.fillContextMenu(NavigateActionGroup.java:83)
+	at org.rubypeople.rdt.internal.ui.actions.CompositeActionGroup.fillContextMenu(CompositeActionGroup.java:77)
+	at org.rubypeople.rdt.internal.ui.packageview.RubyExplorerActionGroup.fillContextMenu(RubyExplorerActionGroup.java:220)
+	at org.rubypeople.rdt.internal.ui.packageview.PackageExplorerPart.menuAboutToShow(PackageExplorerPart.java:895)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:235)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3543)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1250)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1254)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:683)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4705)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:68)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:230)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3489)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3093)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-10-20 13:40:57.694
+!MESSAGE No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:49:08.524
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:49:08.591
+!MESSAGE Internal error occurred
+!STACK 0
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:474)
+	at java.lang.UNIXProcess.waitFor(UNIXProcess.java:112)
+	at org.rubypeople.rdt.internal.launching.JRubyVMRunner.constructProgramString(JRubyVMRunner.java:137)
+	at org.rubypeople.rdt.internal.launching.StandardVMRunner.run(StandardVMRunner.java:345)
+	at org.rubypeople.rdt.launching.RubyLaunchDelegate.launch(RubyLaunchDelegate.java:106)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at org.rubypeople.rdt.internal.ui.infoviews.RiUtility.launchInBackgroundAndRead(RiUtility.java:242)
+	at org.rubypeople.rdt.internal.ui.infoviews.RiUtility.execAndReadOutput(RiUtility.java:185)
+	at org.rubypeople.rdt.internal.ui.infoviews.RiUtility.buildIndex(RiUtility.java:131)
+	at org.rubypeople.rdt.internal.ui.infoviews.RiUtility.getRIContents(RiUtility.java:56)
+	at org.rubypeople.rdt.internal.ui.infoviews.RiUtility.getRIHTMLContents(RiUtility.java:63)
+	at org.rubypeople.rdt.internal.ui.text.ruby.hover.RiDocHoverProvider.getRIResult(RiDocHoverProvider.java:25)
+	at org.rubypeople.rdt.internal.ui.text.ruby.hover.RiDocHoverProvider.getHoverInfo(RiDocHoverProvider.java:17)
+	at org.rubypeople.rdt.internal.ui.text.ruby.hover.AbstractRubyEditorTextHover.getHoverInfo(AbstractRubyEditorTextHover.java:145)
+	at org.rubypeople.rdt.internal.ui.text.ruby.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:101)
+	at org.rubypeople.rdt.internal.ui.text.ruby.hover.RubyEditorTextHoverProxy.getHoverInfo(RubyEditorTextHoverProxy.java:67)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:49:08.593
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -- /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.launching/ruby/fastri-server -b
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:49:11.496
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:49:11.603
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -- /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.launching/ruby/fri -L --no-pager HelloJob
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:54:13.465
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:54:13.579
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -I /Users/jesse/work/example/jruby/example-rails-quartz/lib -I /Users/jesse/work/example/jruby/example-rails-quartz/test -- /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.testunit/ruby/RemoteTestRunner.rb vendor/plugins/jruby-quartz/test/integration/jruby_quartz_integration_test.rb 50531 false
+
+!ENTRY org.rubypeople.rdt.launching 4 4 2009-10-20 13:55:44.757
+!MESSAGE Setting executable bit for: /usr/local/jruby-1.3.1/bin/jruby
+
+!ENTRY org.rubypeople.rdt.launching 1 -1 2009-10-20 13:55:44.869
+!MESSAGE Starting: /usr/local/jruby-1.3.1/bin/jruby -I /Users/jesse/work/example/jruby/example-rails-quartz/lib -I /Users/jesse/work/example/jruby/example-rails-quartz/test -- /Users/jesse/work/example/jruby/.metadata/.plugins/org.rubypeople.rdt.testunit/ruby/RemoteTestRunner.rb vendor/plugins/jruby-quartz/test/integration/jruby_quartz_integration_test.rb 50531 false
+
+!ENTRY org.codehaus.groovy 1 0 2009-10-20 13:56:43.971
+!MESSAGE Stopping Groovy compiler version 1.7.0.xx-20091006-1400-e35
+
+!ENTRY com.aptana.ide.core 4 0 2009-10-20 13:56:44.660
+!MESSAGE (Build 1.5.0.26112) [ERROR] An error occurred while shutting down the database
+!STACK 0
+java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getConnection(DriverManager.java:545)
+	at java.sql.DriverManager.getConnection(DriverManager.java:193)
+	at com.aptana.ide.core.db.AptanaDB.shutdown(AptanaDB.java:320)
+	at com.aptana.ide.core.AptanaCorePlugin.stop(AptanaCorePlugin.java:89)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:474)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:546)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1098)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:593)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:261)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:216)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:685)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:583)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:409)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)

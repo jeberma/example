@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Groovy bug when compiling.",1256431944500
+error,log,,,"Groovy bug when compiling.",1256431944505
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.smartEnter",1256431976389
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256431992402
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1256432197001
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1256432199114
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432202991
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432209882
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1256432210005
+opened,editor,org.eclipse.jst.jsp.ui,1.1.401.v200908111935,"org.eclipse.jst.jsp.core.jspsource.source",1256432212090
+activated,editor,org.eclipse.jst.jsp.ui,1.1.401.v200908111935,"org.eclipse.jst.jsp.core.jspsource.source",1256432212143
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256432226497
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432230473
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432259178
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256432277369
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.0.xx-20091006-1400-e35,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1256432283074
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256432295594
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432298843
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432315556
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432317940
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432327142
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256432333134
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432335762
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1256432381008
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1256432385998

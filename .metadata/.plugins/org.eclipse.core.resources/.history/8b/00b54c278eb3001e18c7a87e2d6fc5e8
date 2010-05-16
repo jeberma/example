@@ -1,0 +1,12 @@
+package com.originatelabs.example.jms;
+
+import org.junit.Test;
+
+public class MessageConsumerTest {
+
+	@Test
+	public void foo() {
+		
+	}
+	
+}
