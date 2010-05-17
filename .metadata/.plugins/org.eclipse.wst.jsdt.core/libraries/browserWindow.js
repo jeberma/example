@@ -160,7 +160,7 @@ Window.prototype.screenLeft = 0;
  * @memberOf Window
  */
 Window.prototype.screenTop = 0;
-//Window.prototype.event = new Event();
+Window.prototype.event = new Object();
 Window.prototype.length = 0;
 Window.prototype.scrollbars= new BarProp();
 Window.prototype.scrollX=0;

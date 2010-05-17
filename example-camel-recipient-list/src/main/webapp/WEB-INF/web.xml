@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<display-name>camel-example</display-name>
+
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+	<!-- camel web console configuration.  uncomment and run with mvn jetty:run-war -->
+<!--
+  <filter>
+    <filter-name>sitemesh</filter-name>
+    <filter-class>com.opensymphony.module.sitemesh.filter.PageFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>Jersey Filter</filter-name>
+    <filter-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</filter-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.resourceConfigClass</param-name>
+      <param-value>org.apache.camel.web.util.CamelResourceConfig</param-value>
+    </init-param>
+    <init-param>
+      <param-name>com.sun.jersey.config.feature.Redirect</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>com.sun.jersey.config.feature.ImplicitViewables</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>org.apache.camel.web</param-value>
+    </init-param>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.WebPageContentRegex</param-name>
+      <param-value>/(images|css|js)/.*</param-value>
+    </init-param>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.WadlResourceUri</param-name>
+      <param-value>/api</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>Jersey Filter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+	
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
+ -->
+
+</web-app>

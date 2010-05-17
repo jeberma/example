@@ -1772,14 +1772,14 @@ HTMLDocument.prototype.close = function(){};
  */
 HTMLDocument.prototype.write = function(text){};
 /**
- * function writeIn(text)
+ * function writeln(text)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
  * 
  * @param {String} text
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.writeIn = function(text){};
+HTMLDocument.prototype.writeln = function(text){};
 /**
  * function getElementsByName(elementName)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
