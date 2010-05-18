@@ -26,7 +26,7 @@ public class Main {
 				.to("seda:logQueue");
 				
 				from("seda:logQueue")
-				.split(body().tokenize(" "))
+				.transform().method(UpperCaseTransformer.class, "transform")
 				.to("stream:out");
 			}
 		});
