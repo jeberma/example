@@ -1,11 +1,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>com.example.camel</groupId>
 	<artifactId>example-camel-logfile-streamer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
+	<!--
+		SNAPSHOT repositories used as some examples uses latest code from
+		Camel
+	-->
+	<repositories>
+		<repository>
+			<id>apache.snapshots</id>
+			<name>Apache Development Snapshot Repository</name>
+			<url>https://repository.apache.org/content/repositories/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
@@ -79,12 +97,12 @@
 	</build>
 
 	<properties>
-		<camel.version>2.2.0</camel.version>
+		<camel.version>2.3-SNAPSHOT</camel.version>
 		<activemq.version>5.2.0</activemq.version>
 		<xbean.spring.version>3.5</xbean.spring.version>
 
 		<log.level>INFO</log.level>
 		<log.file>${project.build.directory}/development.log</log.file>
 	</properties>
-	
+
 </project>
