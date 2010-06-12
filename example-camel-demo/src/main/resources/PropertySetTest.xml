@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <PropertySet xmlns="http://www.involver.com/schema/property-set.xsd" 
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ 	xsi:schemaLocation="http://www.involver.com/schema/property-set.xsd property-set.xsd"
+ 	title="Stat Properties">
+        <Entry key="SPOY Rank">1</Entry>
+        <Entry key="Points">10000</Entry>
+        <Entry key="Relationship Status">Single</Entry>
+</PropertySet>
+  

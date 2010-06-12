@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="70" version="2.0">
+<workbench progressCount="84" version="2.0">
 <workbenchAdvisor/>
-<window height="1041" width="1717" x="70" y="22">
+<window height="1004" maximized="true" width="1232" x="434" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="403"/>
@@ -23,17 +23,18 @@
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet4" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="40" y="22"/>
 <coolItem id="org.eclipse.ui.WorkingSetActionSet" itemType="typeToolBarContribution" x="40" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="104" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="org.maven.ide.eclipse.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.radrails.rails.ui.RailsElementCreationActionSet" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.radrails.rails.ui.railsActions" itemType="typeToolBarContribution" x="98" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" itemType="typeToolBarContribution" x="94" y="22"/>
 <coolItem id="com.aptana.ide.editors.ERBEditor" itemType="typePlaceholder" x="120" y="22"/>
 <coolItem id="com.aptana.ide.editors.YMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.codehaus.groovy.eclipse.editor.GroovyEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -41,64 +42,52 @@
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="UserSeparator" itemType="typeSeparator"/>
-<coolItem id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView" itemType="typeToolBarContribution" x="115" y="22"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="org.rubypeople.rdt.ui.EditorRubyFile" itemType="typePlaceholder" x="120" y="22"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1254938293567" focus="true" label="Workspace - RadRails">
+<page aggregateWorkingSetId="Aggregate for window 1254938293567" focus="true" label="Workspace - Java EE">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="property-set.xsd" partName="property-set.xsd" path="/Users/jesse/work/example/example-camel-demo/src/main/resources/property-set.xsd" title="property-set.xsd" tooltip="example-camel-demo/src/main/resources/property-set.xsd" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-camel-demo/src/main/resources/property-set.xsd"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="PropertySetTest.xml" partName="PropertySetTest.xml" path="/Users/jesse/work/example/example-camel-demo/src/main/resources/PropertySetTest.xml" title="PropertySetTest.xml" tooltip="example-camel-demo/src/main/resources/PropertySetTest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-camel-demo/src/main/resources/PropertySetTest.xml"/>
+</editor>
 </editors>
 <views>
-<view id="com.aptana.rdt.ViewRakeTasks" partName="Rake Tasks">
-<viewState/>
-</view>
 <view id="com.aptana.ide.server.ui.serversView" partName="Servers">
 <viewState/>
 </view>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
-<view id="com.aptana.gems.ui.ViewGems" partName="RubyGems"/>
-<view id="org.radrails.rails.ui.ViewGenerators" partName="Generators">
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
 <view id="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" partName="SVN Repositories">
 <viewState/>
 </view>
 <view id="org.tigris.subversion.subclipse.ui.annotations.AnnotateView" partName="SVN Annotate"/>
-<view id="org.rubypeople.rdt.ui.RubyExplorer" partName="Ruby Explorer">
-<viewState isWindowWorkingSet="false" layout="1" org.rubypeople.rdt.ui.packages.linktoeditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.AllMembersFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.ClosedProjectsFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.StaticsFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.ImportDeclarationFilter" isEnabled="true"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.RubyFileFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.NonRubyProjectsFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.NonPublicFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer_patternFilterId_.*" isEnabled="true"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.NonRubyElementFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.FieldsFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.LibraryFilter" isEnabled="false"/>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.NonSharedProjectsFilter" isEnabled="false"/>
-</xmlDefinedFilters>
-</customFilters>
-</viewState>
-</view>
-<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
+<view id="org.eclipse.team.sync.views.SynchronizeView" partName="Synchronize">
 <viewState/>
 </view>
-<view id="org.eclipse.team.sync.views.SynchronizeView" partName="Synchronize">
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress"/>
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
@@ -107,15 +96,21 @@
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
-<view id="org.rubypeople.rdt.testunit.views.TestUnitView" partName="Test::Unit"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.repositories" partName="Task Repositories">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Warnings (7 items)"/>
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (6 items)"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="699"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -124,8 +119,8 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.rubypeople.rdt.ui.RubyExplorer" activePerspective="org.radrails.rails.ui.PerspectiveRails">
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspectives activePart="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
@@ -169,13 +164,9 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
 <alwaysOnActionSet id="org.maven.ide.eclipse.help.actionSet"/>
-<alwaysOnActionSet id="org.rubypeople.rdt.debug.ui.RDTDebugActionSet"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.phpNavigator"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.phpLibrariesBuilding"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.phpCANavigator"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.contentassist.refactoring"/>
-<alwaysOnActionSet id="org.codehaus.groovy.eclipse.ui.groovyElementCreation"/>
-<alwaysOnActionSet id="org.codehaus.groovy.eclipse.conversion"/>
+<alwaysOnActionSet id="ajelementCreation"/>
+<alwaysOnActionSet id="ajrefactoring"/>
+<alwaysOnActionSet id="org.eclipse.contribution.xref.ui.XRefActionSet"/>
 <show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
 <show_view_action id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
@@ -199,51 +190,68 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
 <perspective_action id="org.eclipse.ui.resourcePerspective"/>
-<fastViewBars>&#x0A;<fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="1">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
-<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
-<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.3"/>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ratio="0.3"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.ProgressView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a799d" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a799d" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.15928659" ratioLeft="259" ratioRight="1367" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.699187" ratioLeft="516" ratioRight="222" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="LabelNotFound"/>
-<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<info folder="true" part="bottomRight" ratio="0.5979021" ratioLeft="342" ratioRight="230" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+</presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.69947505" ratioLeft="533" ratioRight="229" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<info folder="true" part="topRight" ratio="0.69947505" ratioLeft="533" ratioRight="229" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -320,7 +328,7 @@
 </layout>
 </perspective>
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor class="org.radrails.rails.internal.ui.RailsPerspectiveFactory" id="org.radrails.rails.ui.PerspectiveRails" label="RadRails"/>
+<descriptor descriptor="org.radrails.rails.ui.PerspectiveRails" id="&lt;&lt;RadRails&gt;&gt;" label="&lt;&lt;RadRails&gt;&gt;"/>
 <alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
@@ -342,10 +350,8 @@
 <alwaysOnActionSet id="c.com.aptana.ide.server.cloud.actionSet1"/>
 <alwaysOnActionSet id="y.com.aptana.ide.server.cloud.actionSet1"/>
 <alwaysOnActionSet id="eclipsemonkeyAction.actionSet"/>
-<alwaysOnActionSet id="org.rubypeople.rdt.debug.ui.RDTDebugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
-<alwaysOnActionSet id="org.radrails.rails.ui.RailsElementCreationActionSet"/>
 <alwaysOnActionSet id="com.aptana.ide.core.ui.actionSet.aptanamenu"/>
 <alwaysOnActionSet id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView"/>
 <alwaysOnActionSet id="com.aptana.ide.desktop.integration.protocolhandler.actionSet"/>
@@ -358,13 +364,8 @@
 <alwaysOnActionSet id="com.aptana.ide.pathtools.actionSet"/>
 <alwaysOnActionSet id="com.aptana.ide.server.cloud.ActionSet"/>
 <alwaysOnActionSet id="com.aptana.ide.intro.menuActionSet.MyAccount"/>
-<alwaysOnActionSet id="org.radrails.rails.ui.railsActions"/>
-<alwaysOnActionSet id="org.rubypeople.rdt.ui.rubyActionSet"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.phpNavigator"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.phpLibrariesBuilding"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.phpCANavigator"/>
-<alwaysOnActionSet id="com.aptana.ide.editor.php.contentassist.refactoring"/>
-<alwaysOnActionSet id="org.codehaus.groovy.eclipse.ui.groovyElementCreation"/>
+<alwaysOnActionSet id="ajrefactoring"/>
+<alwaysOnActionSet id="org.eclipse.contribution.xref.ui.XRefActionSet"/>
 <show_view_action id="org.rubypeople.rdt.ui.views.RIView"/>
 <show_view_action id="org.rubypeople.rdt.testunit.views.TestUnitView"/>
 <show_view_action id="org.rubypeople.rdt.ui.RubyExplorer"/>
@@ -396,57 +397,36 @@
 <perspective_action id="com.aptana.ide.js.ui.WebPerspective"/>
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.rubypeople.rdt.ui.RubyExplorer"/>
-<view id="org.rubypeople.rdt.testunit.views.TestUnitView"/>
 <view id="com.aptana.ide.server.ui.serversView"/>
-<view id="org.radrails.rails.ui.ViewGenerators"/>
-<view id="com.aptana.rdt.ViewRakeTasks"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="com.aptana.gems.ui.ViewGems"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.rubypeople.rdt.ui.RubyExplorer" appearance="2" expanded="2">
-<page content="org.rubypeople.rdt.ui.RubyExplorer" label="Ruby Explorer"/>
-<page content="org.rubypeople.rdt.testunit.views.TestUnitView" label="Test::Unit"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.rubypeople.rdt.ui.RubyExplorer" appearance="2" expanded="2">&#x0A;<page content="org.rubypeople.rdt.ui.RubyExplorer" label="LabelNotFound"/>
+<page content="org.rubypeople.rdt.testunit.views.TestUnitView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7495899" ratioLeft="1371" ratioRight="458" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7495899" ratioLeft="1371" ratioRight="458" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25381008" ratioLeft="433" ratioRight="1273" relationship="2" relative="topLeft"/>
-<info folder="true" part="consoleArea" ratio="0.75" ratioLeft="765" ratioRight="255" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="com.aptana.ide.server.ui.serversView" label="Servers"/>
-<page content="org.radrails.rails.ui.ViewGenerators" label="Generators"/>
-<page content="com.aptana.rdt.ViewRakeTasks" label="Rake Tasks"/>
+<info folder="true" part="consoleArea" ratio="0.75" ratioLeft="765" ratioRight="255" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="com.aptana.ide.server.ui.serversView" label="Servers"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="com.aptana.gems.ui.ViewGems" label="RubyGems"/>
+<page content="org.radrails.rails.ui.ViewGenerators" label="LabelNotFound"/>
+<page content="com.aptana.rdt.ViewRakeTasks" label="LabelNotFound"/>
+<page content="com.aptana.gems.ui.ViewGems" label="LabelNotFound"/>
 <page content="org.radrails.rails.ui.ViewRailsPlugins" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.82591414" ratioLeft="1039" ratioRight="219" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="topRight" ratio="0.82591414" ratioLeft="1039" ratioRight="219" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -535,7 +515,176 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/example-camel-demo/src/main/resources/PropertySet.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/PropertySet.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/example-camel-demo/src/main/resources/mrss.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/mrss.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/PropertySet.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/dc.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/dcterms.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/dcmitype.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-camel-demo/src/main/java/com/involver/demo/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-camel-demo/src/main/java/com/example/camel/RetardTransformer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-camel-demo/src/main/java/com/example/camel/RssRecipientList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/example-camel-demo/src/main/resources/PropertySet.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/PropertySet.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.XMLEditor" path="/example-camel-demo/src/main/resources/PropertySetTest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/example-camel-demo/src/main/resources/property-set.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/example-camel-demo/src/main/resources/property-set.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/example-camel-demo/src/main/resources/PropertySetTest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/example-camel-demo/src/main/resources/PropertySetTest.xml"/>
+</editors>
+<item historyLabel="PropertySet.xsd" index="0">
+<position/>
+</item>
+<item historyLabel="PropertySet.xsd" index="1">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="0">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="0">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="1">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="0">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="0">
+<position info="not_deleted" x="515" y="0"/>
+</item>
+<item historyLabel="mrss.xsd" index="2">
+<position/>
+</item>
+<item historyLabel="mrss.xsd" index="3">
+<position info="not_deleted" x="39" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="4">
+<position info="not_deleted" x="0" y="752"/>
+</item>
+<item historyLabel="mrss.xsd" index="3">
+<position info="not_deleted" x="39" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="4">
+<position info="not_deleted" x="0" y="752"/>
+</item>
+<item historyLabel="mrss.xsd" index="3">
+<position info="not_deleted" x="379" y="25"/>
+</item>
+<item historyLabel="dc.xsd" index="5">
+<position info="not_deleted" x="4116" y="0"/>
+</item>
+<item historyLabel="mrss.xsd" index="3">
+<position info="not_deleted" x="379" y="25"/>
+</item>
+<item historyLabel="dc.xsd" index="5">
+<position info="not_deleted" x="0" y="4116"/>
+</item>
+<item historyLabel="dcterms.xsd" index="6">
+<position info="not_deleted" x="7118" y="17"/>
+</item>
+<item historyLabel="dcmitype.xsd" index="7">
+<position info="not_deleted" x="879" y="0"/>
+</item>
+<item historyLabel="dcterms.xsd" index="6">
+<position info="not_deleted" x="7118" y="17"/>
+</item>
+<item historyLabel="dc.xsd" index="5">
+<position/>
+</item>
+<item historyLabel="mrss.xsd" index="3">
+<position info="not_deleted" x="20057" y="0"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="484" y="0"/>
+</item>
+<item historyLabel="RetardTransformer.java" index="9">
+<position info="not_deleted" x="99" y="0"/>
+</item>
+<item historyLabel="RssRecipientList.java" index="10">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="11">
+<position info="not_deleted" x="39" y="0"/>
+</item>
+<item historyLabel="PropertySet.xsd" index="12">
+<position info="not_deleted" x="219" y="0"/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="13">
+<position info="not_deleted" x="0" y="1094"/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="13">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="13">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="13">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="13">
+<position/>
+</item>
+<item historyLabel="property-set.xsd" index="14">
+<position info="not_deleted" x="219" y="0"/>
+</item>
+<item historyLabel="property-set.xsd" index="15">
+<position info="not_deleted" x="219" y="0"/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="13">
+<position info="not_deleted" x="875" y="0"/>
+</item>
+<item historyLabel="property-set.xsd" index="15">
+<position path=""/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="16">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position info="not_deleted" x="110" y="0"/>
+</item>
+<item historyLabel="PropertySetTest.xml" index="17">
+<position info="not_deleted" x="41" y="241"/>
+</item>
+<item historyLabel="property-set.xsd" index="15">
+<position path=""/>
+</item>
+<item historyLabel="property-set.xsd" index="14">
+<position info="not_deleted" x="219" y="0"/>
+</item>
+<item historyLabel="property-set.xsd" index="14">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item active="true" historyLabel="PropertySetTest.xml" index="16"/>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -552,5 +701,51 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="PropertySetTest.xml" tooltip="example-camel-demo/src/main/resources/PropertySetTest.xml">
+<persistable path="/example-camel-demo/src/main/resources/PropertySetTest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="dcmitype.xsd" tooltip="example-camel-demo/src/main/resources/dcmitype.xsd">
+<persistable path="/example-camel-demo/src/main/resources/dcmitype.xsd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="dcterms.xsd" tooltip="example-camel-demo/src/main/resources/dcterms.xsd">
+<persistable path="/example-camel-demo/src/main/resources/dcterms.xsd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="dc.xsd" tooltip="example-camel-demo/src/main/resources/dc.xsd">
+<persistable path="/example-camel-demo/src/main/resources/dc.xsd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="mrss.xsd" tooltip="example-camel-demo/src/main/resources/mrss.xsd">
+<persistable path="/example-camel-demo/src/main/resources/mrss.xsd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RssRecipientList.java" tooltip="example-camel-demo/src/main/java/com/example/camel/RssRecipientList.java">
+<persistable path="/example-camel-demo/src/main/java/com/example/camel/RssRecipientList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RssRecipientList.java" tooltip="example-camel-recipient-list/src/main/java/com/example/camel/RssRecipientList.java">
+<persistable path="/example-camel-recipient-list/src/main/java/com/example/camel/RssRecipientList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RetardTransformer.java" tooltip="example-camel-demo/src/main/java/com/example/camel/RetardTransformer.java">
+<persistable path="/example-camel-demo/src/main/java/com/example/camel/RetardTransformer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DemoRoute.java" tooltip="example-camel-demo/src/main/java/com/example/camel/DemoRoute.java">
+<persistable path="/example-camel-demo/src/main/java/com/example/camel/DemoRoute.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="example-camel-demo/src/main/java/com/involver/demo/Main.java">
+<persistable path="/example-camel-demo/src/main/java/com/involver/demo/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="example-camel-logfile-streamer/src/main/java/com/example/camel/Main.java">
+<persistable path="/example-camel-logfile-streamer/src/main/java/com/example/camel/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpperCaseTransformer.java" tooltip="example-camel-logfile-streamer/src/main/java/com/example/camel/UpperCaseTransformer.java">
+<persistable path="/example-camel-logfile-streamer/src/main/java/com/example/camel/UpperCaseTransformer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RssRoute.java" tooltip="example-camel-recipient-list/src/main/java/com/example/camel/RssRoute.java">
+<persistable path="/example-camel-recipient-list/src/main/java/com/example/camel/RssRoute.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="environment.properties" tooltip="example-camel-recipient-list/src/main/resources/environment.properties">
+<persistable path="/example-camel-recipient-list/src/main/resources/environment.properties"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" tooltip="example-camel-demo/pom.xml">
+<persistable path="/example-camel-demo/pom.xml"/>
+</file>
+</mruList>
 </workbench>

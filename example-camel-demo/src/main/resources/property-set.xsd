@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.involver.com/schema/property-set.xsd" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.involver.com/schema/property-set.xsd" 
+	elementFormDefault="qualified">
+	
+	<xsd:element name="PropertySet" type="tns:PropertySetType"/>
+	
+	<xsd:complexType name="PropertySetType">
+		<xsd:sequence>
+			<xsd:element name="Entry" type="tns:EntryType"
+				minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="title" type="xsd:string"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="EntryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="key" type="xsd:string" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	
+</xsd:schema>
