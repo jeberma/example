@@ -1,0 +1,52 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>9.5&nbsp;Configuring a Hosted Repository</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Virgo Web Server User Guide"><link rel="up" href="ch09.html" title="9.&nbsp;Configuring the Virgo Web Server"><link rel="prev" href="ch09s04.html" title="9.4&nbsp;Configuring the Local Provisioning Repository"><link rel="next" href="apa.html" title="Appendix&nbsp;A.&nbsp;Event log codes"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.5&nbsp;Configuring a Hosted Repository</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch09s04.html">Prev</a>&nbsp;</td><th width="60%" align="center">9.&nbsp;Configuring the Virgo Web Server</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="apa.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="configuring-hosted-repo"></a>9.5&nbsp;Configuring a Hosted Repository</h2></div></div></div><p>You configure a VWS instance to host a repository 
+		by editing the <code class="literal">$SERVER_HOME/config/com.springsource.repository.hosted.properties</code> file; 
+		remote clients can then access the artifacts in this hosted repository and use them locally.
+		</p><p>When you specify a property in the file, use the format <code class="literal">repository-name.property=value</code>, where:
+             </p><div class="itemizedlist"><ul type="disc"><li><code class="literal">repository-name</code> refers to the name of the hosted repository.</li><li><code class="literal">property</code> refers to the name of a particular property.  </li><li><code class="literal">value</code> refers to the value of the property.  </li></ul></div><p> 
+              </p><p>For example, <code class="literal">my-hosted-repo.type=external</code> specifies that the <code class="literal">type</code> property 
+             of the <code class="literal">my-hosted-repository</code> repository is <code class="literal">external</code>.
+             </p><p>The following table lists the properties that you can include in the <code class="literal">hostedRepository.properties</code> file. 
+		</p><div class="table"><a name="hosted-repository-properties-table"></a><p class="title"><b>Table&nbsp;9.7.&nbsp;Hosted Repository Properties</b></p><div class="table-contents"><table summary="Hosted Repository Properties" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Property</th><th style="border-bottom: 1.0pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.type</code></td><td style="border-bottom: 1.0pt solid ; ">Specifies the type of path of the hosted repository.  
+				All paths are local to the current VWS instance. 
+				You can set this property to one of the following valid values:
+	<div class="itemizedlist"><ul type="disc"><li><code class="literal">external</code>: Specifies that this path points to a number of directories that satisfy a given search pattern. 
+    	Use the <code class="literal">searchPattern</code> property to specify the directory search pattern.
+    	</li><li><code class="literal">watched</code>: Specifies that this path points to a single directory. 
+	Virgo Web Server regularly scans watched repositories so it automatically picks up any changes to the artifacts in the directory at runtime. 
+	Use the <code class="literal">watchDirectory</code> property to specify the actual watched directory and the <code class="literal">watchInterval</code> property 
+	to specify how often VWS checks the directory.
+	</li></ul></div>
+			  <p>See <a class="link" href="ch09s04.html#configuring-repository-watched-versus-external" title="Should I Configure a Watched or External Repository?">Watched or External Repository?</a> 
+			  for additional information about when to configure watched or external repositories for your particular environment.
+			  </p>
+				</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.searchPattern</code></td><td style="border-bottom: 1.0pt solid ; "> <p>Specifies the pattern that an external hosted repository uses when deciding which 
+			local directories it should search when identifying artifacts.  
+			Use this property when <code class="literal">repository-name.type=external</code>. 
+			See <a class="link" href="ch09s04.html#configuring-provisioning-repository-search-paths" title="Search Paths: Additional Information">Search Paths: Additional Information</a> 
+			for detailed information about specifying a search pattern.  
+			</p> </td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.watchDirectory</code></td><td style="border-bottom: 1.0pt solid ; "> <p>Specifies the single directory of a watched hosted repository. 
+			You can specify either an absolute or relative pathname for the directory.  
+			If you specify a relative pathname, it is relative to the root of the VWS installation (<code class="literal">$SERVER_HOME</code>).  
+			Use this property when <code class="literal">repository-name.type=watched</code>.
+			</p></td></tr><tr><td style="border-right: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.watchInterval</code></td><td style=""> <p>Specifies the interval in seconds between checks of a watched directory by a watched hosted repository.  
+			This property is optional.  Use this property when <code class="literal">repository-name.type=watched</code>. 
+			</p> </td></tr></tbody></table></div></div><br class="table-break"><p>The following sample shows a <code class="literal">com.springsource.repository.hosted.properties</code> file with a single external repository 
+		called <code class="literal">my-hosted-repo</code> with search pattern <code class="literal">$SERVER_HOME/repository/hosted/*</code>.
+		</p><pre class="programlisting">my-hosted-repo.type=external
+my-hosted-repo.searchPattern=repository/hosted/*</pre><p>
+		</p><p>See <a class="link" href="ch09s04.html#configuring-repository-examples-remote-watched" title="Add remote and watched repositories">Example of watched and remote repositories</a> 
+	for details on how a local repository can remotely access the artifacts in this hosted repository.
+	</p></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch09s04.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="ch09.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="apa.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">9.4&nbsp;Configuring the Local Provisioning Repository&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Appendix&nbsp;A.&nbsp;Event log codes</td></tr></table></div></body></html>

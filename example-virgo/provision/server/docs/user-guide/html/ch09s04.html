@@ -1,0 +1,200 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>9.4&nbsp;Configuring the Local Provisioning Repository</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Virgo Web Server User Guide"><link rel="up" href="ch09.html" title="9.&nbsp;Configuring the Virgo Web Server"><link rel="prev" href="ch09s03.html" title="9.3&nbsp;Configuring the Embedded Tomcat Servlet Container"><link rel="next" href="ch09s05.html" title="9.5&nbsp;Configuring a Hosted Repository"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.4&nbsp;Configuring the Local Provisioning Repository</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch09s03.html">Prev</a>&nbsp;</td><th width="60%" align="center">9.&nbsp;Configuring the Virgo Web Server</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch09s05.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="configuring-provisioning-repository"></a>9.4&nbsp;Configuring the Local Provisioning Repository</h2></div></div></div><p>
+		    You configure the locations that Virgo Web Server includes in its provisioning repository 
+		    by editing the <code class="literal">com.springsource.repository.properties</code> file in the <code class="literal">$SERVER_HOME/config</code> directory.  
+		    </p><p>When you specify a property in the file, use the format <code class="literal">repository-name.property=value</code>, where:
+		</p><div class="itemizedlist"><ul type="disc"><li><code class="literal">repository-name</code> refers to the name of the local repository.</li><li><code class="literal">property</code> refers to the name of a particular property.</li><li><code class="literal">value</code> refers to the value of the property. </li></ul></div><p>
+		</p><p>For example, <code class="literal">ext.type=external</code> specifies that the <code class="literal">type</code> property of the repository 
+		with name <code class="literal">ext</code> is <code class="literal">external</code>.  
+                </p><p>For each specific repository, you configure a number of properties, 
+		such as its type (external, watched, or remote) and its searchpath, watched directory, 
+		or URI that specifies the actual location of the artifacts (OSGi bundles, libraries, PARs, plans, or configuration files.) 
+		The particular properties that configure these options are listed in the table after the example.
+		</p><p>
+			The <code class="literal">chain</code> property specifies the order in which Virgo Web Server searches the searchpaths 
+			when it looks for dependencies; 
+			the first path listed specifies the first actual directory that Virgo Web Server searches, until the last listed path.  
+			The <code class="literal">chain</code> property uses the names of the searchpaths as specified in the individual repository properties; 
+			for example, in the property <code class="literal">ext.type=external</code>, the name of the repository is <code class="literal">ext</code>.
+		</p><p>
+			The default repository configuration for a newly installed Virgo Web Server is as follows:
+			</p><pre class="programlisting">ext.type=external
+ext.searchPattern=repository/ext/{artifact}
+
+usr.type=watched
+usr.watchDirectory=repository/usr
+
+chain=ext,usr</pre><p>
+		</p><p>
+		The default configuration shown above has two searchpaths corresponding to the two default sub-directories of the <code class="literal">$SERVER_HOME/repository</code> directory created when you first install VWS: <code class="literal">ext</code> and <code class="literal">usr</code>.    Virgo Web Server searches each of these searchpaths when locating entries for inclusion in the repository.  </p><p>
+	        The <code class="literal">chain</code> property shows the order in which Virgo Web Server searches the searchpaths: first <code class="literal">ext</code> and then <code class="literal">usr</code>. 
+	</p><p>
+		The following table lists all the available properties that you can use to describe a named path and the 
+		repository search chain in the <code class="literal">com.springsource.repository.properties</code> file.
+		</p><div class="table"><a name="repository-options-table"></a><p class="title"><b>Table&nbsp;9.6.&nbsp;Repository Properties in repository.properties</b></p><div class="table-contents"><table summary="Repository Properties in repository.properties" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Property</th><th style="border-bottom: 1.0pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.type</code></td><td style="border-bottom: 1.0pt solid ; "> 
+                          <p>
+                            Specifies the type of path.  You can set this property to one of the following three valid values:
+			    </p><div class="itemizedlist"><ul type="disc"><li><code class="literal">external</code>: Specifies that this path points to a number of directories that satisfy a given search pattern 
+				and are local to the current Virgo Web Server instance. 
+				Use the <code class="literal">searchPattern</code> property to specify the directory search pattern.
+				</li><li><code class="literal">watched</code>: Specifies that this path points to a single directory, local to the current Virgo Web Server instance.  
+				Virgo Web Server regularly scans watched repositories so it automatically picks up any changes to the artifacts in the directory at runtime. 
+				Use the <code class="literal">watchDirectory</code> property to specify the watched directory 
+				and the <code class="literal">watchInterval</code> property 
+				to specify how often VWS checks the directory.
+				</li><li><code class="literal">remote</code>: Specifies that the path points to a remotely-hosted repository, 
+				hosted by a remote instance of Virgo Web Server.  
+				Use the <code class="literal">uri</code> property to specify the full URI of the remote repository.  
+				You can also specify the optional <code class="literal">indexRefreshInterval</code> property. 
+				</li></ul></div><p>
+                          </p> 
+
+			  <p>See <a class="link" href="ch09s04.html#configuring-repository-watched-versus-external" title="Should I Configure a Watched or External Repository?">Watched or External Repository?</a> 
+			  for additional information about when to configure watched or external repositories for your particular environment.
+			  </p>
+			</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.searchPattern</code></td><td style="border-bottom: 1.0pt solid ; "> <p>Specifies the pattern that an external repository uses when deciding which local directories it should search 
+			when identifying artifacts.  Use this property together with <code class="literal"><span class="emphasis"><em>repository-name</em></span>.type=external</code>. 
+			See <a class="link" href="ch09s04.html#configuring-provisioning-repository-search-paths" title="Search Paths: Additional Information">Search Paths: Additional Information</a> 
+			for detailed information about specifying a search pattern.  
+			</p> </td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.watchDirectory</code></td><td style="border-bottom: 1.0pt solid ; "> <p>Specifies the single directory of a watched repository. 
+			You can specify either an absolute or relative pathname for the directory.  
+			If you specify a relative pathname, it is relative  to the root of the VWS installation (<code class="literal">$SERVER_HOME</code>).  
+			Use this property together with <code class="literal"><span class="emphasis"><em>repository-name</em></span>.type=watched</code>.
+			</p></td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.watchInterval</code></td><td style="border-bottom: 1.0pt solid ; "> <p>Specifies the interval in seconds between checks of a watched directory by a watched repository.  
+			This property is optional, if it is not specified the default interval of 5 seconds is used.  
+			Use this property together with <code class="literal"><span class="emphasis"><em>repository-name</em></span>.type=watched</code>. 
+			</p> </td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.uri</code></td><td style="border-bottom: 1.0pt solid ; "> <p>Specifies the URI of the hosted repository to which a remote repository connects.  
+			The value of this property takes the following format:
+			</p>
+                      <p><code class="literal">http://<span class="emphasis"><em>host</em></span>:<span class="emphasis"><em>port</em></span>/org.eclipse.virgo.server.repository/<span class="emphasis"><em>remote-repository-name</em></span></code></p>
+                      <p>where:
+			</p><div class="itemizedlist"><ul type="disc"><li><code class="literal"><span class="emphasis"><em>host</em></span></code> refers to the computer on which the remote VWS instance hosts the remote repository.
+				</li><li><code class="literal"><span class="emphasis"><em>port</em></span></code> refers to Tomcat listen port of the remote VWS instance which hosts the remote repository.
+				</li><li><code class="literal"><span class="emphasis"><em>remote-repository-name</em></span></code> refers to the name of the remote repository, 
+				as specified in the <code class="literal">hostedRepository.properties</code> file of the remote VWS instance.
+				</li></ul></div><p>
+                       </p>
+                       <p>Use this property together with <code class="literal"><span class="emphasis"><em>repository-name</em></span>.type=remote</code>.
+                       </p> </td></tr><tr><td style="border-right: 1.0pt solid ; "><code class="literal"><span class="emphasis"><em>repository-name</em></span>.indexRefreshInterval</code></td><td style="">
+				<p>
+					Specifies the interval in seconds between checks by a remote repository that 
+					its local copy of the hosted repository index is up-to-date 
+					(a remote repository acts as a proxy for a hosted repository and thus it holds a local copy of the hosted repository&#8217;s index). 
+					This property is optional,
+					if it is not specified the default interval of 5 seconds is used.
+				</p> 
+				<p>Use this property together with <code class="literal"><span class="emphasis"><em>repository-name</em></span>.type=remote</code>.</p> </td></tr></tbody></table></div></div><p><br class="table-break">
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="configuring-repository-watched-versus-external"></a>Should I Configure a Watched or External Repository?</h3></div></div></div><p>The main difference between a watched and an external repository is that Virgo Web Server regularly scans watched directories 
+		and automatically picks up any changed artifacts, 
+		while VWS scans external directories only at startup, and then only if there is no cached index available.  
+		This means that VWS always performs a scan of an external repository when you start the server 
+		with the <code class="literal">-clean</code> (as this deletes the index) and only scans during a normal startup if the index isn&#8217;t there because, 
+		for example, this is the first time you start the server. 
+		</p><p>There is a performance cost associated with using a watched repository due to VWS using resources 
+		to scan the directory at the configured interval.  
+		The cost is small if the watched repository contains just a few artifacts; however, 
+		the performance cost increases as the number of artifacts increases.
+		</p><p> For this reason, we recommend that you put most of your dependencies in external repositories, 
+		even when in development mode. 
+		If you make any changes to the artifacts in the external repositories, 
+		remember to restart VWS with the <code class="literal">-clean</code> option so that the server picks up any changes.  
+		Use watched directories for artifacts that you are prototyping, actively updating, or when adding new dependencies 
+		so that VWS quickly and easily picks them up.  
+		To increase performance even during development, however, you can use an external repository for most of your dependencies, 
+		in particular the ones that are fairly static. 
+		</p><p>In production environments, where dependencies should not change, 
+		we recommend that you use <span class="emphasis"><em>only</em></span> external repositories.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="configuring-provisioning-repository-search-paths"></a>Search Paths: Additional Information</h3></div></div></div><p>
+	            The <code class="literal"><span class="emphasis"><em>repository-name</em></span>.searchPattern</code> and 
+	            <code class="literal"><span class="emphasis"><em>repository-name</em></span>.watchDirectory</code> properties specify search paths 
+	            for external and watched repositories, respectively, 
+	            that define a physical location that Virgo Web Server searches when looking for a library or bundle dependency. 
+	            If a search path is relative, its location is relative to the root of the installation, 
+	            in other words, the <code class="literal">$SERVER_HOME</code> directory.
+   	        </p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="configuring-provisioning-repository-search-paths-wildcards"></a>Using Wildcards</h4></div></div></div><p>
+		            Search paths specified with the <code class="literal"><span class="emphasis"><em>repository-name</em></span>.searchPattern</code> property 
+		            provide support for wildcards. 
+		            In the entries above, the path segments surrounded by curly braces, 
+		            for example <code class="literal">{bundle}</code> and <code class="literal">{library}</code>, 
+		            are wildcards entries for a directory with any name. 
+		            Allowing wildcards to be named in this way is intended to improve the readability of search path configuration.
+		        </p><p>
+			        In addition to supporting the above-described form of wildcards, Virgo Web Server also supports Ant-style paths, 
+			        that is <code class="literal">*</code> and <code class="literal">**</code> can be used to represent any directory and 
+			        any series of directories, respectively. 
+			        For example, <code class="literal">repository/usr/{bundle}</code> and <code class="literal">repository/usr/*</code> 
+			        are directly equivalent.
+			    </p><p>
+				    A common usage of the <code class="literal">**</code> wildcard is to allow dependencies stored in a directory structure of varying depth, 
+				    such as a local Maven repository, to be provisioned by the Virgo Web Server.
+				</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="configuring-provisioning-repository-using-system-properties"></a>Using System properties</h3></div></div></div><p>
+				You can use system properties when specifying the values of the <code class="literal"><span class="emphasis"><em>repository-name</em></span>.searchPattern</code>, 
+				<code class="literal"><span class="emphasis"><em>repository-name</em></span>.watchDirectory</code>,
+				<code class="literal"><span class="emphasis"><em>repository-name</em></span>.watchInterval</code> <code class="literal"><span class="emphasis"><em>repository-name</em></span>.uri</code>, 
+				and <code class="literal"><span class="emphasis"><em>repository-name</em></span>.indexRefreshInterval</code>
+				properties. 
+				You reference system properties as <code class="literal">${system.property.name}</code>; 
+				for example, a search path of <code class="literal">${user.home}/repository/bundles</code> references the
+				<code class="literal">repository/bundles</code> directory in the user&#8217;s home directory.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="configuring-provisioning-repository-examples"></a>Example repository configurations</h3></div></div></div><p>
+		        The following examples provide sample configuration that could be used for some common use cases.
+		    </p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="configuring-provisioning-repository-examples-ivy"></a>Add an Ivy cache repository</h4></div></div></div><p>The following example shows how to add an external repository whose location is actually an Ivy cache.</p><pre class="programlisting">ext.type=external
+ext.searchPattern=repository/ext/{artifact}
+
+usr.type=watched
+usr.watchDirectory=repository/usr
+
+ivy-repo.type=external
+ivy-repo.searchPattern=${user.home}/.ivy2/cache/{org}/{name}/{version}/{bundle}.jar
+
+chain=ext,usr,ivy-repo</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="configuring-provisioning-repository-examples-maven"></a>Add a Maven local repository</h4></div></div></div><p>The following example shows how to add an external repository whose location is actually a Maven repository.</p><pre class="programlisting">ext.type=external
+ext.searchPattern=repository/ext/{artifact}
+
+usr.type=watched
+usr.watchDirectory=repository/usr
+
+maven-repo.type=external
+maven-repo.searchPattern=${user.home}/.m2/repository/**/{bundle}.jar
+
+chain=ext,usr,maven-repo</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="configuring-repository-examples-remote-watched"></a>Add remote and watched repositories</h4></div></div></div><p>The following example shows the default <code class="literal">com.springsource.repository.properties</code> file 
+		from a freshly-installed VWS, but then updated to include new remote and watched repositories.  
+		Both of these repositories are part of the repository chain. 
+		</p><p>The remote repository is called <code class="literal">remote-repo</code>.  
+		The URI of the hosted repository from which <code class="literal">remote-repo</code> gets its artifacts is 
+		<code class="literal">http://my-host:8080/org.eclipse.virgo.server.repository/my-hosted-repo</code>; 
+		this means that there is a VWS instance running on host <code class="literal">my-host</code> 
+		whose Tomcat server listens at the default port, <code class="literal">8080</code>, 
+		and this server instance hosts a repository called <code class="literal">my-hosted-repo</code>, 
+		configured in the <code class="literal">hostedRepository.properties</code> file of the remote server instance.  
+		The remote repository checks for changes in the hosted repository every 30 seconds.
+		</p><p>The watched repository is called <code class="literal">watched-repo</code> and the directory that holds the artifacts 
+		is <code class="literal">repository/watched</code>, 
+		relative to the installation directory of the VWS instance.  
+		The server checks for changes in this watched repository every 5 seconds.
+		</p><pre class="programlisting">ext.type=external
+ext.searchPattern=repository/ext/{artifact}
+
+usr.type=watched
+usr.watchDirectory=repository/usr
+
+remote-repo.type=remote
+remote-repo.uri=http://my-host:8080/org.eclipse.virgo.server.repository/my-hosted-repo
+remote-repo.indexRefreshInterval=30
+
+watched-repo.type=watched
+watched-repo.watchedDirectory=repository/watched
+watched-repo.watchedInterval=5
+
+chain=ext,usr,remote-repo,watched-repo</pre></div></div></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch09s03.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="ch09.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch09s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">9.3&nbsp;Configuring the Embedded Tomcat Servlet Container&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;9.5&nbsp;Configuring a Hosted Repository</td></tr></table></div></body></html>

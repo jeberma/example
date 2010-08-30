@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- ARTEFACT MANAGER -->
+
+	<bean id="artefactManagerContent" class="org.eclipse.virgo.apps.admin.core.artifact.StandardArtifactService">
+		<constructor-arg ref="applicationDeployer"/>		
+		<constructor-arg ref="workArea"/>
+	</bean>
+
+<!-- DUMP INSPECTOR -->
+
+	<bean id="dumpPathLocator" class="org.eclipse.virgo.apps.admin.core.dump.StandardDumpPathLocator">
+		<constructor-arg ref="configAdmin"/>
+	</bean>
+
+    <bean id="dumpInspectorService" class="org.eclipse.virgo.apps.admin.core.dump.StandardDumpInspectorService">
+		<constructor-arg ref="dumpPathLocator"/>
+    </bean>
+
+<!-- STATE INSPECTOR -->
+
+	<bean id="stateDumpExtractor" class="org.eclipse.virgo.apps.admin.core.state.StateDumpExtractor">
+		<constructor-arg ref="workArea"/>
+		<constructor-arg ref="dumpPathLocator"/>
+	</bean>
+	
+	<bean id="stateHolder" class="org.eclipse.virgo.apps.admin.core.state.StandardStateHolder">
+		<constructor-arg ref="stateService" />
+		<constructor-arg ref="stateDumpExtractor"/>
+		<constructor-arg ref="moduleContextAccessor"/>
+		<constructor-arg ref="quasiFrameworkFactory" />
+	</bean>
+
+</beans>

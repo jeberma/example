@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <relativePath>../poms/compiled/</relativePath>
+    <groupId>com.example.example-pax-construct.build</groupId>
+    <artifactId>compiled-bundle-settings</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <properties>
+    <bundle.symbolicName>com.example.rss-config-webutil</bundle.symbolicName>
+    <bundle.namespace>com.example.rss.config.web</bundle.namespace>
+
+    <spring.version>3.0.1.RELEASE-A</spring.version>
+    <springdm.version>2.0.0.M1</springdm.version>
+	
+  </properties>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>example-rss-config-webutil</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+
+  <name>${bundle.symbolicName} [${bundle.namespace}]</name>
+
+  <dependencies>
+    <dependency>
+      <type>pom</type>
+      <groupId>${parent.groupId}</groupId>
+      <artifactId>provision</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+    	<groupId>com.example</groupId>
+    	<artifactId>example-rss-service-api</artifactId>
+    	<version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.example</groupId>
+    	<artifactId>example-feature-config-api</artifactId>
+    	<version>1.0-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi_R4_core</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi_R4_compendium</artifactId>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+  <!--
+  <build>
+  	<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.0.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<manifestLocation>META-INF</manifestLocation>
+					<instructions>
+						<Private-Package>com.manning.sdmia.ch09.web</Private-Package>
+						<Import-Package>
+							javax.servlet;version="2.4.0",
+							javax.servlet.http;version="2.4.0",
+							javax.servlet.resources;version="2.0.0",
+							javax.servlet.jsp;version="2.0.0";resolution:=optional,
+							javax.servlet.jsp.jstl.core;version="1.1.2";resolution:=optional,
+							javax.servlet.jsp.jstl.fmt;version="1.1.2";resolution:=optional,
+							javax.servlet.jsp.jstl.tlv;version="1.1.2";resolution:=optional,
+							org.apache.taglibs.standard.resources;version="1.1.2";resolution:=optional,
+							org.apache.taglibs.standard.tag.common.core;version="1.1.2";resolution:=optional,
+							org.apache.taglibs.standard.tag.rt.core;version="1.1.2";resolution:=optional,
+							org.apache.taglibs.standard.tei;version="1.1.2";resolution:=optional,
+							org.apache.taglibs.standard.tlv;version="1.1.2";resolution:=optional,
+							org.springframework.aop;version="${spring.version}",
+							org.springframework.core;version="${spring.version}",
+							org.springframework.core.io;version="${spring.version}",
+							org.springframework.ui;version="${spring.version}",
+							org.springframework.stereotype;version="${spring.version}",
+							org.springframework.context.support;version="${spring.version}",
+							org.springframework.web.context;version="${spring.version}",
+							org.springframework.web.context.support;version="${spring.version}",
+							org.springframework.web.servlet;version="${spring.version}",
+							org.springframework.web.servlet.handler;version="${spring.version}",
+							org.springframework.web.servlet.mvc;version="${spring.version}",
+							org.springframework.web.servlet.view;version="${spring.version}",
+							org.springframework.web.servlet.mvc.annotation;version="${spring.version}",
+							org.springframework*=;version="${spring.version}",
+							org.springframework.osgi.web.context.support;version="${springdm.version}",
+							*</Import-Package>
+						<Include-Resource>src/main/resources,src/main/webapp</Include-Resource>
+						<Web-ContextPath>simplewebmvcapp</Web-ContextPath>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+  </build>
+  -->
+
+</project>

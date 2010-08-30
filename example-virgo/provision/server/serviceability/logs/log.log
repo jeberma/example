@@ -1,0 +1,312 @@
+[2010-08-28 11:08:49.285] startup-tracker              org.eclipse.virgo.medic.eventlog.default                         KE0001I Kernel starting. 
+[2010-08-28 11:08:55.875] startup-tracker              org.eclipse.virgo.medic.eventlog.default                         KE0002I Kernel started. 
+[2010-08-28 11:08:56.087] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:08:56.659] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:56.845] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:08:56.942] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:08:57.007] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:57.028] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:59.520] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:59.533] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:08:59.542] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:08:59.570] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:59.576] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:59.585] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:08:59.641] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:08:59.657] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:59.670] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:59.674] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:09:00.356] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:09:00.362] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:09:00.378] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:09:00.378] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.411] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.414] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.541] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.547] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:09:00.644] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:00.728] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:00.796] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:00.822] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.840] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.862] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.web.tomcat' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.394] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.399] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.404] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.410] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.415] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.web.tomcat' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.421] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:01.455] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:01.463] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.493] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.499] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:02.451] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         TC0000I Starting Tomcat. 
+[2010-08-28 11:09:02.615] system-artifacts             org.apache.catalina.mbeans.GlobalResourcesLifecycleListener       No global naming context defined for server 
+[2010-08-28 11:09:02.641] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         TC0010I Creating HTTP/1.1 connector with scheme http on port 8080. 
+[2010-08-28 11:09:02.681] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         TC0010I Creating HTTP/1.1 connector with scheme https on port 8443. 
+[2010-08-28 11:09:02.697] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         TC0010I Creating AJP/1.3 connector with scheme http on port 8009. 
+[2010-08-28 11:09:02.824] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         TC0001I Started Tomcat. 
+[2010-08-28 11:09:02.858] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:02.894] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:02.959] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:03.005] system-artifacts             org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.web.tomcat' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:03.150] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:03.153] start-signalling-2           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:03.158] start-signalling-2           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:03.164] Thread-2                     org.eclipse.virgo.medic.eventlog.default                         UR0001I User region ready. 
+[2010-08-28 11:09:04.176] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         HD0001I Hot deployer processing 'INITIAL' event for file 'org.eclipse.virgo.apps.admin-2.1.0.M03-incubation.plan'. 
+[2010-08-28 11:09:04.310] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:04.339] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:05.117] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.261] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.266] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.271] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:06.281] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:06.288] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.483] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.496] Thread-3                     org.eclipse.virgo.medic.eventlog.default                         WE0000I Starting web bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation' with context path '/admin'. 
+[2010-08-28 11:09:06.502] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         HD0001I Hot deployer processing 'INITIAL' event for file 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation.par'. 
+[2010-08-28 11:09:06.530] fs-watcher                   o.e.v.kernel.install.artifact.internal.ParPlanInstallArtifact     Skipping entry /META-INF as it is not of a recognized type 
+[2010-08-28 11:09:06.577] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.910] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.918] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.930] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.329] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.357] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.365] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-synthetic.context' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.379] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.415] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.423] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.849] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.852] Thread-3                     org.eclipse.virgo.medic.eventlog.default                         WE0000I Starting web bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation' with context path '/org.eclipse.virgo.apps.repository'. 
+[2010-08-28 11:09:07.911] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-synthetic.context' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.918] start-signalling-3           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-synthetic.context' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.976] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         HD0001I Hot deployer processing 'INITIAL' event for file 'org.eclipse.virgo.apps.splash-2.1.0.M03-incubation.war'. 
+[2010-08-28 11:09:08.062] start-signalling-3           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.181] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0000I Installing bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.502] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0001I Installed bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.672] fs-watcher                   org.eclipse.virgo.medic.eventlog.default                         DE0004I Starting bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.675] Thread-3                     org.eclipse.virgo.medic.eventlog.default                         WE0000I Starting web bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation' with context path '/'. 
+[2010-08-28 11:09:09.541] Thread-3                     org.eclipse.virgo.medic.eventlog.default                         WE0001I Started web bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation' with context path '/admin'. 
+[2010-08-28 11:09:09.566] start-signalling-2           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:09.605] start-signalling-2           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:09.908] Thread-3                     org.eclipse.virgo.medic.eventlog.default                         WE0001I Started web bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation' with context path '/'. 
+[2010-08-28 11:09:09.965] start-signalling-3           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:10.494] Thread-3                     org.eclipse.virgo.medic.eventlog.default                         WE0001I Started web bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation' with context path '/org.eclipse.virgo.apps.repository'. 
+[2010-08-28 11:09:10.502] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:10.508] start-signalling-1           org.eclipse.virgo.medic.eventlog.default                         DE0005I Started par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:27.711] System Bundle Shutdown       org.eclipse.virgo.medic.eventlog.default                         KE0010I Shutdown initiated. 
+[2010-08-28 11:09:28.018] region-dm-10                 o.s.o.e.i.d.startup.DependencyWaiterApplicationContextExecutor    Could not succesfully close context OsgiBundleXmlApplicationContext(bundle=org.eclipse.gemini.web.tomcat, config=osgibundle:/META-INF/spring/*.xml): startup date [Sat Aug 28 11:09:02 PDT 2010]; root of context hierarchy java.lang.IllegalStateException: The EventAdmin is stopped
+	at org.apache.felix.eventadmin.impl.EventAdminImpl$1.createHandlerTasks(EventAdminImpl.java:128)
+	at org.apache.felix.eventadmin.impl.EventAdminImpl.sendEvent(EventAdminImpl.java:101)
+	at org.apache.felix.eventadmin.impl.security.EventAdminSecurityDecorator.sendEvent(EventAdminSecurityDecorator.java:102)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.sendDestroyedEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:228)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.onOsgiApplicationEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:58)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invokeUnprivileged(ServiceTCCLInterceptor.java:56)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy108.onOsgiApplicationEvent(Unknown Source)
+	at org.springframework.osgi.extender.internal.activator.ListListenerAdapter.onOsgiApplicationEvent(ListListenerAdapter.java:52)
+	at org.springframework.osgi.context.event.ApplicationListenerAdapter.onApplicationEvent(ApplicationListenerAdapter.java:45)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:97)
+	at org.springframework.osgi.context.event.OsgiBundleApplicationContextEventMulticasterAdapter.multicastEvent(OsgiBundleApplicationContextEventMulticasterAdapter.java:63)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.sendClosedEvent(AbstractDelegatedExecutionApplicationContext.java:615)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.normalClose(AbstractDelegatedExecutionApplicationContext.java:222)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.close(DependencyWaiterApplicationContextExecutor.java:374)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.doClose(AbstractDelegatedExecutionApplicationContext.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:917)
+	at org.springframework.osgi.extender.internal.activator.ContextLoaderListener$1.run(ContextLoaderListener.java:522)
+	at org.springframework.osgi.extender.internal.util.concurrent.RunnableTimedExecution$MonitoredRunnable.run(RunnableTimedExecution.java:60)
+	at org.eclipse.virgo.kernel.agent.dm.ContextPropagatingTaskExecutor$2.run(ContextPropagatingTaskExecutor.java:95)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+
+[2010-08-28 11:09:28.031] region-dm-11                 o.s.o.e.i.d.startup.DependencyWaiterApplicationContextExecutor    Could not succesfully close context OsgiBundleXmlApplicationContext(bundle=org.eclipse.virgo.web.core, config=osgibundle:/META-INF/spring/*.xml): startup date [Sat Aug 28 11:09:02 PDT 2010]; root of context hierarchy java.lang.IllegalStateException: The EventAdmin is stopped
+	at org.apache.felix.eventadmin.impl.EventAdminImpl$1.createHandlerTasks(EventAdminImpl.java:128)
+	at org.apache.felix.eventadmin.impl.EventAdminImpl.sendEvent(EventAdminImpl.java:101)
+	at org.apache.felix.eventadmin.impl.security.EventAdminSecurityDecorator.sendEvent(EventAdminSecurityDecorator.java:102)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.sendDestroyedEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:228)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.onOsgiApplicationEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:58)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invokeUnprivileged(ServiceTCCLInterceptor.java:56)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy108.onOsgiApplicationEvent(Unknown Source)
+	at org.springframework.osgi.extender.internal.activator.ListListenerAdapter.onOsgiApplicationEvent(ListListenerAdapter.java:52)
+	at org.springframework.osgi.context.event.ApplicationListenerAdapter.onApplicationEvent(ApplicationListenerAdapter.java:45)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:97)
+	at org.springframework.osgi.context.event.OsgiBundleApplicationContextEventMulticasterAdapter.multicastEvent(OsgiBundleApplicationContextEventMulticasterAdapter.java:63)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.sendClosedEvent(AbstractDelegatedExecutionApplicationContext.java:615)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.normalClose(AbstractDelegatedExecutionApplicationContext.java:222)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.close(DependencyWaiterApplicationContextExecutor.java:374)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.doClose(AbstractDelegatedExecutionApplicationContext.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:917)
+	at org.springframework.osgi.extender.internal.activator.ContextLoaderListener$1.run(ContextLoaderListener.java:522)
+	at org.springframework.osgi.extender.internal.util.concurrent.RunnableTimedExecution$MonitoredRunnable.run(RunnableTimedExecution.java:60)
+	at org.eclipse.virgo.kernel.agent.dm.ContextPropagatingTaskExecutor$2.run(ContextPropagatingTaskExecutor.java:95)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+
+[2010-08-28 11:09:28.038] region-dm-12                 o.s.o.e.i.d.startup.DependencyWaiterApplicationContextExecutor    Could not succesfully close context OsgiBundleXmlApplicationContext(bundle=org.eclipse.virgo.apps.admin.core, config=osgibundle:/META-INF/spring/*.xml): startup date [Sat Aug 28 11:09:06 PDT 2010]; root of context hierarchy java.lang.IllegalStateException: The EventAdmin is stopped
+	at org.apache.felix.eventadmin.impl.EventAdminImpl$1.createHandlerTasks(EventAdminImpl.java:128)
+	at org.apache.felix.eventadmin.impl.EventAdminImpl.sendEvent(EventAdminImpl.java:101)
+	at org.apache.felix.eventadmin.impl.security.EventAdminSecurityDecorator.sendEvent(EventAdminSecurityDecorator.java:102)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.sendDestroyedEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:228)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.onOsgiApplicationEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:58)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invokeUnprivileged(ServiceTCCLInterceptor.java:56)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy108.onOsgiApplicationEvent(Unknown Source)
+	at org.springframework.osgi.extender.internal.activator.ListListenerAdapter.onOsgiApplicationEvent(ListListenerAdapter.java:52)
+	at org.springframework.osgi.context.event.ApplicationListenerAdapter.onApplicationEvent(ApplicationListenerAdapter.java:45)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:97)
+	at org.springframework.osgi.context.event.OsgiBundleApplicationContextEventMulticasterAdapter.multicastEvent(OsgiBundleApplicationContextEventMulticasterAdapter.java:63)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.sendClosedEvent(AbstractDelegatedExecutionApplicationContext.java:615)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.normalClose(AbstractDelegatedExecutionApplicationContext.java:222)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.close(DependencyWaiterApplicationContextExecutor.java:374)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.doClose(AbstractDelegatedExecutionApplicationContext.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:917)
+	at org.springframework.osgi.extender.internal.activator.ContextLoaderListener$1.run(ContextLoaderListener.java:522)
+	at org.springframework.osgi.extender.internal.util.concurrent.RunnableTimedExecution$MonitoredRunnable.run(RunnableTimedExecution.java:60)
+	at org.eclipse.virgo.kernel.agent.dm.ContextPropagatingTaskExecutor$2.run(ContextPropagatingTaskExecutor.java:95)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+
+[2010-08-28 11:09:28.046] region-dm-13                 o.s.o.e.i.d.startup.DependencyWaiterApplicationContextExecutor    Could not succesfully close context OsgiBundleXmlApplicationContext(bundle=org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core, config=osgibundle:/META-INF/spring/*.xml): startup date [Sat Aug 28 11:09:07 PDT 2010]; root of context hierarchy java.lang.IllegalStateException: The EventAdmin is stopped
+	at org.apache.felix.eventadmin.impl.EventAdminImpl$1.createHandlerTasks(EventAdminImpl.java:128)
+	at org.apache.felix.eventadmin.impl.EventAdminImpl.sendEvent(EventAdminImpl.java:101)
+	at org.apache.felix.eventadmin.impl.security.EventAdminSecurityDecorator.sendEvent(EventAdminSecurityDecorator.java:102)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.sendDestroyedEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:228)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.onOsgiApplicationEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:58)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invokeUnprivileged(ServiceTCCLInterceptor.java:56)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy108.onOsgiApplicationEvent(Unknown Source)
+	at org.springframework.osgi.extender.internal.activator.ListListenerAdapter.onOsgiApplicationEvent(ListListenerAdapter.java:52)
+	at org.springframework.osgi.context.event.ApplicationListenerAdapter.onApplicationEvent(ApplicationListenerAdapter.java:45)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:97)
+	at org.springframework.osgi.context.event.OsgiBundleApplicationContextEventMulticasterAdapter.multicastEvent(OsgiBundleApplicationContextEventMulticasterAdapter.java:63)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.sendClosedEvent(AbstractDelegatedExecutionApplicationContext.java:615)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.normalClose(AbstractDelegatedExecutionApplicationContext.java:222)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.close(DependencyWaiterApplicationContextExecutor.java:374)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.doClose(AbstractDelegatedExecutionApplicationContext.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:917)
+	at org.springframework.osgi.extender.internal.activator.ContextLoaderListener$1.run(ContextLoaderListener.java:522)
+	at org.springframework.osgi.extender.internal.util.concurrent.RunnableTimedExecution$MonitoredRunnable.run(RunnableTimedExecution.java:60)
+	at org.eclipse.virgo.kernel.agent.dm.ContextPropagatingTaskExecutor$2.run(ContextPropagatingTaskExecutor.java:95)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+
+[2010-08-28 11:09:28.054] region-dm-14                 o.s.o.e.i.d.startup.DependencyWaiterApplicationContextExecutor    Could not succesfully close context OsgiBundleXmlApplicationContext(bundle=org.eclipse.virgo.kernel.deployer.dm, config=osgibundle:/META-INF/spring/*.xml): startup date [Sat Aug 28 11:09:00 PDT 2010]; root of context hierarchy java.lang.IllegalStateException: The EventAdmin is stopped
+	at org.apache.felix.eventadmin.impl.EventAdminImpl$1.createHandlerTasks(EventAdminImpl.java:128)
+	at org.apache.felix.eventadmin.impl.EventAdminImpl.sendEvent(EventAdminImpl.java:101)
+	at org.apache.felix.eventadmin.impl.security.EventAdminSecurityDecorator.sendEvent(EventAdminSecurityDecorator.java:102)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.sendDestroyedEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:228)
+	at org.eclipse.virgo.kernel.agent.dm.internal.BlueprintEventPostingOsgiBundleApplicationContextListener.onOsgiApplicationEvent(BlueprintEventPostingOsgiBundleApplicationContextListener.java:122)
+	at sun.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:58)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invokeUnprivileged(ServiceTCCLInterceptor.java:56)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy108.onOsgiApplicationEvent(Unknown Source)
+	at org.springframework.osgi.extender.internal.activator.ListListenerAdapter.onOsgiApplicationEvent(ListListenerAdapter.java:52)
+	at org.springframework.osgi.context.event.ApplicationListenerAdapter.onApplicationEvent(ApplicationListenerAdapter.java:45)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:97)
+	at org.springframework.osgi.context.event.OsgiBundleApplicationContextEventMulticasterAdapter.multicastEvent(OsgiBundleApplicationContextEventMulticasterAdapter.java:63)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.sendClosedEvent(AbstractDelegatedExecutionApplicationContext.java:615)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.normalClose(AbstractDelegatedExecutionApplicationContext.java:222)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.close(DependencyWaiterApplicationContextExecutor.java:374)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.doClose(AbstractDelegatedExecutionApplicationContext.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:917)
+	at org.springframework.osgi.extender.internal.activator.ContextLoaderListener$1.run(ContextLoaderListener.java:522)
+	at org.springframework.osgi.extender.internal.util.concurrent.RunnableTimedExecution$MonitoredRunnable.run(RunnableTimedExecution.java:60)
+	at org.eclipse.virgo.kernel.agent.dm.ContextPropagatingTaskExecutor$2.run(ContextPropagatingTaskExecutor.java:95)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+

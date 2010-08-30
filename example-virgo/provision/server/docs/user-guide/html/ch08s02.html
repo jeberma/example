@@ -1,0 +1,30 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>8.2&nbsp;Undeploying Artifacts</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Virgo Web Server User Guide"><link rel="up" href="ch08.html" title="8.&nbsp;Working with Applications"><link rel="prev" href="ch08.html" title="8.&nbsp;Working with Applications"><link rel="next" href="ch09.html" title="9.&nbsp;Configuring the Virgo Web Server"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">8.2&nbsp;Undeploying Artifacts</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08.html">Prev</a>&nbsp;</td><th width="60%" align="center">8.&nbsp;Working with Applications</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch09.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="deployment-undeploy"></a>8.2&nbsp;Undeploying Artifacts</h2></div></div></div><p>
+			You undeploy artifacts from Virgo Web Server by using either the hot-deploy directory on the file system, or the Admin Console.
+		</p><p><span class="bold"><strong>Note:</strong></span>  As with deploying, in this guide the terms <span class="emphasis"><em>undeploying</em></span> and <span class="emphasis"><em>uninstalling</em></span> are used interchageably.</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="deployment-undeploy-hot"></a>Hot Undeploy</h3></div></div></div><p>
+				To hot-undeploy an artifact, remove the corresponding file from the pickup directory (by default <code class="literal">$SERVER_HOME/pickup</code>):
+			</p><pre class="programlisting">prompt$ cd $SERVER_HOME/pickup
+prompt$ rm helloWorld.war</pre><p>
+				When Virgo Web Server completes the undeployment of the artifact, messages similar to the following appear in the log:
+			</p><pre class="screen">[2009-12-10 06:46:33.254] fs-watcher   &lt;HD0001I&gt; Hot deployer processing 'DELETED' event for file 'helloWorld.war'.
+[2009-12-10 06:46:33.259] Thread-3     &lt;WE0002I&gt; Stopping web bundle 'helloWorld' version '0.0.0' with context path '/helloWorld'.
+[2009-12-10 06:46:33.285] Thread-3     &lt;WE0003I&gt; Stopped web bundle 'helloWorld' version '0.0.0' with context path '/helloWorld'.
+[2009-12-10 06:46:33.290] fs-watcher   &lt;DE0010I&gt; Stopping bundle 'helloWorld' version '0.0.0'.
+[2009-12-10 06:46:33.295] fs-watcher   &lt;DE0011I&gt; Stopped bundle 'helloWorld' version '0.0.0'.
+[2009-12-10 06:46:33.302] fs-watcher   &lt;DE0013I&gt; Uninstalling bundle 'helloWorld' version '0.0.0'.
+[2009-12-10 06:46:33.319] fs-watcher   &lt;DE0014I&gt; Uninstalled bundle 'helloWorld' version '0.0.0'.</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="deployment-undeploy-manual"></a>Undeploying Using the Admin Console</h3></div></div></div><p>
+				You can undeploy only whole artifacts from the Admin Console, or in other words, you cannot undeploy the separate modules or bundles that make up an artifact.</p><p>
+				The only artifact that you cannot undeploy from the Admin Console is the Admin Console itself. If you need to undeploy this application, you must remove it from the pickup directory (by default <code class="literal">SERVER_HOME/pickup</code>); the name of the artifact is <code class="literal">org.eclipse.virgo.server.admin-2.0.0.0.plan</code>.
+			</p><p>See <a class="link" href="ch05s02.html#admin-console-manage-artifacts" title="Viewing and Managing the Lifecycle of Deployed Artifacts">Viewing and Managing the Lifecycle of Deployed Artifacts</a> for details about uninstalling (undeploying) an artifact using the Admin Console.  The high-level steps are to highlight the artifact in the artifact tree then click <code class="literal">Uninstall</code>. </p></div></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch08.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="ch08.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch09.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">8.&nbsp;Working with Applications&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;9.&nbsp;Configuring the Virgo Web Server</td></tr></table></div></body></html>

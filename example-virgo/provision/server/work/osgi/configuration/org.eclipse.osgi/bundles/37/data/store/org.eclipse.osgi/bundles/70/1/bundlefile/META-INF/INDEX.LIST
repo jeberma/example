@@ -1,0 +1,12 @@
+JarIndex-Version: 1.0
+
+org.eclipse.virgo.apps.repository.web.war
+WEB-INF
+WEB-INF/classes
+WEB-INF/classes/org
+WEB-INF/classes/org/eclipse
+WEB-INF/classes/org/eclipse/virgo
+WEB-INF/classes/org/eclipse/virgo/apps
+WEB-INF/classes/org/eclipse/virgo/apps/repository
+WEB-INF/classes/org/eclipse/virgo/apps/repository/web
+

@@ -1,0 +1,31 @@
+#
+# The Spring Insight(tm) configuration file (in YAML)
+#
+
+# Number of wall-clock milliseconds that a trace must consume 
+# in order to be added to the trace repository.
+minTraceDuration: 0
+
+# Maximum # of traces which will be stored in memory
+maxInMemoryTraces: 2000
+
+# How many traces will be purged when the maximum limit is reached?
+tracePurgeBatch: 200
+
+# Paths to exclude from tracing (in ant path format)
+excludeTraceByPath:
+    - /**/*.png
+    - /**/*.gif
+    - /**/*.jpg
+    - /**/*.css
+    - /**/*.js
+
+# The number of seconds a request must complete in for
+# it to be deemed 'satisfactory'.  This threshold is used
+# to calculate the color of the health bar for endpoint
+# response time.
+# The formula for calculating the health bar closely
+# corresponds to the Apdex formula.  
+# See apdex.org for more details.
+healthyResponseTime: 0.2
+

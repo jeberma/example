@@ -1,0 +1,11 @@
+JarIndex-Version: 1.0
+
+org.eclipse.virgo.kernel.deployer.dm.jar
+org
+org/eclipse
+org/eclipse/virgo
+org/eclipse/virgo/kernel
+org/eclipse/virgo/kernel/deployer
+org/eclipse/virgo/kernel/deployer/app
+org/eclipse/virgo/kernel/deployer/app/spring
+

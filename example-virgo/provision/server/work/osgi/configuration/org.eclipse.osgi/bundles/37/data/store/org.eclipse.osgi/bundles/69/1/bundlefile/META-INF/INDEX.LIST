@@ -1,0 +1,12 @@
+JarIndex-Version: 1.0
+
+org.eclipse.virgo.apps.repository.core.jar
+org
+org/eclipse
+org/eclipse/virgo
+org/eclipse/virgo/apps
+org/eclipse/virgo/apps/repository
+org/eclipse/virgo/apps/repository/core
+org/eclipse/virgo/apps/repository/core/internal
+EventLogMessages.properties
+

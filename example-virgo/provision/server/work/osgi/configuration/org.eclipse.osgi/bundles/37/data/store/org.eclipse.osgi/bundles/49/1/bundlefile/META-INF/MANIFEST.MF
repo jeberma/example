@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01-279 (Apple Inc.)
+Export-Package: org.eclipse.virgo.web.core;version="2.1.0.M03-incubati
+ on"
+Bundle-Version: 2.1.0.M03-incubation
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: (incubation) Virgo Web Support Core
+Bundle-ManifestVersion: 2
+Import-Package: javax.servlet;version="[2.5.0,3)",org.aspectj.lang;ver
+ sion="[1.6.6,2)",org.aspectj.lang.reflect;version="[1.6.6,2)",org.asp
+ ectj.runtime.reflect;version="[1.6.6,2)",org.eclipse.gemini.web.core;
+ version="[1.1.0,2)",org.eclipse.gemini.web.core.spi;version="[1.1.0,2
+ )",org.eclipse.osgi.framework.adaptor;version="0",org.eclipse.virgo.k
+ ernel.artifact.bundle;version="[2.1.0,3)",org.eclipse.virgo.kernel.ar
+ tifact.fs;version="[2.1.0,3)",org.eclipse.virgo.kernel.deployer.core;
+ version="[2.1.0,3)",org.eclipse.virgo.kernel.install.artifact;version
+ ="[2.1.0,3)",org.eclipse.virgo.kernel.install.environment;version="[2
+ .1.0,3)",org.eclipse.virgo.kernel.install.pipeline.stage.transform;ve
+ rsion="[2.1.0,3)",org.eclipse.virgo.kernel.osgi.framework;version="[2
+ .1.0,3)",org.eclipse.virgo.kernel.serviceability;version="[2.1.0,3)",
+ org.eclipse.virgo.kernel.serviceability.dump;version="[2.1.0,3)",org.
+ eclipse.virgo.medic.eventlog;version="[2.1.0,3)",org.eclipse.virgo.me
+ dic.log;version="[2.1.0,3)",org.eclipse.virgo.repository;version="[2.
+ 1.0,3)",org.eclipse.virgo.util.common;version="[2.1.0,3)",org.eclipse
+ .virgo.util.osgi.manifest;version="[2.1.0,3)",org.osgi.framework;vers
+ ion="0",org.osgi.service.event;version="0",org.slf4j;version="[1.6.1,
+ 2)"
+Bundle-SymbolicName: org.eclipse.virgo.web.core
+Bundle-Creator: chrisfrost
+Implementation-Title: org.eclipse.virgo.web.core
+Implementation-Version: 2.1.0.M03-incubation
+

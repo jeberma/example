@@ -1,0 +1,13 @@
+JarIndex-Version: 1.0
+
+org.eclipse.virgo.apps.admin.core.jar
+org
+org/eclipse
+org/eclipse/virgo
+org/eclipse/virgo/apps
+org/eclipse/virgo/apps/admin
+org/eclipse/virgo/apps/admin/core
+org/eclipse/virgo/apps/admin/core/artifact
+org/eclipse/virgo/apps/admin/core/dump
+org/eclipse/virgo/apps/admin/core/state
+

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01-279 (Apple Inc.)
+Import-Bundle: com.springsource.org.apache.taglibs.standard;version="[
+ 1.1.2,2)"
+Bundle-Version: 2.1.0.M03-incubation
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: (incubation) Splash Screen
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.virgo.apps.splash
+Web-ContextPath: /
+Import-Package: javax.servlet.http;version="[2.5.0,3)",org.springframe
+ work.beans.factory.xml;version="[2.5.6,4)",org.springframework.web.se
+ rvlet;version="[2.5.6,4)",org.springframework.web.servlet.handler;ver
+ sion="[2.5.6,4)",org.springframework.web.servlet.mvc;version="[2.5.6,
+ 4)",org.springframework.web.servlet.view;version="[2.5.6,4)"
+Bundle-Creator: chrisfrost
+Implementation-Title: org.eclipse.virgo.apps.splash
+Implementation-Version: 2.1.0.M03-incubation
+

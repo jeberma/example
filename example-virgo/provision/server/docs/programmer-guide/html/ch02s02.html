@@ -1,0 +1,65 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>2.2&nbsp;What is the Virgo Web Server?</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Virgo Web Server Programmer Guide"><link rel="up" href="ch02.html" title="2.&nbsp;Introduction to the Virgo Web Server"><link rel="prev" href="ch02.html" title="2.&nbsp;Introduction to the Virgo Web Server"><link rel="next" href="ch02s03.html" title="2.3&nbsp;Why the Virgo Web Server?"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.2&nbsp;What is the Virgo Web Server?</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02.html">Prev</a>&nbsp;</td><th width="60%" align="center">2.&nbsp;Introduction to the Virgo Web Server</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch02s03.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="introduction-what"></a>2.2&nbsp;What is the Virgo Web Server?</h2></div></div></div><p>
+	  	    The Virgo Web Server, or VWS for short, is the runtime portion of the Virgo Runtime Environment.
+	        It is a lightweight, modular, OSGi-based runtime that provides a complete packaged solution for developing,
+	        deploying, and managing enterprise applications. 
+			By leveraging several best-of-breed technologies and improving upon
+			them, the VWS offers a compelling solution to develop and deploy
+			enterprise applications. 
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="introduction-constituents"></a>What makes up the Virgo Web Server?</h3></div></div></div><p>
+				The Virgo Web Server is built on top of the following core technologies: 
+			</p><div class="itemizedlist"><ul type="disc"><li><a class="ulink" href="http://www.springframework.org/" target="_top">Spring Framework</a>, obviously!</li><li><a class="ulink" href="http://tomcat.apache.org/" target="_top">Tomcat</a> as the web container.</li><li><a class="ulink" href="http://www.osgi.org/Specifications/HomePage" target="_top">OSGi R4.2</a>.</li><li><a class="ulink" href="http://www.eclipse.org/equinox/" target="_top">Equinox</a> as the OSGi implementation.</li><li><a class="ulink" href="http://www.springframework.org/osgi/" target="_top">Spring Dynamic Modules for OSGi</a> for working with OSGi in a Spring application.</li><li><a class="ulink" href="http://www.springsource.com/products/sts" target="_top">SpringSource Tool Suite</a> for developing applications.</li></ul></div><p>
+				Note, however, that the Virgo Web Server isn&#8217;t just a combination
+				of these technologies. Rather, it integrates and extends these
+				technologies to provide many features essential for developing,
+				deploying, and managing today&#8217;s enterprise Java applications.
+			</p></div><p>
+			The following diagram presents a high-level overview of the VWS&#8217;s architecture. 
+		</p><p>
+			<img src="images/introduction-architecture.png">
+		</p><p>
+			At the heart of the Virgo Web Server is the Virgo Kernel or VK. 
+			The VK is an OSGi-based kernel that takes full advantage of the modularity 
+			and versioning of the OSGi platform. The VK builds on Equinox and extends its capabilities for
+			provisioning and library management, as well as providing core functionality for the VWS.
+		</p><p>
+			To maintain a minimal runtime footprint, OSGi bundles are installed on demand by the
+			VK provisioning subsystem. This allows for an application to be installed into a running
+			VWS and for its dependencies to be satisfied from an external repository. Not only
+			does this remove the need to manually install all your application dependencies, which
+			would be tedious, but it also keeps memory usage to a minimum.
+		</p><p>
+			As shown in the figure, VK runs on top of Equinox within a standard Java
+			Virtual Machine. Above the VK is a layer of subsystems which contribute functionality
+			to the VWS. Subsystems are configured to run for various <span class="emphasis"><em>profiles</em></span>
+			and typically provide additional services to the basic OSGi container
+			such as serviceability,	management, and personality-specific deployment.
+		</p><p>
+			In the Virgo Web Server, applications are modular and each module has a
+			personality that describes what kind of module it is: web, batch, web service, etc. 
+			The VWS deploys modules of each personality in a personality-specific manner. 
+			For example, web modules are configured in Tomcat with web context. 
+			Each module in the application can be updated independently of the other modules 
+			whilst retaining the identity of being part of the larger application. 
+			Whatever kind of application you are building, the programming model remains standard
+			Spring and Spring DM.
+		</p><p>
+			Version 2.1.0.M03-incubation of the Virgo Web Server supports the <span class="emphasis"><em>bundle</em></span>,
+			<span class="emphasis"><em>web</em></span>, and <span class="emphasis"><em>WAR</em></span> personalities, which enable
+			you to build sophisticated web applications. The WAR personality includes support for
+			standard Java EE WARs, "shared library" WARs, and "shared services" WARs, each of
+			which will be covered in greater detail in <a class="xref" href="ch03.html" title="3.&nbsp;Deployment Architecture">Chapter&nbsp;3, <i>Deployment Architecture</i></a>. Future
+			releases will include support for more personalities such as batch, web services, etc.
+		</p></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch02.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch02s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.&nbsp;Introduction to the Virgo Web Server&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;2.3&nbsp;Why the Virgo Web Server?</td></tr></table></div></body></html>

@@ -1,0 +1,4 @@
+Export-Package: com.example.hibernate.common;version="${project.version}"
+Import-Package: org.hibernate;version="3.3.2",\
+ org.hibernate.classic;version="3.3.2",\
+ *

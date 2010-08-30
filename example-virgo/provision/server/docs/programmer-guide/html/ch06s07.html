@@ -1,0 +1,48 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>6.7&nbsp;Form Tags as a plan</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Virgo Web Server Programmer Guide"><link rel="up" href="ch06.html" title="6.&nbsp;Case study: Migrating the Form Tags sample application"><link rel="prev" href="ch06s06.html" title="6.6&nbsp;Summary of the Form Tags Migration"><link rel="next" href="ch07.html" title="7.&nbsp;Tooling"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">6.7&nbsp;Form Tags as a plan</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch06s06.html">Prev</a>&nbsp;</td><th width="60%" align="center">6.&nbsp;Case study: Migrating the Form Tags sample application</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch07.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-as-plan"></a>6.7&nbsp;Form Tags as a plan</h2></div></div></div><p>
+        	Plans (see <a class="xref" href="ch04s03.html" title="4.3&nbsp;Creating Plans">Section&nbsp;4.3, &#8220;Creating Plans&#8221;</a>) 
+        	allow us to package and deploy the Form Tags application in a more flexible way. 
+        	Instead of packaging all the bundles of the application into a single PAR file, each bundle can be placed in the repository
+        	and referred to in a <span class="emphasis"><em>plan</em></span>.
+        </p><p>
+ 			The bundles to be placed in a repository in the chain (for example, <code class="literal">repository/usr</code>) are:
+</p><pre class="programlisting">org.springframework.showcase.formtags.domain-2.0.0.RELEASE.jar
+org.springframework.showcase.formtags.service-2.0.0.RELEASE.jar
+org.springframework.showcase.formtags.web-2.0.0.RELEASE.war
+</pre><p>
+        	which are just those files which were part of the PAR.
+        </p><p>
+        	Here is the contents of a suitable plan file for the Form Tags example:
+</p><pre class="programlisting">&lt;<span class="hl-tag">?xml version="1.0" encoding="UTF-8"?</span>&gt;
+&lt;<span class="hl-tag">plan</span> <span class="hl-attribute">name</span>=<span class="hl-value">"formtags.plan"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"2.0.0"</span> <span class="hl-attribute">scoped</span>=<span class="hl-value">"true"</span> <span class="hl-attribute">atomic</span>=<span class="hl-value">"true"</span>
+        <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.springsource.org/schema/dm-server/plan"</span>
+        <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+        <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"
+            http://www.springsource.org/schema/dm-server/plan 
+            http://www.springsource.org/schema/dm-server/plan/springsource-dm-server-plan.xsd"</span>&gt;
+
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"bundle"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"org.springframework.showcase.formtags.domain_par"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"[2.0,2.1)"</span>/&gt;
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"bundle"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"org.springframework.showcase.formtags.service_par"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"[2.0,2.1)"</span>/&gt;
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"war"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"org.springframework.showcase.formtags.web_par"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"[2.0,2.1)"</span>/&gt;
+
+&lt;<span class="hl-tag">/plan</span>&gt;</pre><p>
+			where we have chosen to use any of the artifacts in the version range [2.0,2.1). 
+			This plan (as a file called, for example, <code class="literal">formtags.plan</code>) 
+			can be deployed in any of the normal ways (for example, dropped in 
+			the <code class="literal">pickup</code> directory).
+        </p><p>
+        	When the plan is deployed, the artifacts it references are installed from the repository and deployed in the order given in the plan file.
+        	Because this plan is scoped and atomic, the collection is given an application scope and is started and stopped as a single unit.
+        </p></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch06s06.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="ch06.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch07.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">6.6&nbsp;Summary of the Form Tags Migration&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;7.&nbsp;Tooling</td></tr></table></div></body></html>

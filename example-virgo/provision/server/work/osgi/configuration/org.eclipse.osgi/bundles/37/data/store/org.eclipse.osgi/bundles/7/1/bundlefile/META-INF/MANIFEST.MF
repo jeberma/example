@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01-279 (Apple Inc.)
+Export-Package: org.eclipse.virgo.kernel.agent.dm;version="2.1.0.M03-i
+ ncubation";uses:="org.eclipse.virgo.kernel.shim.serviceability,org.ec
+ lipse.virgo.medic.log,org.osgi.framework,org.springframework.beans.fa
+ ctory,org.springframework.core.task"
+Bundle-Version: 2.1.0.M03-incubation
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: (incubation) Virgo Kernel Agent Spring DM integration
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.eclipse.virgo.kernel.agent.dm.internal.AgentActi
+ vator
+Bundle-SymbolicName: org.eclipse.virgo.kernel.agent.dm
+Import-Package: org.aspectj.lang;version="[1.6.6.RELEASE,2)",org.aspec
+ tj.lang.reflect;version="[1.6.6.RELEASE,2)",org.aspectj.runtime.refle
+ ct;version="[1.6.6.RELEASE,2)",org.eclipse.virgo.kernel.serviceabilit
+ y;version="[2.1.0,2.2)",org.eclipse.virgo.kernel.shim.serviceability;
+ version="[2.1.0,2.2)",org.eclipse.virgo.medic.eventlog;version="[2.1.
+ 0,2.2)",org.eclipse.virgo.medic.log;version="[2.1.0,2.2)",org.eclipse
+ .virgo.util.osgi;version="[2.1.0,2.2)",org.osgi.framework;version="0"
+ ,org.osgi.service.event;version="0",org.slf4j;version="[1.6.1,2)",org
+ .springframework.beans.factory;version="[2.5.6,3.1)",org.springframew
+ ork.core.task;version="[2.5.6,3.1)",org.springframework.osgi.context.
+ event;version="[1.2.1,2)",org.springframework.osgi.extender.event;ver
+ sion="[1.2.1,2)",org.springframework.osgi.service.importer;version="[
+ 1.2.1,2)",org.springframework.osgi.service.importer.event;version="[1
+ .2.1,2)"
+Bundle-Creator: chrisfrost
+Implementation-Title: org.eclipse.virgo.kernel.agent.dm
+Implementation-Version: 2.1.0.M03-incubation
+

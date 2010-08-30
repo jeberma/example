@@ -1,0 +1,255 @@
+/* 
+ *  Local style information for the Admin Console
+ *
+ *  Contains both style and colour information and 
+ *  overrides content from the dojo/tundra style.
+ *
+ *  Christopher Frost - Nov 2009
+ *
+ */
+
+/* General */
+
+.tundra .consoleFootnote {
+ 	color:#888;
+ 	line-height:19px;
+ 	font-size:90%;
+ 	padding:2px;
+}
+
+.tundra .consoleLoading {
+	background-image: url(../images/loader-white-large.gif);
+	background-position:left center;
+	background-repeat:no-repeat;
+	font-style:italic;
+	padding:20px;
+	text-indent:30px;
+}
+
+.tundra .consoleContentPane {
+ 	text-align:left;
+ 	padding:10px;
+ 	margin: 0;
+ 	border:1px solid #BAD9EC;
+}
+
+.tundra .consoleContentPaneMinimal {
+ 	text-align:left;
+ 	padding: 0;
+ 	margin: 0;
+ 	border:0px none;
+ 	border-bottom: 1px solid #BAD9EC;
+}
+
+.tundra .consoleContentPaneSpace {
+ 	text-align:left;
+ 	padding: 0;
+ 	margin: 1em;
+ 	border:0px none;
+}
+
+/* Title Pane */
+
+.tundra .dijitTitlePane {
+	margin-top: 1em;
+}
+
+.tundra .dijitTitlePane .dijitTitlePaneTitle {
+	background-image: url(../images/table-header-background.png);
+    background-repeat: repeat-x;
+ 	height:19px;
+ 	text-align:left;
+ 	margin:0;
+ 	padding:1px 6px 0 6px;
+ 	line-height:19px;
+ 	border: 1px solid #BAD9EC;
+}
+
+.tundra .dijitTitlePane .dijitTitlePaneTitle a.edit {
+	float: right;
+	text-decoration: none;
+}
+
+.tundra .dijitTitlePane .dijitTitlePaneContentOuter {
+ 	border: 1px solid #BAD9EC;
+}
+
+.tundra .dijitTitlePaneContentInner {
+	padding: 0px;
+ 	overflow-x: auto; 
+}
+
+.tundra .dijitTitlePane .dijitArrowNode {
+	float: left;
+	margin-top: 6px;
+}
+
+/* Collection of Title Pane */
+
+.tundra .consoleContentPaneMinimal .dijitTitlePaneTitle {
+	background:#ffffff;	
+ 	border-bottom: 0 none;
+}
+
+.tundra .consoleContentPaneMinimal .dijitTitlePane .dijitTitlePaneContentOuter{
+ 	border-bottom: 0 none;
+}
+
+.tundra .consoleContentPaneMinimal .dijitTitlePane {
+	margin-top: 0;
+}
+
+/* Content Pane Common */
+
+.tundra .dijitTitlePane .dijitTitlePaneTitle-hover {
+	background:#DCEDF6;	
+}
+
+/* Tree Colours */
+
+.tundra .dijitTreeNode .dijitTreeNodeHover {
+	background-image: ;
+	background:#DCEDF6;	
+}
+
+.tundra .dijitTreeNodeSelected .dijitTreeLabel {
+	background:#DCEDF6 none repeat scroll 0 0;	
+}
+
+.tundra .treeLink {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.tundra .dijitTreeExpandoLoading {
+	background-image: transparent url(../images/loader-white-small.gif);
+}
+
+/* Tree Icons */
+
+.tundra .dijitTreeIcon {
+	height:18px;
+	width:18px;
+	background-position: center center;
+}
+
+.tundra .treeArtifact-bundle {
+	background: transparent url(../images/tree-icons/artifact-bundle.png) no-repeat scroll center center;	
+}
+
+.tundra .treeArtifact-configuration {
+	background: transparent url(../images/tree-icons/artifact-configuration.png) no-repeat scroll center center;	
+}
+
+.tundra .treeArtifact-plan {
+	background: transparent url(../images/tree-icons/artifact-plan.png) no-repeat scroll center center;	
+}
+
+.tundra .treeArtifact-par {
+	background: transparent url(../images/tree-icons/artifact-par.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-atomic {
+	background: transparent url(../images/tree-icons/attribute-atomic.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-scoped {
+	background: transparent url(../images/tree-icons/attribute-scoped.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-scoped-atomic {
+	background: transparent url(../images/tree-icons/attribute-scoped-atomic.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-stopping {
+	background: transparent url(../images/tree-icons/state-stopping.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-starting {
+	background: transparent url(../images/tree-icons/state-starting.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-active {
+	background: transparent url(../images/tree-icons/state-active.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-resolved {
+	background: transparent url(../images/tree-icons/state-resolved.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-installed {
+	background: transparent url(../images/tree-icons/state-installed.png) no-repeat scroll center center;	
+}
+
+.tundra .treeAtribute-spring-powered {
+	background: transparent url(../images/spring.png) no-repeat scroll center center;	
+}
+
+/*
+ * FORM STYLES
+ */
+
+input, textarea, textfield {
+    margin: 0;
+    font-family: Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    padding: 1px;
+    font-size: 100%;
+}
+
+/*
+ * DUMP TEXT BOX STYLE
+ */
+.dumpSelector {
+	width: 350px; 
+	margin: 5px;
+}
+ 
+.inspection-box{
+    font-family : "Courier New", Courier, monospace;
+	border: 1px solid #BAD9EC;
+	width: 98%;
+    margin: 10px;
+    padding: 5px;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+/*
+ * STATE HEADER
+ */
+ 
+.stateHeader {
+	line-height: 25px;
+	height: 25px;
+	margin-top: 25px;
+}
+ 
+.stateHeader .stateNavigation {
+	float: left;
+	display: inline;
+}
+ 
+.stateHeader fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+ 
+.stateHeader .dumpStateSelector {
+	padding-left:20px;
+	float: left;
+	display: inline;
+}
+ 
+.stateHeader .search {
+	float: right;
+}
+
+.dj_ie7 .search {
+	margin-top: 22px;
+}
+
+.dj_ie6 .search {
+	display: none;
+}

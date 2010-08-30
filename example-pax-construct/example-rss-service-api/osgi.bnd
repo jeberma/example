@@ -1,0 +1,1 @@
+Export-Package: com.example.rss.service.api;version="${project.version}"

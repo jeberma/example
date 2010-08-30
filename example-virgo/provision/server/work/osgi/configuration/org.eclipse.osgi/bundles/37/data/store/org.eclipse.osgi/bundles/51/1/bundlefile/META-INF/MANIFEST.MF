@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01-279 (Apple Inc.)
+Fragment-Host: org.eclipse.gemini.web.tomcat
+Bundle-Version: 2.1.0.M03-incubation
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: (incubation) Virgo Web Support Tomcat Support
+Bundle-ManifestVersion: 2
+Import-Package: javax.servlet;version="[2.5.0,3)",org.apache.catalina;
+ version="[6.0.18,6.1)",org.apache.catalina.connector;version="[6.0.18
+ ,6.1)",org.apache.catalina.ha;version="[6.0.18,6.1)",org.apache.catal
+ ina.ha.deploy;version="[6.0.18,6.1)";resolution:="optional",org.apach
+ e.catalina.ha.session;version="[6.0.18,6.1)";resolution:="optional",o
+ rg.apache.catalina.ha.tcp;version="[6.0.18,6.1)";resolution:="optiona
+ l",org.apache.catalina.tribes;version="[6.0.18,6.1)",org.apache.catal
+ ina.tribes.group;version="[6.0.18,6.1)";resolution:="optional",org.ap
+ ache.catalina.tribes.group.interceptors;version="[6.0.18,6.1)";resolu
+ tion:="optional",org.apache.catalina.tribes.io;version="[6.0.18,6.1)"
+ ;resolution:="optional",org.apache.catalina.tribes.membership;version
+ ="[6.0.18,6.1)";resolution:="optional",org.apache.catalina.tribes.tra
+ nsport;version="[6.0.18,6.1)";resolution:="optional",org.apache.catal
+ ina.tribes.transport.nio;version="[6.0.18,6.1)";resolution:="optional
+ ",org.apache.catalina.valves;version="[6.0.18,6.1)",org.aspectj.lang;
+ version="[1.6.6,2)",org.aspectj.lang.reflect;version="[1.6.6,2)",org.
+ aspectj.runtime.reflect;version="[1.6.6,2)",org.eclipse.gemini.web.to
+ mcat.spi;version="[1.1.0,2)",org.eclipse.virgo.kernel.osgi.framework;
+ version="[2.1.0,3)",org.eclipse.virgo.kernel.serviceability;version="
+ [2.1.0,3)",org.eclipse.virgo.kernel.serviceability.dump;version="[2.1
+ .0,3)",org.eclipse.virgo.kernel.shim.serviceability;version="[2.1.0,3
+ )",org.eclipse.virgo.medic.eventlog;version="[2.1.0,3)",org.eclipse.v
+ irgo.medic.log;version="[2.1.0,3)",org.eclipse.virgo.util.io;version=
+ "[2.1.0,3)",org.eclipse.virgo.util.math;version="[2.1.0,3)",org.eclip
+ se.virgo.web.core;version="[2.1.0,2.2)",org.osgi.framework;version="0
+ "
+Bundle-SymbolicName: org.eclipse.virgo.web.tomcat
+Bundle-Creator: chrisfrost
+Implementation-Title: org.eclipse.virgo.web.tomcat
+Implementation-Version: 2.1.0.M03-incubation
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+<!-- ARTEFACT MANAGER -->
+	<osgi:reference id="applicationDeployer" interface="org.eclipse.virgo.kernel.deployer.core.ApplicationDeployer" />
+	
+	<osgi:reference id="workArea" interface="org.eclipse.virgo.kernel.services.work.WorkArea" />
+
+    <osgi:service ref="artefactManagerContent" interface="org.eclipse.virgo.apps.admin.core.ArtifactService"/>
+    
+    <osgi:reference id="moduleContextAccessor" interface="org.eclipse.virgo.kernel.module.ModuleContextAccessor"/>
+
+<!-- DUMP INSPECTOR -->
+
+    <osgi:service ref="dumpInspectorService" interface="org.eclipse.virgo.apps.admin.core.DumpInspectorService"/>
+
+<!-- STATE INSPECTOR -->
+
+	<osgi:reference id="quasiFrameworkFactory" interface="org.eclipse.virgo.kernel.osgi.quasi.QuasiFrameworkFactory" />
+	
+	<osgi:reference id="stateService" interface="org.eclipse.virgo.kernel.shell.state.StateService" />
+
+    <osgi:service ref="stateHolder" interface="org.eclipse.virgo.apps.admin.core.StateHolder"/>
+
+<!-- CONFIGURATION ADMIN -->
+
+	<osgi:reference id="configAdmin" interface="org.osgi.service.cm.ConfigurationAdmin" />
+
+</beans>

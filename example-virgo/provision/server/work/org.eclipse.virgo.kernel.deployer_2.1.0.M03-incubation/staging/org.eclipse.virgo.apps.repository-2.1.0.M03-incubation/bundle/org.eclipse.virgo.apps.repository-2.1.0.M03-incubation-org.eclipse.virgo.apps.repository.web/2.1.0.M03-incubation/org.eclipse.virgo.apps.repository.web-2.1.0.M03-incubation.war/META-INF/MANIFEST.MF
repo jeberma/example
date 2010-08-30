@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01-279 (Apple Inc.)
+Export-Package: org.eclipse.virgo.apps.repository.web;version="2.1.0.M
+ 03-incubation";uses:="javax.servlet.http,org.eclipse.virgo.apps.repos
+ itory.core,org.springframework.stereotype,org.springframework.web.bin
+ d.annotation"
+Bundle-Vendor: SpringSource Inc.
+Bundle-Version: 2.1.0.M03-incubation
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: (incubation) Hosted Provisioning Repository Web Interface
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.virgo.apps.repository.web
+Web-ContextPath: org.eclipse.virgo.apps.repository
+Import-Package: javax.servlet;version="[2.5.0,3)",javax.servlet.http;v
+ ersion="[2.5.0,3)",org.eclipse.virgo.apps.repository.core;version="[2
+ .1.0, 2.1.1)",org.eclipse.virgo.web.dm;version="[2.1.0,3)",org.spring
+ framework.beans.factory.xml;version="[2.5.6,4)",org.springframework.s
+ tereotype;version="[2.5.6,4)",org.springframework.util;version="[2.5.
+ 6,4)",org.springframework.web.bind.annotation;version="[2.5.6,4)",org
+ .springframework.web.context;version="[2.5.6,4)",org.springframework.
+ web.servlet;version="[2.5.6,4)"
+Bundle-Creator: chrisfrost
+Implementation-Title: org.eclipse.virgo.apps.repository.web
+Implementation-Version: 2.1.0.M03-incubation
+

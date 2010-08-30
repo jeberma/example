@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01-279 (Apple Inc.)
+Export-Package: org.eclipse.virgo.kernel.deployer.app.spring;version="
+ 2.1.0.M03-incubation";uses:="org.eclipse.virgo.kernel.module,org.ecli
+ pse.virgo.kernel.serviceability,org.eclipse.virgo.medic.log,org.osgi.
+ framework,org.springframework.context"
+Bundle-Version: 2.1.0.M03-incubation
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: (incubation) Virgo Kernel Deployer Spring DM Integration
+Bundle-ManifestVersion: 2
+Import-Package: org.aspectj.lang;version="[1.6.6.RELEASE,2)",org.aspec
+ tj.lang.reflect;version="[1.6.6.RELEASE,2)",org.aspectj.runtime.refle
+ ct;version="[1.6.6.RELEASE,2)",org.eclipse.virgo.kernel.module;versio
+ n="[2.1.0,2.2)",org.eclipse.virgo.kernel.serviceability;version="[2.1
+ .0,2.2)",org.eclipse.virgo.medic.log;version="[2.1.0,2.2)",org.osgi.f
+ ramework;version="0",org.springframework.beans;version="[2.5.6,3.1)",
+ org.springframework.beans.factory.config;version="[2.5.6,3.1)",org.sp
+ ringframework.context;version="[2.5.6,3.1)",org.springframework.osgi.
+ context;version="[1.2.1,2)"
+Bundle-SymbolicName: org.eclipse.virgo.kernel.deployer.dm
+Bundle-Creator: chrisfrost
+Implementation-Title: org.eclipse.virgo.kernel.deployer.dm
+Implementation-Version: 2.1.0.M03-incubation
+

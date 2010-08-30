@@ -1,0 +1,61 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>5.&nbsp;Migrating to OSGi</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Virgo Web Server Programmer Guide"><link rel="up" href="index.html" title="Virgo Web Server Programmer Guide"><link rel="prev" href="ch04s09.html" title="4.9&nbsp;Application versioning"><link rel="next" href="ch05s02.html" title="5.2&nbsp;Migrating to a Plan or a PAR"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.&nbsp;Migrating to OSGi</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch04s09.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch05s02.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="migrating-to-osgi"></a>5.&nbsp;Migrating to OSGi</h2></div></div></div><p>
+		Taking on a new technology such as OSGi may seem a bit daunting at first,
+		but a proven set of migration steps can help ease the journey. Teams
+		wishing to migrate existing applications to run on the Virgo Web Server
+		will find that their applications typically fall into one of the following
+		categories.
+
+		</p><div class="itemizedlist"><ul type="disc"><li><p>
+					<span class="bold"><strong>Web Application</strong></span>: for web applications,
+					this chapter provides an overview of the steps required to migrate
+					from a Standard WAR to a Shared Services WAR. Furthermore, the following
+					chapter provides a detailed case study involving the migration
+					of the Spring 2.0 Form Tags show case application.
+				</p></li><li><p>
+					<span class="bold"><strong>Anything else</strong></span>: for any other type
+					of application, you will typically either deploy your application
+					as multiple individual bundles, as a single PAR file, or as a plan,
+					which is the recommended approach for deploying applications on
+					the Virgo Web Server. See <a class="xref" href="ch05s02.html" title="5.2&nbsp;Migrating to a Plan or a PAR">Section&nbsp;5.2, &#8220;Migrating to a Plan or a PAR&#8221;</a> for details.
+				</p></li></ul></div><p>
+		
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="migrating-to-osgi-web"></a>5.1&nbsp;Migrating Web Applications</h2></div></div></div><p>
+			Many applications may start with the standard WAR format for web applications and
+			gradually migrate to a more OSGi-oriented architecture. Since the Virgo Web Server 
+			offers several benefits to all supported deployment formats, it provides a smooth
+			migration path. Of course, depending on your application&#8217;s complexity and your
+			experience with OSGi, you may choose to start immediately with an OSGi-based
+			architecture. 
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-standard-war"></a>Standard WAR</h3></div></div></div><p>
+				If you are not yet familiar with OSGi or simply want to deploy an existing web application on the Virgo Web Server,
+				you can deploy a standard WAR and leverage the VWS with a minimal learning curve. In fact reading the 
+				<a class="ulink" href="../../user-guide/html/index.html" target="_top">Virgo Web Server User Guide</a>
+				is pretty much all that you need to do to get started. Furthermore, you will gain
+				familiarity with the Virgo Web Server, while preparing to take advantage of the other formats. 
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-shared-libraries-war"></a>Shared Libraries WAR</h3></div></div></div><p>
+				The <span class="emphasis"><em>Shared Libraries WAR</em></span>
+				format is the first step to reaping the benefits of OSGi. In this phase, you dip your toes into OSGi-based dependency
+				management by removing JAR files from the WAR and declaring dependencies on corresponding OSGi bundles.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-shared-services-war"></a>Shared Services WAR</h3></div></div></div><p> In this phase, you take the next step toward a fully OSGi-based architecture by separating your web artifacts
+				(e.g., Servlets, Controllers, etc.) from the services they depend on.</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-summary"></a>Web Migration Summary</h3></div></div></div><p>
+				The following diagram graphically depicts the migration path from a Standard WAR to a Shared Services WAR.
+				As you can see, the libraries (<span class="emphasis"><em>libs</em></span>) move from within the deployment artifact
+				to the Bundle Repository.
+				Similarly, the services move from within the WAR to external bundles and are accessed via the
+				OSGi Service Registry. In addition, the overall footprint of the deployment artifact decreases
+				as you move towards a Shared Services WAR.
+				</p><div class="mediaobject"><img src="images/migration-path-war-to-shsrv.png"></div><p>
+			</p></div></div></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch04s09.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch05s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.9&nbsp;Application versioning&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;5.2&nbsp;Migrating to a Plan or a PAR</td></tr></table></div></body></html>

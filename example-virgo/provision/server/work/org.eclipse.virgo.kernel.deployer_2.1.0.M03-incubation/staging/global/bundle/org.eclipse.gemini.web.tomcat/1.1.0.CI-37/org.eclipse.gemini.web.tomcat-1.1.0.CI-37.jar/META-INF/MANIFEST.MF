@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01 (Sun Microsystems Inc.)
+Export-Package: org.eclipse.gemini.web.tomcat.spi;version="1.1.0.CI-37
+ ";uses:="org.osgi.framework"
+Bundle-ClassPath: .,com.springsource.javax.xml.bind-2.1.7.jar,com.spri
+ ngsource.javax.xml.stream-1.0.1.jar,com.springsource.javax.xml.soap-1
+ .3.0.jar
+Bundle-Version: 1.1.0.CI-37
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: Gemini Web Tomcat Bootstrap (incubation)
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.eclipse.gemini.web.tomcat.internal.Activator
+Bundle-SymbolicName: org.eclipse.gemini.web.tomcat
+Import-Package: javax.activation;version="0",javax.management;version=
+ "0",javax.naming;version="0",javax.naming.directory;version="0",javax
+ .servlet;version="2.5",javax.xml.datatype;version="0",javax.xml.parse
+ rs;version="0",javax.xml.transform;version="0",javax.xml.transform.do
+ m;version="0",javax.xml.transform.sax;version="0",javax.xml.transform
+ .stream;version="0",javax.xml.validation;version="0",org.apache.catal
+ ina;version="6.0.20.S2-r5956",org.apache.catalina.connector;version="
+ 6.0.20.S2-r5956",org.apache.catalina.core;version="6.0.20.S2-r5956",o
+ rg.apache.catalina.deploy;version="6.0.20.S2-r5956",org.apache.catali
+ na.session;version="6.0.20.S2-r5956",org.apache.catalina.startup;vers
+ ion="6.0.20.S2-r5956",org.apache.catalina.util;version="6.0.20.S2-r59
+ 56",org.apache.juli.logging;version="6.0.20.S2-r5956",org.apache.nami
+ ng;version="6.0.20.S2-r5956",org.apache.naming.resources;version="6.0
+ .20.S2-r5956",org.apache.tomcat;version="6.0.20.S2-r5956",org.apache.
+ tomcat.util;version="6.0.20.S2-r5956",org.apache.tomcat.util.digester
+ ;version="6.0.20.S2-r5956",org.apache.tomcat.util.modeler;version="6.
+ 0.20.S2-r5956",org.eclipse.gemini.web.core;version="1.0",org.eclipse.
+ gemini.web.core.spi;version="1.0",org.eclipse.osgi.baseadaptor;versio
+ n="0";resolution:="optional",org.eclipse.osgi.baseadaptor.bundlefile;
+ version="0";resolution:="optional",org.eclipse.osgi.framework.adaptor
+ ;version="0";resolution:="optional",org.eclipse.osgi.framework.intern
+ al.core;version="0";resolution:="optional",org.eclipse.virgo.util.io;
+ version="2.0",org.eclipse.virgo.util.osgi;version="2.0",org.osgi.fram
+ ework;version="0",org.osgi.service.packageadmin;version="1.0",org.osg
+ i.service.url;version="1.0",org.osgi.util.tracker;version="1.4.0",org
+ .slf4j;version="1.5.10",org.springframework.osgi.util;version="1.2.0"
+ ,org.w3c.dom;version="0",org.xml.sax;version="0",org.xml.sax.ext;vers
+ ion="0",org.xml.sax.helpers;version="0"
+Bundle-Creator: teamcity
+Implementation-Title: org.eclipse.gemini.web.tomcat
+Implementation-Version: 1.1.0.CI-37
+

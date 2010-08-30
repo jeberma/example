@@ -1,0 +1,12 @@
+JarIndex-Version: 1.0
+
+org.eclipse.virgo.kernel.agent.dm.jar
+org
+org/eclipse
+org/eclipse/virgo
+org/eclipse/virgo/kernel
+org/eclipse/virgo/kernel/agent
+org/eclipse/virgo/kernel/agent/dm
+org/eclipse/virgo/kernel/agent/dm/internal
+EventLogMessages.properties
+

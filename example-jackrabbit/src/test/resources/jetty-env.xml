@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+<!--
+	jetty-env.xml
+	
+	Jetty environment configuration file for configuring for use with the
+	Jetty Maven Plugin.  Note, this file is for development use only!  In
+	production, the datasource below is configured as a JNDI resource in the
+	application server.
+-->
+<Configure id="wac" class="org.mortbay.jetty.webapp.WebAppContext">
+    
+	<!-- 
+		Prevents java.lang.LinkageError when reloading cxf webservices. 
+		see http://www.jroller.com/gmazza/entry/writing_junit_test_cases_for
+	-->
+	<Set name="parentLoaderPriority">true</Set>
+	
+	<!-- JCR CONFIGURATION -->
+    <New id="repository" class="org.mortbay.jetty.plus.naming.Resource">
+        <Arg>jcr/repository</Arg>
+        <Arg>
+        	<New class="org.apache.jackrabbit.core.TransientRepository">
+        		<Arg>${project.build.outputDirectory}/repository.xml</Arg>
+				<Arg>${project.build.directory}/REPO_HOME</Arg>
+        	</New>
+        </Arg>
+    </New>
+	
+</Configure>

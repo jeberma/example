@@ -1,0 +1,10 @@
+JarIndex-Version: 1.0
+
+org.eclipse.virgo.web.tomcat.jar
+org
+org/eclipse
+org/eclipse/virgo
+org/eclipse/virgo/web
+org/eclipse/virgo/web/tomcat
+EventLogMessages.properties
+

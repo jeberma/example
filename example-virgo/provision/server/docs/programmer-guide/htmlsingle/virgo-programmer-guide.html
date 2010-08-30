@@ -1,0 +1,1677 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Virgo Web Server Programmer Guide</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" lang="en"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>Virgo Web Server Programmer Guide</h1></div><div><div class="authorgroup"><div class="author"><h3 class="author"><span class="firstname">Ramnivas</span> <span class="surname">Laddad</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Colin</span> <span class="surname">Yates</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Sam</span> <span class="surname">Brannen</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Rob</span> <span class="surname">Harrop</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Christian</span> <span class="surname">Dupuis</span></h3></div><div class="author"><h3 class="author"><span class="firstname">Andy</span> <span class="surname">Wilkinson</span></h3></div></div></div><div><div class="mediaobject" align="right"><img src="images/virgo-logo-small.png" align="right"></div></div><div><span class="productname">Virgo Web Server<br></span></div><div><p class="releaseinfo">2.1.0.M03-incubation</p></div></div><div><div><div class="legalnotice"><a name="d0e47"></a><p>Copyright &copy; 2008, 2010 VMware Inc.</p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="preface"><a href="#preface">Preface</a></span></dt><dt><span class="chapter"><a href="#prerequisites">1. Prerequisites</a></span></dt><dd><dl><dt><span class="section"><a href="#prerequisites-environment">1.1. Runtime Environment</a></span></dt><dt><span class="section"><a href="#prerequisites-references">1.2. References</a></span></dt></dl></dd><dt><span class="chapter"><a href="#introduction">2. Introduction to VWS</a></span></dt><dd><dl><dt><span class="section"><a href="#introduction-preface">2.1. Overview</a></span></dt><dt><span class="section"><a href="#introduction-what">2.2. What is the Virgo Web Server?</a></span></dt><dt><span class="section"><a href="#introduction-why">2.3. Why the Virgo Web Server?</a></span></dt></dl></dd><dt><span class="chapter"><a href="#architecture">3. Deployment Architecture</a></span></dt><dd><dl><dt><span class="section"><a href="#architecture-deployment-formats">3.1. Supported Deployment Formats</a></span></dt><dt><span class="section"><a href="#architecture-dependency-types">3.2. Dependency Types</a></span></dt><dt><span class="section"><a href="#architecture-forming-bundles">3.3. A guide to forming bundles</a></span></dt></dl></dd><dt><span class="chapter"><a href="#developing-applications">4. Developing Applications</a></span></dt><dd><dl><dt><span class="section"><a href="#developing-applications-bundle">4.1. Anatomy of a bundle</a></span></dt><dt><span class="section"><a href="#developing-applications-packaging">4.2. Creating PARs and WARs</a></span></dt><dt><span class="section"><a href="#developing-applications-plans">4.3. Creating Plans</a></span></dt><dt><span class="section"><a href="#developing-applications-configuration-artifacts">4.4. Creating and Using Configuration Artifacts</a></span></dt><dt><span class="section"><a href="#developing-applications-programmatic-access">4.5. Programmatic Access to Personality-specific Features</a></span></dt><dt><span class="section"><a href="#developing-applications-automatic-imports">4.6. Automatic Imports</a></span></dt><dt><span class="section"><a href="#developing-applications-dependencies">4.7. Working with dependencies</a></span></dt><dt><span class="section"><a href="#developing-applications-application-trace">4.8. Application trace</a></span></dt><dt><span class="section"><a href="#developing-applications-versioning">4.9. Application versioning</a></span></dt></dl></dd><dt><span class="chapter"><a href="#migrating-to-osgi">5. Migrating to OSGi</a></span></dt><dd><dl><dt><span class="section"><a href="#migrating-to-osgi-web">5.1. Migrating Web Applications</a></span></dt><dt><span class="section"><a href="#migrating-to-osgi-par-plan">5.2. Migrating to a Plan or a PAR</a></span></dt></dl></dd><dt><span class="chapter"><a href="#formtags-case-study">6. Migrating Form Tags</a></span></dt><dd><dl><dt><span class="section"><a href="#formtags-case-study-introduction">6.1. Overview of the Form Tags Sample Application</a></span></dt><dt><span class="section"><a href="#formtags-case-study-war">6.2. Form Tags WAR</a></span></dt><dt><span class="section"><a href="#formtags-case-study-war-shared-libs">6.3. Form Tags Shared Libraries WAR</a></span></dt><dt><span class="section"><a href="#formtags-case-study-war-shared-services">6.4. Form Tags Shared Services WAR</a></span></dt><dt><span class="section"><a href="#formtags-case-study-par">6.5. Form Tags PAR</a></span></dt><dt><span class="section"><a href="#formtags-case-study-summary">6.6. Summary of the Form Tags Migration</a></span></dt><dt><span class="section"><a href="#formtags-case-study-as-plan">6.7. Form Tags as a plan</a></span></dt></dl></dd><dt><span class="chapter"><a href="#tooling">7. Tooling</a></span></dt><dd><dl><dt><span class="section"><a href="#tooling-installation">7.1. Installation</a></span></dt><dt><span class="section"><a href="#tooling-running">7.2. Running a Virgo Web Server instance within Eclipse</a></span></dt><dt><span class="section"><a href="#tooling-repository-editor">7.3. Bundle and Library Provisioning</a></span></dt><dt><span class="section"><a href="#tooling-config">7.4. Setting up Eclipse Projects</a></span></dt><dt><span class="section"><a href="#tooling-developing">7.5. Developing OSGi Bundles</a></span></dt><dt><span class="section"><a href="#tooling-deploying">7.6. Deploying Applications</a></span></dt></dl></dd><dt><span class="chapter"><a href="#common-libraries">8. Common Libraries</a></span></dt><dd><dl><dt><span class="section"><a href="#common-libraries-hibernate">8.1. Working with Hibernate</a></span></dt><dt><span class="section"><a href="#common-libraries-datasources">8.2. Working with DataSources</a></span></dt><dt><span class="section"><a href="#common-libraries-weaving-instrumentation">8.3. Weaving and Instrumentation</a></span></dt><dt><span class="section"><a href="#common-libraries-tld">8.4. JSP Tag Libraries</a></span></dt></dl></dd><dt><span class="chapter"><a href="#known-issues">9. Known Issues</a></span></dt><dd><dl><dt><span class="section"><a href="#known-issues-jpa">9.1. JPA Entity Scanning</a></span></dt><dt><span class="section"><a href="#known.issues.proxy">9.2. ClassNotFoundError When Creating a Proxy</a></span></dt><dt><span class="section"><a href="#known.issues.cglib">9.3. Creating proxies with CGLIB for package-protected types</a></span></dt><dt><span class="section"><a href="#known-issues-tomcat-restrictions">9.4. Tomcat Restrictions</a></span></dt></dl></dd></dl></div><div class="preface" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="preface"></a>Preface</h2></div></div></div><p>
+		Increasing complexity in modern enterprise applications is a fact of life.
+		You not only have to deal with complex business logic, but also a myriad
+		of other concerns such as security, auditing, exposing business
+		functionality to external applications, and managing the evolution of
+		that functionality and technologies. The Spring Framework and Spring
+		Portfolio products address these needs by offering a Plain-Old Java Object
+		(POJO) based solution that lets you focus on your business logic.
+	</p><p>
+		Complex applications pose problems that go beyond using the right set of
+		technologies. You need to take into account other considerations such as
+		a simplified development process, easy deployment, monitoring deployed
+		applications, and managing changes in response to changing business needs.
+		This is where the Virgo Runtime Environment comes into play. It offers a simple yet
+		comprehensive platform to develop, deploy, and service enterprise
+		applications. In this Programmer Guide, we explore the runtime portion of the
+		Virgo Runtime Environment, the Virgo Web Server, and learn how to develop
+		applications to benefit from its capabilities.
+	</p></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="prerequisites"></a>1.&nbsp;Prerequisites</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="prerequisites-environment"></a>1.1&nbsp;Runtime Environment</h2></div></div></div><p>
+			The Virgo Web Server requires Java SE 6 or later to be installed. Java is available from
+			<a class="ulink" href="http://java.sun.com/javase/downloads/index.jsp" target="_top">Sun</a> and elsewhere.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="prerequisites-references"></a>1.2&nbsp;References</h2></div></div></div><p>
+			To make effective use of the Virgo Web Server, you should also refer to the following guides:
+		</p><div class="itemizedlist"><ul type="disc"><li><a class="ulink" href="../../user-guide/html/index.html" target="_top">Virgo Web Server User Guide</a></li><li><a class="ulink" href="http://static.springframework.org/osgi/docs/current/reference/html/" target="_top">Spring Dynamic Modules Reference Guide</a></li><li><a class="ulink" href="http://static.springframework.org/spring/docs/2.5.x/reference/index.html" target="_top">Spring Framework Reference Guide</a></li></ul></div></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="introduction"></a>2.&nbsp;Introduction to the Virgo Web Server</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="introduction-preface"></a>2.1&nbsp;Overview</h2></div></div></div><p>
+			In this chapter, we provide an overview of the Virgo Web Server focusing
+			on what it is, what benefits it provides to developers and administrators,
+			and why you should use it. 
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="introduction-what"></a>2.2&nbsp;What is the Virgo Web Server?</h2></div></div></div><p>
+	  	    The Virgo Web Server, or VWS for short, is the runtime portion of the Virgo Runtime Environment.
+	        It is a lightweight, modular, OSGi-based runtime that provides a complete packaged solution for developing,
+	        deploying, and managing enterprise applications. 
+			By leveraging several best-of-breed technologies and improving upon
+			them, the VWS offers a compelling solution to develop and deploy
+			enterprise applications. 
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="introduction-constituents"></a>What makes up the Virgo Web Server?</h3></div></div></div><p>
+				The Virgo Web Server is built on top of the following core technologies: 
+			</p><div class="itemizedlist"><ul type="disc"><li><a class="ulink" href="http://www.springframework.org/" target="_top">Spring Framework</a>, obviously!</li><li><a class="ulink" href="http://tomcat.apache.org/" target="_top">Tomcat</a> as the web container.</li><li><a class="ulink" href="http://www.osgi.org/Specifications/HomePage" target="_top">OSGi R4.2</a>.</li><li><a class="ulink" href="http://www.eclipse.org/equinox/" target="_top">Equinox</a> as the OSGi implementation.</li><li><a class="ulink" href="http://www.springframework.org/osgi/" target="_top">Spring Dynamic Modules for OSGi</a> for working with OSGi in a Spring application.</li><li><a class="ulink" href="http://www.springsource.com/products/sts" target="_top">SpringSource Tool Suite</a> for developing applications.</li></ul></div><p>
+				Note, however, that the Virgo Web Server isn&#8217;t just a combination
+				of these technologies. Rather, it integrates and extends these
+				technologies to provide many features essential for developing,
+				deploying, and managing today&#8217;s enterprise Java applications.
+			</p></div><p>
+			The following diagram presents a high-level overview of the VWS&#8217;s architecture. 
+		</p><p>
+			<img src="images/introduction-architecture.png">
+		</p><p>
+			At the heart of the Virgo Web Server is the Virgo Kernel or VK. 
+			The VK is an OSGi-based kernel that takes full advantage of the modularity 
+			and versioning of the OSGi platform. The VK builds on Equinox and extends its capabilities for
+			provisioning and library management, as well as providing core functionality for the VWS.
+		</p><p>
+			To maintain a minimal runtime footprint, OSGi bundles are installed on demand by the
+			VK provisioning subsystem. This allows for an application to be installed into a running
+			VWS and for its dependencies to be satisfied from an external repository. Not only
+			does this remove the need to manually install all your application dependencies, which
+			would be tedious, but it also keeps memory usage to a minimum.
+		</p><p>
+			As shown in the figure, VK runs on top of Equinox within a standard Java
+			Virtual Machine. Above the VK is a layer of subsystems which contribute functionality
+			to the VWS. Subsystems are configured to run for various <span class="emphasis"><em>profiles</em></span>
+			and typically provide additional services to the basic OSGi container
+			such as serviceability,	management, and personality-specific deployment.
+		</p><p>
+			In the Virgo Web Server, applications are modular and each module has a
+			personality that describes what kind of module it is: web, batch, web service, etc. 
+			The VWS deploys modules of each personality in a personality-specific manner. 
+			For example, web modules are configured in Tomcat with web context. 
+			Each module in the application can be updated independently of the other modules 
+			whilst retaining the identity of being part of the larger application. 
+			Whatever kind of application you are building, the programming model remains standard
+			Spring and Spring DM.
+		</p><p>
+			Version 2.1.0.M03-incubation of the Virgo Web Server supports the <span class="emphasis"><em>bundle</em></span>,
+			<span class="emphasis"><em>web</em></span>, and <span class="emphasis"><em>WAR</em></span> personalities, which enable
+			you to build sophisticated web applications. The WAR personality includes support for
+			standard Java EE WARs, "shared library" WARs, and "shared services" WARs, each of
+			which will be covered in greater detail in <a class="xref" href="#architecture" title="3.&nbsp;Deployment Architecture">Chapter&nbsp;3, <i>Deployment Architecture</i></a>. Future
+			releases will include support for more personalities such as batch, web services, etc.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="introduction-why"></a>2.3&nbsp;Why the Virgo Web Server?</h2></div></div></div><p>
+			You could deploy a web application in a stand-alone servlet engine or application server.
+			Or you could even deploy directly in an OSGi container such as Equinox. However,
+			deploying in the Virgo Web Server offers a number of key benefits that make it both more
+			appealing and more suitable for enterprise application development.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="introduction-unified-deployment"></a>Deployment options and migration paths</h3></div></div></div><p>
+				While many applications deployed in the Virgo Web Server will take advantage
+				of OSGi capabilities, not all applications need such sophistication.
+				For example, development teams may initially choose to continue packaging
+				existing web applications as standard WAR files and then gradually migrate
+				toward a fully OSGi-based packaging and deployment model. The Virgo Web Server
+				makes such migrations easy for developers by supporting multiple packaging
+				and deployment formats. These formats and migration strategies are discussed
+				in greater detail in <a class="xref" href="#migrating-to-osgi" title="5.&nbsp;Migrating to OSGi">Chapter&nbsp;5, <i>Migrating to OSGi</i></a> and
+				<a class="xref" href="#formtags-case-study" title="6.&nbsp;Case study: Migrating the Form Tags sample application">Chapter&nbsp;6, <i>Case study: Migrating the Form Tags sample application</i></a>. 
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="introduction-simplified-deployment"></a>Simplified development and deployment of OSGi-based applications</h3></div></div></div><p>
+				Prior to the release of the Virgo Web Server, developing and deploying OSGi
+				applications involved inherent complexity such as:
+			</p><div class="itemizedlist"><ul type="disc"><li><span class="emphasis"><em>Obtaining OSGi bundles for popular Java libraries:</em></span>
+					For optimal benefits, every technology you use in an OSGi application must
+					be packaged as OSGi bundles. Currently, this involves manually converting
+					JAR files into bundles and making sure that any libraries needed by those
+					bundles are also available as OSGi bundles.
+				</li><li><span class="emphasis"><em>Package management complexity:</em></span>
+					OSGi bundles use other bundles through <code class="code">Import-Package</code> manifest headers.
+					Many applications use a set of common technologies (e.g., an ORM solution,
+					a web framework, etc.). Combining these two characteristics leads to duplicated
+					configuration in the form of repeated and verbose <code class="code">Import-Package</code> statements.
+				</li><li><span class="emphasis"><em>Lack of application-level isolation:</em></span>
+					In OSGi everything is a bundle, and all bundles share the same OSGi Service Registry.
+					To highlight how conflicts can arise between applications and their services in this
+					shared service registry, consider the following scenarios.
+					<div class="itemizedlist"><ul type="circle"><li>
+							Application <code class="code">A</code> is comprised of bundles <code class="code">B</code> and <code class="code">C</code>. 
+							In a standard OSGi environment, if you attempt to install two instances of the same
+							version of application <code class="code">A</code> (i.e., two sets of bundles <code class="code">B</code> and
+							<code class="code">C</code>), a clash will occur, because you cannot deploy multiple bundles with
+							the same <code class="code">Bundle-SymbolicName</code> and <code class="code">Bundle-Version</code> combination.
+						</li><li>
+							Application <code class="code">A1</code> is comprised of bundles <code class="code">B1</code> and <code class="code">C1</code>. 
+							Similarly, application <code class="code">A2</code> is comprised of bundles <code class="code">B2</code> and <code class="code">C2</code>.
+							Each bundle has a unique combination of <code class="code">Bundle-SymbolicName</code> and <code class="code">Bundle-Version</code>.
+							Bundles <code class="code">B1</code> and <code class="code">B2</code> both export service <code class="code">S</code> which
+							is imported by both <code class="code">C1</code> and <code class="code">C2</code>. In contrast to the previous
+							example, there is no conflict resulting from duplicate 
+							<code class="code">Bundle-SymbolicName</code>/<code class="code">Bundle-Version</code> combinations; however,
+							there is a clash for the exported service <code class="code">S</code>. 
+							Which service <code class="code">S</code> will bundles <code class="code">C1</code> and <code class="code">C2</code> end up
+							using once they are installed?
+							Assuming bundles <code class="code">B1</code> and <code class="code">C1</code> are intended to work together, 
+							you would not want bundle <code class="code">C1</code> to get a reference to service <code class="code">S</code>
+							from bundle <code class="code">B2</code>, because it is installed in a different logical application.
+							On the contrary, you typically want bundle <code class="code">C1</code> to get a reference to 
+							service <code class="code">S</code> exported by bundle <code class="code">B1</code>, but in a standard OSGi environment
+							this may not be the case.
+						</li></ul></div></li></ul></div><p>
+				Furthermore, since standard OSGi does not define a notion of an application as a set of bundles,
+				you cannot deploy or undeploy an application and its constituent bundles as a single unit.
+			</p><p>
+				The Virgo Web Server introduces a number of features to solve these issues:
+			</p><div class="itemizedlist"><ul type="disc"><li>
+					A full set of OSGi bundles for many popular Java libraries to get you
+					started quickly with creating OSGi applications.
+				</li><li>
+					An OSGi library concept that obviates the need to
+					duplicate verbose <code class="code">Import-Package</code> statements.
+				</li><li>
+					The PAR packaging format which offers
+					application-level isolation and deployment.
+				</li><li>
+					The concept of a plan, which is an XML file that lists a collection of bundles that Virgo Web Server should load together as a single application.  Conceptually, plans are very like PARs, except that a plan describes the contents of the application rather than a PAR that actually contains them.
+				</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="introduction-diagnostics"></a>Enhanced diagnostics during deployment and in production</h3></div></div></div><p>
+			    Identifying why an application won&#8217;t deploy or which particular library
+			    dependencies are unsatisfied is the cause of many headaches!
+			    Similarly, production time errors that don&#8217;t identify the root cause are
+			    all too familiar to Java developers. The VWS was designed from the
+			    ground up to enable tracing and First Failure Data Capture (FFDC) that
+			    empower developers with precise information at the point of failure to
+			    fix the problem quickly.
+			</p></div></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="architecture"></a>3.&nbsp;Deployment Architecture</h2></div></div></div><p>
+		The Virgo Web Server
+		offers several choices when it comes to deploying applications. Each choice offers certain advantages, and it is
+		important to understand those in order to make the right choice for your application. In this chapter, we take a
+		closer look at the choices offered, compare them, and provide guidelines in choosing the right one based on your
+		specific needs. 
+	</p><p>
+		The VWS supports standard self-contained WAR files thus allowing you to use the Virgo Web Server
+		as an enhanced web server. The VWS also supports the 
+		<span class="emphasis"><em>Shared Libraries</em></span>
+		WAR format which allows for slimmer WAR files that depend on OSGi bundles instead of including JAR files inside the
+		WAR. The
+		<span class="emphasis"><em>Shared Services</em></span>
+		WAR format allows developers to further reduce the complexity of standard WARs by deploying services and
+		infrastructure bundles alongside the WAR. A shared services WAR will then consume the services published by those
+		bundles. To complete the picture, the VWS supports the new OSGi-standard
+		<span class="emphasis"><em>Web Bundle</em></span>
+		deployment format for web applications that builds on the benefits provided by a shared services WAR. In addition
+		to this VWS provides additional conveniences for developing and deploying Spring MVC-based web
+		applications.
+	</p><p>For applications consisting of multiple bundles and web applications, plans and the PAR format are the
+		primary deployment models that take advantage of OSGi capabilities. We will explore all of these formats and their
+		suitability later in this guide.</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="architecture-deployment-formats"></a>3.1&nbsp;Supported Deployment Formats</h2></div></div></div><p>
+			The Virgo Web Server
+			supports applications packaged in the following formats: 
+		</p><div class="orderedlist"><ol type="1"><li><p><a class="link" href="#architecture-raw-osgi-bundles" title="Raw OSGi Bundles">Raw OSGi Bundles</a></p></li><li><p><a class="link" href="#architecture-wars" title="WAR Deployment Formats">Java EE WAR</a></p></li><li><p><a class="link" href="#architecture-war-rfc66" title="WARs and the OSGi Web Container (RFC66)">Web Bundles</a></p></li><li><p><a class="link" href="#architecture-pars" title="PAR">PAR</a></p></li><li><p><a class="link" href="#architecture-plans" title="Plans">Plans</a></p></li></ol></div><p>
+			When you deploy an application to the VWS, each deployment artifact (e.g., a single bundle, WAR, PAR, or
+			plan) passes through a deployment pipeline. This deployment pipeline supports the notion of personality-specific
+			deployers which are responsible for processing an application with a certain personality (i.e., application type).
+			The 2.1.0.M03-incubation release of the VWS natively supports personality-specific deployers analogous
+			to each of the aforementioned packaging options. Furthermore, the deployment pipeline can be extended with additional
+			personality deployers, and future releases of the VWS will provide support for personalities such as
+			Batch, Web Services, etc.
+		</p><p>
+			Let&#8217;s take a closer look now at each of the supported deployment and packaging options to explore which one is best
+			suited for your applications.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="architecture-raw-osgi-bundles"></a>Raw OSGi Bundles</h3></div></div></div><p>
+				At its core, the Virgo Web Server
+				is an OSGi container. Thus any OSGi-compliant bundle can be deployed directly on the VWS unmodified.
+				You&#8217;ll typically deploy an application as a single bundle or a set of stand-alone bundles if you&#8217;d like to publish or
+				consume services globally within the container via the OSGi Service Registry. 
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="architecture-wars"></a>WAR Deployment Formats</h3></div></div></div><p>
+				For Web Application Archives (WAR), the Virgo Web Server
+				provides support for the following three formats. 
+			</p><div class="orderedlist"><ol type="1"><li><p><a class="link" href="#architecture-standard-war" title="Standard WAR">Standard WAR</a></p></li><li><p><a class="link" href="#architecture-shared-libraries-war" title="Shared Libraries WAR">Shared Libraries WAR</a></p></li><li><p><a class="link" href="#architecture-shared-services-war" title="Shared Services WAR">Shared Services WAR</a></p></li></ol></div><p> Each of these formats plays a distinct role in the incremental migration path from a standard Java EE WAR to
+				an OSGi-ified web application.</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="architecture-standard-war"></a>Standard WAR</h4></div></div></div><p>
+					Standard WAR files are supported directly in the VWS. At deployment time, the WAR file is
+					transformed into an OSGi bundle and installed into Tomcat. All the standard WAR contracts are honored, and your
+					existing WAR files should just drop in and deploy without change. Support for standard, unmodified WAR files
+					allows you to try out the Virgo Web Server on your existing web applications and then gradually migrate toward the
+					<span class="emphasis"><em>Shared Libraries WAR</em></span>
+					and
+					<span class="emphasis"><em>Shared Services WAR</em></span>
+					formats.
+				</p><p> In addition to the standard support for WARs that you would expect from Tomcat, the VWS also
+					enables the following features:</p><div class="orderedlist"><ol type="1"><li><p>Spring-driven load-time weaving (see Section 6.8.4, &#8220;Load-time weaving with AspectJ in the
+							Spring Framework").</p></li><li><p>Diagnostic information such as FFDC (first failure data capture)</p></li></ol></div><p> The main benefit of this application style is familiarity -- everyone knows how to create a WAR file! You can
+					take advantage of the VWS&#8217;s added feature set without modifying the application. The application
+					can also be deployed on other Servlet containers or Java EE application servers.</p><p>
+					You may choose this application style if the application is fairly simple and small. You may also prefer this style
+					even for large and complex applications as a starting point and migrate to the other styles over time as discussed
+					in
+					<a class="xref" href="#migrating-to-osgi" title="5.&nbsp;Migrating to OSGi">Chapter&nbsp;5, <i>Migrating to OSGi</i></a>
+					.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="architecture-shared-libraries-war"></a>Shared Libraries WAR</h4></div></div></div><p>
+					If you have experience with developing and packaging web applications using the standard WAR format, you&#8217;re
+					certainly familiar with the pains of library bloat. So, unless you&#8217;re installing shared libraries in a common
+					library folder for your Servlet container, you have to pack all JARs required by your web application in
+					<code class="literal">/WEB-INF/lib</code>. 
+					Prior to the release of the Virgo Web Server, such library bloat has essentially been the norm for web applications, but
+					now there is a better solution! The Shared Libraries WAR format reduces your application&#8217;s deployment footprint and
+					eradicates library bloat by allowing you to declare dependencies on libraries via standard OSGi manifest headers
+					such as
+					<code class="literal">Import-Package</code>
+					and
+					<code class="literal">Require-Bundle</code>
+					. The VWS provides additional support for simplifying dependency management via the
+					<code class="literal">Import-Library</code>
+					and
+					<code class="literal">Import-Bundle</code>
+					manifest headers which are essentially macros that get expanded into OSGi-compliant
+					<code class="literal">Import-Package</code>
+					statements.
+				</p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+						For detailed information on which libraries are already available, check out the
+						<a class="ulink" href="http://www.springsource.com/repository" target="_top">SpringSource Enterprise Bundle Repository
+						</a>
+						.
+					</p></td></tr></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="architecture-shared-services-war"></a>Shared Services WAR</h4></div></div></div><p>
+					Once you&#8217;ve begun taking advantage of declarative dependency management with a Shared Libraries WAR, you&#8217;ll likely
+					find yourself wanting to take the next step toward reaping further benefits of an OSGi container: sharing services
+					between your OSGi-compliant bundles and your web applications. By building on the power and simplicity of
+					Spring-DM, the
+					<span class="emphasis"><em>Shared Services WAR</em></span>
+					format puts the OSGi Service Registry at your finger tips. As a best practice you&#8217;ll typically publish services
+					from your domain, service, and infrastructure bundles via
+					<code class="literal">&lt;osgi:service ... /&gt;</code>
+					and then consume them in your web application&#8217;s ApplicationContext via
+					<code class="literal">&lt;osgi:reference ... /&gt;</code>.
+					Doing so promotes programming to interfaces and allows you to completely decouple your web-specific deployment
+					artifacts from your domain model, service layer, etc., and that&#8217;s certainly a step in the right direction. Of the
+					three supported WAR deployment formats, the Shared Services WAR is by far the most attractive in terms of
+					modularity and reduced overall footprint of your web applications.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="architecture-war-rfc66"></a>WARs and the OSGi Web Container (RFC66)</h4></div></div></div><p>
+					Virgo Web Server fully supports the OSGi Web Container (RFC66) standard. In fact, the reference implementation for RFC66 
+					was developed by SpringSource from an offshoot of the original VWS codebase. This RI is now fully integrated in
+					VWS as the basis of the support for web application deployment. 
+				</p><p>
+					The Web Container specification introduces the concept of a <span class="emphasis"><em>web bundle</em></span>, which is a WAR that is also
+					a bundle. The specification defines how WAR files are transformed into bundles automatically as needed. 
+				</p><p>
+					The Web Container specification is not yet publicly available, but you can find an introduction to the Web Container in
+					blog entries written by the VWS team 
+					<a class="ulink" href="http://blog.springsource.com/2009/05/27/introduction-to-the-osgi-web-container/" target="_top">here</a> 
+					and <a class="ulink" href="http://blog.springsource.com/2009/06/01/what-the-osgi-web-container-means-for-dm-server/" target="_top">here</a>.
+				</p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="architecture-war-rfc66-extensions"></a>Extensions to the Web Container</h5></div></div></div><p>
+						Virgo Web Server provides a variety of extensions to the Web Container that allow you to construct sophisticated applications.
+						The table below, summarizes the extensions that are available or in development.
+					</p><div class="table"><a name="d0e497"></a><p class="title"><b>Table&nbsp;3.1.&nbsp;</b></p><div class="table-contents"><table style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Feature</th><th style="border-bottom: 1.0pt solid ; ">Description</th><th style="border-bottom: 1.0pt solid ; ">Notes</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Auto-import of system packages</td><td style="border-bottom: 1.0pt solid ; ">All packages exported by the system bundle are automatically imported by web bundles</td><td style="border-bottom: 1.0pt solid ; ">This feature is being discussed for inclusion in the specification</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Instrumentable ClassLoaders</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">All web bundle ClassLoaders are instrumentable by Spring&#8217;s load-time weaving infrastructure.</td><td style="border-bottom: 1.0pt solid ; ">&nbsp;</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Support for exploded bundles/WARs</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Bundles/WARs in directory form can be deployed as web bundles</td><td style="border-bottom: 1.0pt solid ; ">&nbsp;</td></tr><tr><td style="border-right: 1.0pt solid ; ">Support for scanning TLDs in dependencies</td><td style="border-right: 1.0pt solid ; ">As per the Web Container specification, all TLDs located inside a web bundle are located using the rules 
+									defined in the JSP 2.1 specification. In VWS, the dependencies of a web bundle are also scanned 
+									for TLDs following the rules outlined in JSP 2.1</td><td class="auto-generated" style="">&nbsp;</td></tr></tbody></table></div></div><br class="table-break"></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="architecture-web-modules"></a>Web Modules</h3></div></div></div><p>
+				Web Modules have been removed in favor of war files and web bundles following the OSGi Web Container specification.
+				We believe our users will benefit more from a standard model than one that is VWS-specific.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="architecture-pars"></a>PAR</h3></div></div></div><p>
+				A PAR is a standard JAR which contains all of the modules of your application (e.g., service,
+				domain, and infrastructure bundles as well as a WAR or web module for web applications) in a single deployment unit.
+				This allows you to deploy, refresh, and undeploy your entire application as a single entity. If you are familiar with Java
+				EE, it is worth noting that a PAR can be considered a replacement for an EAR (Enterprise Archive) within the context
+				of an OSGi container. As an added bonus, modules within a PAR can be refreshed independently and on-the-fly, for
+				example via the Virgo Web Server Tool Suite (see <a class="xref" href="#tooling" title="7.&nbsp;Tooling">Chapter&nbsp;7, <i>Tooling</i></a>).
+			</p><p>
+				Many of the benefits of the PAR format are due to the underlying OSGi infrastructure, including:
+				</p><div class="itemizedlist"><ul type="disc"><li><p> Fundamentally modularized applications: instead of relying on fuzzy boundaries between logical modules
+						in a monolithic application, this style promotes physically separated modules in the form of OSGi bundles. Then
+						each module may be developed separately, promoting parallel development and loose coupling.</p></li><li><p> Robust versioning of various modules: the versioning capability offered by OSGi is much more
+						comprehensive than any alternatives. Each module can specify a version range for each of its dependencies. Bundles
+						are isolated from each other in such a way that multiple versions of a bundle may be used simultaneously in an
+						application.</p></li><li><p> Improved serviceability: each bundle may be deployed or undeployed in a running application. This allows
+						modifying the existing application to fix bugs, improve performance, and even to add new features without having
+						to restart the application.</p></li></ul></div><p>
+			</p><p> Furthermore, PARs scope the modules of your application within the VWS. Scoping provides both a
+				physical and logical application boundary, effectively shielding the internals of your application from other PARs deployed
+				within the VWS. This means your application doesn&#8217;t have to worry about clashing with other running
+				applications (e.g., in the OSGi Service Registry). You get support for load-time weaving, classpath scanning, context class
+				loading, etc., and the VWS does the heavy lifting for you to make all this work seamlessly in an OSGi
+				environment. If you want to take full advantage of all that the Virgo Web Server and OSGi have to offer, packaging and deploying
+				your applications as a PAR is a good choice, although plans are an even better one, as described in the next section.</p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip: OSGi != multiple JARs"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">OSGi != multiple JARs</th></tr><tr><td align="left" valign="top"><p>
+					Note that while physically separated modules can, in theory, be implemented simply using multiple
+					JARs, complex versioning requirements often make this impractical. For example,
+					consider the situation depicted in the diagram below. 
+
+					</p><div class="itemizedlist"><ul type="disc"><li><p>Bundle A depends on version 1.0.0 of bundle B and version 2.0.0 of bundle C.</p></li><li><p>Bundle B depends on version 1.0.0 of bundle C.</p></li></ul></div><p>
+
+					Suppose that versions 1.0.0 and 2.0.0 of bundle C are neither backward nor forward compatible. Traditional monolithic
+					applications cannot handle such situations: either bundle A or bundle B would need reworking which undermines
+					truly independent development. OSGi&#8217;s versioning scheme enables this scenario to be implemented in a robust manner.
+					If it is desirable to rework the application to share a single version of C, then this can be planned in and is not forced.
+				</p><div class="mediaobject"><img src="images/architecture-bundle-versioning.png"></div></td></tr></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="architecture-plans"></a>Plans</h3></div></div></div><p>
+				A plan is similar to a PAR in that it encapsulates all of the artifacts of your application in a single deployment unit. 
+				The main difference, however, is that a plan is simply an XML file that lists the artifacts of your application; 
+				a PAR, by contrast, is an actual JAR file that physically contains the artifacts.  
+				Just like a PAR, you deploy, refresh, and undeploy a plan as a single entity. 
+				We highly recommends the use of plans for creating applications.
+			</p><p>
+				When you create a plan, you can specify that the included bundles and services are in a scope that isolates them 
+				from the rest of Virgo Web Server 
+				and its deployments. 
+				This scoping ensures that the bundles wire to each other and see each other&#8217;s services in preference to services 
+				from outside the scope. 
+				Scoping also prevents application code from leaking into the global scope or scope of another application. 
+				In addition, a plan can link the lifecycle of a group of bundles together atomically, which ensures that install, 
+				start, stop, and uninstall events 
+				on a single artifact in the plan are escalated to all artifacts in the plan.  
+				You can, however, disable both of these features by simply updating an attribute in the plan.
+			</p><p>
+				The general benefits of using plans are similar to those of using PARs; see <a class="link" href="#architecture-pars" title="PAR">PAR</a> for details.  
+				Plans offer added benefits, however, such as the ability to control the deployment order of your application: 
+				the order in which you list artifacts in the plan&#8217;s XML file is the order in which VWS deploys them.  
+				Additionally, because plans specify the artifacts that make up an application by reference, it is easier to share content 
+				between plans as well as update individual parts of a plan without having to physically repackage (re-JAR) it.
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="architecture-dependency-types"></a>3.2&nbsp;Dependency Types</h2></div></div></div><p>
+			In an OSGi environment, there are two kinds of dependencies between various bundles: <span class="emphasis"><em>type</em></span>
+			dependency and <span class="emphasis"><em>service</em></span> dependency.
+			</p><div class="itemizedlist"><ul type="disc"><li><p>
+						<span class="bold"><strong>Type dependency</strong></span>: A bundle may depend on a type exported by another
+						bundle thus creating a type dependency. Type dependencies are managed through <code class="literal">Import-Package</code>
+						and <code class="literal">Export-Package</code> directives in the OSGi manifest. This kind of dependency is similar
+						to a JAR file using types in other JAR files from the classpath. However, as we&#8217;ve seen earlier, there are
+						significant differences.
+					</p></li><li><p>
+						<span class="bold"><strong>Service dependency</strong></span>: A bundle may also publish services (preferably using
+						Spring-DM), and other bundles may consume those services. If two bundles depend on the same service, both
+						will be communicating effectively to the same object. More specifically, any state for that service will
+						be shared between all the clients of that service. This kind of arrangement is similar to the commonly
+						seen client-server interaction through mechanisms such as RMI or Web Services.
+					</p></li></ul></div><p>
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="architecture-forming-bundles"></a>3.3&nbsp;A guide to forming bundles</h2></div></div></div><p>
+			So what makes a good application suitable for deployment on the Virgo Web Server? Since OSGi is at the heart of the
+			VWS, modular applications consisting of bundles, which each represent distinct functionality and
+			well-defined boundaries, can take maximum advantage of the OSGi container&#8217;s capabilities. The core ideas behind forming
+			bundles require following good software engineering practices: separation of concerns, minimum coupling, and communication
+			through clear interfaces. In this section, we look at a few approaches that you may use to create modular applications
+			for Virgo Web Server deployment. Please consider the following discussion as guidelines and not as rules. 
+		</p><p> Bundles can be formed along horizontal slices of layering and vertical slices of function. The objective is to
+			enable independent development of each bundle and minimize the skills required to develop each bundle.</p><p>
+			For example, an application could have the following bundles: <span class="emphasis"><em>infrastructure</em></span>,
+			<span class="emphasis"><em>domain</em></span>, <span class="emphasis"><em>repository</em></span>, <span class="emphasis"><em>service</em></span>, and
+			<span class="emphasis"><em>web</em></span> as shown in the following diagram.</p><p>
+			</p><div class="mediaobject"><img src="images/bundle-dependencies-layers.png"></div><p>
+				
+			Each bundle consists of types appropriate for that layer and exports packages and services to be used by other
+			layers. Let&#8217;s examine each bundle in more detail:
+			</p><div class="table"><a name="architecture-forming-bundles-across-layers-table"></a><p class="title"><b>Table&nbsp;3.2.&nbsp;Bundles across layers</b></p><div class="table-contents"><table summary="Bundles across layers" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col><col><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Bundles</th><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Imported Packages</th><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Exported Packages</th><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Consumed Services</th><th style="border-bottom: 1.0pt solid ; ">Published Services</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Infrastructure</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Third-party libraries</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Infrastructure interfaces</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">None</td><td style="border-bottom: 1.0pt solid ; ">None</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Domain</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Depends: for example, if JPA is used to annotate persistent types, then JPA packages.</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Public domain types</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">None</td><td style="border-bottom: 1.0pt solid ; ">None</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Web</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Domain, Service</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">None</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Service beans</td><td style="border-bottom: 1.0pt solid ; ">None</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Service</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Domain, Infrastructure, Repository</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Service interfaces</td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Repository beans</td><td style="border-bottom: 1.0pt solid ; ">Service beans</td></tr><tr><td style="border-right: 1.0pt solid ; ">Repository</td><td style="border-right: 1.0pt solid ; ">Domain, Third-party libraries, ORM bundles, etc.</td><td style="border-right: 1.0pt solid ; ">Repository interfaces</td><td style="border-right: 1.0pt solid ; ">DataSources, ORM session/entity managers, etc.</td><td style="">Repository beans</td></tr></tbody></table></div></div><p><br class="table-break">
+		</p><p>
+			Within each layer, you may create bundles for each subsystem representing a vertical slice of business functionality.
+			For example, as shown in the following figure, the service layer is divided into two bundles each representing
+			separate business functionalities.
+			</p><div class="mediaobject"><img src="images/bundle-dependencies-verticals.png"></div><p>
+		</p><p> You can similarly separate the repositories, domain classes, and web controllers based on the business role
+			they play.</p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="developing-applications"></a>4.&nbsp;Developing Applications</h2></div></div></div><p>
+		Applications that take advantage of the OSGi capabilities of the Virgo Web Server
+		are typically comprised of multiple bundles. Each bundle may have dependencies on
+		other bundles. Furthermore, each bundle exposes only certain packages and
+		services. In this chapter, we look at how to create bundles, import and export
+		appropriate functionality, and create artifacts to deploy web applications on the Virgo Web Server. 
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-bundle"></a>4.1&nbsp;Anatomy of a bundle</h2></div></div></div><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+				This is an abbreviated introduction to OSGi bundles. Please refer to the
+				<a class="ulink" href="http://static.springframework.org/osgi/docs/current/reference/html/" target="_top"> 
+				Spring Dynamic Modules for OSGi documentation</a> for full details.
+			</p></td></tr></table></div><p>
+			An OSGi bundle is simply a jar file with metadata that describe
+			additional characteristics such as version and imported and exported packages.
+		</p><p>
+			A bundle exports types and publishes services to be used by other bundles:
+		</p><div class="itemizedlist"><ul type="disc"><li><p>
+					<span class="bold"><strong>Types</strong></span>:
+					via the OSGi <code class="code">Export-Package</code> directive,
+				</p></li><li><p>
+					<span class="bold"><strong>Services</strong></span>:
+					via Spring-DM&#8217;s <code class="code">&lt;service ... /&gt;</code> XML namespace element.
+				</p></li></ul></div><p>
+			A bundle may import types and services exported by other bundles:
+		</p><div class="itemizedlist"><ul type="disc"><li><p><span class="bold"><strong>Types</strong></span>:
+				via the OSGi <code class="code">Import-Package</code> directive,</p></li><li><p><span class="bold"><strong>Services</strong></span>:
+				via Spring-DM&#8217;s <code class="code">&lt;reference ... /&gt;</code> XML namespace element.</p></li></ul></div><p>
+			Let&#8217;s see an example from the PetClinic sample application. The following listing shows the
+			<code class="filename">MANIFEST.MF</code> file for the <code class="code">org.springframework.petclinic.infrastructure.hsqldb</code> bundle.
+		</p><pre class="programlisting">
+Manifest-Version: 1.0
+<span class="bold"><strong>Bundle-ManifestVersion</strong></span>: 2
+<span class="bold"><strong>Bundle-Name</strong></span>: PetClinic HSQL Database Infrastructure
+<span class="bold"><strong>Bundle-SymbolicName</strong></span>: org.springframework.petclinic.infrastructure.hsqldb
+<span class="bold"><strong>Bundle-Version</strong></span>: 1.0
+<span class="bold"><strong>Import-Library</strong></span>: org.springframework.spring;version="[2.5,2.6]"
+<span class="bold"><strong>Import-Bundle</strong></span>: com.springsource.org.apache.commons.dbcp;version="[1.2.2.osgi,1.2.2.osgi]",
+ com.springsource.org.hsqldb;version="[1.8.0.9,1.8.0.9]"
+<span class="bold"><strong>Import-Package</strong></span>: javax.sql
+<span class="bold"><strong>Export-Package</strong></span>: org.springframework.petclinic.infrastructure
+		</pre><p>
+			The <code class="code">org.springframework.petclinic.infrastructure.hsqldb</code> bundle expresses its dependencies on
+			the <code class="code">javax.sql</code> package, the Commons DBCP and HSQLDB bundles, and the Spring library (we will examine
+			the details of the library artifact in <a class="xref" href="#developing-applications-defining-libraries" title="Defining libraries">the section called &#8220;Defining libraries&#8221;</a>). The Commons DBCP 
+			bundle is imported at a version of exactly 1.2.2.osgi and the HSQLDB bundle is imported at a version of exactly
+			1.8.0.9. The Spring library is imported at a version between 2.5 inclusive and 2.6 exclusive.
+		</p><p>
+			Note that you do not specify the bundle that will provide the imported packages.
+			The Virgo Web Server will examine the available bundles and satisfy the required dependencies. 
+		</p><p>
+			The following <code class="filename">osgi-context.xml</code> file from the PetClinic sample&#8217;s
+			<code class="code">org.springframework.petclinic.repository.jdbc</code> bundle declares a service published by the bundle and
+			references a service published by another bundle.
+		</p><pre class="programlisting">&lt;<span class="hl-tag">?xml version="1.0" encoding="UTF-8"?</span>&gt;
+&lt;<span class="hl-tag">beans:beans</span> <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.springframework.org/schema/osgi"</span>
+    <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+    <span class="hl-attribute">xmlns:beans</span>=<span class="hl-value">"http://www.springframework.org/schema/beans"</span>
+    <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;
+
+    &lt;<span class="hl-tag">service</span> <span class="hl-attribute">id</span>=<span class="hl-value">"osgiClinic"</span> <span class="hl-attribute">ref</span>=<span class="hl-value">"clinic"</span> <span class="hl-attribute">interface</span>=<span class="hl-value">"org.springframework.petclinic.repository.Clinic"</span> /&gt;
+    &lt;<span class="hl-tag">reference</span> <span class="hl-attribute">id</span>=<span class="hl-value">"dataSource"</span> <span class="hl-attribute">interface</span>=<span class="hl-value">"javax.sql.DataSource"</span>/&gt;
+
+&lt;<span class="hl-tag">/beans:beans</span>&gt;</pre><p>
+			The <code class="code">service</code> element publishes the <code class="code">clinic</code> bean
+			(a regular Spring bean declared in the <code class="filename">module-context.xml</code> file) and specifies
+			<code class="code">org.springframework.petclinic.repository.Clinic</code> as the type
+			of the published service.
+		</p><p>The <code class="code">reference</code> elements define a <code class="code">dataSource</code> bean that references
+		    a service published by another bundle with a an interface type of <code class="code">javax.sql.DataSource</code>.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-packaging"></a>4.2&nbsp;Creating PARs and WARs</h2></div></div></div><p>
+			The Virgo Web Server supports two OSGi-oriented ways of packaging applications: the PAR format 
+			and application modules (including personality-specific modules). The VWS also supports three
+			distinct WAR deployment and packaging formats: standard Java EE WAR, Shared Libraries WAR, Shared Services WAR.
+		</p><p>
+			The VWS also supports plans as a way to describe an application. This method is similar to a PAR in that it encapsulates all the artifacts of an application as a single unit, but differs in that a plan simply lists the bundles in an XML file rather than packaging all the bundles in a single JAR file.  The use of plans offers additional benefits to using PARs; for this reason, we recommend their use.  For details, see <a class="link" href="#developing-applications-plans" title="4.3&nbsp;Creating Plans">Creating Plans</a>.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-packaging-par"></a>PARs</h3></div></div></div><p>
+				An OSGi application is packaged as a JAR file, with extension <code class="literal">.par</code>. A PAR artifact offers several benefits:
+				</p><div class="itemizedlist"><ul type="disc"><li>A PAR file has an application name, version, symbolic name, and description.</li><li>The modules of a PAR file are scoped so that they cannot
+						be shared accidentally by other applications. The scope forms a boundary for automatic
+						propagation of load time weaving and bundle refresh.</li><li>The modules of a PAR have their exported packages imported by the
+						synthetic context bundle which is used for thread context class loading. So,
+						for example, hibernate will be able to load classes of any of the exported
+						packages of the modules in a PAR file using <code class="code">Class.forName()</code> (or equivalent).</li><li>The PAR file is visible to management interfaces.</li><li>The PAR file can be undeployed and redeployed as a unit.</li></ul></div><p>
+			</p><p>
+				A PAR includes one or more application bundles and its manifest specifies the following
+				manifest headers:
+				</p><div class="table"><a name="developing-applications-packaging-par-headers-table"></a><p class="title"><b>Table&nbsp;4.1.&nbsp;PAR file headers</b></p><div class="table-contents"><table summary="PAR file headers" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Header</th><th style="border-bottom: 1.0pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">Application-SymbolicName</code></td><td style="border-bottom: 1.0pt solid ; ">Identifier for the application which, in combination with Application-Version, uniquely identifies an application</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">Application-Name</code></td><td style="border-bottom: 1.0pt solid ; ">Human readable name of the application</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">Application-Version</code></td><td style="border-bottom: 1.0pt solid ; ">Version of the application</td></tr><tr><td style="border-right: 1.0pt solid ; "><code class="literal">Application-Description</code></td><td style="">Short description of the application</td></tr></tbody></table></div></div><p><br class="table-break">
+			</p><p>
+				The following code shows an example MANIFEST.MF in a PAR file:
+			</p><pre class="programlisting"><span class="bold"><strong>Application-SymbolicName</strong></span>: com.example.shop
+<span class="bold"><strong>Application-Version</strong></span>: 1.0
+<span class="bold"><strong>Application-Name</strong></span>: Online Shop
+<span class="bold"><strong>Application-Description</strong></span>: Example.com&#8217;s Online Shopping Application</pre><p>
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-packaging-web-modules"></a>Web Modules</h3></div></div></div><p>
+				As discussed earlier, Web Modules are no longer supported in VWS. Instead, we recommend that you 
+				use Shared Service WARs or Web Bundles that are compliant with the OSGi Web Container specification.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="developing-applications-packaging-web-module-to-war"></a>Migrating to a Web Bundle from a Web Module</h4></div></div></div><p>
+					To move from a Web Module to a Web Container-compliant Web Bundle you need to follow these four steps:
+					</p><div class="orderedlist"><ol type="1"><li>Remove the <code class="literal">Module-Type</code> manifest header</li><li>Replace any <code class="literal">Web-DispatcherServletUrlPatterns</code> header with the corresponding 
+						servlet entries in <code class="literal">web.xml</code></li><li>Replace any <code class="literal">Web-FilterMappings</code> header with the corresponding filter 
+						entries in <code class="literal">web.xml</code></li><li>Move all content in <code class="literal">MODULE-INF</code> to the root of the WAR</li></ol></div><p>
+				</p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="developing-applications-packaging-web-module-to-war-ds"></a>Removing <code class="literal">Web-DispatcherServletUrlPatterns</code></h5></div></div></div><p>
+						To remove a <code class="literal">Web-DispatcherServletUrlPatterns</code> header such as
+						<code class="literal">Web-DispatcherServletUrlPatterns: *.htm</code>, start by declaring 
+						a <code class="classname">DispatcherServlet</code> in <code class="literal">web.xml</code>:
+					</p><pre class="programlisting">&lt;servlet&gt;
+    &lt;servlet-name&gt;dispatcher.myapp&lt;/servlet-name&gt;
+    &lt;servlet-<span class="hl-keyword">class</span>&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-<span class="hl-keyword">class</span>&gt;
+&lt;/servlet&gt;</pre><p>
+						For every mapping in the <code class="literal">DispatcherServletUrlPatterns</code> header, create the 
+						corresponding <code class="literal">servlet-mapping</code>:
+					</p><pre class="programlisting">&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;dispatcher.myapp&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;*.htm&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="developing-applications-packaging-web-module-to-war-filter"></a>Removing <code class="literal">Web-FilterMappings</code></h5></div></div></div><p>
+						To remove a <code class="literal">Web-FilterMappings</code> header such as
+						<code class="literal">Web-FilterMappings: myfilter;url-patterns:="*.htm"</code>, start by declaring 
+						<code class="classname">DelegatingFilterProxy</code> in <code class="literal">web.xml</code> for each filter listed:
+					</p><pre class="programlisting">&lt;filter&gt;
+	&lt;filter-name&gt;myfilter&lt;/filter-name&gt;
+	&lt;filter-<span class="hl-keyword">class</span>&gt;org.springframework.web.filter.DelegatingFilterProxy&lt;/filter-<span class="hl-keyword">class</span>&gt;
+&lt;/filter&gt;</pre><p>
+						For every mapping listed for the filter create the 
+						corresponding <code class="literal">filter-mapping</code>:
+					</p><pre class="programlisting">&lt;filter-mapping&gt;
+    &lt;filter-name&gt;myfilter&lt;/filter-name&gt;
+    &lt;url-pattern&gt;*.htm&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;</pre></div></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-plans"></a>4.3&nbsp;Creating Plans</h2></div></div></div><p>
+			Plans are similar to PARs in that they encapsulate the artifacts of an application as a single unit. As a consequence, they have similar benefits; for details of the benefits common to PARs and plans, see <a class="link" href="#developing-applications-packaging-par" title="PARs">PARs</a>.
+		</p><p>
+			Plans have the following additional benefits, which is why we recommend that you use plans rather than PARs when defining an application:
+		</p><div class="itemizedlist"><ul type="disc"><li>Virgo Web Server deploys the artifacts in the plan in the order in which they are listed in the XML file, which gives you complete control over deployment order.  With a PAR, the order of deployment of the included artifacts is not guaranteed.</li><li>Plans describe their contents by reference (using an XML file) as opposed to PARs that are JAR files that physically contain the included artifacts.   For this reason, it is easier to share content between plans as well as update individual parts of a plan without having to physically repackage (re-JAR) it.</li><li>You can enable or disable whether a plan is scoped or atomic; PARs are always scoped and atomic.</li></ul></div><p>
+			Plans always get their dependencies from the VWS repository.  This means, for example, that if you drop one of the plan&#8217;s dependencies in the <code class="code">pickup</code> directory rather than adding it to the repository, the plan will fail to deploy because it will not find the dependency.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-plans-create"></a>Creating the Plan XML File</h3></div></div></div><p>
+				Plans are XML files that have a <code class="code">.plan</code> file extension, such as <code class="code">multi-artifact.plan</code>.  
+				The structure of the XML file is simple: 
+				the root element is <code class="code">&lt;plan&gt;</code> with attributes specifying the name of the plan, the version, atomicity, and scoping. 
+				Then, for each artifact that makes up your application, 
+				you add a <code class="code">&lt;artifact&gt;</code> element, using its attributes to specify the type of artifact and its name and version.  
+				The following is a simple example of a plan&#8217;s XML file:
+			</p><pre class="programlisting">&lt;<span class="hl-tag">?xml version="1.0" encoding="UTF-8"?</span>&gt;
+&lt;<span class="hl-tag">plan</span> <span class="hl-attribute">name</span>=<span class="hl-value">"multi-artifact.plan"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"1.0.0"</span> <span class="hl-attribute">scoped</span>=<span class="hl-value">"true"</span> <span class="hl-attribute">atomic</span>=<span class="hl-value">"true"</span>
+        <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.springsource.org/schema/dm-server/plan"</span>
+        <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+        <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"
+            http://www.springsource.org/schema/dm-server/plan 
+            http://www.springsource.org/schema/dm-server/plan/springsource-dm-server-plan.xsd"</span>&gt;
+
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"configuration"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"app-properties"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"1.0.0"</span>/&gt;
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"bundle"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"com.springsource.exciting.app"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"[2.0.0, 3.1.0)"</span>/&gt;
+
+&lt;<span class="hl-tag">/plan</span>&gt;</pre><p>
+				In the preceding example, the name of the plan is <code class="code">multi-artifact.plan</code> and its version is <code class="code">1.0.0</code>.  
+				The plan is both scoped and atomic.    The plan contains two artifacts: one is a bundle called <code class="code">com.springsource.exciting.app</code> and the other is a configuration file called <code class="code">app-properties</code>.  
+			</p><p>
+				The following table describes the attributes of the <code class="code">&lt;plan&gt;</code> element.
+			</p><div class="table"><a name="developing-applications-plans-create-plan-attributes"></a><p class="title"><b>Table&nbsp;4.2.&nbsp;Attributes of the &lt;plan&gt; Element</b></p><div class="table-contents"><table summary="Attributes of the <plan&gt; Element" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Attribute</th><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Description</th><th style="border-bottom: 1.0pt solid ; ">Required?</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">name</code></td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Specifies the name of this plan.  Virgo Web Server uses the name as one component of the unique identifier of this plan. </td><td style="border-bottom: 1.0pt solid ; ">Yes.</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">version</code></td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Specifies the version of this plan.  You must use OSGi version specification syntax, such as <code class="code">2.1.0</code>. Virgo Web Server uses the version as one component of the unique identifier of this plan. </td><td style="border-bottom: 1.0pt solid ; ">Yes.</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">scoped</code></td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Specifies whether Virgo Web Server should install the artifacts into plan-specific scope so that only the application described by this plan has access to the artifacts. If you disable scoping, then Virgo Web Server installs the artifacts into the global scope, which means they are then available for access by all other deployed artifacts.  Set the attribute to <code class="code">true</code> to enable scoping or <code class="code">false</code> to disable it.</td><td style="border-bottom: 1.0pt solid ; ">Yes.</td></tr><tr><td style="border-right: 1.0pt solid ; "><code class="literal">atomic</code></td><td style="border-right: 1.0pt solid ; ">Specifies whether you want to tie together the lifecycle of the artifacts in this plan. Making a plan atomic means that if you install, start, stop, or uninstall a single artifact in the plan, Virgo Web Server escalates the event to all artifacts in the plan. Also, in an atomic plan, Virgo Web Server prevents artifacts from being in inconsistent states. For example, if one artifact should fail to start, then Virgo Web Server stops all artifacts in the plan.  Set this attribute to <code class="code">true</code> to enable atomicity or <code class="code">false</code> to disable it. </td><td style="">Yes.</td></tr></tbody></table></div></div><br class="table-break"><p>
+				The following table describes the attributes of the <code class="code">&lt;artifact&gt;</code> element.
+			</p><div class="table"><a name="developing-applications-plans-create-artifact-attributes"></a><p class="title"><b>Table&nbsp;4.3.&nbsp;Attributes of the &lt;artifact&gt; Element</b></p><div class="table-contents"><table summary="Attributes of the <artifact&gt; Element" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Attribute</th><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Description</th><th style="border-bottom: 1.0pt solid ; ">Required?</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">type</code></td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Specifies the type of the artifact.  Valid values are: 
+		<div class="itemizedlist"><ul type="disc"><li><code class="code">bundle</code>: Specifies an OSGi bundle.  Use this artifact type for WAR files. </li><li><code class="code">configuration</code>: Specifies that the artifact is a configuration file.  Configuration files contain name/value pairs that set initial values for configuration properties of a bundle.  </li><li><code class="code">plan</code>: Specifies that the artifact is a plan. </li><li><code class="code">par</code>: Specifies that the artifact is a PAR. </li></ul></div>
+		</td><td style="border-bottom: 1.0pt solid ; ">Yes.</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; "><code class="literal">name</code></td><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Specifies the name of the artifact. 
+
+		<p>See <a class="link" href="#">Artifact Names</a> for guidelines for determining the name of an artifact.</p>
+							</td><td style="border-bottom: 1.0pt solid ; ">Yes.</td></tr><tr><td style="border-right: 1.0pt solid ; "><code class="literal">version</code></td><td style="border-right: 1.0pt solid ; ">Specifies the version or range of versions of this artifact that VWS should look up in its repositories and then install and deploy.  You must use OSGi version specification syntax, such as <code class="code">[1.0.0, 2.0.0)</code>. </td><td style="">No.  If not specified, defaults to <code class="code">0</code>, which in OSGi means 0 to infinity, or any version.</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="names-of-artifacts"></a>Artifact Names</h3></div></div></div><p>When you create a plan, you use the <code class="code">name</code> attribute of the <code class="code">&lt;artifact&gt;</code> element to specify the name of all the plan&#8217;s dependencies.  This section describes how to determine the name of an artifact, which is not always obvious.</p><p>Use the following guidelines to determine the name of an artifact:</p><div class="itemizedlist"><ul type="disc"><li><p><span class="bold"><strong>Bundle</strong></span>: In this context, a <span class="emphasis"><em>bundle</em></span> refers to a standard OSGi bundle as well as a Web application WAR file.   The name of a bundle is the value of the <code class="code">Bundle-SymbolicName</code> header in the <code class="code">META-INF/MANIFEST.MF</code> file of the <code class="code">*.jar</code> or <code class="code">*.war</code> file.   The following <code class="code">MANIFEST.MF</code> snippet shows a bundle with name <code class="code">com.springsource.exciting.app</code>:</p><pre class="screen">Bundle-SymbolicName: com.springsource.exciting.app</pre><p>If the bundle does not contain a <code class="code">META-INF/MANIFEST.MF</code> file, then the name of the bundle is its filename minus the <code class="code">.jar</code> or <code class="code">.war</code> extension.</p></li><li><p><span class="bold"><strong>Configuration File</strong></span>: The name of a configuration file is its filename minus the <code class="code">.properties</code> extension. </p></li><li><p><span class="bold"><strong>Plan</strong></span>: The name of a plan is the value of the required <code class="code">name</code> attribute of the <code class="code">&lt;plan&gt;</code> element in the plan&#8217;s XML file.  In the following XML snippet, the plan name is <code class="code">multi-artifact.plan</code>:</p><pre class="screen">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;plan name="<span class="bold"><strong>multi-artifact.plan</strong></span>" version="1.0.0" scoped="true" atomic="true"
+        xmlns="http://www.springsource.org/schema/dm-server/plan"
+...</pre></li><li><p><span class="bold"><strong>PAR</strong></span>: The name of a PAR is the value of the <code class="code">Application-SymbolicName</code> header in the <code class="code">META-INF/MANIFEST.MF</code> file of the <code class="code">*.par</code> file.   The following <code class="code">MANIFEST.MF</code> snippet shows a PAR with name <code class="code">com.springsource.my.par</code>:</p><pre class="screen">Application-SymbolicName: com.springsource.my.par</pre><p>If the PAR does not contain a <code class="code">META-INF/MANIFEST.MF</code> file, then the name of the PAR is its filename minus the <code class="code">.par</code> extension.</p></li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-plans-use"></a>Using the Plan</h3></div></div></div><p>
+				Because a plan is a list of artifacts, rather than a physical file that contains the artifacts, there are a few additional steps you must perform before you deploy it to VWS.  
+			</p><div class="orderedlist"><ol type="1"><li><p>Copy the artifacts that make up the plan to the <code class="code">usr</code> repository, which by default is the <code class="code">$DMS_HOME/repository/usr</code> directory, where <code class="code">$DMS_HOME</code> refers to the top-level installation directory of VWS.  Note that you might have configured the server differently; in which case, copy the artifacts to your custom repository directory.</p></li><li><p>Restart VWS.</p></li><li><p>After the server has started, either use the Admin Console to deploy the plan, or manually deploy it by copying the plan&#8217;s XML file into the <code class="code">$DMS_HOME/pickup</code> directory. </p><p>This results in VWS deploying the plan with the same semantics as a PAR file.</p></li><li><p>To undeploy the plan, use the Admin Console, or simply delete it from the <code class="code">$DMS_HOME/pickup</code> directory.</p></li></ol></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-plans-scoping"></a>Plans and Scoping</h3></div></div></div><p>As described in previous sections, you can specify that a plan be <span class="emphasis"><em>scoped</em></span>.  This means that Virgo Web Server installs the artifacts that make up the plan into a plan-specific scope so that only the application described by the plan has access to the artifacts. If you disable scoping, then Virgo Web Server installs the artifacts into the global scope, which means they are available for access by all other deployed artifacts. This section describes scoping in a bit more detail.  It also describes how you can change the default behavior of scoping, with respect to services, so that a service that is in a scope can be made globally available. </p><p>If a bundle in a given scope imports a package and a bundle in the same scope exports the package, then the import may only be satisfied by the bundle in the scope, and not by any bundles outside the scope, including the global scope.   Similarly, package exports from bundles in a scope are not visible to bundles in the global scope.</p><p>If a bundle in a scope uses Spring DM (or the blueprint service) to obtain a service reference and a bundle in the same scope uses Spring DM (or the blueprint service) to publish a matching service, then the service reference may only bind to the service published in the scope (and not to any services outside the scope).  Services published by bundles in a scope are not visible to bundles in the global scope. </p><p>However, sometimes it is useful to make a service in a scope globally available to artifacts outside the scope.  To do this, publish the service with the <code class="literal">com.springsource.service.scope</code> service property set to <code class="literal">global</code>.  Use the <code class="literal">&lt;service-properties&gt;</code> child element of <code class="literal">&lt;service&gt;</code>, as shown in the following example: </p><pre class="programlisting">&lt;service id="publishIntoGlobal" interface="java.lang.CharSequence"&gt;
+  <span class="bold"><strong>&lt;service-properties&gt;
+    &lt;beans:entry key="com.springsource.service.scope" value="global" /&gt;
+  &lt;/service-properties&gt;</strong></span>
+  &lt;beans:bean class="java.lang.String"&gt;
+    &lt;beans:constructor-arg value="foo"/&gt;
+  &lt;/beans:bean&gt;
+&lt;/service&gt;</pre></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-configuration-artifacts"></a>4.4&nbsp;Creating and Using Configuration Artifacts</h2></div></div></div><p>Applications typically include some sort of configuration data that might change depending on the environment in which the application is deployed.  For example, if an application connects to a database server using JDBC, the configuration data would include the JDBC URL of the database server, the JDBC drvier, and the username and password that the application uses to connect to the database server.    This information often changes as the application is deployed to different computers or the application moves from the testing phase to the production phase.</p><p>Virgo Web Server provides a feature called <span class="emphasis"><em>configuration artifacts</em></span> that makes it very easy for you to manage this configuration data.  A configuration artifact is simply a properties file that is made available at runtime using the OSGi <code class="literal">ConfigurationAdmin</code> service.   When you create this properties file, you set the values of the properties for the specific environment in which you are going to deploy your application, and then update the metadata of your Spring application to use the properties file.  You then deploy the application and properties file together, typically as a <a class="link" href="#developing-applications-plans" title="4.3&nbsp;Creating Plans">plan</a>.  Virgo Web Server automatically creates a configuration artifact from the properties file, and you can manage the lifecycle of this configuration artifact in the same way you manage the lifecycle of PARs, bundles, and plans, using both the Admin Shell and Admin Console.  Additionally, VWS subscribes your application for notification of any refresh of the configuration artifact and the application can then adapt accordingly, which means you can easily <span class="emphasis"><em>change</em></span> the configuration of your application without redeploying it.  </p><p>In sum, configuration artifacts, especially when combined with plans, provide an excellent mechanism for managing external configuration data for your applications.</p><p>The following sections describe the format of the configuration artifact, how to update the Spring application context file of your application so that it knows about the configuration artifact, and finally how to include it in a plan alongside your application.  </p><p>As an example to illustrate the configuration artifact feature, assume that you have a Spring bean called <code class="literal">PropertiesController</code> whose constructor requires that four property values be passed to it, as shown in the following snippet of Java code:</p><pre class="programlisting">@Controller
+public class PropertiesController {
+
+    private final String driverClassName;
+    private final String url;
+    private final String username;
+    private final String password;
+
+    public PropertiesController(String driverClassName, String url, String username, String password) {
+        this.driverClassName = driverClassName;
+        this.url = url;
+        this.username = username;
+        this.password = password;
+}</pre><p>In the preceding example, the <code class="literal">PropertiesController</code> constructor requires four property values: <code class="literal">driverClassName</code>, <code class="literal">url</code>, <code class="literal">username</code>, and <code class="literal">password</code>.  Note that the example shows just one way that a class might require property values; your application may code it another way.</p><p>Additionally, assume that the following snippet of the associated Spring application context XML file shows how the <code class="literal">PropertiesController</code> bean is configured:</p><pre class="programlisting">&lt;bean class="com.springsource.configuration.properties.PropertiesController"&gt;
+                &lt;constructor-arg value="${driverClassName}"/&gt;
+                &lt;constructor-arg value="${url}"/&gt;
+                &lt;constructor-arg value="${username}"/&gt;
+                &lt;constructor-arg value="${password}"/&gt;
+&lt;/bean&gt;</pre><p>The rest of this section describes how the bean can get these property values using a configuration artifact.</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-configuration-artifacts-propfile"></a>Creating the Properties File</h3></div></div></div><p>To create a properties file that in turn will become a configuration artifact when deployed to VWS from which a Spring bean, such as the <code class="literal">PropertiesController</code> bean, will get the actual property values, follow these guidelines:</p><div class="itemizedlist"><ul type="disc"><li><p>Create a text file in which each property is listed as a name/value pair, one pair per line.  Precede comments with a <code class="literal">#</code>.  For example:</p><pre class="screen"># Properties for the com.springsource.configuration.properties sample
+
+driverClassName   = org.w3.Driver
+url               = http://www.springsource.com
+username          = joe
+password          = secret</pre><p>The example shows four properties whose name correspond to the constructor arguments of the <code class="literal">PropertiesController</code> Spring bean.</p></li><li><p>Name the file anything you want, as long as it has a <code class="literal">.properties</code> extension, such as <code class="literal">app-properties.properties</code>.</p></li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-configuration-artifacts-app"></a>Updating Your Application</h3></div></div></div><p>To update your application so that it "knows" about the configuration artifact, you update the application's Spring application context XML file, typically located in the <code class="literal">WEB-INF</code> directory.</p><p>You use the <code class="literal">&lt;context:property-placeholder&gt;</code> element to specify that you want to use the VWS mechanism for substituting values into bean properties.  The <code class="literal">properties-ref</code> attribute of this element points to a <code class="literal">&lt;osgi-compendium:cm-properties&gt;</code> element which you use to specify the configuration artifact that contains the property values.  You set the value of the <code class="literal">persistent-id</code> attribute of this element equal to the name of the configuration artifact, which is the name of the properties file <span class="emphasis"><em>minus</em></span> the <code class="literal">.properties</code> extension. </p><p>The following sample Spring application context XMl file shows everything wired together; only relevant parts of the file are shown:</p><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:osgi-compendium="http://www.springframework.org/schema/osgi-compendium"
+  xsi:schemaLocation="http://www.springframework.org/schema/osgi 
+    http://www.springframework.org/schema/osgi/spring-osgi-1.2.xsd
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd
+    http://www.springframework.org/schema/osgi-compendium 
+    http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium-1.2.xsd"&gt;
+
+...
+
+        &lt;bean class="com.springsource.configuration.properties.PropertiesController"&gt;
+                &lt;constructor-arg value="${driverClassName}"/&gt;
+                &lt;constructor-arg value="${url}"/&gt;
+                &lt;constructor-arg value="${username}"/&gt;
+                &lt;constructor-arg value="${password}"/&gt;
+        &lt;/bean&gt;
+
+        &lt;context:property-placeholder properties-ref="configAdminProperties"/&gt;
+
+        &lt;osgi-compendium:cm-properties id="configAdminProperties" persistent-id="app-properties"/&gt;
+
+...
+
+&lt;/beans&gt; </pre></div><p>The preceding example shows how the id <code class="literal">configAdminProperites</code> wires the <code class="literal">&lt;context:property-placeholder&gt;</code> and <code class="literal">&lt;osgi-compendium:cm-properties&gt;</code> elements together.  Based on the value of the <code class="literal">persistent-id</code> attribute, you must also deploy a properties file called <code class="literal">app-properties.properties</code> which VWS installs as a configuration artifact.</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-configuration-artifacts-plan"></a>Adding the Configuration Artifact to a Plan</h3></div></div></div><p>Although you can always deploy your application and associated configuration artifact using the <code class="literal">pickup</code> directory, we recommends that you group the two together in a plan, add the two artifacts to the repository, and then deploy the plan using the <code class="literal">pickup</code> directory.  The following sample plan includes the two artifacts:</p><pre class="programlisting">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;plan name="multi-artifact.plan" version="1.0.0" 
+         scoped="false" atomic="false"
+        xmlns="http://www.springsource.org/schema/dm-server/plan"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.springsource.org/schema/dm-server/plan
+            http://www.springsource.org/schema/dm-server/plan/springsource-dm-server-plan.xsd"&gt;
+
+    &lt;artifact type="configuration" name="app-properties" version="0"/&gt;
+    &lt;artifact type="bundle" name="org.eclipse.virgo.configuration.properties" version="1.0.0"/&gt;
+&lt;/plan&gt;</pre><p>For additional information about plans, see <a class="link" href="#developing-applications-plans" title="4.3&nbsp;Creating Plans">Creating Plans</a>.</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-programmatic-access"></a>4.5&nbsp;Programmatic Access to Personality-specific Features</h2></div></div></div><p>
+			Module personalities typically provide automatic access to features
+			specific to the personality via custom manifest headers or other
+			configuration mechanisms. There may be situations, however, for which
+			programmatic access to such features is desirable or necessary.
+			This section describes how to programmatically access personality-specific
+			features from application code in a module. 
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-programmatic-access-web"></a>Programmatic Access to Web Personality Features</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="developing-applications-programmatic-access-web-application-context"></a>Programmatic Access to the WebApplicationContext</h4></div></div></div><p>
+					The Virgo Web Server automatically creates a <code class="literal">WebApplicationContext</code>
+					for Web Bundles and WAR files. When used in conjuction with an
+					an auto-configured Spring MVC <code class="literal">DispatcherServlet</code>,
+					there is generally no need to access the <code class="literal">WebApplicationContext</code>
+					programmatically, since all components of the web application are configured
+					within the scope of the <code class="literal">WebApplicationContext</code>
+					itself. However, if you wish to access the <code class="literal">WebApplicationContext</code>
+					you can do so via the web application&#8217;s <code class="literal">ServletContext</code>.
+					The Web Personality subsystem stores the bundle&#8217;s
+					<code class="literal">WebApplicationContext</code> in the ServletContext under
+					the attribute name "<code class="literal">BSN-ApplicationContext</code>", where
+					<code class="literal">BSN</code> is the <code class="literal">Bundle-SymbolicName</code>
+					of your WAR or Web Bundle.
+				</p><p>
+					Alternatively, since the Web Personality subsystem also stores the
+					<code class="literal">WebApplicationContext</code> under the attribute name
+					with the value of the <code class="literal">WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE</code>
+					constant, you may choose to use Spring MVC&#8217;s WebApplicationContextUtils&#8217;
+					<code class="literal">getWebApplicationContext(servletContext)</code>
+					or
+					<code class="literal">getRequiredWebApplicationContext(servletContext)</code>
+					methods to access the <code class="literal">WebApplicationContext</code> without providing
+					an explicit attribute name. 
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="developing-applications-programmatic-access-web-bundle-context"></a>Programmatic Access to the BundleContext</h4></div></div></div><p>
+					As required by the OSGi Web Container specification, you can access the
+					<code class="literal">BundleContext</code> of your WAR or Web Bundle via the web application&#8217;s
+					<code class="literal">ServletContext</code>. The bundle context is stored in the
+					<code class="literal">ServletContext</code> under the attribute name <code class="literal">osgi-bundlecontext</code>.
+				</p></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-automatic-imports"></a>4.6&nbsp;Automatic Imports</h2></div></div></div><p>
+			The Virgo Web Server generates automatic package imports (i.e., via the
+			<code class="literal">Import-Package</code> manifest header) for various 
+			module personalities. This section lists which packages are automatically
+			generated for each personality.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-automatic-imports-web"></a>Automatic Imports for the Web Personality</h3></div></div></div><p>
+				As required by the OSGi Web Container specification all WARs and Web Bundles will
+				automatically import the following packages:
+			</p><div class="itemizedlist"><ul type="disc"><li><code class="literal">javax.servlet;version="2.5"</code></li><li><code class="literal">javax.servlet.http;version="2.5"</code></li><li><code class="literal">javax.servlet.jsp";version="2.1"</code></li><li><code class="literal">javax.servlet.jsp.el;version="2.1"</code></li><li><code class="literal">javax.servlet.jsp.tagext;version="2.1"</code></li><li><code class="literal">javax.el";version="1.0"</code></li></ul></div><p>
+				In addition to the above-described imports, VWS will also
+				generate automatic imports for all of the packages that are exported by the system
+				bundle, unless an import for the package already exists in the artifact&#8217;s manifest,
+				or the artifact contains the package, i.e. within <code class="literal">WEB-INF/classes</code>,
+				or in a jar file in <code class="literal">WEB-INF/lib</code>. When an import is generated, it
+				is versioned such that it exactly matches the version or versions of the package that
+				are exported from the system bundle. For example, a package that&#8217;s exported only at
+				version <code class="literal">1.0.0</code> will generate an import with a version of
+				<code class="literal">[1.0.0,1.0.0]</code>, and a package that&#8217;s exported at version
+				<code class="literal">1.0.0</code> and version <code class="literal">2.0.0</code> will generate an import 
+				with a version of <code class="literal">[1.0.0,2.0.0]</code>.
+			</p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip: System Bundle Package Exports"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">System Bundle Package Exports</th></tr><tr><td align="left" valign="top"><p>
+					For further details on which packages are exported by the
+					OSGi system bundle, consult the <code class="filename">java6-server.profile</code>
+					file located in the <code class="literal">SERVER_HOME/lib</code> directory.
+				</p></td></tr></table></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-dependencies"></a>4.7&nbsp;Working with dependencies</h2></div></div></div><p>Complex enterprise frameworks such a Spring and Hibernate are typically divided into many, many different
+			packages. Traditionally, if an OSGi bundle wished to make extensive use of such a framework its manifest would
+			have to import a huge number of different packages. This can be an error-prone and tedious process. Furthermore,
+			application developers are used to thinking in terms of their application using a framework, such as Spring, as a
+			whole, rather than a long list of all the different packages that comprise the framework.
+		</p><p>The following figure provides a simple illustration of the complexity of only using <code class="code">Import-Package</code>:
+		</p><p>
+			<img src="images/import-package.png">
+		</p><p>The Virgo Web Server reduces the need for long lists of imported packages by introducing two new manifest
+			headers; <code class="code">Import-Bundle</code> and <code class="code">Import-Library</code>. The following figure provides an
+			illustration of the simplification that these new headers offer:
+	    </p><p>
+			<img src="images/import-bundle_import-library.png">			
+		</p><p>
+			As you can see, use of <code class="code">Import-Bundle</code> and <code class="code">Import-Library</code> can lead to a dramatic reduction
+			in the number of imports that you need to include in an application bundle&#8217;s manifest. Furthermore, <code class="code">Import-Bundle</code>
+			and <code class="code">Import-Library</code> are simply aliases for <code class="code">Import-Package</code>; at deployment time <code class="code">Import-Bundle</code>
+			and <code class="code">Import-Library</code> header entries are automatically expanded into numerous <code class="code">Import-Package</code> entries. This
+			means that you retain the exact same semantics of using <code class="code">Import-Package</code>, without having to go through the labourious
+			process of doing so.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-importing-libraries"></a>Importing libraries</h3></div></div></div><p>A bundle in an application can declare a dependency on a library by using the
+				Virgo Web Server-specific <code class="code">Import-Library</code> header. This header specifies a
+				comma-separated list of library symbolic names and version ranges that determine which libraries
+				are imported. By default a dependency on a library is mandatory but this can be
+				controlled through use of the resolution directive in exactly the same way as
+				it can with <code class="code">Import-Package</code>.
+			</p><pre class="programlisting">
+<span class="bold"><strong>Import-Library</strong></span>: org.springframework.spring;version="[2.5.4, 3.0)",
+ org.aspectj;version="[1.6.0,1.6.0]";resolution:="optional"
+            </pre><p>
+                This example <code class="code">Import-Library</code> header declares a mandatory dependency on the Spring
+                library at a version from 2.5.4 inclusive to 3.0 exclusive. It also declares an
+                optional dependency on the AspectJ library at exactly 1.6.0.
+            </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-importing-bundles"></a>Importing bundles</h3></div></div></div><p>A bundle in an application can declare a dependency on a bundle by using the
+		   Virgo Web Server-specific <code class="code">Import-Bundle</code> header. The header specifies a comma-separated 
+		   list of bundle symbolic names, version ranges, and scope declarmations that determine which bundles are imported and the scope of their dependency. By default a dependency
+		   on a bundle is mandatory but this can be controlled through use of the resolution directive in exactly
+		   the same way as it can with <code class="code">Import-Package</code>.
+		   </p><pre class="programlisting">
+<span class="bold"><strong>Import-Bundle</strong></span>: com.springsource.org.apache.commons.dbcp;version="[1.2.2.osgi, 1.2.2.osgi]"
+           </pre><p>
+	           This example <code class="code">Import-Bundle</code> header declares a mandatory dependency on the Apache Commons
+	           DBCP bundle at exactly 1.2.2.osgi.
+	       </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-scoping-libraries-bundles"></a>Scoping Bundles in an Application</h3></div></div></div><p>
+           When working with a scoped application, such as a PAR file or a plan, you might run into a situation where one of the bundles in the application (call it <code class="code">bundleA</code>) depends on another bundle (<code class="code">bundleB</code>) that performs a runtime task (such as class generation) that a third bundle (<code class="code">bundleC</code>) might need to know about, although <code class="code">bundleC</code> does not explicitly depend on <code class="code">bundleB</code>.  
+	    </p><p>
+ 		For example, Hibernate uses CGLIB (code generation library) at runtime to generate proxies for persistent classes.  Assume that a domain bundle in your application uses Hibernate for its persistent objects, and thus its <code class="code">Import-Bundle</code> manifest header includes the Hibernate bundle.  Further assume that a separate Web bundle uses reflection in its data-binding code, and thus needs to reflect on the persistent classes generated by Hibernate at runtime.  The Web bundle now has an indirect dependency on the Hibernate bundle because of these dynamically generated classes, although the Web bundle does not typically care about the details of how these classes are persisted.  One way to solve this dependency problem is to explicitly add the Hibernate bundle to the <code class="code">Import-Bundle</code> header of the Web bundle; however, this type of explicit-specified dependency breaks the modularity of the application and is not a programming best practice.
+           </p><p>
+           A better way to solve this problem is to specify that Virgo Web Server itself dynamically import 
+		the bundle (Hibernate in the example above) to all bundles in the application at runtime.  
+		You do this by adding the <code class="code">import-scope:=application</code> directive to the <code class="code">Import-Bundle</code> header 
+		of the bundle that has the direct dependency (the domain bundle in our example).  At runtime, although the Web bundle 
+		does not explicitly import the Hibernate bundle, Virgo Web Server implicitly imports it and thus its classes are available 
+		to the Web bundle.  This mechanism allows you to declare the dependencies you need to make your application run,
+		 without having to make changes to your application that might limit its flexibility. 
+           </p><p>
+	   	The following example shows how to use the <code class="code">import-scope</code> directive with the <code class="code">Import-Bundle</code> header:
+	   </p><pre class="programlisting">
+Import-Bundle: com.springsource.org.hibernate;version="[3.2.6.ga,3.2.6.ga]";<span class="bold"><strong>import-scope:=application</strong></span></pre><p>
+		You can also set the <code class="code">import-scope</code> directive to the (default) value <code class="code">bundle</code>; in this case, the scope of the bundle is just the bundle itself and thus Virgo Web Server does not perform any implicit importing into other bundles of the application.  
+	    </p><p>
+		Note that use of the <code class="code">import-scope:=application</code> directive of the <code class="code">Import-Bundle</code> header only makes sense when the bundle is part of a scoped application (PAR or plan);  if the bundle is not part of a scoped application, then this directive has no effect.
+	    </p><p>
+		Finally, because <code class="code">import-scope:=application</code> implicitly adds a bundle import to each bundle of the PAR or plan, the impact of subsequently refreshing the imported bundle is, in general, broader than it would have been if you had not used <code class="code">import-scope:=application</code>. This may well affect the performance of refresh.
+	    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-defining-libraries"></a>Defining libraries</h3></div></div></div><p>
+			    Libraries are defined in a simple text file, typically with a <code class="code">.libd</code> suffix. This file identifies the
+			    library and lists all of its constituent bundles. For example, the following is the library definition for
+			    Spring 2.5.4:
+			    </p><pre class="programlisting"><span class="bold"><strong>Library-SymbolicName</strong></span>: org.springframework.spring
+<span class="bold"><strong>Library-Version</strong></span>: 2.5.4
+<span class="bold"><strong>Library-Name</strong></span>: Spring Framework
+<span class="bold"><strong>Import-Bundle</strong></span>: org.springframework.core;version="[2.5.4,2.5.5)",
+ org.springframework.beans;version="[2.5.4,2.5.5)",
+ org.springframework.context;version="[2.5.4,2.5.5)",
+ org.springframework.aop;version="[2.5.4,2.5.5)",
+ org.springframework.web;version="[2.5.4,2.5.5)", 
+ org.springframework.web.servlet;version="[2.5.4,2.5.5)",
+ org.springframework.jdbc;version="[2.5.4,2.5.5)",
+ org.springframework.orm;version="[2.5.4,2.5.5)",
+ org.springframework.transaction;version="[2.5.4,2.5.5)",
+ org.springframework.context.support;version="[2.5.4,2.5.5)",
+ org.springframework.aspects;version="[2.5.4,2.5.5)",
+ com.springsource.org.aopalliance;version="1.0"</pre><p>
+			</p><p>
+				The following table lists all of the headers that may be used in a library definition:
+			</p><div class="table"><a name="developing-applications-defining-libraries-library-headers-table"></a><p class="title"><b>Table&nbsp;4.4.&nbsp;Library definition headers</b></p><div class="table-contents"><table summary="Library definition headers" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Header</th><th style="border-bottom: 1.0pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Library-SymbolicName</td><td style="border-bottom: 1.0pt solid ; ">Identifier for the library</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Library-Version</td><td style="border-bottom: 1.0pt solid ; ">Version number for the library</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Import-Bundle</td><td style="border-bottom: 1.0pt solid ; ">A comma separated list of bundle symbolic names. 
+							Each entry may optionally specify a version (using the <code class="code">version=</code> directive) 
+							and the scope of the import (using the <code class="code">import-scope</code> directive).</td></tr><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Library-Name</td><td style="border-bottom: 1.0pt solid ; ">Optional. The human-readable name of the library</td></tr><tr><td style="border-right: 1.0pt solid ; ">Library-Description</td><td style="">Optional. A human-readable description of the library</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="developing-applications-installing-dependencies"></a>Installing dependencies</h3></div></div></div><p>
+			    Rather than encouraging the packaging of all an application&#8217;s dependencies within the application itself, Virgo Web Server
+			    uses a local provisioning repository of bundles and libraries upon which an application can depend. When the Virgo Web Server
+			    encounters an application with a particular dependency, it will automatically provide, from its provisioning repository,
+			    the appropriate bundle or library.
+			</p><p>
+			    Making a dependency available for provisioning is simply a matter of copying it to the appropriate location in the
+			    VWS&#8217;s local provisioning repository. By default this is
+			    <code class="literal">SERVER_HOME/repository/bundles/usr</code> for bundles, and 
+			    <code class="literal">SERVER_HOME/repository/libraries/usr</code> for libraries. A more detailed discussion of the provisioning
+			    repository can be found in the <a class="ulink" href="../../user-guide/html/index.html" target="_top">User Guide</a>.
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-application-trace"></a>4.8&nbsp;Application trace</h2></div></div></div><p>
+		    As described in the <a class="ulink" href="../../user-guide/html/index.html" target="_top">User Guide</a> Virgo Web Server provides support for
+		    per-application trace. Virgo Web Server provides SLF4J with Logback logging for Event Logging and Tracing. 
+		    Application trace is configured in the <code class="literal">serviceability.xml</code> file.
+		    See the <a class="ulink" href="../../user-guide/html/index.html" target="_top">User Guide</a> for more details.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="developing-applications-versioning"></a>4.9&nbsp;Application versioning</h2></div></div></div><p>
+	        In much the same way that individual OSGi bundles can be versioned, Virgo Web Server allows applications to be versioned. How exactly you do this depends on how you have packaged the application:  
+		</p><div class="itemizedlist"><ul type="disc"><li>If you package your application using a PAR, you version the application by using the <code class="literal">Application-Version</code> header in the <code class="code">MANIFEST.MF</code> file of the PAR file.</li><li>If you use a plan to describe the artifacts that make up your application, you version it by using the <code class="code">version</code> attribute of the <code class="code">&lt;plan&gt;</code> root element of the plan&#8217;s XML file.</li><li>If your application consists of a single bundle, you version it in the standard OSGi way: by using the <code class="literal">Bundle-Version</code> header of the <code class="code">MANIFEST.MF</code> file of the bundle.</li></ul></div><p>
+        </p><p>Virgo Web Server uses an application&#8217;s version to prevent clashes when multiple versions of the same application are deployed at
+	        the same time. For example, the application trace support described in <a class="xref" href="#developing-applications-application-trace" title="4.8&nbsp;Application trace">Section&nbsp;4.8, &#8220;Application trace&#8221;</a>,
+	        includes the application&#8217;s name and version in the file path. This ensures that each version of the same application has its
+	        own trace or logging file.
+	    </p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="migrating-to-osgi"></a>5.&nbsp;Migrating to OSGi</h2></div></div></div><p>
+		Taking on a new technology such as OSGi may seem a bit daunting at first,
+		but a proven set of migration steps can help ease the journey. Teams
+		wishing to migrate existing applications to run on the Virgo Web Server
+		will find that their applications typically fall into one of the following
+		categories.
+
+		</p><div class="itemizedlist"><ul type="disc"><li><p>
+					<span class="bold"><strong>Web Application</strong></span>: for web applications,
+					this chapter provides an overview of the steps required to migrate
+					from a Standard WAR to a Shared Services WAR. Furthermore, the following
+					chapter provides a detailed case study involving the migration
+					of the Spring 2.0 Form Tags show case application.
+				</p></li><li><p>
+					<span class="bold"><strong>Anything else</strong></span>: for any other type
+					of application, you will typically either deploy your application
+					as multiple individual bundles, as a single PAR file, or as a plan,
+					which is the recommended approach for deploying applications on
+					the Virgo Web Server. See <a class="xref" href="#migrating-to-osgi-par-plan" title="5.2&nbsp;Migrating to a Plan or a PAR">Section&nbsp;5.2, &#8220;Migrating to a Plan or a PAR&#8221;</a> for details.
+				</p></li></ul></div><p>
+		
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="migrating-to-osgi-web"></a>5.1&nbsp;Migrating Web Applications</h2></div></div></div><p>
+			Many applications may start with the standard WAR format for web applications and
+			gradually migrate to a more OSGi-oriented architecture. Since the Virgo Web Server 
+			offers several benefits to all supported deployment formats, it provides a smooth
+			migration path. Of course, depending on your application&#8217;s complexity and your
+			experience with OSGi, you may choose to start immediately with an OSGi-based
+			architecture. 
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-standard-war"></a>Standard WAR</h3></div></div></div><p>
+				If you are not yet familiar with OSGi or simply want to deploy an existing web application on the Virgo Web Server,
+				you can deploy a standard WAR and leverage the VWS with a minimal learning curve. In fact reading the 
+				<a class="ulink" href="../../user-guide/html/index.html" target="_top">Virgo Web Server User Guide</a>
+				is pretty much all that you need to do to get started. Furthermore, you will gain
+				familiarity with the Virgo Web Server, while preparing to take advantage of the other formats. 
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-shared-libraries-war"></a>Shared Libraries WAR</h3></div></div></div><p>
+				The <span class="emphasis"><em>Shared Libraries WAR</em></span>
+				format is the first step to reaping the benefits of OSGi. In this phase, you dip your toes into OSGi-based dependency
+				management by removing JAR files from the WAR and declaring dependencies on corresponding OSGi bundles.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-shared-services-war"></a>Shared Services WAR</h3></div></div></div><p> In this phase, you take the next step toward a fully OSGi-based architecture by separating your web artifacts
+				(e.g., Servlets, Controllers, etc.) from the services they depend on.</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-web-summary"></a>Web Migration Summary</h3></div></div></div><p>
+				The following diagram graphically depicts the migration path from a Standard WAR to a Shared Services WAR.
+				As you can see, the libraries (<span class="emphasis"><em>libs</em></span>) move from within the deployment artifact
+				to the Bundle Repository.
+				Similarly, the services move from within the WAR to external bundles and are accessed via the
+				OSGi Service Registry. In addition, the overall footprint of the deployment artifact decreases
+				as you move towards a Shared Services WAR.
+				</p><div class="mediaobject"><img src="images/migration-path-war-to-shsrv.png"></div><p>
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="migrating-to-osgi-par-plan"></a>5.2&nbsp;Migrating to a Plan or a PAR</h2></div></div></div><p>
+			The first steps to migrating an existing application to a plan or a PAR are the same: deciding on the bundles that make up the application and ensuring that their <code class="code">Import-Package</code>, <code class="code">Import-Library</code>, and <code class="code">Import-Bundle</code> manifest headers are correct.   Once you have the list of bundles that make up your application, you then decide whether you want to JAR them all into a single application file (PAR) or create a plan that simply lists the bundles by reference.  Creating a plan is the recommend way to create an application, although PARs also have benefits that might suit your needs better, as described in <a class="xref" href="#migrating-to-osgi-parplan-decide" title="Plan or PAR?">the section called &#8220;Plan or PAR?&#8221;</a>.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-parplan-bundles"></a>Creating the Application Bundles</h3></div></div></div><p>
+			When migrating an existing application to the PAR packaging and deployment format or a plan,
+			you consider modularity as the prime objective. Following the ideas discussed in
+			<a class="xref" href="#architecture-forming-bundles" title="3.3&nbsp;A guide to forming bundles">Section&nbsp;3.3, &#8220;A guide to forming bundles&#8221;</a>, you refactor the application into multiple bundles.
+			You may start conservatively with a small number of bundles and then further refactor those bundles.
+		</p><p>
+			If the original code is crafted following good software practices such as separation of concerns and use of
+			well-defined interfaces, migration may involve modifying only configuration and packaging. In other words,
+			your Java sources will remain unchanged. Even configuration is likely to change only slightly.			
+		</p><p>
+			For example, the following diagram depicts a typical web application that has been refactored and
+			packaged as a PAR. The blue elements within the <span class="emphasis"><em>Application</em></span> box constitute
+			the bundles of the application. Each of these bundles imports types from other bundles within
+			the PAR using <code class="literal">Import-Package</code>. The green elements in the left column represent
+			<span class="emphasis"><em>libraries</em></span> installed on the VWS. The PAR&#8217;s bundles reference these
+			libraries using <code class="literal">Import-Library</code>. The purple element in the left column
+			represents a bundle within the VWS&#8217;s bundle repository which is imported by the DAO
+			bundle using <code class="literal">Import-Bundle</code>. In contrast to a traditional, monolithic
+			WAR deployment, the PAR format provides both a logical and physical application boundary
+			and simultaneously allows the application to benefit from both the OSGi container and the Virgo Web Server.
+			</p><div class="mediaobject"><img src="images/migrating-to-osgi-par-structure.png"></div><p>
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="migrating-to-osgi-parplan-decide"></a>Plan or PAR?</h3></div></div></div><p>
+			   Once you have refactored your existing application into separate OSGi bundles, you then must decide whether to package the bundles into a single PAR file or create a plan that lists the bundles by reference.  As described in more detail in preceding sections of this guides, PARs and plans have similar benefits, such as:
+		   </p><div class="itemizedlist"><ul type="disc"><li>Scoping</li><li>Atomicity, or the ability to deploy and control the bundles as a single unit</li><li>Versioning</li><li>Improved serviceability</li></ul></div><p>
+			Plans, the method most recommended by us to create your application, has the following added benefits:
+		   </p><div class="itemizedlist"><ul type="disc"><li>Guaranteed order of deployment, based on the order in which they are listed in the plan&#8217;s XML file</li><li>Ease of sharing content between plans and updating individual plans without having to physically repackage, due to the artifacts being listed by reference.</li><li>Ability to disable scoping and atomicity, if desired.</li></ul></div><p>
+			The main benefit of PARS is that, because they physically contain all the required artifacts, you know exactly what bundles are deployed when you deploy the PAR file, in contrast to plans that allow content to be substituted or lost.  
+		   </p><p>
+ 		   	For details about creating plans and PARs, see <a class="xref" href="#developing-applications-plans" title="4.3&nbsp;Creating Plans">Section&nbsp;4.3, &#8220;Creating Plans&#8221;</a> and <a class="xref" href="#developing-applications-packaging" title="4.2&nbsp;Creating PARs and WARs">Section&nbsp;4.2, &#8220;Creating PARs and WARs&#8221;</a>, respectively.
+		   </p></div></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="formtags-case-study"></a>6.&nbsp;Case study: Migrating the Form Tags sample application</h2></div></div></div><p>
+        In this chapter we will walk through the steps needed to migrate the
+        Form Tags sample application from a standard Java EE WAR to a fully OSGi
+        compliant <span class="emphasis"><em>Shared Services WAR</em></span> within a PAR.
+        The migration involves four packaging and deployment formats:
+        </p><div class="orderedlist"><ol type="1"><li><p>
+                    <a class="link" href="#formtags-case-study-war" title="6.2&nbsp;Form Tags WAR">Standard WAR</a>
+                </p></li><li><p>
+                    <a class="link" href="#formtags-case-study-war-shared-libs" title="6.3&nbsp;Form Tags Shared Libraries WAR">Shared Libraries WAR</a>
+                </p></li><li><p>
+                    <a class="link" href="#formtags-case-study-war-shared-services" title="6.4&nbsp;Form Tags Shared Services WAR">Shared Services WAR</a>
+                </p></li><li><p>
+                    <a class="link" href="#formtags-case-study-par" title="6.5&nbsp;Form Tags PAR">PAR with a shared services WAR</a>
+                </p></li></ol></div><p>
+    </p><p>
+        Each of these migration steps will produce a web application 
+        that can be deployed and run on the VWS.
+    </p><p>
+    	After summarising the process, an example <code class="literal">plan</code> is shown which is another way of packaging and deploying the application.
+    </p><p>
+        The following image displays the directory structure you should have
+        after installing the Form Tags sample. Note however that the release tag
+        will typically resemble <code class="literal">2.0.0.RELEASE</code>.
+    </p><p><img src="images/formtags-case-study-sample-layout.png"></p><p>
+        The <code class="literal">dist</code> directory contains the distributables,
+        and the <code class="literal">projects</code> directory contains the source code
+        and build scripts.
+   </p><p>
+        For simplicity, this chapter will focus on the distributables&#8212;which are built using Spring-Build&#8212;rather than
+        on configuring a project in an IDE.
+        </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top">
+        	Pre-packaged distributables are made available in the <code class="literal">dist</code> directory;
+        	however, if you would like to modify the samples or build them from scratch, you may
+        	do so using Spring-Build. Take a look at
+             the <code class="literal">README.TXT</code> file in each of the folders under
+             the <code class="literal">projects</code> directory in the
+             Form Tags sample for instructions.
+        </td></tr></table></div><p>
+    </p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-introduction"></a>6.1&nbsp;Overview of the Form Tags Sample Application</h2></div></div></div><p>
+            The sample that we will be using is the Form Tags show case sample
+            which was provided with Spring 2.0. The Form Tags application has
+            been removed from the official Spring 2.5.x distributions; however,
+            since it is relatively simple but still contains enough ingredients
+            to demonstrate the various considerations required during a migration,
+            we have chosen to use it for these examples. 
+        </p><p>
+            The purpose of the Form Tags show case sample was to demonstrate how
+            the Spring specific <code class="literal">form:</code> tags, released
+            in Spring 2.0, make view development with JSPs and tag libraries easier.  
+            The Form Tags application consists of a single <code class="literal">UserService</code> which returns a list
+            of <code class="literal">Users</code>. Furthermore, the application demonstrates how to list, view,
+            and edit <code class="literal">Users</code> in a simple Spring MVC based web application using JSP
+            and JSTL.
+        </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-war"></a>6.2&nbsp;Form Tags WAR</h2></div></div></div><p>
+            We begin with a standard WAR deployment.
+            </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+            	The Virgo Web Server supports the standard Java EE WAR packaging
+            	and deployment format as a first-class citizen, and there are many
+            	benefits to deploying a standard WAR file on the VWS including, 
+            	but not limited to: tooling support, runtime error diagnostics, FFDC
+            	(first failure data capture), etc.
+            	In addition, support for standard WAR deployment provides an easy on-ramp
+            	for trying out the Virgo Web Server with existing web applications.
+            </td></tr></table></div><p> 
+        </p><p>
+            The following screen shot displays the directory structure of the
+            Form Tags application using the standard WAR format. As you can see,
+            there is no deviation from the standard structure and layout, and as
+            you would expect, all of the web application&#8217;s third-party dependencies
+            (for example: Spring, Commons Logging) are packaged as JARs in
+            <code class="literal">WEB-INF/lib</code>.
+        </p><p><img src="images/formtags-case-study-exploded-war.png"></p><p>
+            To deploy this application, simply copy <code class="literal">dist/formtags-war-2.0.0.*.war</code> to 
+            the <code class="literal">SERVER_HOME/pickup</code> directory for hot deployment.
+        </p><p>
+            You should then see the VWS produce console output similar to the following:
+        </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The console output has been reformatted to fit this document.</p></td></tr></table></div><pre class="programlisting">
+[2009-07-01 14:54:45.135] fs-watcher
+    &lt;SPDE0048I&gt; Processing 'CREATED' event for file 'formtags-war-2.0.0.RELEASE.war'.
+[2009-07-01 14:54:45.797] fs-watcher
+    &lt;SPDE0010I&gt; Deployment of 'formtags-war-2.0.0.RELEASE.war' version '0' completed.
+[2009-07-01 14:54:45.797] Thread-20
+    &lt;SPWE0000I&gt; Starting web bundle '/formtags-war-2.0.0.RELEASE'.
+[2009-07-01 14:54:46.380] Thread-20
+    &lt;SPWE0001I&gt; Started web bundle '/formtags-war-2.0.0.RELEASE'.
+</pre><p>
+            Navigate to <code class="literal">http://localhost:8080/</code> plus the web application context path,
+            which in the above case is
+            <code class="literal">formtags-war-2.0.0.RELEASE</code>. Thus navigating to
+            <code class="literal">http://localhost:8080/formtags-war-2.0.0.RELEASE</code>
+            should render the sample application&#8217;s welcome page, as displayed in the screen
+            shot below.
+            </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top">
+                For WARs, the default web context path is the name of the WAR file 
+                without the <code class="literal">.war</code> extension. You can optionally 
+                specify a context path using the <code class="literal">Web-ContextPath</code> bundle
+                manifest header, which will be described in further detail later.
+            </td></tr></table></div><p>
+        </p><p>
+            <img src="images/formtags-case-study-war-webpage.png">
+        </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-war-shared-libs"></a>6.3&nbsp;Form Tags Shared Libraries WAR</h2></div></div></div><p>
+            As mentioned above, a standard WAR file typically packages of all its required
+            dependencies in <code class="literal">WEB-INF/lib</code>. The servlet container will
+            then add all of the JARs in <code class="literal">WEB-INF/lib</code> to the application&#8217;s
+            classpath.
+        </p><p>
+            The first step of the migration towards benefiting from an OSGi
+            container is to retrieve the dependencies from the VWS&#8217;s bundle
+            repository at runtime.  This can significantly reduce the time it takes to build
+            and deploy the application.  It also enables the enforcement of policies
+            regarding the use of third-party libraries.
+        </p><p>
+            The way in which dependencies are declared in an OSGi environment is
+            via manifest headers in a bundle&#8217;s <code class="literal">/META-INF/MANIFEST.MF</code>.
+            As mentioned in <a class="xref" href="#developing-applications" title="4.&nbsp;Developing Applications">Chapter&nbsp;4, <i>Developing Applications</i></a>, there are
+            three ways of expressing dependencies: <code class="literal">Import-Package</code>,
+            <code class="literal">Import-Bundle</code> and <code class="literal">Import-Library</code>.
+        </p><p>
+            The Form Tags application uses JSTL standard tag libraries. 
+            Thus, you need to choose a JSTL provider, for example the
+            Apache implementation which comes with the VWS. To use the
+            Apache implementation of JSTL, you need to express your dependency
+            as outlined in the following manifest listing.
+            Because it is a single bundle, <code class="literal">Import-Bundle</code> is 
+            the simplest and therefore preferred manifest header to use.
+        </p><p>
+            The Form Tags application requires commons-logging and Spring.  
+            It would be very painful to have to list all the Spring packages one by one.
+            Equally, considering the number of bundles that make up the 
+            Spring framework, it would be verbose to list each bundle. Therefore
+            <code class="literal">Import-Library</code> is the preferred approach
+            for expressing the dependency on the Spring framework.
+        </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+                How do you determine the name of a library definition provided
+                by the Virgo Web Server?
+                Use the <a class="ulink" href="http://www.springsource.com/repository" target="_top">SpringSource Enterprise Bundle Repository</a>.
+            </p></td></tr></table></div><p>
+            Examine the <code class="literal">/META-INF/MANIFEST.MF</code> in 
+            <code class="literal">/dist/formtags-shared-libs-*.war</code>:
+</p><pre class="programlisting">
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_13-119 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.springframework.showcase.formtags-shared-libs
+<span class="bold"><strong>Import-Library</strong></span>: org.springframework.spring;version="[2.5.4,3.1.0)"
+<span class="bold"><strong>Import-Bundle</strong></span>: com.springsource.org.apache.taglibs.standard;version="1
+ .1.2"
+</pre><p>
+        You can see the <code class="literal">Import-Library</code> and <code class="literal">Import-Bundle</code>
+        directives that instruct the VWS to add the appropriate package imports to the bundle
+        classpath used by this WAR file.
+        </p><p>
+            Deploying the shared libraries WAR onto the VWS should result
+            in console output similar to the following:
+        </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The console output has been reformatted to fit this document.</p></td></tr></table></div><pre class="programlisting">
+[2009-07-01 15:00:14.953] fs-watcher
+    &lt;SPDE0048I&gt; Processing 'CREATED' event for file 'formtags-shared-libs-2.0.0.RELEASE.war'.
+[2009-07-01 15:00:15.363] fs-watcher
+    &lt;SPDE0010I&gt; Deployment of 'org.springframework.showcase.formtags_shared_libs' version '2' completed.
+[2009-07-01 15:00:15.364] Thread-20
+    &lt;SPWE0000I&gt; Starting web bundle '/formtags-shared-libs-2.0.0.RELEASE'.
+[2009-07-01 15:00:15.816] Thread-20
+    &lt;SPWE0001I&gt; Started web bundle '/formtags-shared-libs-2.0.0.RELEASE'.
+</pre><p>
+            Navigating to <code class="literal">http://localhost:8080/formtags-shared-libs-BUILDTAG</code>
+            should render the welcome page. Note that for the pre-packaged distributable,
+            the <code class="literal">BUILDTAG</code> should be similar to <code class="literal">2.0.0.RELEASE</code>;
+            whereas, for a local build the <code class="literal">-BUILDTAG</code> may be completely
+            omitted. Please consult the console output, web-based admin console, or log
+            to determine the exact context path under which the web application has been deployed.   
+        </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-war-shared-services"></a>6.4&nbsp;Form Tags Shared Services WAR</h2></div></div></div><p>
+            The next step in the migration is to deploy the services as a separate
+            OSGi bundle which the WAR then references.
+            The Form Tags sample has a single service <code class="literal">UserManager</code>.
+        </p><p>
+            This scenario has two separate deployables, the <code class="literal">service</code> bundle and the WAR file.
+            The following image shows the two separate source trees:
+        </p><p>
+            <img src="images/formtags-case-study-shared-services-eclipse.png">
+            </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">Note that the WAR does not contain the <code class="literal">.domain</code> or
+            <code class="literal">.service</code> packages as these will be imported from the separate service bundle.
+            </td></tr></table></div><p>
+        </p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="formtags-case-study-war-shared-services-service"></a>The Service Bundle</h3></div></div></div><p>
+	            The responsibility of the first bundle (<code class="literal">formtags-shared-services-service</code>)
+	            is to provide the API of the formtags service.  This includes both the
+	            domain and the service API.  In the same way that imports are defined
+	            in the <code class="literal">/META-INF/MANIFEST.MF</code>, so are exports.  
+	            The following is the <code class="literal">/META-INF/MANIFEST.MF</code> listing from the service bundle.
+</p><pre class="programlisting">
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_13-119 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: FormTags Service (and implementation)
+Bundle-SymbolicName: org.springframework.showcase.formtags.service-shared-services
+<span class="bold"><strong>Export-Package</strong></span>: org.springframework.showcase.formtags.service,org.spri
+ ngframework.showcase.formtags.domain
+Import-Library: org.springframework.spring;version="[2.5.4,3.1.0)"
+</pre><p>
+	        </p><p>
+	        	The symbolic name of this bundle is
+	        	<code class="literal">org.springframework.showcase.formtags.service-shared-services</code>.  
+	        	Note that the name of the bundle typically describes the package
+	        	that the bundle primarily exports.  
+	        	If you take a look at the <code class="literal">repository/bundles/ext</code> in the VWS
+	        	directory, you&#8217;ll see that names are almost always indicative of the contents of the bundle.
+	        	For this example, however, we have also appended
+	        	"<code class="literal">-shared-services</code>"
+	        	in order to avoid possible clashes with other bundle symbolic names.
+	        	You will see later that the PAR also contains a service bundle.
+	            </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+	            	In OSGi, the combination of <code class="literal">Bundle-SymbolicName</code>
+	            	and <code class="literal">Bundle-Version</code> is used to uniquely identify 
+		            a bundle within the OSGi container. Furthermore, when you deploy
+		            a bundle to the Virgo Web Server, for example via the <code class="literal">pickup</code>
+		            directory, a bundle&#8217;s filename is also used to uniquely identify it for
+		            the purpose of supporting <span class="emphasis"><em>hot deployment</em></span> via
+		            the file system.
+		        </td></tr></table></div><p>
+	        </p><p>
+	            As well as exporting types (i.e. the domain classes and service
+	            API), the service bundle also publishes an implementation of the
+	            <code class="literal">UserManager</code>.  The actual implementation is
+	            <code class="literal">StubUserManager</code>; however, that should remain an
+	            implementation detail of this bundle.
+	        </p><p>
+	            The fact that this bundle publishes a service is not captured in
+	            the <code class="literal">/META-INF/MANIFEST.MF</code>, as it is a Spring-DM concept.
+	            The following image is of <code class="literal">src/main/resources/spring</code>.
+            </p><p><img src="images/formtags-case-study-shared-services-service-resources.png"></p><p>
+	             As you can see there are two Spring configuration files: <code class="literal">module-context.xml</code> and
+	            <code class="literal">osgi-context.xml</code>.  
+	            </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top">
+		            These names are abitrary; however, they follow an informal convention:
+		            <code class="literal">module-context.xml</code> typically bootstraps the Spring context
+		            (usually delegating to smaller fine grained context files inside another directory), whilst
+		            <code class="literal">osgi-context.xml</code> contains all the OSGi service exports and references.
+	            </td></tr></table></div><p>
+	            The following is a listing of <code class="literal">module-context.xml</code>.
+</p><pre class="programlisting">
+&lt;<span class="hl-tag">?xml version="1.0" encoding="UTF-8"?</span>&gt;
+	
+&lt;<span class="hl-tag">beans</span> <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.springframework.org/schema/beans"</span>
+    <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+    <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"</span>&gt;
+
+    &lt;<span class="hl-tag">bean</span> <span class="hl-attribute">id</span>=<span class="hl-value">"userManager"</span>
+        <span class="hl-attribute">class</span>=<span class="hl-value">"org.springframework.showcase.formtags.service.internal.StubUserManager"</span>/&gt;
+
+&lt;<span class="hl-tag">/beans</span>&gt;
+</pre><p>
+	            As you can see, this simply defines a bean called <code class="literal">userManager</code>.
+	            The following is a listing of <code class="literal">osgi-context.xml</code>.
+</p><pre class="programlisting">
+&lt;<span class="hl-tag">?xml version="1.0" encoding="UTF-8"?</span>&gt;
+&lt;<span class="hl-tag">beans:beans</span>
+    <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.springframework.org/schema/osgi"</span>
+    <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+    <span class="hl-attribute">xmlns:beans</span>=<span class="hl-value">"http://www.springframework.org/schema/beans"</span>
+    <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;
+
+    &lt;<span class="hl-tag">service</span> <span class="hl-attribute">ref</span>=<span class="hl-value">"userManager"</span>
+        <span class="hl-attribute">interface</span>=<span class="hl-value">"org.springframework.showcase.formtags.service.UserManager"</span>/&gt;
+               
+&lt;<span class="hl-tag">/beans:beans</span>&gt;
+</pre><p>
+	            This single bean definition exports the <code class="literal">userManager</code>
+	            defined in <code class="literal">module-context.xml</code> to the
+	            OSGi service registry and makes it available under the public
+	            <code class="literal">org.springframework.showcase.formtags.service.UserManager</code> API.
+	        </p><p>
+		        The service bundle should now be ready to deploy on the VWS.
+		        So copy <code class="literal">/dist/formtags-shared-services-services*</code>
+		        to the <code class="literal">SERVER_HOME/pickup</code> directory.
+		        Output similar to the following should appear in the VWS&#8217;s console:
+	        </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The console output has been reformatted to fit this document.</p></td></tr></table></div><pre class="programlisting">
+[2009-07-01 15:05:03.511] fs-watcher
+    &lt;SPDE0048I&gt; Processing 'CREATED' event for file 'formtags-shared-services-service-2.0.0.RELEASE.jar'.
+[2009-07-01 15:05:03.688] fs-watcher
+    &lt;SPDE0010I&gt; Deployment of 'org.springframework.showcase.formtags.service_shared_services' version '2.0.0.RELEASE' completed.
+</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="formtags-case-study-war-shared-services-war"></a>Accessing the Service and Types from the WAR</h3></div></div></div><p>
+                The WAR file now needs to access the types and service exported
+                by the service bundle. The following listing is the WAR&#8217;s
+                <code class="literal">/META-INF/MANIFEST.MF</code> which imports the types
+                exported by the service bundle. The <code class="literal">Import-Bundle</code>
+                statement has also been extended to import <code class="literal">org.springframework.osgi.core</code>,
+                which is necessary in order to load an OSGi-enabled <code class="literal">WebApplicationContext</code>.
+</p><pre class="programlisting">
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_13-119 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.springframework.showcase.formtags.web-shared-
+ services
+<span class="bold"><strong>Import-Package</strong></span>: org.springframework.showcase.formtags.domain,org.sprin
+ gframework.showcase.formtags.service, org.eclipse.virgo.server.web.dm;version="[1.0,2.1)"
+Import-Library: org.springframework.spring;version="[2.5.4,3.1.0)"
+Import-Bundle: com.springsource.org.apache.taglibs.standard;version="1
+ .1.2",<span class="bold"><strong>org.springframework.osgi.core</strong></span>
+</pre><p>
+            </p><p>
+                In addition to importing the exported types of the service bundle, 
+                the WAR must also obtain a reference to the <code class="literal">UserManager</code>
+                published by the service bundle. The following image shows the directory
+                structure of the Shared Services WAR.
+            </p><p><img src="images/formtags-case-study-shared-services-war-resources.png"></p><p>
+                As you can see in the above image, the Form Tags Shared Services WAR&#8217;s
+                <code class="literal">/WEB-INF/web.xml</code> directory contains a standard <code class="literal">web.xml</code>
+                deployment descriptor, <code class="literal">applicationContext.xml</code> which defines the configuration
+                for the <span class="emphasis"><em>root</em></span> <code class="literal">WebApplicationContext</code>, and
+                <code class="literal">formtags-servlet.xml</code> which defines the configuration specific to the 
+                configured <span class="emphasis"><em>formtags</em></span> <code class="literal">DispatcherServlet</code>.
+            </p><p>
+                As is typical for Spring MVC based web applications, you configure a <code class="literal">ContextLoaderListener</code>
+                in <code class="literal">web.xml</code> to load your root <code class="literal">WebApplicationContext</code>; however, to enable your
+                <code class="literal">WebApplicationContext</code> to be able to reference services from the OSGi Service Registry,
+                you must explicitly set the <code class="literal">contextClass</code> Servlet context parameter to the fully qualified
+                class name of a <code class="literal">ConfigurableWebApplicationContext</code> which is OSGi-enabled. When deploying
+                Shared Services WARs to the Virgo Web Server, you should use
+                <code class="literal">org.eclipse.virgo.server.web.dm.ServerOsgiBundleXmlWebApplicationContext</code>. This will
+                then enable the use of Spring-DM&#8217;s <code class="literal">&lt;reference ... /&gt;</code> within your root
+                <code class="literal">WebApplicationContext</code> (i.e., in <code class="literal">applicationContext.xml</code>).
+                The following listing is an excerpt from <code class="literal">/WEB-INF/web.xml</code>.
+            </p><pre class="programlisting">
+    &lt;<span class="hl-tag">context-param</span>&gt;
+        &lt;<span class="hl-tag">param-name</span>&gt;contextClass&lt;<span class="hl-tag">/param-name</span>&gt;
+        &lt;<span class="hl-tag">param-value</span>&gt;org.eclipse.virgo.server.web.dm.ServerOsgiBundleXmlWebApplicationContext&lt;<span class="hl-tag">/param-value</span>&gt;
+    &lt;<span class="hl-tag">/context-param</span>&gt;
+
+    &lt;<span class="hl-tag">listener</span>&gt;
+        &lt;<span class="hl-tag">listener-class</span>&gt;org.springframework.web.context.ContextLoaderListener&lt;<span class="hl-tag">/listener-class</span>&gt;
+    &lt;<span class="hl-tag">/listener</span>&gt;
+</pre><p>
+                The Form Tags Shared Services WAR contains a <code class="literal">/WEB-INF/applicationContext.xml</code>
+                file which is the default configuration location used to create the <span class="emphasis"><em>root</em></span>
+                <code class="literal">WebApplicationContext</code> for Spring MVC&#8217;s <code class="literal">ContextLoaderListener</code>.
+                </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+                    As already mentioned, in the OSGi world, bundle configuration 
+                    takes place in the root <code class="literal">/META-INF/</code> directory.
+                    Typically Spring-DM powered configuration files will live
+                    there as well (e.g., in <code class="literal">/META-INF/spring/*.xml</code>).
+                    In a WAR, however, the root <code class="literal">WebApplicationContext</code>
+                    loaded by <code class="literal">ContextLoaderListener</code> and the <code class="literal">DispatcherServlet&#8217;s</code>
+                    application context typically live in <code class="literal">/WEB-INF/</code>.
+                </td></tr></table></div><p>
+                The following is the listing of the WAR&#8217;s <code class="literal">/WEB-INF/applicationContext.xml</code>.
+</p><pre class="programlisting">
+&lt;<span class="hl-tag">?xml version="1.0" encoding="UTF-8"?</span>&gt;
+&lt;<span class="hl-tag">beans:beans</span>
+   <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.springframework.org/schema/osgi"</span>
+   <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+   <span class="hl-attribute">xmlns:beans</span>=<span class="hl-value">"http://www.springframework.org/schema/beans"</span>
+   <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"http://www.springframework.org/schema/osgi  
+       http://www.springframework.org/schema/osgi/spring-osgi.xsd
+       http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;
+
+    &lt;<span class="hl-tag">reference</span> <span class="hl-attribute">id</span>=<span class="hl-value">"userManager"</span>
+        <span class="hl-attribute">interface</span>=<span class="hl-value">"org.springframework.showcase.formtags.service.UserManager"</span>/&gt;
+               
+&lt;<span class="hl-tag">/beans:beans</span>&gt;
+</pre><p>
+                The single bean declaration is retrieving a service that implements
+                the <code class="literal">org.springframework.showcase.formtags.service.UserManager</code>
+                API from the OSGi Service Registry.
+                </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top">
+	                You might have been expecting a reference to the service bundle,
+	                but that isn&#8217;t how OSGi works.  OSGi provides a service
+	                registry, and this bean definition is accessing a service in that
+	                registry that meets the specified restriction (i.e. implements
+	                the specified interface).  This leads to a very loosely coupled
+	                programming model: the WAR really doesn&#8217;t care where the implementation
+	                comes from.
+                </td></tr></table></div><p>
+                </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top">
+	                What happens if there is no service at runtime?
+	                What if there are multiple services that match the criteria?
+	                Spring-DM provides a lot of configuration options, including 
+	                whether or not the reference is <span class="emphasis"><em>mandatory</em></span>,
+	                how long to wait for a service reference, etc. Please consult the
+	                <a class="ulink" href="http://www.springframework.org/osgi/" target="_top">Spring Dynamic Modules for OSGi</a>
+	                home page for further information.
+                </td></tr></table></div><p>
+                </p><p>
+	                One of the benefits of programming to interfaces is that you are
+	                decoupled from the actual implementation; Spring-DM provides a proxy.  This
+	                has enormous benefits including the ability to dynamically refresh individual bundles without
+	                cascading that refresh to unrelated bundles.
+                </p><p>
+            </p><p>
+	            To deploy the WAR, copy <code class="literal">/dist/formtags-shared-services-war*</code>
+	            to the <code class="literal">SERVER_HOME/pickup</code> directory.
+	            You should then see console output similar to the following:
+            </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The console output has been reformatted to fit this document.</p></td></tr></table></div><pre class="programlisting">
+[2009-07-01 15:09:19.819] fs-watcher
+    &lt;SPDE0048I&gt; Processing 'CREATED' event for file 'formtags-shared-services-war-2.0.0.RELEASE.war'.
+[2009-07-01 15:09:20.167] fs-watcher
+    &lt;SPDE0010I&gt; Deployment of 'org.springframework.showcase.formtags.web_shared_services' version '2' completed.
+[2009-07-01 15:09:20.168] Thread-20
+    &lt;SPWE0000I&gt; Starting web bundle '/formtags-shared-services-war-2.0.0.RELEASE'.
+[2009-07-01 15:09:20.647] Thread-20
+   &lt;SPWE0001I&gt; Started web bundle '/formtags-shared-services-war-2.0.0.RELEASE'.
+</pre>
+            Navigating to the appropriate link should render the welcome page.            
+        </div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-par"></a>6.5&nbsp;Form Tags PAR</h2></div></div></div><p>
+            The final step in the migration is that of a full blown
+            OSGi application with web support. The Virgo Web Server introduces a
+            new packaging and deployment format: the PAR.  
+            
+            A PAR is a standard JAR with a "<code class="literal">.par</code>"
+            file extension which contains all of the modules of your
+            application (e.g., service, domain, and infrastructure bundles
+            as well as a WAR for web applications) in a single deployment unit.
+            Moreover, a PAR defines both a physical and logical application boundary.
+        </p><p>
+            The PAR sample is comprised of four directories, as shown below.
+        </p><p><img src="images/formtags-case-study-par-sample.png"></p><p>
+            The <code class="literal">formtags-par</code> directory is a build project that
+            understands how to create the PAR from its constituent bundles.
+        </p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="formtags-case-study-par-granularity"></a>Granularity of the PAR</h3></div></div></div><p>
+                Achieving the appropriate level of granularity for your OSGi
+                application is more of an art than a science.  It helps to look
+                at the different requirements:
+            </p><div class="table"><a name="formtags-case-study-par-granularity-drivers-table"></a><p class="title"><b>Table&nbsp;6.1.&nbsp;Granularity drivers</b></p><div class="table-contents"><table summary="Granularity drivers" style="border-collapse: collapse;border-top: 1.0pt solid ; border-bottom: 1.0pt solid ; border-left: 1.0pt solid ; border-right: 1.0pt solid ; "><colgroup><col><col></colgroup><thead><tr><th style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Requirement</th><th style="border-bottom: 1.0pt solid ; ">Description</th></tr></thead><tbody><tr><td style="border-right: 1.0pt solid ; border-bottom: 1.0pt solid ; ">Domain/Technical Layering</td><td style="border-bottom: 1.0pt solid ; ">
+                            	Applications can be split either by domain (i.e., 
+                            	by use case or <span class="emphasis"><em>vertically</em></span>) or
+                            	by their technical layers (i.e., <span class="emphasis"><em>horizontally</em></span>).
+                            	Since the Form Tags application essentially has only
+                            	a single use case, the bundles are split by technical layering
+                            	(i.e., domain, service, and web).
+                            </td></tr><tr><td style="border-right: 1.0pt solid ; ">Refreshability</td><td style="">
+	                            A major benefit of OSGi is that of refreshability: if one bundle 
+	                            is changed, only bundles that have a dependency upon
+	                            the exported types need to be refreshed.  This has a high impact
+	                            on development time costs as well as production
+	                            costs.  However, this can lead to lots of smaller, fine grained
+	                            bundles.  An example of this granularity would be to 
+	                            separate out the service API and implementation into two different
+	                            bundles.  This means that a change in the implementation
+	                            wouldn&#8217;t require any other bundles to be refreshed.
+                            </td></tr></tbody></table></div></div><p><br class="table-break">
+            Ultimately the right level of granularity will depend upon your particular application and team.
+            </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+                This topic will be revisited in greater detail later in the
+                Programmer Guide in a chapter covering how to build a PAR from
+                scratch.
+            </td></tr></table></div><p>
+            </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="formtags-case-study-par-domain-and-service"></a>Domain and Service Bundles</h3></div></div></div><p>
+                The service bundle is identical (except for the <code class="literal">Bundle-SymbolicName</code>) to that
+                in the shared-services variation of the sample.  
+                The PAR has also separated out the domain classes into their own bundle.  
+                When layering by technical considerations, it is again
+                somewhat of an unofficial convention to have a 
+                <code class="literal">.domain</code> bundle.
+            </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="formtags-case-study-par-par"></a>Constructing the PAR</h3></div></div></div><p>
+                Finally we need to construct the PAR itself.  
+                The following are the contents of the exploded PAR.
+            </p><p><img src="images/formtags-case-study-par-exploded.png"></p><p>
+                You can see that the PAR itself doesn&#8217;t contain any resources or
+                Java classes: it simply packages together a related set of bundles
+                as a single, logical unit.
+            </p><p>
+                The PAR does however, contain its own <code class="literal">/META-INF/MANIFEST.MF</code>.
+</p><pre class="programlisting">
+Manifest-Version: 1.0
+Application-SymbolicName: org.springframework.showcase.formtags-par
+Application-Version: 1.0.0
+Application-Name: FormTags Showcase Application (PAR)
+</pre><p>
+                For more information on the contents of the PAR&#8217;s 
+                <code class="literal">/META-INF/MANIFEST.MF</code>, please consult
+                <a class="xref" href="#developing-applications" title="4.&nbsp;Developing Applications">Chapter&nbsp;4, <i>Developing Applications</i></a>.
+            </p><p>
+	            You can now deploy the PAR on the VWS, for example by copying 
+	            <code class="literal">/dist/formtags-par*.par</code> to the VWS&#8217;s
+	            <code class="literal">pickup</code> directory.
+	            You should then see console output similar to the following:
+            </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The console output has been reformatted to fit this document.</p></td></tr></table></div><pre class="programlisting">
+[2009-07-01 15:13:43.306] fs-watcher
+    &lt;SPDE0048I&gt; Processing 'CREATED' event for file 'formtags-par-2.0.0.RELEASE.par'.
+[2009-07-01 15:13:44.060] fs-watcher
+    &lt;SPDE0010I&gt; Deployment of 'formtags-par' version '2.0.0.RELEASE' completed.
+[2009-07-01 15:13:44.068] Thread-20
+    &lt;SPWE0000I&gt; Starting web bundle '/formtags-par'.
+[2009-07-01 15:13:45.212] Thread-20
+    &lt;SPWE0001I&gt; Started web bundle '/formtags-par'.
+</pre><p>
+	            Navigate to <a class="ulink" href="http://localhost:8080/formtags-par" target="_top">http://localhost:8080/formtags-par</a> to see the welcome page.
+            </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="images/tip.gif"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top">
+                Note that the web application&#8217;s context path is explicitly defined via the
+                <code class="literal">Web-ContextPath</code> manifest header in 
+                <code class="literal">/META-INF/MANIFEST.MF</code> of the web module within
+                the PAR.
+            </td></tr></table></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-summary"></a>6.6&nbsp;Summary of the Form Tags Migration</h2></div></div></div><p>
+	        The Virgo Web Server provides out-of-the-box support for deploying
+	        standard Java EE WAR files. In addition support for 
+	        <span class="emphasis"><em>Shared Libraries</em></span> and <span class="emphasis"><em>Shared Services</em></span>
+	        WAR formats provides a logical migration path away from standard,
+	        monolithic WARs toward OSGi-enable Web applications. The PAR packaging
+	        and deployment format enables truly fine-grained, loosely-coupled, and
+	        efficient application development. In general, the migration steps
+	        presented in this chapter are fairly straightforward, but developers
+	        should set aside time for some up-front design of the bundles themselves.
+        </p><p>
+	        It is recommended that you take another sample application or 
+	        indeed your own small application and go through this migration
+	        process yourself. This will help you better understand the concepts and
+	        principles at work.  In addition, it is highly recommended that you
+	        familiarize yourself with the Eclipse-based
+	        <span class="emphasis"><em>Virgo Web Server Tools</em></span> support which is discussed in
+	        <a class="xref" href="#tooling" title="7.&nbsp;Tooling">Chapter&nbsp;7, <i>Tooling</i></a>.
+        </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="formtags-case-study-as-plan"></a>6.7&nbsp;Form Tags as a plan</h2></div></div></div><p>
+        	Plans (see <a class="xref" href="#developing-applications-plans" title="4.3&nbsp;Creating Plans">Section&nbsp;4.3, &#8220;Creating Plans&#8221;</a>) 
+        	allow us to package and deploy the Form Tags application in a more flexible way. 
+        	Instead of packaging all the bundles of the application into a single PAR file, each bundle can be placed in the repository
+        	and referred to in a <span class="emphasis"><em>plan</em></span>.
+        </p><p>
+ 			The bundles to be placed in a repository in the chain (for example, <code class="literal">repository/usr</code>) are:
+</p><pre class="programlisting">org.springframework.showcase.formtags.domain-2.0.0.RELEASE.jar
+org.springframework.showcase.formtags.service-2.0.0.RELEASE.jar
+org.springframework.showcase.formtags.web-2.0.0.RELEASE.war
+</pre><p>
+        	which are just those files which were part of the PAR.
+        </p><p>
+        	Here is the contents of a suitable plan file for the Form Tags example:
+</p><pre class="programlisting">&lt;<span class="hl-tag">?xml version="1.0" encoding="UTF-8"?</span>&gt;
+&lt;<span class="hl-tag">plan</span> <span class="hl-attribute">name</span>=<span class="hl-value">"formtags.plan"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"2.0.0"</span> <span class="hl-attribute">scoped</span>=<span class="hl-value">"true"</span> <span class="hl-attribute">atomic</span>=<span class="hl-value">"true"</span>
+        <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.springsource.org/schema/dm-server/plan"</span>
+        <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+        <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"
+            http://www.springsource.org/schema/dm-server/plan 
+            http://www.springsource.org/schema/dm-server/plan/springsource-dm-server-plan.xsd"</span>&gt;
+
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"bundle"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"org.springframework.showcase.formtags.domain_par"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"[2.0,2.1)"</span>/&gt;
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"bundle"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"org.springframework.showcase.formtags.service_par"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"[2.0,2.1)"</span>/&gt;
+    &lt;<span class="hl-tag">artifact</span> <span class="hl-attribute">type</span>=<span class="hl-value">"war"</span> <span class="hl-attribute">name</span>=<span class="hl-value">"org.springframework.showcase.formtags.web_par"</span> <span class="hl-attribute">version</span>=<span class="hl-value">"[2.0,2.1)"</span>/&gt;
+
+&lt;<span class="hl-tag">/plan</span>&gt;</pre><p>
+			where we have chosen to use any of the artifacts in the version range [2.0,2.1). 
+			This plan (as a file called, for example, <code class="literal">formtags.plan</code>) 
+			can be deployed in any of the normal ways (for example, dropped in 
+			the <code class="literal">pickup</code> directory).
+        </p><p>
+        	When the plan is deployed, the artifacts it references are installed from the repository and deployed in the order given in the plan file.
+        	Because this plan is scoped and atomic, the collection is given an application scope and is started and stopped as a single unit.
+        </p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="tooling"></a>7.&nbsp;Tooling</h2></div></div></div><p>
+		SpringSource provides a set of plug-ins for the Eclipse IDE that streamline the development
+		lifecycle of OSGi bundles and PAR applications. The Virgo Web Server Tools build on top
+		of the Eclipse Web Tools Project (WTP) and Spring IDE, the open-source Spring development 
+		tool set.
+	</p><p>
+		The Virgo Web Server Tools support the creation of new OSGi bundle and PAR projects within Eclipse, and the
+		conversion of existing projects into OSGi bundle projects. Projects can then be deployed and debugged on a running
+		VWS from within Eclipse.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tooling-installation"></a>7.1&nbsp;Installation</h2></div></div></div><p>
+			Currently the Tools support Eclipse 3.4 and Eclipse 3.5 with the corresponding version of WTP. Downloading and
+			unzipping the <a class="ulink" href="http://www.eclipse.org/downloads/" target="_top">Eclipse IDE for Java EE  Developers</a> is the
+			easiest way to start. 			
+		</p><p>
+			Execute the following steps to install the Tools into your Eclipse environment.
+			</p><div class="orderedlist"><ol type="1"><li><p>
+						Install Spring IDE 2.1.0 from <a class="ulink" href="http://springide.org/updatesite/" target="_top">
+						http://springide.org/updatesite/</a> using the Eclipse Update Manager.
+					</p><p>
+						</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+							Don&#8217;t try to install the "Spring IDE Dependencies (only for Eclipse 3.2.x)" 
+							from the "Dependency" category on Eclipse 3.3. This feature is intended only 
+							for Eclipse 3.2 and is to keep Spring IDE backward-compatible. You will not 
+							be able to continue with the installation if you select this feature on 
+							Eclipse 3.3.
+						</td></tr></table></div><p>
+					</p></li><li><p>
+						Install the Tools from <a class="ulink" href="http://static.springsource.com/projects/sts-dm-server/update/" target="_top">
+						http://static.springsource.com/projects/sts-dm-server/update/</a> using the Eclipse Update Manager.</p></li></ol></div><p>
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tooling-running"></a>7.2&nbsp;Running a Virgo Web Server instance within Eclipse</h2></div></div></div><p>
+			After installing the Tools from the update site outlined in the previous section, you 
+			will be able to configure an instance of the VWS inside Eclipse.
+		</p><p>
+			To do so bring up the WTP Servers view (i.e.,
+			<span class="guimenu">Window</span> &#8594; <span class="guisubmenu">Show View</span> &#8594; <span class="guimenuitem">Other</span> &#8594; <span class="guimenuitem">Server</span> &#8594; <span class="guimenuitem">Servers</span>).
+			You can now right-click in the view and select "<span class="guimenu">New</span> &#8594; <span class="guimenuitem">Server</span>".
+			This will bring up a "New Server" dialog. Select "Virgo Web Server v2.0 Server"
+			in the "Virgo" category and click "<span class="guibutton">Next</span>".
+		</p><p>
+			<img src="images/tooling-new-server.png">
+		</p><p>
+			Within the "New Server Wizard" point to the installation directory of the Virgo Web Server
+			and finish the wizard. After finishing the wizard you should see a Virgo Web Server
+			entry in the Servers view.
+		</p><p>
+			To start, stop, and debug the created Virgo Web Server instance use the toolbar or the context 
+			menu actions of the Servers view.
+		</p><p>
+			<img src="images/tooling-start-server.png">
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tooling-repository-editor"></a>7.3&nbsp;Bundle and Library Provisioning</h2></div></div></div><p>
+			After successful configuration of an instance of the Virgo Web Server in Eclipse you can use
+			the Repository Browser to very easily install bundles and libraries from the remote 
+			SpringSource Enterprise Bundle Repository.
+		</p><p>
+			To open the Repository Browser double-click a Virgo Web Server instance in the Servers
+			view and select the "Repository" tab in the server editor. Please note that opening of the
+			Editor may take a few seconds as the contents of the local repository needs to be indexed
+			before opening.
+		</p><p>
+			<img src="images/tooling-repository-browser.png">
+		</p><p>
+			The left section of the Repository Browser allows the user to run searches against the
+			SpringSource Enterprise Bundle Repository and displays matching results. The search can 
+			take parts of bundle symbolic names, class or package names and allows wildcards such as
+			&#8216;?&#8217; and &#8216;*&#8217;. By selecting the checkbox left to a matching bundle and/or library and clicking 
+			the "Download" button it is	very easy to install new bundles in the Virgo Web Server. For your 
+			convenience JARs containing the bundle source code can be automatically downloaded as well. 
+		</p><p>
+			Clicking the "Download" button will trigger an Eclipse background job that will download
+			the selected repository artifacts and -- if desired -- the source JARs one after another. 
+		</p><p>
+			The section on the right displays the currently installed bundles and libraries. Bundles
+			with available sources are visually marked. You can very easily download missing source
+			JARs by using the "Install Sources" button.			
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tooling-config"></a>7.4&nbsp;Setting up Eclipse Projects</h2></div></div></div><p>
+			The Virgo Web Server supports different deployment units as discussed earlier in this guide. The 
+			Tools define specific project types to support the development of OSGi and PAR projects.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="tooling-config-creating-new-projects"></a>Creating New Projects</h3></div></div></div><p>
+				There are two New Project Wizards available within Eclipse that allow for creating
+				new OSGi bundle and PAR projects. The projects created by the wizards are deployable
+				to the integrated VWS instance without requiring any additional steps. 
+			</p><p>
+				<img src="images/tooling-new-project-wizards.png">
+			</p><p>
+				Those wizards create the required <code class="code">MANIFEST.MF</code> file and appropriate manifest 
+				headers.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="tooling-config-migrating-existing-projects"></a>Migrating existing Java Projects</h3></div></div></div><p>
+				To migrate an existing Java Project to be used with the VWS, the Tools
+				provide a migration action that adds the required meta data to the project. 
+				The migration will not change your project&#8217;s source layout.
+			</p><p>
+				Use the context menu action of a project in the Package or Project Explorer and select
+				"<span class="guimenu">Spring Tools</span> &#8594; <span class="guimenuitem">Convert to OSGi bundle project</span>".
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tooling-developing"></a>7.5&nbsp;Developing OSGi Bundles</h2></div></div></div><p>
+				The Tools provide functionality that makes developing OSGi bundles, 
+				especially the editing of MANIFEST.MF files, easier.   
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="tooling-developing-resolving-bundle-dependencies"></a>Resolving Bundle Dependencies</h3></div></div></div><p>
+				While working with OSGi bundles, one of the most interesting and challenging aspects is defining 
+				the	package, bundle, and library imports in the manifest and then keeping this in sync 
+				with your compile classpath	either in Ant and Maven or Eclipse. In most cases you would typically 
+				be required to manually set up the Eclipse classpath. Ultimately, the Eclipse compile 
+				classpath is still different from the bundle runtime classpath, as normally an entire
+				JAR file is being made available on the Eclipse classpath but not necessarily at runtime
+				due to the explicit visibility rules defined in <code class="code">Import-Package</code> headers. 
+			</p><p>
+				The Tools address this problem by providing an Eclipse classpath container that 
+				uses an Virgo Web Server-specific dependency resolution mechanism. This classpath
+				container makes resolved dependencies available on the project&#8217;s classpath but allows
+				only access to those package that are imported explicitly (e.g., via <code class="code">Import-Package</code>) 
+				or implicitly by using <code class="code">Import-Library</code> or <code class="code">Import-Bundle</code>.
+			</p><p>
+				To use the automatic dependency resolution, an OSGi bundle or PAR project needs to be 
+				targeted to a configured Virgo Web Server instance. This can be done from the project&#8217;s
+				preferences by selecting the runtime on the "Targeted Runtimes" preference page.
+			</p><p>
+				</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+					In most scenarios it is sufficient to target the PAR project to a runtime. The nested
+					bundles will then automatically inherit this setting.
+				</td></tr></table></div><p>
+			</p><p>
+				<img src="images/tooling-classpath.png">
+			</p><p>
+				After targeting the project or PAR you will see a "Bundle Dependencies" classpath 
+				container in your Java project. It is now safe to remove any manually configured classpath 
+				entries.
+			</p><p>
+				The classpath container will automatically attach Java source code to the classpath
+				entries by looking for source JARs next to the binary JARs in the Virgo Web Server&#8217;s 
+				repository. You can also manually override the source code attachment by using the
+				properties dialog on a single JAR entry. This manual attachment will always override
+				the convention-based attachment.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="tooling-developing-editing-manifest-mf"></a>Editing the Manifest</h3></div></div></div><p>
+				The Tools provide a Bundle Manifest Editor that assists the developer to create and
+				edit MANIFEST.MF files. The editor understands the Virgo Web Server specific headers
+				like <code class="code">Import-Library</code> and <code class="code">Import-Bundle</code> and provides content
+				assist features while editing source code. Furthermore a Eclipse Form-based UI is also
+				available. 
+			</p><p>
+				To open the Bundle Manifest Editor right click a MANIFEST.MF file and select "Bundle
+				Manifest Editor" from the "Open With" menu.
+			</p><p>
+				</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+					Please note that the Virgo Web Server specific manifest headers appear in green color
+					to distinguish them from those headers defined in the OSGi specification. This also
+					makes navigating much easier.
+				</td></tr></table></div><p>
+			</p><p>
+				<img src="images/tooling-manifest-source-editor.png">
+			</p><p>
+				The content assist proposals in the source tab as well as in the UI-based tabs are
+				resolved from the bundle and library repository of an installed and configured 
+				Virgo Web Server. Therefore it is important to target the project or PAR to a specific 
+				VWS instance to indicate to the tooling which bundle repository to use.
+			</p><p>
+				</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+					If a OSGi bundle project is not targeted to a VWS instance, either
+					directory or indirectly via a PAR project&#8217;s targetting, the manifest editor will not
+					be able to provide content assist for importing packages, bundles, and libraries.
+				</td></tr></table></div><p>
+			</p><p>
+				<img src="images/tooling-manifest-form-ui-editor.png">
+			</p><p>
+				The Dependencies tab of the Bundle Manifest Editor enables the user to easily download
+				and install bundles and libraries from the SpringSource Enterprise Bundle Repository
+				by using the "Download..." buttons next to the "Import Bundle" and "Import Library" 
+				sections.
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tooling-deploying"></a>7.6&nbsp;Deploying Applications</h2></div></div></div><p>
+			Currently the Tools support direct deployment of WTP Dynamic Web Projects, OSGi
+			bundle and PAR projects to the VWS from directly within Eclipse.
+		</p><p>
+			To deploy an application to the Virgo Web Server just bring up the context menu on the configured
+			VWS runtime in the Servers view and choose "Add or Remove Projects...". In the
+			dialog, select the desired project and add it to the list of "Configured projects".
+		</p><p>
+			<img src="images/tooling-deployed-application.png">
+		</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+				Deploying and undeploying an application from the VWS certainly works
+				while the Virgo Web Server is running, but you can also add or remove projects if the
+				VWS is not running.
+			</p></td></tr></table></div><p>
+			Once an application is deployed on the Virgo Web Server the tooling support will automatically 
+			pick up any change to source files -- for example, Java and XML context files -- and refresh the
+			deployed application on the VWS.
+		</p><p>
+			The wait time between a change and the actual refresh can be configured
+			in the configuration editor of the runtime. To bring up that editor,
+			double-click on the configured Virgo Web Server instance in the Servers view. 
+		</p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="common-libraries"></a>8.&nbsp;Working with Common Enterprise Libraries</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="common-libraries-hibernate"></a>8.1&nbsp;Working with Hibernate</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="common-libraries-hibernate-import"></a>Importing Hibernate</h3></div></div></div><p>
+				Hibernate uses CGLIB to dynamically create subclasses of your entity types at
+				runtime. To guarantee that Hibernate and CGLIB can correctly see the types,
+				you must add an <code class="literal">Import-Library</code> or <code class="literal">Import-Bundle</code> for the Hibernate library or bundle
+				into any bundle that uses Hibernate directly.
+			</p><p>
+			      	Additionally, if other bundles in your application contain types to be persisted by Hibernate, then be sure to specify the <code class="code">import-scope</code> directive of the <code class="literal">Import-Bundle</code> header in the bundle that uses Hibernate directly.  The <code class="literal">import-scope</code> directive tells Virgo Web Server to implicitly import the bundle into all other bundles that make up the application; this ensures that bundles that indirectly depend on the generated Hibernate classes have access to them, but you do not have to explicitly update their <code class="code">Import-Bundle</code> header, ensuring modularity.  For example:
+			</p><pre class="programlisting">
+Import-Bundle: com.springsource.org.hibernate;version="[3.2.6.ga,3.2.6.ga]";<span class="bold"><strong>import-scope:=application</strong></span></pre><p>
+			The <code class="code">import-scope</code> directive works only for the bundles in a scoped application (PARs or plans.)
+		</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="common-libraries-datasources"></a>8.2&nbsp;Working with DataSources</h2></div></div></div><p>
+			Many <code class="literal">DataSource</code> implementations use the <code class="literal">DriverManager</code>
+			class which is incompatible with typical OSGi class loading semantics. To get around this,
+			use a <code class="literal">DataSource</code> implementation that does not rely on
+			<code class="literal">DriverManager</code>. Versions of the following
+			<code class="literal">DataSources</code> that are known to work in an OSGi environment are available in the
+			<a class="ulink" href="http://www.springsource.com/repository" target="_top">SpringSource Enterprise Bundle Repository</a>.
+		</p><div class="itemizedlist"><ul type="disc"><li><p>
+					<a class="ulink" href="http://www.springsource.com/repository/app/bundle/detail?name=com.springsource.org.apache.commons.dbcp" target="_top">Apache Commons DBCP</a>
+				</p></li><li><p>SimpleDriverDataSource available in
+					<a class="ulink" href="http://www.springsource.com/repository/app/bundle/detail?name=org.springframework.jdbc" target="_top">Spring JDBC</a>
+					2.5.5 and later
+				</p></li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="common-libraries-weaving-instrumentation"></a>8.3&nbsp;Weaving and Instrumentation</h2></div></div></div><p>
+			When using a library that performs bytecode weaving or instrumentation, such as AspectJ,
+			OpenJPA or EclipseLink, any types that are woven must be able to see the library doing
+			the weaving. This is accomplished by adding an <code class="literal">Import-Library</code> for the
+			weaving library into all bundles that are to be woven.
+		</p><p>
+			Weaving is often used by JPA implementations to transform persisted types. When using a
+			JPA provider that uses load-time weaving, an <code class="literal">Import-Library</code> for the
+			provider is needed in the bundles containing the persisted types.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="common-libraries-tld"></a>8.4&nbsp;JSP Tag Libraries</h2></div></div></div><p>
+			When using tag libraries within a WAR or Web Bundle, be sure to include an
+			<code class="literal">Import-Bundle</code> or <code class="literal">Import-Library</code> for the tag library
+			bundle(s). This will ensure that your module can see the TLD definition and implementing types.
+			For example, to use the Apache implementation of JSTL, add the following to your bundle&#8217;s
+			<code class="literal">/META-INF/MANIFEST.MF</code>:
+		</p><pre class="programlisting">
+<span class="bold"><strong>Import-Bundle</strong></span>: com.springsource.org.apache.taglibs.standard;version="1.1.2"
+</pre></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="known-issues"></a>9.&nbsp;Known Issues</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="known-issues-jpa"></a>9.1&nbsp;JPA Entity Scanning</h2></div></div></div><p>
+			Classpath scanning for JPA entities annotated with <code class="literal">@Entity</code> does
+			not work. Describing entities with <code class="literal">@Entity</code> will work, but the
+			entities need to be listed explicitly.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="known.issues.proxy"></a>9.2&nbsp;<code class="classname">ClassNotFoundError</code> When Creating a Proxy</h2></div></div></div><p>
+			When creating proxies at runtime, there are circumstances where <code class="classname">ClassNotFoundErrors</code>
+			can be generated. These errors happen because the proxy creating bundle does not have visibility into every
+			type on the interface of the proxy. You can either put in import statements for all the relevant types or
+			add use a service (with visibility of all pertinent types) to create the proxy. Please see
+			<a class="ulink" href="http://www.osgi.org/blog/2008/08/classy-solutions-to-tricky-proxies.html" target="_top">this blog entry</a>
+			for more details.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="known.issues.cglib"></a>9.3&nbsp;Creating proxies with CGLIB for package-protected types</h2></div></div></div><p>
+			In traditional Java EE applications user types are loaded by the same <code class="classname">ClassLoader</code> as
+			CGLIB. This allows CGLIB to proxy package-protected types. In OSGi environments, user types and CGLIB will
+			most likely be packaged in separate bundles. This results in the user types and CGLIB being loaded by 
+			different <code class="classname">ClassLoaders</code>. This prevents CGLIB from proxying any package-protected types.
+		</p><p>
+			The workaround for this issue is to make all types that require proxying public.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="known-issues-tomcat-restrictions"></a>9.4&nbsp;Tomcat Restrictions</h2></div></div></div><p>
+			The following Tomcat features are not supported.
+			</p><div class="itemizedlist"><ul type="disc"><li><code class="literal">&lt;Context&gt;</code> elements.
+				</li></ul></div><p>
+		</p></div></div></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--></body></html>

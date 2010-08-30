@@ -1,0 +1,30 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>3.2&nbsp;Dependency Types</title><link rel="stylesheet" href="css/stylesheet.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Virgo Web Server Programmer Guide"><link rel="up" href="ch03.html" title="3.&nbsp;Deployment Architecture"><link rel="prev" href="ch03.html" title="3.&nbsp;Deployment Architecture"><link rel="next" href="ch03s03.html" title="3.3&nbsp;A guide to forming bundles"><!--Begin Google Analytics code--><script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2728886-3");
+			pageTracker._setDomainName("none");
+			pageTracker._setAllowLinker(true);
+			pageTracker._trackPageview();
+		</script><!--End Google Analytics code--></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2&nbsp;Dependency Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch03.html">Prev</a>&nbsp;</td><th width="60%" align="center">3.&nbsp;Deployment Architecture</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch03s03.html">Next</a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="architecture-dependency-types"></a>3.2&nbsp;Dependency Types</h2></div></div></div><p>
+			In an OSGi environment, there are two kinds of dependencies between various bundles: <span class="emphasis"><em>type</em></span>
+			dependency and <span class="emphasis"><em>service</em></span> dependency.
+			</p><div class="itemizedlist"><ul type="disc"><li><p>
+						<span class="bold"><strong>Type dependency</strong></span>: A bundle may depend on a type exported by another
+						bundle thus creating a type dependency. Type dependencies are managed through <code class="literal">Import-Package</code>
+						and <code class="literal">Export-Package</code> directives in the OSGi manifest. This kind of dependency is similar
+						to a JAR file using types in other JAR files from the classpath. However, as we&#8217;ve seen earlier, there are
+						significant differences.
+					</p></li><li><p>
+						<span class="bold"><strong>Service dependency</strong></span>: A bundle may also publish services (preferably using
+						Spring-DM), and other bundles may consume those services. If two bundles depend on the same service, both
+						will be communicating effectively to the same object. More specifically, any state for that service will
+						be shared between all the clients of that service. This kind of arrangement is similar to the commonly
+						seen client-server interaction through mechanisms such as RMI or Web Services.
+					</p></li></ul></div><p>
+		</p></div><!--Begin LoopFuse code--><script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+			_lf_cid = "LF_48be82fa";
+			_lf_remora();
+		</script><!--End LoopFuse code--><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch03.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="ch03.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.&nbsp;Deployment Architecture&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;3.3&nbsp;A guide to forming bundles</td></tr></table></div></body></html>

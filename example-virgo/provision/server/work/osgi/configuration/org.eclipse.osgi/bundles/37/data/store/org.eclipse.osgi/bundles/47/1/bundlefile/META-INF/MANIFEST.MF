@@ -1,0 +1,30 @@
+Manifest-Version: 1
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.3-b01 (Sun Microsystems Inc.)
+Export-Package: org.eclipse.gemini.web.core;version="1.1.0";uses:="jav
+ ax.servlet,org.eclipse.virgo.util.osgi.manifest,org.osgi.framework",o
+ rg.eclipse.gemini.web.core.spi;version="1.1.0";uses:="javax.servlet,o
+ rg.osgi.framework",org.eclipse.gemini.web.internal.template;version="
+ 1.1.0";uses:="org.osgi.framework,org.osgi.util.tracker",org.eclipse.g
+ emini.web.internal.url;version="1.1.0";uses:="org.eclipse.gemini.web.
+ core,org.eclipse.virgo.util.io,org.eclipse.virgo.util.osgi.manifest,o
+ rg.eclipse.virgo.util.osgi.manifest.parse,org.osgi.framework,org.osgi
+ .service.url"
+Bundle-Version: 1.1.0.CI-37
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: Gemini Web Core (incubation)
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.eclipse.gemini.web.internal.WebContainerActivato
+ r
+Bundle-SymbolicName: org.eclipse.gemini.web.core
+Import-Package: javax.servlet;version="2.5",org.eclipse.virgo.util.io;
+ version="2.0",org.eclipse.virgo.util.osgi;version="2.0",org.eclipse.v
+ irgo.util.osgi.manifest;version="2.0",org.eclipse.virgo.util.osgi.man
+ ifest.parse;version="2.0",org.osgi.framework;version="0",org.osgi.ser
+ vice.event;version="1.1";resolution:="optional",org.osgi.service.pack
+ ageadmin;version="1.2",org.osgi.service.url;version="1.0",org.osgi.ut
+ il.tracker;version="1.4.0",org.slf4j;version="1.5.0"
+Bundle-Creator: teamcity
+Implementation-Title: org.eclipse.gemini.web.core
+Implementation-Version: 1.1.0.CI-37
+

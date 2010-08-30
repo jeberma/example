@@ -1,0 +1,45 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/osgi-compendium http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+		
+		<bean id="repositoryManager" class="org.eclipse.virgo.apps.repository.core.internal.StandardRepositoryManager"
+				init-method="start" destroy-method="stop">
+			<constructor-arg>
+				<osgix:cm-properties persistent-id="org.eclipse.virgo.apps.repository"/>
+			</constructor-arg>
+			<constructor-arg>
+				<osgi:reference interface="org.eclipse.virgo.repository.RepositoryFactory"/>
+			</constructor-arg>
+			<constructor-arg>
+				<osgi:reference interface="org.eclipse.virgo.kernel.services.work.WorkArea"/>
+			</constructor-arg>
+			<constructor-arg>
+				<osgi:set interface="org.eclipse.virgo.repository.ArtifactBridge"/>
+			</constructor-arg>
+			<constructor-arg value="${domain}"/>
+			<constructor-arg ref="objectNameFactory"/>
+			<constructor-arg ref="webContainerProperties"/>
+			<constructor-arg ref="eventLogger"/>
+		</bean>
+		
+		<bean id="objectNameFactory" class="org.eclipse.virgo.apps.repository.core.internal.HostedRepositoryObjectNameFactory">
+			<constructor-arg value="org.eclipse.virgo.server"/>
+		</bean>
+
+        <osgi:reference id="eventLogger" interface="org.eclipse.virgo.medic.eventlog.EventLogger"/>
+		
+		<osgi:service ref="repositoryManager" interface="org.eclipse.virgo.apps.repository.core.RepositoryManager"/>
+		
+		<osgi:reference id="webContainerProperties" interface="org.eclipse.gemini.web.core.WebContainerProperties" />
+		
+		<osgix:cm-properties id="kernelConfig" persistent-id="org.eclipse.virgo.kernel"/>
+		
+		<context:property-placeholder properties-ref="kernelConfig"/>
+</beans>

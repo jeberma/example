@@ -1,0 +1,13 @@
+JarIndex-Version: 1.0
+
+org.eclipse.gemini.web.core.jar
+org
+org/eclipse
+org/eclipse/gemini
+org/eclipse/gemini/web
+org/eclipse/gemini/web/core
+org/eclipse/gemini/web/core/spi
+org/eclipse/gemini/web/internal
+org/eclipse/gemini/web/internal/template
+org/eclipse/gemini/web/internal/url
+

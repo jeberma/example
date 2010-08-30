@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.example.virgo</groupId>
+    <artifactId>example-virgo-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.example.virgo</groupId>
+  <artifactId>provision</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
+  <name>${project.artifactId}</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.osgi</groupId>
+      <artifactId>org.springframework.osgi.core</artifactId>
+      <version>${springdm.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.osgi</groupId>
+      <artifactId>org.springframework.osgi.web</artifactId>
+      <version>${springdm.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.osgi</groupId>
+      <artifactId>spring-osgi-io</artifactId>
+      <version>${springdm.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>org.springframework.spring-library</artifactId>
+      <version>3.0.0.RELEASE</version>
+      <type>libd</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>org.hibernate.ejb-library</artifactId>
+      <version>3.4.0.GA</version>
+      <type>libd</type>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>com.springsource.slf4j.api</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>com.springsource.slf4j.org.apache.commons.logging</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>com.springsource.slf4j.org.apache.log4j</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.joda</groupId>
+      <artifactId>com.springsource.org.joda.time</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>com.springsource.org.apache.commons.lang</artifactId>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>com.springsource.org.apache.commons.io</artifactId>
+      <version>1.4.0</version>
+    </dependency>
+	<!-- activemq dependencies -->
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>com.springsource.org.apache.activemq</artifactId>
+      <version>5.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>com.springsource.org.apache.kahadb</artifactId>
+      <version>5.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>com.springsource.javax.management.j2ee</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <!-- bitronix -->
+    <dependency>
+    	<groupId>org.codehaus.btm</groupId>
+    	<artifactId>btm</artifactId>
+    	<version>2.0.1</version>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <springdm.version>1.2.1</springdm.version>
+    <slf4j.version>1.6.1</slf4j.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.groovy.maven</groupId>
+        <artifactId>gmaven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>install-server</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <properties>
+				  <downloadUrl>
+http://www.eclipse.org/downloads/download.php?file=/virgo/milestone/VWS/2.1.0.M03-incubation/virgo-web-server-2.1.0.M03-incubation.zip&amp;url=http://ftp.osuosl.org/pub/eclipse/virgo/milestone/VWS/2.1.0.M03-incubation/virgo-web-server-2.1.0.M03-incubation.zip&amp;mirror_id=272
+				  </downloadUrl>
+              </properties>
+              <source>
+              	def serverHome = new File(project.basedir, 'server')
+              	def zip = new File(project.basedir, 'server.zip')
+              	
+				if(serverHome.exists()) {
+					return
+				}
+				
+				if(!zip.exists()) {
+					log.info("Downloading server")
+					def out = new FileOutputStream(zip)
+					try {
+						int count = 0;
+						project.properties.downloadUrl.toURL().openStream().eachByte { b ->
+							out.write(b);	
+							count++;
+							if((count % 1024) == 0) {
+								int kb = (int)count/1024
+								print  kb + "/?\r"
+							}
+						}
+						out.flush()
+					} catch(Exception e) {
+						log.error(e);
+						ant.delete(file:zip)
+					} finally {
+						out.close();
+					}
+				}
+				
+				ant.sequential {
+					unzip(src:zip, dest:project.basedir)
+					move(todir:serverHome) {
+						fileset(dir:new File(project.basedir,'virgo-web-server-2.1.0.M03-incubation')) 
+					}
+					chmod(dir:serverHome, perm:'777', includes:'bin/*.sh')
+				}
+				</source>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.1</version>
+        <executions>
+          <execution>
+            <id>provision-repository</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/server/repository/usr</outputDirectory>
+              <overWriteReleases>false</overWriteReleases>
+              <overWriteSnapshots>false</overWriteSnapshots>
+              <overWriteIfNewer>true</overWriteIfNewer>
+              <excludeTransitive>false</excludeTransitive>
+              <excludeScope>provided</excludeScope>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

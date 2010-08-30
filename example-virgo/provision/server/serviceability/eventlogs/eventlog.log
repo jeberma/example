@@ -1,0 +1,96 @@
+[2010-08-28 11:08:49.273] startup-tracker              <KE0001I> Kernel starting. 
+[2010-08-28 11:08:55.862] startup-tracker              <KE0002I> Kernel started. 
+[2010-08-28 11:08:56.081] system-artifacts             <DE0000I> Installing plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:08:56.654] system-artifacts             <DE0000I> Installing bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:56.832] system-artifacts             <DE0000I> Installing bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:08:56.939] system-artifacts             <DE0000I> Installing bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:08:56.996] system-artifacts             <DE0000I> Installing bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:57.023] system-artifacts             <DE0000I> Installing bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:59.516] system-artifacts             <DE0001I> Installed bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:59.523] system-artifacts             <DE0001I> Installed bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:08:59.536] system-artifacts             <DE0001I> Installed bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:08:59.547] system-artifacts             <DE0001I> Installed bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:59.573] system-artifacts             <DE0001I> Installed bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:08:59.579] system-artifacts             <DE0001I> Installed plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:08:59.637] system-artifacts             <DE0004I> Starting plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:08:59.654] system-artifacts             <DE0004I> Starting bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:59.664] start-signalling-1           <DE0005I> Started bundle 'org.springframework.osgi.core' version '1.2.1'. 
+[2010-08-28 11:08:59.670] system-artifacts             <DE0004I> Starting bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:09:00.353] start-signalling-1           <DE0005I> Started bundle 'org.springframework.osgi.extender' version '1.2.1'. 
+[2010-08-28 11:09:00.359] system-artifacts             <DE0004I> Starting bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:09:00.373] system-artifacts             <DE0004I> Starting bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.373] start-signalling-1           <DE0005I> Started bundle 'org.springframework.osgi.io' version '1.2.1'. 
+[2010-08-28 11:09:00.394] system-artifacts             <DE0004I> Starting bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.411] start-signalling-1           <DE0005I> Started bundle 'org.eclipse.virgo.kernel.agent.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.538] start-signalling-1           <DE0005I> Started bundle 'org.eclipse.virgo.kernel.deployer.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.544] start-signalling-1           <DE0005I> Started plan 'org.eclipse.virgo.kernel.userregion.springdm' version '2.1.0'. 
+[2010-08-28 11:09:00.640] system-artifacts             <DE0000I> Installing plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:00.724] system-artifacts             <DE0000I> Installing bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:00.793] system-artifacts             <DE0000I> Installing bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:00.816] system-artifacts             <DE0000I> Installing bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.832] system-artifacts             <DE0000I> Installing bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:00.859] system-artifacts             <DE0000I> Installing bundle 'org.eclipse.virgo.web.tomcat' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.391] system-artifacts             <DE0001I> Installed bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.396] system-artifacts             <DE0001I> Installed bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.401] system-artifacts             <DE0001I> Installed bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.407] system-artifacts             <DE0001I> Installed bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.412] system-artifacts             <DE0001I> Installed bundle 'org.eclipse.virgo.web.tomcat' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:01.418] system-artifacts             <DE0001I> Installed plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:01.445] system-artifacts             <DE0004I> Starting plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:01.460] system-artifacts             <DE0004I> Starting bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.486] start-signalling-1           <DE0005I> Started bundle 'org.eclipse.gemini.web.core' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:01.496] system-artifacts             <DE0004I> Starting bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:02.447] system-artifacts             <TC0000I> Starting Tomcat. 
+[2010-08-28 11:09:02.638] system-artifacts             <TC0010I> Creating HTTP/1.1 connector with scheme http on port 8080. 
+[2010-08-28 11:09:02.679] system-artifacts             <TC0010I> Creating HTTP/1.1 connector with scheme https on port 8443. 
+[2010-08-28 11:09:02.695] system-artifacts             <TC0010I> Creating AJP/1.3 connector with scheme http on port 8009. 
+[2010-08-28 11:09:02.805] system-artifacts             <TC0001I> Started Tomcat. 
+[2010-08-28 11:09:02.854] system-artifacts             <DE0004I> Starting bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:02.881] system-artifacts             <DE0004I> Starting bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:02.936] start-signalling-1           <DE0005I> Started bundle 'org.eclipse.virgo.web.dm' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:02.930] system-artifacts             <DE0005I> Started bundle 'org.eclipse.virgo.web.tomcat' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:03.146] start-signalling-1           <DE0005I> Started bundle 'org.eclipse.gemini.web.tomcat' version '1.1.0.CI-37'. 
+[2010-08-28 11:09:03.150] start-signalling-2           <DE0005I> Started bundle 'org.eclipse.virgo.web.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:03.156] start-signalling-2           <DE0005I> Started plan 'org.eclipse.virgo.web' version '2.1.0'. 
+[2010-08-28 11:09:03.162] Thread-2                     <UR0001I> User region ready. 
+[2010-08-28 11:09:04.171] fs-watcher                   <HD0001I> Hot deployer processing 'INITIAL' event for file 'org.eclipse.virgo.apps.admin-2.1.0.M03-incubation.plan'. 
+[2010-08-28 11:09:04.307] fs-watcher                   <DE0000I> Installing plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:04.336] fs-watcher                   <DE0000I> Installing bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:05.114] fs-watcher                   <DE0000I> Installing bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.258] fs-watcher                   <DE0001I> Installed bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.263] fs-watcher                   <DE0001I> Installed bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.268] fs-watcher                   <DE0001I> Installed plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:06.279] fs-watcher                   <DE0004I> Starting plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:06.285] fs-watcher                   <DE0004I> Starting bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.472] fs-watcher                   <DE0004I> Starting bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.491] fs-watcher                   <HD0001I> Hot deployer processing 'INITIAL' event for file 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation.par'. 
+[2010-08-28 11:09:06.494] Thread-3                     <WE0000I> Starting web bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation' with context path '/admin'. 
+[2010-08-28 11:09:06.574] start-signalling-1           <DE0005I> Started bundle 'org.eclipse.virgo.apps.admin.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.907] fs-watcher                   <DE0000I> Installing par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.913] fs-watcher                   <DE0000I> Installing bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:06.921] fs-watcher                   <DE0000I> Installing bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.326] fs-watcher                   <DE0001I> Installed bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.332] fs-watcher                   <DE0001I> Installed bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.361] fs-watcher                   <DE0001I> Installed bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-synthetic.context' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.370] fs-watcher                   <DE0001I> Installed par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.412] fs-watcher                   <DE0004I> Starting par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.420] fs-watcher                   <DE0004I> Starting bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.843] fs-watcher                   <DE0004I> Starting bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.851] Thread-3                     <WE0000I> Starting web bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation' with context path '/org.eclipse.virgo.apps.repository'. 
+[2010-08-28 11:09:07.854] fs-watcher                   <DE0004I> Starting bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-synthetic.context' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.915] start-signalling-3           <DE0005I> Started bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-synthetic.context' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:07.973] fs-watcher                   <HD0001I> Hot deployer processing 'INITIAL' event for file 'org.eclipse.virgo.apps.splash-2.1.0.M03-incubation.war'. 
+[2010-08-28 11:09:08.059] start-signalling-3           <DE0005I> Started bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.178] fs-watcher                   <DE0000I> Installing bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.499] fs-watcher                   <DE0001I> Installed bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.669] fs-watcher                   <DE0004I> Starting bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:08.674] Thread-3                     <WE0000I> Starting web bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation' with context path '/'. 
+[2010-08-28 11:09:09.540] Thread-3                     <WE0001I> Started web bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation' with context path '/admin'. 
+[2010-08-28 11:09:09.552] start-signalling-2           <DE0005I> Started bundle 'org.eclipse.virgo.apps.admin.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:09.569] start-signalling-2           <DE0005I> Started plan 'org.eclipse.virgo.apps.admin.plan' version '2.1.0'. 
+[2010-08-28 11:09:09.904] Thread-3                     <WE0001I> Started web bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation' with context path '/'. 
+[2010-08-28 11:09:09.919] start-signalling-3           <DE0005I> Started bundle 'org.eclipse.virgo.apps.splash' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:10.493] Thread-3                     <WE0001I> Started web bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation' with context path '/org.eclipse.virgo.apps.repository'. 
+[2010-08-28 11:09:10.499] start-signalling-1           <DE0005I> Started bundle 'org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.web' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:10.505] start-signalling-1           <DE0005I> Started par 'org.eclipse.virgo.apps.repository' version '2.1.0.M03-incubation'. 
+[2010-08-28 11:09:27.709] System Bundle Shutdown       <KE0010I> Shutdown initiated. 

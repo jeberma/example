@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Export-Package: com.example.rss.config.web.service;uses:="com.example.
+ feature.config.api";version="1.0.0.SNAPSHOT"
+Private-Package: .,WEB-INF
+Built-By: jesse
+Tool: Bnd-0.0.311
+Bundle-Name: com.example.rss-config-webutil [com.example.rss.config.we
+ b]
+Created-By: Apache Maven Bundle Plugin
+Web-ContextPath: example-rss-config-webutil
+Build-Jdk: 1.6.0_20
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1282103695625
+Bundle-ManifestVersion: 2
+Bundle-Description: Generated using Pax-Construct
+Import-Package: com.example.feature.config.api;version="1.0",com.examp
+ le.rss.config.web.service;version="1.0",javax.servlet;version="2.4.0"
+ ,javax.servlet.http;version="2.5.0",org.springframework.osgi.web.cont
+ ext.support;version="2.0.0.M1",org.springframework.web.context;versio
+ n="3.0.0.RELEASE",org.springframework.web.servlet;version="3.0.0.RELE
+ ASE",org.springframework.web.servlet.view;version="3.0.0.RELEASE"
+Bundle-SymbolicName: com.example.rss-config-webutil
+

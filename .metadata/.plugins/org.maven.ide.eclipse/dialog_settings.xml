@@ -18,6 +18,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
+			<item value="com.example"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -27,11 +28,13 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 		<list key="package">
+			<item value="com.example"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 		<list key="artifactId">
+			<item value="example-jackrabbit"/>
 		</list>
 	</section>
 	<section name="MavenDependenciesWizardPage">
@@ -41,6 +44,19 @@
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+		<list key="rootDirectory">
+			<item value="/Users/jesse/work/example/example-pax-construct"/>
+			<item value="/Users/jesse/work/example/example-virgo"/>
 		</list>
 	</section>
 	<section name="MavenProjectWizardLocationPage">
@@ -58,7 +74,6 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.example"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -73,7 +88,6 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 		<list key="artifactId">
-			<item value="example-camel-demo"/>
 		</list>
 	</section>
 	<section name="MavenCheckoutLocationPage">

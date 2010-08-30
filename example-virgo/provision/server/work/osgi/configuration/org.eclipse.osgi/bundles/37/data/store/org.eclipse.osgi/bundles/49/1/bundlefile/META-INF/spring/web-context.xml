@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<reference id="webContainer" interface="org.eclipse.gemini.web.core.WebContainer"/>
+	<reference id="transformer" interface="org.eclipse.gemini.web.core.WebBundleManifestTransformer"/>	
+	<reference id="framework" interface="org.eclipse.virgo.kernel.osgi.framework.OsgiFramework" />
+	<reference id="eventLogger" interface="org.eclipse.virgo.medic.eventlog.EventLogger"/>
+	
+	<service ref="registry" interface="org.eclipse.virgo.web.core.WebApplicationRegistry"/>
+	
+	<service ref="webAppEventLogger" interface="org.osgi.service.event.EventHandler">
+		<service-properties>
+			<beans:entry key="event.topics" value="org/osgi/service/web/*"/>
+		</service-properties>
+	</service>
+	
+	<beans:bean id="environment" class="org.eclipse.virgo.web.core.internal.WebDeploymentEnvironment">
+		<beans:constructor-arg ref="webContainer"/>
+		<beans:constructor-arg ref="transformer"/>
+		<beans:constructor-arg ref="registry"/>
+	</beans:bean>
+	
+	<beans:bean id="registry" class="org.eclipse.virgo.web.core.internal.StandardWebApplicationRegistry"/>
+
+	<beans:bean id="webAppEventLogger" class="org.eclipse.virgo.web.core.internal.WebApplicationEventLogger">
+		<beans:constructor-arg ref="eventLogger"/>
+	</beans:bean>
+	
+	<service interface="org.eclipse.virgo.kernel.install.pipeline.stage.transform.Transformer" ranking="10000">
+		<beans:bean class="org.eclipse.virgo.web.core.internal.WebBundleTransformer">
+			<beans:constructor-arg ref="environment"/>
+		</beans:bean>
+	</service>
+	
+	<service interface="org.eclipse.virgo.kernel.install.artifact.InstallArtifactLifecycleListener">
+		<beans:bean class="org.eclipse.virgo.web.core.internal.WebBundleLifecycleListener" init-method="init" destroy-method="destroy">
+			<beans:constructor-arg ref="environment"/>
+			<beans:constructor-arg ref="bundleContext"/>
+		</beans:bean>
+	</service>
+	
+	<service interface="org.eclipse.virgo.kernel.install.artifact.ArtifactIdentityDeterminer">
+		<beans:bean class="org.eclipse.virgo.web.core.internal.WebArtifactIdentityDeterminer">
+			<beans:constructor-arg>
+				<reference interface="org.eclipse.virgo.repository.HashGenerator"/>
+			</beans:constructor-arg>
+		</beans:bean>
+	</service>
+	
+</beans:beans>

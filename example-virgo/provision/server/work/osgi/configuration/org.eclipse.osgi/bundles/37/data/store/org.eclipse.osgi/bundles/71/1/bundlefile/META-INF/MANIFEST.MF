@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Import-Bundle: org.eclipse.virgo.apps.repository-2.1.0.M03-incubation-
+ org.eclipse.virgo.apps.repository.web,org.eclipse.virgo.apps.reposito
+ ry-2.1.0.M03-incubation-org.eclipse.virgo.apps.repository.core
+Bundle-Version: 2.1.0.M03-incubation
+Bundle-ManifestVersion: 2
+Module-Scope: org.eclipse.virgo.apps.repository-2.1.0.M03-incubation
+Bundle-SymbolicName: org.eclipse.virgo.apps.repository-2.1.0.M03-incub
+ ation-synthetic.context
+

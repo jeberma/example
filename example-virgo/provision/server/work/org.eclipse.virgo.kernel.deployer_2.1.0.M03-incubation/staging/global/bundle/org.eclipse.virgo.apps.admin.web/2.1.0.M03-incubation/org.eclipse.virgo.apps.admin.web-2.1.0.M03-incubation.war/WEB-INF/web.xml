@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<display-name>Admin Console</display-name>
+
+	<description>Virgo - Administration Console</description>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<!-- CONFIGURE A PARENT APPLICATION CONTEXT -->
+
+	<context-param>
+		<param-name>contextClass</param-name>
+		<param-value>org.eclipse.virgo.web.dm.ServerOsgiBundleXmlWebApplicationContext</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- DISPATCHER SERVLET CONFIG -->
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/web/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ResourceServlet</servlet-name>
+		<servlet-class>org.springframework.js.resource.ResourceServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ResourceServlet</servlet-name>
+		<url-pattern>/resources/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- SECURITY CONFIG -->
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Virgo Server Admin Console</web-resource-name>
+			<url-pattern>/web/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint> 
+	
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>Virgo Server Admin Console</realm-name>
+	</login-config>
+	
+	<security-role>
+		<role-name>admin</role-name>
+	</security-role>
+
+</web-app>
