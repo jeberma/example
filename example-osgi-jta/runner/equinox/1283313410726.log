@@ -1,0 +1,152 @@
+!SESSION 2010-08-31 20:56:50.332 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_20
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=carbon, NL=en_US
+Command-line arguments:  -console -configuration equinox
+
+!ENTRY org.eclipse.osgi 4 0 2010-08-31 20:56:51.595
+!MESSAGE Error starting bundle: initial@reference:file:../bundles/com.springsource.slf4j.log4j_1.5.6.jar/
+!STACK 0
+org.osgi.framework.BundleException: A fragment bundle cannot be started: com.springsource.slf4j.log4j_1.5.6 [4]
+	at org.eclipse.osgi.framework.internal.core.BundleFragment.startWorker(BundleFragment.java:228)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundle(EclipseStarter.java:1128)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundles(EclipseStarter.java:1121)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:640)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:301)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:175)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:150)
+
+!ENTRY org.eclipse.osgi 4 0 2010-08-31 20:56:51.601
+!MESSAGE Error starting bundle: initial@reference:file:../bundles/com.example.osgi.jta.log4j_1.0.0.SNAPSHOT.jar/
+!STACK 0
+org.osgi.framework.BundleException: A fragment bundle cannot be started: com.example.osgi.jta.log4j_1.0.0.SNAPSHOT [49]
+	at org.eclipse.osgi.framework.internal.core.BundleFragment.startWorker(BundleFragment.java:228)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundle(EclipseStarter.java:1128)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundles(EclipseStarter.java:1121)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:640)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:301)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:175)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:150)
+
+!ENTRY com.atomikos.transactions-osgi 4 0 2010-08-31 20:56:51.615
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The activator com.atomikos.transactions.osgi.AtomikosActivator for bundle com.atomikos.transactions-osgi is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:157)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:751)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+Caused by: java.lang.NoClassDefFoundError: javax/transaction/TransactionManager
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:632)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:616)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.defineClass(DefaultClassLoader.java:183)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:576)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:546)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:477)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass_LockClassLoader(ClasspathManager.java:465)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:445)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at com.atomikos.transactions.osgi.AtomikosActivator.<init>(AtomikosActivator.java:35)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:152)
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: javax.transaction.TransactionManager
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:448)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	... 34 more
+Root exception:
+java.lang.NoClassDefFoundError: javax/transaction/TransactionManager
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:632)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:616)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.defineClass(DefaultClassLoader.java:183)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:576)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:546)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:477)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass_LockClassLoader(ClasspathManager.java:465)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:445)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at com.atomikos.transactions.osgi.AtomikosActivator.<init>(AtomikosActivator.java:35)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:152)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:751)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+Caused by: java.lang.ClassNotFoundException: javax.transaction.TransactionManager
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:448)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	... 34 more
+
+!ENTRY com.springsource.org.atinject.tck 4 0 2010-08-31 20:56:51.622
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: javax.inject; version="[1.0.0,1.0.0]"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.eclipse.osgi 4 0 2010-08-31 20:56:52.122
+!MESSAGE Bundle com.atomikos.transactions-osgi_3.7.0.SNAPSHOT [1] is not active.
+
+!ENTRY org.eclipse.osgi 4 0 2010-08-31 20:56:52.125
+!MESSAGE Bundle com.springsource.slf4j.log4j_1.5.6 [4] is not active.
+
+!ENTRY org.eclipse.osgi 4 0 2010-08-31 20:56:52.125
+!MESSAGE Bundle initial@reference:file:../bundles/com.springsource.org.atinject.tck_1.0.0.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-08-31 20:56:52.125
+!MESSAGE Bundle com.example.osgi.jta.log4j_1.0.0.SNAPSHOT [49] is not active.

@@ -55,6 +55,7 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 		<list key="rootDirectory">
+			<item value="/Users/jesse/work/example/example-osgi-jta"/>
 			<item value="/Users/jesse/work/example/example-pax-construct"/>
 			<item value="/Users/jesse/work/example/example-virgo"/>
 		</list>

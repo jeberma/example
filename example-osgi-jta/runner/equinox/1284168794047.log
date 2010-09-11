@@ -1,0 +1,114 @@
+!SESSION 2010-09-10 18:33:13.627 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_20
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=carbon, NL=en_US
+Command-line arguments:  -console -configuration equinox
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:14.940
+!MESSAGE Error starting bundle: initial@reference:file:../bundles/com.springsource.slf4j.log4j_1.5.6.jar/
+!STACK 0
+org.osgi.framework.BundleException: A fragment bundle cannot be started: com.springsource.slf4j.log4j_1.5.6 [3]
+	at org.eclipse.osgi.framework.internal.core.BundleFragment.startWorker(BundleFragment.java:228)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundle(EclipseStarter.java:1128)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundles(EclipseStarter.java:1121)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:640)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:301)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:175)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:150)
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:14.950
+!MESSAGE Error starting bundle: initial@reference:file:../bundles/com.example.osgi.jta.log4j_1.0.0.SNAPSHOT.jar/
+!STACK 0
+org.osgi.framework.BundleException: A fragment bundle cannot be started: com.example.osgi.jta.log4j_1.0.0.SNAPSHOT [55]
+	at org.eclipse.osgi.framework.internal.core.BundleFragment.startWorker(BundleFragment.java:228)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:280)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundle(EclipseStarter.java:1128)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundles(EclipseStarter.java:1121)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:640)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:301)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:175)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:150)
+
+!ENTRY com.springsource.org.atinject.tck 4 0 2010-09-10 18:33:14.955
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: javax.inject; version="[1.0.0,1.0.0]"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.apache.servicemix.transaction 4 0 2010-09-10 18:33:15.418
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.jencks.factory; version="2.1.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.apache.servicemix.bundles.jencks 4 0 2010-09-10 18:33:15.447
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.geronimo.connector; version="0.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY com.example.osgi.jta.transaction 4 0 2010-09-10 18:33:15.468
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: com.atomikos.icatch.admin.imp; version="3.6.5"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:15.501
+!MESSAGE Bundle com.springsource.slf4j.log4j_1.5.6 [3] is not active.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:15.501
+!MESSAGE Bundle initial@reference:file:../bundles/com.springsource.org.atinject.tck_1.0.0.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:15.501
+!MESSAGE Bundle initial@reference:file:../bundles/org.apache.servicemix.transaction_4.0.0.fuse.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:15.502
+!MESSAGE Bundle initial@reference:file:../bundles/org.apache.servicemix.bundles.jencks_2.1.0.fuse.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:15.502
+!MESSAGE Bundle com.example.osgi.jta.log4j_1.0.0.SNAPSHOT [55] is not active.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:33:15.503
+!MESSAGE Bundle initial@reference:file:../bundles/com.example.osgi.jta.transaction_1.0.0.SNAPSHOT.jar/ was not resolved.

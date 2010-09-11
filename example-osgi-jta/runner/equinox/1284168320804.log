@@ -1,0 +1,490 @@
+!SESSION 2010-09-10 18:25:20.397 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_20
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=carbon, NL=en_US
+Command-line arguments:  -console -configuration equinox
+
+!ENTRY com.springsource.org.atinject.tck 4 0 2010-09-10 18:25:21.671
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: javax.inject; version="[1.0.0,1.0.0]"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.osgi.extender 4 0 2010-09-10 18:25:21.677
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.0.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.osgi.web.extender 4 0 2010-09-10 18:25:21.686
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.0.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.osgi.web 4 0 2010-09-10 18:25:21.690
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.0.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.osgi.extensions.annotations 4 0 2010-09-10 18:25:21.695
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.0.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.orm 4 0 2010-09-10 18:25:21.700
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.aopalliance.intercept; version="[1.0.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.jdbc 4 0 2010-09-10 18:25:21.704
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.1.1,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.transaction 4 0 2010-09-10 18:25:21.708
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.1.1,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.web.servlet 4 0 2010-09-10 18:25:21.711
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.springframework.beans; version="[3.0.4,3.0.5)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.web 4 0 2010-09-10 18:25:21.715
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.aopalliance.aop; version="[1.0.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.oxm 4 0 2010-09-10 18:25:21.718
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.1.1,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.context.support 4 0 2010-09-10 18:25:21.721
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.springframework.context; version="[3.0.4,3.0.5)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.beans 4 0 2010-09-10 18:25:21.725
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.1.1,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.context 4 0 2010-09-10 18:25:21.728
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.1.1,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.core 4 0 2010-09-10 18:25:21.732
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.commons.logging; version="[1.1.1,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.aop 4 0 2010-09-10 18:25:21.735
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.aopalliance.aop; version="[1.0.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.expression 4 0 2010-09-10 18:25:21.739
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: org.springframework.core; version="[3.0.4,3.0.5)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.springframework.osgi.catalina.start.osgi 4 0 2010-09-10 18:25:21.751
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The activator org.springframework.osgi.web.tomcat.internal.Activator for bundle org.springframework.osgi.catalina.start.osgi is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:157)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:751)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/logging/LogFactory
+	at org.springframework.osgi.web.tomcat.internal.Activator.<clinit>(Activator.java:61)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:152)
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.logging.LogFactory
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:494)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	... 18 more
+Root exception:
+java.lang.NoClassDefFoundError: org/apache/commons/logging/LogFactory
+	at org.springframework.osgi.web.tomcat.internal.Activator.<clinit>(Activator.java:61)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:355)
+	at java.lang.Class.newInstance(Class.java:308)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:152)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:751)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:352)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.logging.LogFactory
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:494)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	... 18 more
+
+!ENTRY org.apache.geronimo.components.geronimo-transaction 4 0 2010-09-10 18:25:21.755
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: javax.transaction; version="[1.1.0,2.0.0)"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.apache.servicemix.transaction 4 0 2010-09-10 18:25:21.768
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: javax.transaction; version="1.1.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.apache.servicemix.bundles.jencks 4 0 2010-09-10 18:25:21.771
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: javax.jms; version="0.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY com.example.osgi.jta.transaction 4 0 2010-09-10 18:25:21.775
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: com.atomikos.icatch.admin.imp; version="3.6.5"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY com.example.osgi.jta.widget.service 4 0 2010-09-10 18:25:21.777
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle could not be resolved. Reason: Missing Constraint: Import-Package: javax.transaction; version="1.1.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1313)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1297)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:309)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:370)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1068)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:557)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:464)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:248)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:445)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.783
+!MESSAGE Bundle initial@reference:file:../bundles/com.springsource.org.atinject.tck_1.0.0.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.784
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.osgi.extender_2.0.0.M1.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.785
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.osgi.web.extender_2.0.0.M1.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.792
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.osgi.web_2.0.0.M1.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.792
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.osgi.extensions.annotations_2.0.0.M1.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.793
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.orm_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.793
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.jdbc_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.794
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.transaction_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.803
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.web.servlet_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.803
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.web_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.803
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.oxm_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.803
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.context.support_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.804
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.beans_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.804
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.context_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.804
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.core_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.804
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.aop_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.805
+!MESSAGE Bundle initial@reference:file:../bundles/org.springframework.expression_3.0.4.RELEASE.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.805
+!MESSAGE Bundle org.springframework.osgi.catalina.start.osgi_1.0.0 [38] is not active.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.806
+!MESSAGE Bundle initial@reference:file:../bundles/org.apache.geronimo.components.geronimo-transaction_3.0.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.806
+!MESSAGE Bundle initial@reference:file:../bundles/org.apache.servicemix.transaction_4.0.0.fuse.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.806
+!MESSAGE Bundle initial@reference:file:../bundles/org.apache.servicemix.bundles.jencks_2.1.0.1.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.806
+!MESSAGE Bundle initial@reference:file:../bundles/com.example.osgi.jta.log4j_1.0.0.SNAPSHOT.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.807
+!MESSAGE Bundle initial@reference:file:../bundles/com.example.osgi.jta.transaction_1.0.0.SNAPSHOT.jar/ was not resolved.
+
+!ENTRY org.eclipse.osgi 4 0 2010-09-10 18:25:21.807
+!MESSAGE Bundle initial@reference:file:../bundles/com.example.osgi.jta.widget.service_1.0.0.SNAPSHOT.jar/ was not resolved.
