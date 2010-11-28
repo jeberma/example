@@ -48,6 +48,16 @@ public abstract class AbstractPlovrMojo extends AbstractMojo {
 	 */
 	protected File workDirectory;
 	
+	/**
+	 * @parameter expression="${project.build.directory}/plovr"
+	 */
+	protected File sourceMapPath;
+	
+	/**
+	 * @parameter
+	 */
+	protected Boolean debug;
+	
 	protected void setDefaults(Config config) {
 		if(config.paths == null) {
 			config.paths = paths;
@@ -69,6 +79,9 @@ public abstract class AbstractPlovrMojo extends AbstractMojo {
 		}
 		if(config.workDirectory == null) {
 			config.workDirectory = workDirectory;
+		}
+		if(config.debug == null) {
+			config.debug = debug;
 		}
 	}
 	

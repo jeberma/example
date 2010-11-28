@@ -10,6 +10,12 @@ public class BuildConfig extends Config {
 	 */
 	protected File outputFile;
 	
+	/**
+	 * @parameter
+	 */
+	protected File sourceMapFile;
+	
+	
 	@Override
 	public List<String> validate() {
 		List<String> errors = super.validate();

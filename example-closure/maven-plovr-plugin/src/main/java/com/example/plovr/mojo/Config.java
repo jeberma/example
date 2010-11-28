@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang.CharEncoding;
 import org.apache.commons.lang.StringUtils;
 
 import com.google.gson.Gson;
@@ -56,6 +57,11 @@ public class Config {
 	 */
 	protected File workDirectory;
 	
+	/**
+	 * @parameter
+	 */
+	protected Boolean debug;
+	
 	public String toJson() {
 		JsonObject json = new JsonObject();
 		if(id != null) {
@@ -79,13 +85,16 @@ public class Config {
 		if(closureLibrary != null) {
 			json.addProperty("closure-library", closureLibrary.getAbsolutePath());
 		}
+		if(debug != null) {
+			json.addProperty("debug", debug);
+		}
 		return new Gson().toJson(json);
 	}
 	
 	public File writeToFile() throws IOException {
 		FileUtils.forceMkdir(workDirectory);
-		File output = new File(workDirectory, id + "-config.js");
-		FileUtils.writeStringToFile(output, toJson(), "utf-8");
+		File output = new File(workDirectory, id + ".js");
+		FileUtils.writeStringToFile(output, toJson(), CharEncoding.UTF_8);
 		return output;
 	}
 	

@@ -51,15 +51,25 @@
 						<goals>
 							<goal>build</goal>
 						</goals>
+						<!--  see http://www.plovr.com/options.html -->
 						<configuration>
 							<buildConfigs>
 								<buildConfig>
-									<id>hello</id>
+									<id>main-advanced</id>
 									<paths>${basedir}/src/main/js</paths>
 									<inputs>${basedir}/src/main/js/main.js</inputs>
-									<outputFile>${project.build.outputDirectory}/hello-compiled.js</outputFile>
+									<outputFile>${project.build.outputDirectory}/main-compiled.js</outputFile>
+									<sourceMapFile>${project.build.outputDirectory}/main-map.js</sourceMapFile>
 									<mode>ADVANCED</mode>
 									<level>VERBOSE</level>
+									<debug>true</debug>
+								</buildConfig>
+								<buildConfig>
+									<id>main-whitespace</id>
+									<paths>${basedir}/src/main/js</paths>
+									<inputs>${basedir}/src/main/js/main.js</inputs>
+									<outputFile>${project.build.outputDirectory}/main-debug.js</outputFile>
+									<mode>WHITESPACE</mode>
 									<prettyPrint>true</prettyPrint>
 								</buildConfig>
 							</buildConfigs>
