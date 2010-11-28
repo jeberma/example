@@ -10,5 +10,6 @@
   <modules>
     <module>maven-plovr-plugin</module>
     <module>example-plovr</module>
+    <module>plovr</module>
   </modules>
 </project>

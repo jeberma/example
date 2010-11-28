@@ -30,15 +30,13 @@
 			<artifactId>maven-plugin-api</artifactId>
 			<version>2.0</version>
 		</dependency>
-		<!--  
+		
 		<dependency>
-			<groupId>org.plovr</groupId>
+			<groupId>com.example</groupId>
 			<artifactId>plovr</artifactId>
-			<version>35c0328e9fbf+</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/plovr-35c0328e9fbf+.jar</systemPath>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
-		-->
+		
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
@@ -75,24 +73,6 @@
 				<configuration>
 					<goalPrefix>plovr</goalPrefix>
 				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>run</goal>
-						</goals>
-						<phase>process-resources</phase>
-						<configuration>
-							<target>
-								<unzip src="${basedir}/lib/plovr-35c0328e9fbf+.jar"
-									dest="${project.build.outputDirectory}"/>
-							</target>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>

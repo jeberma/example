@@ -575,3 +575,168 @@ Caused by: java.lang.UnsupportedClassVersionError: Bad version number in .class 
 	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:388)
 	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:521)
 	... 25 more
+!SESSION 2010-11-27 22:07:22.870 -----------------------------------------------
+eclipse.buildId=2.3.2.201003230009-RELEASE
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
+
+!ENTRY com.springsource.sts.ide.ui 4 0 2010-11-27 22:08:32.080
+!MESSAGE An unexpected error occurred while retrieving feed content.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Download of http://springide.org/blog/feed/ failed: Unexpected HTTP response 404
+	at com.springsource.sts.internal.core.net.HttpClientTransportService.toException(HttpClientTransportService.java:205)
+	at com.springsource.sts.internal.core.net.HttpClientTransportService.stream(HttpClientTransportService.java:187)
+	at com.springsource.sts.core.HttpUtil.stream(HttpUtil.java:112)
+	at com.springsource.sts.internal.ide.ui.editors.AggregateFeedJob.run(AggregateFeedJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.springsource.sts.core 4 0 2010-11-27 22:08:32.081
+!MESSAGE Download of http://springide.org/blog/feed/ failed: Unexpected HTTP response 404
+
+!ENTRY org.eclipse.jface 2 0 2010-11-27 22:08:52.653
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2010-11-27 22:08:52.653
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.wst.jsdt.internal.ui.javaeditor.selectionactions.StructureSelectHistoryAction@9cc6fb)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,carbon,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.wst.jsdt.internal.ui.javaeditor.selectionactions.StructureSelectHistoryAction@9cc6fb)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,carbon,system)
+
+!ENTRY org.eclipse.jface 2 0 2010-11-27 22:09:07.748
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:763)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:135)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:305)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider$2.run(ResourceExtensionContentProvider.java:267)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider.runUpdates(ResourceExtensionContentProvider.java:306)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider.processDelta(ResourceExtensionContentProvider.java:116)
+	at org.eclipse.ui.model.WorkbenchContentProvider.resourceChanged(WorkbenchContentProvider.java:106)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:313)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1022)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1070)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1082)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl.create(FacetedProjectFrameworkImpl.java:718)
+	at org.eclipse.wst.common.project.facet.core.ProjectFacetsManager.create(ProjectFacetsManager.java:375)
+	at org.maven.ide.eclipse.wtp.internal.WebResourcesContentProvider.getPipelinedChildren(WebResourcesContentProvider.java:66)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.pipelineChildren(NavigatorContentServiceContentProvider.java:323)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:259)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:607)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1346)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:390)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getFilteredChildren(AbstractTreeViewer.java:636)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:602)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(AbstractTreeViewer.java:797)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:776)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:639)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleTreeExpand(AbstractTreeViewer.java:1442)
+	at org.eclipse.jface.viewers.TreeViewer.handleTreeExpand(TreeViewer.java:937)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$4.treeExpanded(AbstractTreeViewer.java:1453)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:126)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1598)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1607)
+	at org.eclipse.swt.widgets.Tree.itemNotificationProc(Tree.java:2457)
+	at org.eclipse.swt.widgets.Display.itemNotificationProc(Display.java:2396)
+	at org.eclipse.swt.internal.carbon.OS.CallNextEventHandler(Native Method)
+	at org.eclipse.swt.widgets.Widget.kEventControlTrack(Widget.java:1133)
+	at org.eclipse.swt.widgets.Control.kEventControlTrack(Control.java:2109)
+	at org.eclipse.swt.widgets.Widget.controlProc(Widget.java:375)
+	at org.eclipse.swt.widgets.Display.controlProc(Display.java:863)
+	at org.eclipse.swt.internal.carbon.OS.CallNextEventHandler(Native Method)
+	at org.eclipse.swt.widgets.Tree.kEventMouseDown(Tree.java:2653)
+	at org.eclipse.swt.widgets.Widget.mouseProc(Widget.java:1362)
+	at org.eclipse.swt.widgets.Display.mouseProc(Display.java:2930)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3051)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+
+!ENTRY org.maven.ide.eclipse 4 0 2010-11-27 22:11:15.695
+!MESSAGE Build errors for maven-plovr-plugin
+!STACK 0
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile) on project maven-plovr-plugin: Compilation failure
+/Users/jesse/work/example/example-closure/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java:[9,-1] cannot access org.plovr.CheckedSoySyntaxException
+bad class file: /Users/jesse/work/example/example-closure/maven-plovr-plugin/lib/plovr-35c0328e9fbf+.jar(org/plovr/CheckedSoySyntaxException.class)
+class file has wrong version 50.0, should be 49.0
+
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:581)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:324)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
+	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.maven.plugin.CompilationFailureException: Compilation failure
+/Users/jesse/work/example/example-closure/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java:[9,-1] cannot access org.plovr.CheckedSoySyntaxException
+bad class file: /Users/jesse/work/example/example-closure/maven-plovr-plugin/lib/plovr-35c0328e9fbf+.jar(org/plovr/CheckedSoySyntaxException.class)
+class file has wrong version 50.0, should be 49.0
+
+	at org.apache.maven.plugin.AbstractCompilerMojo.execute(AbstractCompilerMojo.java:656)
+	at org.apache.maven.plugin.CompilerMojo.execute(CompilerMojo.java:128)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
+	... 19 more
+
+!ENTRY org.eclipse.ui.workbench 2 0 2010-11-27 22:13:03.337
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2010-11-27 22:13:03.337
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@5aa9ea),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@d0ea1b,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@2500bb)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@332d94)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@5aa9ea),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@d0ea1b,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@2500bb)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@332d94)),sourcePriority=1064961)
