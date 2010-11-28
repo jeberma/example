@@ -1,0 +1,4 @@
+Export-Package: ${project.artifactId};version="${project.version}"
+Import-Package: javax.persistence;version="1.0.0",\
+ org.apache.commons.lang.builder;version="2.0",\
+ *

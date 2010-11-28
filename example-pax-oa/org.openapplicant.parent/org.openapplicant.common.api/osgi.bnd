@@ -1,0 +1,2 @@
+Export-Package: ${project.artifactId};version="${project.version}"
+Import-Package: org.apache.commons.lang.builder;version="2.0"

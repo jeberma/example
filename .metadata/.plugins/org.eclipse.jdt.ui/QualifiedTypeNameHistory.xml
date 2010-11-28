@@ -6,14 +6,12 @@
 <fullyQualifiedTypeName name="edu.emory.mathcs.backport.java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.springframework.security.authentication.UsernamePasswordAuthenticationToken"/>
 <fullyQualifiedTypeName name="com.example.domain.User"/>
-<fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
 <fullyQualifiedTypeName name="javax.jcr.LoginException"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.LogFactory"/>
 <fullyQualifiedTypeName name="javax.jcr.Credentials"/>
 <fullyQualifiedTypeName name="org.apache.jackrabbit.api.security.user.User"/>
 <fullyQualifiedTypeName name="org.apache.jackrabbit.core.security.authentication.CryptedSimpleCredentials"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="javax.jcr.Repository"/>
 <fullyQualifiedTypeName name="com.example.test.NamingContext"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
@@ -31,5 +29,18 @@
 <fullyQualifiedTypeName name="org.apache.commons.collections.bag.HashBag"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="javax.jms.Session"/>
+<fullyQualifiedTypeName name="javax.jms.Message"/>
+<fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+<fullyQualifiedTypeName name="org.plovr.ConfigParser"/>
+<fullyQualifiedTypeName name="org.plovr.CompileRequestHandler"/>
+<fullyQualifiedTypeName name="org.plovr.CheckedSoySyntaxException"/>
+<fullyQualifiedTypeName name="org.plovr.MissingProvideException"/>
+<fullyQualifiedTypeName name="org.plovr.Config"/>
+<fullyQualifiedTypeName name="com.google.javascript.jscomp.Result"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FilenameUtils"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>

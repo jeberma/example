@@ -1,60 +1,30 @@
-!SESSION 2010-08-31 19:49:21.030 -----------------------------------------------
+!SESSION 2010-11-27 15:00:41.790 -----------------------------------------------
 eclipse.buildId=2.3.2.201003230009-RELEASE
-java.version=1.5.0_24
+java.version=1.5.0_26
 java.vendor=Apple Inc.
 BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
 Framework arguments:  -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
 Command-line arguments:  -os macosx -ws carbon -arch x86 -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
 
 This is a continuation of log file /Users/jesse/work/example/.metadata/.bak_0.log
-Created Time: 2010-08-31 20:42:01.613
+Created Time: 2010-11-27 21:48:07.609
 
-!ENTRY org.maven.ide.eclipse 4 0 2010-08-31 20:42:01.614
-!MESSAGE Build errors for com.example.osgi.jta.transaction
+!ENTRY org.maven.ide.eclipse 4 0 2010-11-27 21:48:07.610
+!MESSAGE Build errors for example-plovr
 !STACK 0
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.ops4j:maven-pax-plugin:1.4:compile (default-compile) on project com.example.osgi.jta.transaction: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build (build) on project example-plovr: Execution build of goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build failed: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -88,8 +58,12 @@ Number of foreign imports: 0
 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
 	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.filterResources(GenericBuildParticipant.java:195)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant$2.visit(GenericBuildParticipant.java:169)
+	at org.maven.ide.eclipse.internal.project.MavenProjectFacade.acceptImpl(MavenProjectFacade.java:258)
+	at org.maven.ide.eclipse.internal.project.MavenProjectFacade.accept(MavenProjectFacade.java:250)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.processResources(GenericBuildParticipant.java:162)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:84)
 	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
 	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
@@ -103,49 +77,19 @@ Number of foreign imports: 0
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+Caused by: org.apache.maven.plugin.PluginExecutionException: Execution build of goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build failed: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -174,52 +118,22 @@ Number of foreign imports: 0
 
 -----------------------------------------------------
 
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:143)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:119)
 	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
-	... 19 more
-Caused by: org.apache.maven.plugin.PluginContainerException: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+	... 23 more
+Caused by: org.apache.maven.plugin.PluginContainerException: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -248,607 +162,58 @@ Number of foreign imports: 0
 
 -----------------------------------------------------
 
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:141)
-	... 20 more
-Caused by: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.mergeCompilerConfiguration(BundleCompilerMojo.java:102)
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.execute(BundleCompilerMojo.java:70)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
-	... 20 more
-
-!ENTRY org.maven.ide.eclipse 4 0 2010-08-31 20:54:35.135
-!MESSAGE Build errors for com.example.osgi.jta.log4j
-!STACK 0
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.ops4j:maven-pax-plugin:1.4:compile (default-compile) on project com.example.osgi.jta.log4j: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-1018534562
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:593)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:324)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
-	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
-	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-1018534562
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:143)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
-	... 19 more
-Caused by: org.apache.maven.plugin.PluginContainerException: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-1018534562
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:141)
-	... 20 more
-Caused by: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.mergeCompilerConfiguration(BundleCompilerMojo.java:102)
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.execute(BundleCompilerMojo.java:70)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
-	... 20 more
-
-!ENTRY org.maven.ide.eclipse 4 0 2010-08-31 20:54:36.042
-!MESSAGE Build errors for com.example.osgi.jta.widget.service
-!STACK 0
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.ops4j:maven-pax-plugin:1.4:compile (default-compile) on project com.example.osgi.jta.widget.service: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-698382489
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:593)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:324)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
-	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
-	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-698382489
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:143)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
-	... 19 more
-Caused by: org.apache.maven.plugin.PluginContainerException: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-698382489
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.transaction:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:141)
-	... 20 more
-Caused by: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.mergeCompilerConfiguration(BundleCompilerMojo.java:102)
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.execute(BundleCompilerMojo.java:70)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
-	... 20 more
-
-!ENTRY org.eclipse.wst.server.core 4 0 2010-08-31 23:36:48.591
-!MESSAGE Error during shutdown
-!STACK 0
-org.eclipse.core.runtime.AssertionFailedException: null argument:
-	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
-	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
-	at org.eclipse.core.internal.events.ResourceChangeListenerList.remove(ResourceChangeListenerList.java:146)
-	at org.eclipse.core.internal.events.NotificationManager.removeListener(NotificationManager.java:305)
-	at org.eclipse.core.internal.resources.Workspace.removeResourceChangeListener(Workspace.java:1767)
-	at org.eclipse.wst.server.core.internal.ResourceManager.shutdownImpl(ResourceManager.java:366)
-	at org.eclipse.wst.server.core.internal.ResourceManager.shutdown(ResourceManager.java:312)
-	at org.eclipse.wst.server.core.internal.ServerPlugin.stop(ServerPlugin.java:319)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:551)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:94)
+	... 24 more
+Caused by: java.lang.UnsupportedClassVersionError: Bad version number in .class file
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:676)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:124)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:260)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:56)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:195)
 	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
-	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:474)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:546)
-	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1098)
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:593)
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:261)
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:216)
-	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
-	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:685)
-	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:583)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:409)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:592)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
-!SESSION 2010-09-01 03:48:08.009 -----------------------------------------------
-eclipse.buildId=2.3.2.201003230009-RELEASE
-java.version=1.5.0_24
-java.vendor=Apple Inc.
-BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
-Framework arguments:  -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
-Command-line arguments:  -os macosx -ws carbon -arch x86 -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:386)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:244)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:230)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:375)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2357)
+	at java.lang.Class.getConstructors(Class.java:1446)
+	at org.apache.xbean.recipe.ReflectionUtil.findConstructor(ReflectionUtil.java:527)
+	at org.apache.xbean.recipe.ObjectRecipe.findFactory(ObjectRecipe.java:532)
+	at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:270)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:49)
+	at org.codehaus.plexus.component.builder.XBeanComponentBuilder.createComponentInstance(XBeanComponentBuilder.java:159)
+	at org.codehaus.plexus.component.builder.XBeanComponentBuilder.build(XBeanComponentBuilder.java:123)
+	at org.codehaus.plexus.component.manager.AbstractComponentManager.createComponentInstance(AbstractComponentManager.java:181)
+	at org.codehaus.plexus.component.manager.PerLookupComponentManager.getComponent(PerLookupComponentManager.java:51)
+	at org.codehaus.plexus.DefaultComponentRegistry.getComponent(DefaultComponentRegistry.java:358)
+	at org.codehaus.plexus.DefaultComponentRegistry.lookup(DefaultComponentRegistry.java:178)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:388)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:521)
+	... 25 more
 
-!ENTRY com.springsource.sts.ide.ui 4 0 2010-09-01 03:49:27.682
-!MESSAGE An unexpected error occurred while retrieving feed content.
-!STACK 1
-org.eclipse.core.runtime.CoreException: Download of http://springide.org/blog/feed/ failed: Unexpected HTTP response 404
-	at com.springsource.sts.internal.core.net.HttpClientTransportService.toException(HttpClientTransportService.java:205)
-	at com.springsource.sts.internal.core.net.HttpClientTransportService.stream(HttpClientTransportService.java:187)
-	at com.springsource.sts.core.HttpUtil.stream(HttpUtil.java:112)
-	at com.springsource.sts.internal.ide.ui.editors.AggregateFeedJob.run(AggregateFeedJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 com.springsource.sts.core 4 0 2010-09-01 03:49:27.683
-!MESSAGE Download of http://springide.org/blog/feed/ failed: Unexpected HTTP response 404
-
-!ENTRY org.maven.ide.eclipse 4 0 2010-09-01 03:54:01.944
-!MESSAGE Build errors for com.example.osgi.jta.transaction
+!ENTRY org.maven.ide.eclipse 4 0 2010-11-27 21:49:32.720
+!MESSAGE Build errors for example-plovr
 !STACK 0
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.ops4j:maven-pax-plugin:1.4:compile (default-compile) on project com.example.osgi.jta.transaction: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build (build) on project example-plovr: Execution build of goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build failed: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -882,8 +247,12 @@ Number of foreign imports: 0
 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
 	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.filterResources(GenericBuildParticipant.java:195)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant$2.visit(GenericBuildParticipant.java:169)
+	at org.maven.ide.eclipse.internal.project.MavenProjectFacade.acceptImpl(MavenProjectFacade.java:258)
+	at org.maven.ide.eclipse.internal.project.MavenProjectFacade.accept(MavenProjectFacade.java:250)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.processResources(GenericBuildParticipant.java:162)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:84)
 	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
 	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
@@ -897,49 +266,19 @@ Number of foreign imports: 0
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+Caused by: org.apache.maven.plugin.PluginExecutionException: Execution build of goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build failed: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -968,52 +307,22 @@ Number of foreign imports: 0
 
 -----------------------------------------------------
 
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:143)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:119)
 	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
-	... 19 more
-Caused by: org.apache.maven.plugin.PluginContainerException: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+	... 23 more
+Caused by: org.apache.maven.plugin.PluginContainerException: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -1042,360 +351,58 @@ Number of foreign imports: 0
 
 -----------------------------------------------------
 
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:141)
-	... 20 more
-Caused by: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.mergeCompilerConfiguration(BundleCompilerMojo.java:102)
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.execute(BundleCompilerMojo.java:70)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
-	... 20 more
-
-!ENTRY org.maven.ide.eclipse 4 0 2010-09-01 03:54:03.162
-!MESSAGE Build errors for com.example.osgi.jta.widget.service
-!STACK 0
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.ops4j:maven-pax-plugin:1.4:compile (default-compile) on project com.example.osgi.jta.widget.service: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-1944628476
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:593)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:324)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
-	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
-	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-1944628476
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:143)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
-	... 19 more
-Caused by: org.apache.maven.plugin.PluginContainerException: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4-1944628476
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:141)
-	... 20 more
-Caused by: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.mergeCompilerConfiguration(BundleCompilerMojo.java:102)
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.execute(BundleCompilerMojo.java:70)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
-	... 20 more
-
-!ENTRY org.eclipse.wst.server.core 4 0 2010-09-01 10:39:21.610
-!MESSAGE Error during shutdown
-!STACK 0
-org.eclipse.core.runtime.AssertionFailedException: null argument:
-	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
-	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
-	at org.eclipse.core.internal.events.ResourceChangeListenerList.remove(ResourceChangeListenerList.java:146)
-	at org.eclipse.core.internal.events.NotificationManager.removeListener(NotificationManager.java:305)
-	at org.eclipse.core.internal.resources.Workspace.removeResourceChangeListener(Workspace.java:1767)
-	at org.eclipse.wst.server.core.internal.ResourceManager.shutdownImpl(ResourceManager.java:366)
-	at org.eclipse.wst.server.core.internal.ResourceManager.shutdown(ResourceManager.java:312)
-	at org.eclipse.wst.server.core.internal.ServerPlugin.stop(ServerPlugin.java:319)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:843)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:551)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:94)
+	... 24 more
+Caused by: java.lang.UnsupportedClassVersionError: Bad version number in .class file
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:676)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:124)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:260)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:56)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:195)
 	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:836)
-	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:474)
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:546)
-	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1098)
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:593)
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:261)
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:216)
-	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:266)
-	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:685)
-	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:583)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:409)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:592)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
-!SESSION 2010-09-10 22:23:55.357 -----------------------------------------------
-eclipse.buildId=2.3.2.201003230009-RELEASE
-java.version=1.5.0_24
-java.vendor=Apple Inc.
-BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
-Framework arguments:  -product com.springsource.sts.ide -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
-Command-line arguments:  -os macosx -ws carbon -arch x86 -product com.springsource.sts.ide -data /Users/jesse/work/example -product com.springsource.sts.ide -keyring /Users/jesse/.eclipse_keyring -showlocation
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:386)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:244)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:230)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:375)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2357)
+	at java.lang.Class.getConstructors(Class.java:1446)
+	at org.apache.xbean.recipe.ReflectionUtil.findConstructor(ReflectionUtil.java:527)
+	at org.apache.xbean.recipe.ObjectRecipe.findFactory(ObjectRecipe.java:532)
+	at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:270)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:49)
+	at org.codehaus.plexus.component.builder.XBeanComponentBuilder.createComponentInstance(XBeanComponentBuilder.java:159)
+	at org.codehaus.plexus.component.builder.XBeanComponentBuilder.build(XBeanComponentBuilder.java:123)
+	at org.codehaus.plexus.component.manager.AbstractComponentManager.createComponentInstance(AbstractComponentManager.java:181)
+	at org.codehaus.plexus.component.manager.PerLookupComponentManager.getComponent(PerLookupComponentManager.java:51)
+	at org.codehaus.plexus.DefaultComponentRegistry.getComponent(DefaultComponentRegistry.java:358)
+	at org.codehaus.plexus.DefaultComponentRegistry.lookup(DefaultComponentRegistry.java:178)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:388)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:521)
+	... 25 more
 
-!ENTRY com.springsource.sts.ide.ui 4 0 2010-09-10 22:24:18.730
-!MESSAGE An unexpected error occurred while retrieving feed content.
-!STACK 1
-org.eclipse.core.runtime.CoreException: Download of http://springide.org/blog/feed/ failed: Unexpected HTTP response 404
-	at com.springsource.sts.internal.core.net.HttpClientTransportService.toException(HttpClientTransportService.java:205)
-	at com.springsource.sts.internal.core.net.HttpClientTransportService.stream(HttpClientTransportService.java:187)
-	at com.springsource.sts.core.HttpUtil.stream(HttpUtil.java:112)
-	at com.springsource.sts.internal.ide.ui.editors.AggregateFeedJob.run(AggregateFeedJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 com.springsource.sts.core 4 0 2010-09-10 22:24:18.731
-!MESSAGE Download of http://springide.org/blog/feed/ failed: Unexpected HTTP response 404
-
-!ENTRY org.maven.ide.eclipse 4 0 2010-09-10 22:24:56.736
-!MESSAGE Build errors for com.example.osgi.jta.transaction
+!ENTRY org.maven.ide.eclipse 4 0 2010-11-27 21:50:01.382
+!MESSAGE Build errors for example-plovr
 !STACK 0
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.ops4j:maven-pax-plugin:1.4:compile (default-compile) on project com.example.osgi.jta.transaction: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build (build) on project example-plovr: Execution build of goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build failed: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -1429,8 +436,12 @@ Number of foreign imports: 0
 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
 	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.filterResources(GenericBuildParticipant.java:195)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant$2.visit(GenericBuildParticipant.java:169)
+	at org.maven.ide.eclipse.internal.project.MavenProjectFacade.acceptImpl(MavenProjectFacade.java:258)
+	at org.maven.ide.eclipse.internal.project.MavenProjectFacade.accept(MavenProjectFacade.java:250)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.processResources(GenericBuildParticipant.java:162)
+	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:84)
 	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
 	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
@@ -1444,49 +455,19 @@ Number of foreign imports: 0
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+Caused by: org.apache.maven.plugin.PluginExecutionException: Execution build of goal com.example:maven-plovr-plugin:1.0-SNAPSHOT:build failed: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -1515,52 +496,22 @@ Number of foreign imports: 0
 
 -----------------------------------------------------
 
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:143)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:119)
 	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
-	... 19 more
-Caused by: org.apache.maven.plugin.PluginContainerException: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
+	... 23 more
+Caused by: org.apache.maven.plugin.PluginContainerException: Unable to load the mojo 'build' in the plugin 'com.example:maven-plovr-plugin:1.0-SNAPSHOT' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: Bad version number in .class file
 -----------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4
+realm =    plugin>com.example:maven-plovr-plugin:1.0-SNAPSHOT
 strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+urls[0] = file:/Users/jesse/work/example/example-closure/maven-plovr-plugin/target/classes/
+urls[1] = file:/Users/jesse/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+urls[2] = file:/Users/jesse/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+urls[3] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
 Number of foreign imports: 4
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
 import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
 Number of parent imports: 20
 import: Entry[import org.codehaus.plexus.personality from realm null]
 import: Entry[import org.codehaus.plexus.logging from realm null]
@@ -1589,385 +540,38 @@ Number of foreign imports: 0
 
 -----------------------------------------------------
 
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:141)
-	... 20 more
-Caused by: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.mergeCompilerConfiguration(BundleCompilerMojo.java:102)
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.execute(BundleCompilerMojo.java:70)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
-	... 20 more
-
-!ENTRY org.maven.ide.eclipse 4 0 2010-09-10 22:25:11.011
-!MESSAGE Build errors for com.example.osgi.jta.widget.service
-!STACK 0
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.ops4j:maven-pax-plugin:1.4:compile (default-compile) on project com.example.osgi.jta.widget.service: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4--1405533467
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:593)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:324)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:247)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:104)
-	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(MavenImpl.java:218)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.executePostBuild(GenericBuildParticipant.java:139)
-	at org.maven.ide.eclipse.internal.project.GenericBuildParticipant.build(GenericBuildParticipant.java:78)
-	at org.maven.ide.eclipse.internal.builder.MavenBuilder.build(MavenBuilder.java:153)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-compile of goal org.ops4j:maven-pax-plugin:1.4:compile failed: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4--1405533467
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:143)
-	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:577)
-	... 19 more
-Caused by: org.apache.maven.plugin.PluginContainerException: An API incompatibility was encountered while executing org.ops4j:maven-pax-plugin:1.4:compile: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
------------------------------------------------------
-realm =    plugin>org.ops4j:maven-pax-plugin:1.4--1405533467
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-urls[0] = file:/Users/jesse/.m2/repository/org/ops4j/maven-pax-plugin/1.4/maven-pax-plugin-1.4.jar
-urls[1] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.7/plexus-utils-1.4.7.jar
-urls[2] = file:/Users/jesse/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
-urls[3] = file:/Users/jesse/.m2/repository/org/apache/maven/archetype/maven-archetype-core/1.0-alpha-7/maven-archetype-core-1.0-alpha-7.jar
-urls[4] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
-urls[5] = file:/Users/jesse/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
-urls[6] = file:/Users/jesse/.m2/repository/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
-urls[7] = file:/Users/jesse/.m2/repository/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
-urls[8] = file:/Users/jesse/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar
-urls[9] = file:/Users/jesse/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
-urls[10] = file:/Users/jesse/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
-urls[11] = file:/Users/jesse/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-urls[12] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-downloader/1.0/maven-downloader-1.0.jar
-urls[13] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
-urls[14] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
-urls[15] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.5.3/plexus-compiler-manager-1.5.3.jar
-urls[16] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.5.3/plexus-compiler-javac-1.5.3.jar
-urls[17] = file:/Users/jesse/.m2/repository/org/apache/maven/plugins/maven-eclipse-plugin/2.5.1/maven-eclipse-plugin-2.5.1.jar
-urls[18] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
-urls[19] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-jline/1.0-alpha-5/plexus-interactivity-jline-1.0-alpha-5.jar
-urls[20] = file:/Users/jesse/.m2/repository/jline/jline/0.9.1/jline-0.9.1.jar
-urls[21] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-5/plexus-interactivity-api-1.0-alpha-5.jar
-urls[22] = file:/Users/jesse/.m2/repository/org/apache/maven/maven-archiver/2.2/maven-archiver-2.2.jar
-urls[23] = file:/Users/jesse/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar
-urls[24] = file:/Users/jesse/.m2/repository/biz/aQute/bndlib/0.0.255/bndlib-0.0.255.jar
-urls[25] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-osgi/0.2.0/maven-osgi-0.2.0.jar
-urls[26] = file:/Users/jesse/.m2/repository/org/eclipse/core/resources/3.3.0-v20070604/resources-3.3.0-v20070604.jar
-urls[27] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
-urls[28] = file:/Users/jesse/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-Number of foreign imports: 4
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlSerializer from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParserException from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.pull.XmlPullParser from realm ClassRealm[plexus.core, parent: null]]
-import: Entry[import org.codehaus.plexus.util.xml.Xpp3Dom from realm ClassRealm[plexus.core, parent: null]]
-
-realm =    project>com.example.osgi.jta:com.example.osgi.jta.log4j:1.0-SNAPSHOT
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 1
-import: Entry[import extension>org.ops4j:maven-pax-plugin:1.4 from realm ClassRealm[extension>org.ops4j:maven-pax-plugin:1.4, parent: ClassRealm[plexus.core, parent: null]]]
-Number of parent imports: 20
-import: Entry[import org.codehaus.plexus.personality from realm null]
-import: Entry[import org.codehaus.plexus.logging from realm null]
-import: Entry[import org.codehaus.plexus.lifecycle from realm null]
-import: Entry[import org.codehaus.plexus.context from realm null]
-import: Entry[import org.codehaus.plexus.container from realm null]
-import: Entry[import org.codehaus.plexus.configuration from realm null]
-import: Entry[import org.codehaus.plexus.component from realm null]
-import: Entry[import org.codehaus.plexus.classworlds from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainerException from realm null]
-import: Entry[import org.codehaus.plexus.PlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.PlexusConstants from realm null]
-import: Entry[import org.codehaus.plexus.MutablePlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DuplicateChildContainerException from realm null]
-import: Entry[import org.codehaus.plexus.DefaultPlexusContainer from realm null]
-import: Entry[import org.codehaus.plexus.DefaultContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.DefaultComponentRegistry from realm null]
-import: Entry[import org.codehaus.plexus.ContainerConfiguration from realm null]
-import: Entry[import org.codehaus.plexus.ComponentRegistry from realm null]
-import: Entry[import org.codehaus.classworlds from realm null]
-import: Entry[import org.apache.maven from realm null]
-
-realm =    plexus.core
-strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-Number of foreign imports: 0
-
------------------------------------------------------
-
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:141)
-	... 20 more
-Caused by: java.lang.NoSuchMethodError: org.apache.maven.project.MavenProject.addPlugin(Lorg/apache/maven/model/Plugin;)V
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.mergeCompilerConfiguration(BundleCompilerMojo.java:102)
-	at org.ops4j.pax.construct.lifecycle.BundleCompilerMojo.execute(BundleCompilerMojo.java:70)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:105)
-	... 20 more
-
-!ENTRY org.springframework.ide.eclipse.core 4 0 2010-09-10 22:36:37.193
-!MESSAGE Error getting Java type 'org.jencks.factory.TransactionManagerFactoryBean'
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/META-INF' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:319)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:196)
-	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:113)
-	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:435)
-	at org.springframework.ide.eclipse.core.java.JdtUtils.getJavaType(JdtUtils.java:244)
-	at org.springframework.ide.eclipse.beans.ui.editor.util.BeansEditorUtils.getClassNamesOfBeans(BeansEditorUtils.java:634)
-	at org.springframework.ide.eclipse.beans.ui.editor.util.BeansEditorUtils.getClassNamesOfBean(BeansEditorUtils.java:612)
-	at org.springframework.ide.eclipse.beans.ui.editor.hover.BeansTextHoverProcessor.computeTagAttValueHelp(BeansTextHoverProcessor.java:160)
-	at org.springframework.ide.eclipse.beans.ui.editor.hover.BeansTextHoverProcessor.computeRegionHelp(BeansTextHoverProcessor.java:122)
-	at org.springframework.ide.eclipse.beans.ui.editor.hover.BeansTextHoverProcessor.computeHoverHelp(BeansTextHoverProcessor.java:95)
-	at org.springframework.ide.eclipse.beans.ui.editor.hover.BeansTextHoverProcessor.getHoverInfo(BeansTextHoverProcessor.java:59)
-	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2010-09-10 22:36:37.194
-!MESSAGE Resource '/META-INF' does not exist.
-
-!ENTRY org.maven.ide.eclipse 4 0 2010-09-10 22:40:08.270
-!MESSAGE Could not download sources for org.apache.servicemix.bundles:org.apache.servicemix.bundles.jencks:2.1_1
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not resolve artifact
-	at org.maven.ide.eclipse.internal.embedder.MavenImpl.resolve(MavenImpl.java:464)
-	at org.maven.ide.eclipse.jdt.DownloadSourcesJob.download(DownloadSourcesJob.java:219)
-	at org.maven.ide.eclipse.jdt.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:199)
-	at org.maven.ide.eclipse.jdt.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:181)
-	at org.maven.ide.eclipse.jdt.DownloadSourcesJob.run(DownloadSourcesJob.java:137)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Contains: Missing org.apache.servicemix.bundles:org.apache.servicemix.bundles.jencks:jar:sources:2.1_1
-!SUBENTRY 1 org.maven.ide.eclipse 4 -1 2010-09-10 22:40:08.270
-!MESSAGE Could not resolve artifact
-!SUBENTRY 2 org.maven.ide.eclipse 4 -1 2010-09-10 22:40:08.270
-!MESSAGE Missing org.apache.servicemix.bundles:org.apache.servicemix.bundles.jencks:jar:sources:2.1_1
-
-!ENTRY com.springsource.sts.config.ui 4 0 2010-09-10 22:55:09.997
-!MESSAGE An error occurred while loading editor model.
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml'.
-	at org.eclipse.core.internal.resources.File.checkSynchronized(File.java:104)
-	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:268)
-	at org.eclipse.wst.sse.core.internal.modelhandler.ModelHandlerRegistry.getHandlerFor(ModelHandlerRegistry.java:130)
-	at org.eclipse.wst.sse.core.internal.modelhandler.ModelHandlerRegistry.getHandlerFor(ModelHandlerRegistry.java:193)
-	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.calculateType(ModelManagerImpl.java:748)
-	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:507)
-	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForEdit(ModelManagerImpl.java:1374)
-	at com.springsource.sts.config.ui.editors.SpringConfigEditor.resolveModel(SpringConfigEditor.java:753)
-	at com.springsource.sts.config.ui.editors.SpringConfigEditor.setInputHelper(SpringConfigEditor.java:833)
-	at com.springsource.sts.config.ui.editors.SpringConfigEditor.setInput(SpringConfigEditor.java:978)
-	at org.eclipse.ui.forms.editor.FormEditor.init(FormEditor.java:128)
-	at com.springsource.sts.config.ui.editors.SpringConfigEditor.init(SpringConfigEditor.java:448)
-	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:798)
-	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:644)
-	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:462)
-	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
-	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:286)
-	at org.eclipse.ui.internal.EditorManager.findEditor(EditorManager.java:403)
-	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2799)
-	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2762)
-	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2754)
-	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2705)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2701)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2685)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2676)
-	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:651)
-	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:610)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:361)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:168)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:229)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:208)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:250)
-	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:49)
-	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:221)
-	at org.eclipse.ui.navigator.CommonNavigatorManager$3.open(CommonNavigatorManager.java:202)
-	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
-	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:842)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
-	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:48)
-	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
-	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:840)
-	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1101)
-	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:467)
-	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1205)
-	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:264)
-	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:258)
-	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:298)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1598)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1607)
-	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1396)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3484)
-	at org.eclipse.swt.widgets.Control.sendTrackEvents(Control.java:3036)
-	at org.eclipse.swt.widgets.Control.kEventControlTrack(Control.java:2116)
-	at org.eclipse.swt.widgets.Widget.controlProc(Widget.java:375)
-	at org.eclipse.swt.widgets.Display.controlProc(Display.java:863)
-	at org.eclipse.swt.internal.carbon.OS.CallNextEventHandler(Native Method)
-	at org.eclipse.swt.widgets.Tree.kEventMouseDown(Tree.java:2653)
-	at org.eclipse.swt.widgets.Widget.mouseProc(Widget.java:1362)
-	at org.eclipse.swt.widgets.Display.mouseProc(Display.java:2930)
-	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3051)
-	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
-	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
-	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:592)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
-!SUBENTRY 1 org.eclipse.core.resources 4 274 2010-09-10 22:55:09.999
-!MESSAGE Resource is out of sync with the file system: '/com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml'.
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:551)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:94)
+	... 24 more
+Caused by: java.lang.UnsupportedClassVersionError: Bad version number in .class file
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:676)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:124)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:260)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:56)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:195)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:386)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:244)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:230)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:375)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2357)
+	at java.lang.Class.getConstructors(Class.java:1446)
+	at org.apache.xbean.recipe.ReflectionUtil.findConstructor(ReflectionUtil.java:527)
+	at org.apache.xbean.recipe.ObjectRecipe.findFactory(ObjectRecipe.java:532)
+	at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:270)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:49)
+	at org.codehaus.plexus.component.builder.XBeanComponentBuilder.createComponentInstance(XBeanComponentBuilder.java:159)
+	at org.codehaus.plexus.component.builder.XBeanComponentBuilder.build(XBeanComponentBuilder.java:123)
+	at org.codehaus.plexus.component.manager.AbstractComponentManager.createComponentInstance(AbstractComponentManager.java:181)
+	at org.codehaus.plexus.component.manager.PerLookupComponentManager.getComponent(PerLookupComponentManager.java:51)
+	at org.codehaus.plexus.DefaultComponentRegistry.getComponent(DefaultComponentRegistry.java:358)
+	at org.codehaus.plexus.DefaultComponentRegistry.lookup(DefaultComponentRegistry.java:178)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:388)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:521)
+	... 25 more

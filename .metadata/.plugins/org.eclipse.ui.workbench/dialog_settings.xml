@@ -11,11 +11,8 @@
 		<item key="DIALOG_X_ORIGIN" value="634"/>
 		<item key="DIALOG_Y_ORIGIN" value="179"/>
 	</section>
-	<section name="EditorSelectionDialog">
-		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
-	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.springframework.ide.eclipse.beans.ui.wizards.newBeansConfig"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.html.ui.internal.wizard.NewHTMLWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.jpt"/>
@@ -23,5 +20,8 @@
 			<item value="org.eclipse.wst.web.ui"/>
 			<item value="org.eclipse.wst.XMLCategory"/>
 		</list>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
 	</section>
 </section>

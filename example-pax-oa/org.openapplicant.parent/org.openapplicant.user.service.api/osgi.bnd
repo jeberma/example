@@ -1,0 +1,3 @@
+Export-Package: ${project.artifactId};version="${project.version}"
+Import-Package: org.openapplicant.common.api;version="${project.version}",\
+*

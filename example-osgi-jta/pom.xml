@@ -25,7 +25,7 @@
     <module>provision</module>
     <module>com.example.osgi.jta.log4j</module>
 	<module>com.example.osgi.jta.transaction</module>
-	<module>com.example.osgi.jta.widget.service</module>
+	<module>com.example.osgi.jta.consumer</module>
   </modules>
 
   <build>

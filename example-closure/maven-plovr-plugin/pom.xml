@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<artifactId>example-closure</artifactId>
+		<groupId>com.example</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>com.example</groupId>
+	<artifactId>maven-plovr-plugin</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>maven-plugin</packaging>
+	
+	<name>maven-plovr-plugin Maven Plugin</name>
+	
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<!--  
+		<dependency>
+			<groupId>org.plovr</groupId>
+			<artifactId>plovr</artifactId>
+			<version>35c0328e9fbf+</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/plovr-35c0328e9fbf+.jar</systemPath>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-plugin-plugin</artifactId>
+				<version>2.5.1</version>
+				<executions>
+					<execution>
+						<id>generated-helpmojo</id>
+						<goals>
+							<goal>helpmojo</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<goalPrefix>plovr</goalPrefix>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<phase>process-resources</phase>
+						<configuration>
+							<target>
+								<unzip src="${basedir}/lib/plovr-35c0328e9fbf+.jar"
+									dest="${project.build.outputDirectory}"/>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

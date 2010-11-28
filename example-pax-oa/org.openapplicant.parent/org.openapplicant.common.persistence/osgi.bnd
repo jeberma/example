@@ -1,0 +1,6 @@
+Export-Package: org.openapplicant.common.persistence.*;version="${project.version}"
+Import-Package: javax.persistence;version="1.0.0",\
+ org.hibernate;version="3.3.2",\
+ org.hibernate.classic;version="3.3.2",\
+ org.openapplicant.common.api;version="${project.version}",\
+ *

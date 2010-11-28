@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="70" version="2.0">
+<workbench progressCount="77" version="2.0">
 <workbenchAdvisor/>
-<window height="1105" width="1920" x="8" y="22">
+<window height="1105" width="1920" x="6" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="492"/>
@@ -32,9 +32,9 @@
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="40" y="22"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.WorkingSetActionSet" itemType="typeToolBarContribution" x="41" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -51,24 +51,26 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="156" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.springsource.server.ide.ui.bundlemanifest" itemType="typePlaceholder" x="32" y="22"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.springsource.sts.config.ui.editors.SpringConfigEditor" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="com.springsource.sts.config.ui.editors.SpringConfigEditor" itemType="typePlaceholder" x="32" y="22"/>
 <coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1254938293567" focus="true" label="Workspace - Java EE">
 <editors>
-<editorArea activeWorkbook="DefaultEditorWorkbook">
-<info part="org.eclipse.ui.internal.EditorStack@eab45a">
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@525d26">
+<info part="org.eclipse.ui.internal.EditorStack@55dbb3">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
 </folder>
 </info>
-<info part="DefaultEditorWorkbook" ratio="0.4591114" ratioLeft="713" ratioRight="840" relationship="2" relative="org.eclipse.ui.internal.EditorStack@eab45a">
+<info part="org.eclipse.ui.internal.EditorStack@525d26" ratio="0.5" ratioLeft="823" ratioRight="823" relationship="2" relative="org.eclipse.ui.internal.EditorStack@55dbb3">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
@@ -77,36 +79,35 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor focus="true" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring.xml" partName="spring.xml" path="/Users/jesse/work/example/example-osgi-jta/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring.xml" title="spring.xml" tooltip="com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring.xml" workbook="org.eclipse.ui.internal.EditorStack@eab45a">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildMojo.java" partName="BuildMojo.java" path="/Users/jesse/work/example/example-closure/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java" title="BuildMojo.java" tooltip="maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java" workbook="org.eclipse.ui.internal.EditorStack@525d26">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" partName="provision/pom.xml" path="/Users/jesse/work/example/example-osgi-jta/provision/pom.xml" title="provision/pom.xml" tooltip="provision/pom.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/provision/pom.xml"/>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="hello-config.js" partName="hello-config.js" path="/Users/jesse/work/example/example-closure/example-plovr/target/plovr/hello-config.js" title="hello-config.js" tooltip="example-plovr/target/plovr/hello-config.js" workbook="org.eclipse.ui.internal.EditorStack@525d26">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-plovr/target/plovr/hello-config.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-osgi.xml" partName="spring-osgi.xml" path="/Users/jesse/work/example/example-osgi-jta/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring-osgi.xml" title="spring-osgi.xml" tooltip="com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring-osgi.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring-osgi.xml"/>
+<editor id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" partName="maven-plovr-plugin/pom.xml" path="/Users/jesse/work/example/example-closure/maven-plovr-plugin/pom.xml" title="maven-plovr-plugin/pom.xml" tooltip="maven-plovr-plugin/pom.xml" workbook="org.eclipse.ui.internal.EditorStack@525d26">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/maven-plovr-plugin/pom.xml"/>
 </editor>
-<editor id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" partName="com.example.osgi.jta.transaction/pom.xml" path="/Users/jesse/work/example/example-osgi-jta/com.example.osgi.jta.transaction/pom.xml" title="com.example.osgi.jta.transaction/pom.xml" tooltip="com.example.osgi.jta.transaction/pom.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.example.osgi.jta.transaction/pom.xml"/>
+<editor activePart="true" focus="true" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="hello.js" partName="hello.js" path="/Users/jesse/work/example/example-closure/example-plovr/src/main/js/hello.js" title="hello.js" tooltip="example-plovr/src/main/js/hello.js" workbook="org.eclipse.ui.internal.EditorStack@525d26">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-plovr/src/main/js/hello.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="92" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="osgi.bnd" partName="osgi.bnd" path="/Users/jesse/work/example/example-osgi-jta/com.example.osgi.jta.transaction/osgi.bnd" title="osgi.bnd" tooltip="com.example.osgi.jta.transaction/osgi.bnd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.example.osgi.jta.transaction/osgi.bnd"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="239" selectionTopPixel="0"/>
+<editor id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" partName="example-plovr/pom.xml" path="/Users/jesse/work/example/example-closure/example-plovr/pom.xml" title="example-plovr/pom.xml" tooltip="example-plovr/pom.xml" workbook="org.eclipse.ui.internal.EditorStack@525d26">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-plovr/pom.xml"/>
 </editor>
-<editor id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" partName="example-osgi-jta/pom.xml" path="/Users/jesse/work/example/example-osgi-jta/pom.xml" title="example-osgi-jta/pom.xml" tooltip="example-osgi-jta/pom.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-osgi-jta/pom.xml"/>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="hello.html" partName="hello.html" path="/Users/jesse/work/example/example-closure/example-plovr/src/main/js/hello.html" title="hello.html" tooltip="example-plovr/src/main/js/hello.html" workbook="org.eclipse.ui.internal.EditorStack@525d26">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-plovr/src/main/js/hello.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="340" selectionTopPixel="0"/>
 </editor>
-<editor id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-osgi.xml" partName="spring-osgi.xml" path="/Users/jesse/work/example/example-osgi-jta/com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml" title="spring-osgi.xml" tooltip="com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="osgi.bnd" partName="osgi.bnd" path="/Users/jesse/work/example/example-osgi-jta/com.example.osgi.jta.widget.service/osgi.bnd" title="osgi.bnd" tooltip="com.example.osgi.jta.widget.service/osgi.bnd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.example.osgi.jta.widget.service/osgi.bnd"/>
-<editorState selectionHorizontalPixel="0" selectionLength="681" selectionOffset="53" selectionTopPixel="0"/>
+<editor focus="true" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" partName="main.js" path="/Users/jesse/work/example/example-closure/example-plovr/src/main/js/main.js" title="main.js" tooltip="example-plovr/src/main/js/main.js" workbook="org.eclipse.ui.internal.EditorStack@55dbb3">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-plovr/src/main/js/main.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="213" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -180,7 +181,8 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Warnings (1 item)"/>
+<expanded>
+<category IMemento.internal.id="Warnings (8 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="21"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -191,7 +193,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
@@ -285,7 +287,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.18491356" ratioLeft="353" ratioRight="1556" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.13776846" ratioLeft="263" ratioRight="1646" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.70954776" ratioLeft="706" ratioRight="289" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -588,120 +590,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/provision/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring-osgi.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/com.example.osgi.jta.transaction/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.example.osgi.jta.transaction/osgi.bnd"/>
-<editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring.xml"/>
-<editor element="=com.example.osgi.jta.transaction/\/Users\/jesse\/.m2\/repository\/com\/atomikos\/transactions-jta\/3.6.5\/transactions-jta-3.6.5.jar" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="META-INF/MANIFEST.MF"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.example.osgi.jta.transaction/osgi.bnd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/provision/pom.xml"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=com.example.osgi.jta.transaction/\/Users\/jesse\/.m2\/repository\/javax\/transaction\/transaction-api\/1.1\/transaction-api-1.1.jar&lt;javax.transaction(UserTransaction.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/com.example.osgi.jta.transaction/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/example-osgi-jta/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/example-osgi-jta/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/provision/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml"/>
-<editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring-osgi.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/provision/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/example-osgi-jta/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.example.osgi.jta.transaction/osgi.bnd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.example.osgi.jta.widget.service/osgi.bnd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildConfig.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/maven-plovr-plugin/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/example-plovr/target/plovr/hello-config.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/ServeMojo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/example-plovr/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/example-plovr/src/main/js/hello.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/example-plovr/target/hello.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/example-plovr/src/main/js/hello.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/example-plovr/src/main/js/main.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/example-plovr/src/main/js/hello.html"/>
 </editors>
-<item historyLabel="com.example.osgi.jta.transaction/pom.xml" index="3"/>
-<item historyLabel="osgi.bnd" index="4">
+<item historyLabel="hello-config.js" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="com.example.osgi.jta.transaction/pom.xml" index="3"/>
-<item historyLabel="spring.xml" index="1"/>
-<item historyLabel="provision/pom.xml" index="0"/>
-<item historyLabel="osgi.bnd" index="4">
-<position info="not_deleted" x="244" y="0"/>
-</item>
-<item historyLabel="provision/pom.xml" index="0"/>
-<item historyLabel="osgi.bnd" index="4">
-<position info="not_deleted" x="244" y="0"/>
-</item>
-<item historyLabel="provision/pom.xml" index="0"/>
-<item historyLabel="osgi.bnd" index="4">
-<position info="not_deleted" x="244" y="0"/>
-</item>
-<item historyLabel="provision/pom.xml" index="0"/>
-<item historyLabel="osgi.bnd" index="4">
-<position info="not_deleted" x="245" y="0"/>
-</item>
-<item historyLabel="provision/pom.xml" index="0"/>
-<item historyLabel="osgi.bnd" index="4">
-<position info="not_deleted" x="128" y="0"/>
-</item>
-<item historyLabel="provision/pom.xml" index="0"/>
-<item historyLabel="spring-osgi.xml" index="2"/>
-<item historyLabel="Dashboard" index="5"/>
-<item historyLabel="spring-osgi.xml" index="2"/>
-<item historyLabel="spring.xml" index="6"/>
-<item historyLabel="MANIFEST.MF" index="7">
+<item historyLabel="hello-config.js" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="spring.xml" index="6"/>
-<item historyLabel="osgi.bnd" index="8">
-<position info="not_deleted" x="112" y="0"/>
-</item>
-<item historyLabel="spring.xml" index="6"/>
-<item historyLabel="provision/pom.xml" index="9"/>
-<item historyLabel="osgi.bnd" index="8">
-<position info="not_deleted" x="33" y="0"/>
-</item>
-<item historyLabel="UserTransaction.class" index="10">
-<position/>
-</item>
-<item historyLabel="osgi.bnd" index="8">
-<position info="not_deleted" x="33" y="0"/>
-</item>
-<item historyLabel="com.example.osgi.jta.transaction/pom.xml" index="11"/>
-<item historyLabel="spring-osgi.xml" index="2"/>
-<item historyLabel="example-osgi-jta/pom.xml" index="12">
+<item historyLabel="BuildConfig.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="example-osgi-jta/pom.xml" index="13"/>
-<item historyLabel="spring-osgi.xml" index="2"/>
-<item historyLabel="example-osgi-jta/pom.xml" index="12">
+<item historyLabel="ServeMojo.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="example-osgi-jta/pom.xml" index="13"/>
-<item historyLabel="provision/pom.xml" index="9">
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="548" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="524" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="503" y="4"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="524" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="915" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="802" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="716" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="802" y="0"/>
+</item>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="830" y="0"/>
+</item>
+<item historyLabel="BuildMojo.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="provision/pom.xml" index="14">
-<position info="not_deleted" x="1270" y="0"/>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="271" y="0"/>
 </item>
-<item historyLabel="spring-osgi.xml" index="2"/>
-<item historyLabel="spring-osgi.xml" index="15"/>
-<item historyLabel="Dashboard" index="16"/>
-<item historyLabel="spring-osgi.xml" index="15"/>
-<item historyLabel="spring-osgi.xml" index="17"/>
-<item historyLabel="provision/pom.xml" index="18"/>
-<item historyLabel="example-osgi-jta/pom.xml" index="19"/>
-<item historyLabel="osgi.bnd" index="20">
-<position info="not_deleted" x="49" y="0"/>
+<item historyLabel="example-plovr/pom.xml" index="5"/>
+<item historyLabel="ServeMojo.java" index="4">
+<position info="not_deleted" x="271" y="0"/>
 </item>
-<item historyLabel="osgi.bnd" index="21">
-<position info="not_deleted" x="0" y="737"/>
-</item>
-<item historyLabel="osgi.bnd" index="20">
+<item historyLabel="BuildMojo.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="osgi.bnd" index="21">
-<position info="not_deleted" x="53" y="681"/>
+<item historyLabel="hello-config.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="osgi.bnd" index="20">
-<position info="not_deleted" x="239" y="0"/>
+<item historyLabel="hello-config.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="spring-osgi.xml" index="17"/>
-<item active="true" historyLabel="osgi.bnd" index="20">
-<position info="not_deleted" x="239" y="0"/>
+<item historyLabel="maven-plovr-plugin/pom.xml" index="2"/>
+<item historyLabel="hello.js" index="6">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="hello.js" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello.js" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello.js" index="6">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="example-plovr/pom.xml" index="5"/>
+<item historyLabel="hello.html" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello-config.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="example-plovr/pom.xml" index="5"/>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="31" y="0"/>
+</item>
+<item historyLabel="hello.js" index="6">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="31" y="0"/>
+</item>
+<item historyLabel="hello.js" index="6">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="31" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="111" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="123" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="189" y="0"/>
+</item>
+<item historyLabel="hello.html" index="10">
+<position info="not_deleted" x="310" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="189" y="0"/>
+</item>
+<item historyLabel="hello-config.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello.html" index="10">
+<position info="not_deleted" x="340" y="0"/>
+</item>
+<item historyLabel="hello.js" index="6">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="hello.js" index="6">
+<position info="not_deleted" x="283" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="hello-config.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello.js" index="6">
+<position info="not_deleted" x="81" y="0"/>
+</item>
+<item historyLabel="hello-config.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.js" index="9">
+<position info="not_deleted" x="213" y="0"/>
+</item>
+<item active="true" historyLabel="hello.js" index="6">
+<position info="not_deleted" x="92" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -720,50 +761,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="osgi.bnd" tooltip="com.example.osgi.jta.widget.service/osgi.bnd">
-<persistable path="/com.example.osgi.jta.widget.service/osgi.bnd"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="hello.html" tooltip="example-plovr/src/main/js/hello.html">
+<persistable path="/example-plovr/src/main/js/hello.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" tooltip="example-plovr/src/main/js/main.js">
+<persistable path="/example-plovr/src/main/js/main.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" tooltip="example-plovr/pom.xml">
+<persistable path="/example-plovr/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="hello.js" tooltip="example-plovr/target/hello.js">
+<persistable path="/example-plovr/target/hello.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="hello.js" tooltip="example-plovr/src/main/js/hello.js">
+<persistable path="/example-plovr/src/main/js/hello.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" tooltip="maven-plovr-plugin/pom.xml">
+<persistable path="/maven-plovr-plugin/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="hello-config.js" tooltip="example-plovr/target/plovr/hello-config.js">
+<persistable path="/example-plovr/target/plovr/hello-config.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildMojo.java" tooltip="maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java">
+<persistable path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildMojo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServeMojo.java" tooltip="maven-plovr-plugin/src/main/java/com/example/plovr/mojo/ServeMojo.java">
+<persistable path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/ServeMojo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractPlovrMojo.java" tooltip="maven-plovr-plugin/src/main/java/com/example/plovr/mojo/AbstractPlovrMojo.java">
+<persistable path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/AbstractPlovrMojo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildConfig.java" tooltip="maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildConfig.java">
+<persistable path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/BuildConfig.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Config.java" tooltip="maven-plovr-plugin/src/main/java/com/example/plovr/mojo/Config.java">
+<persistable path="/maven-plovr-plugin/src/main/java/com/example/plovr/mojo/Config.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="config.js" tooltip="maven-plovr-plugin/config.js">
+<persistable path="/maven-plovr-plugin/config.js"/>
 </file>
 <file factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
 <persistable openDashboard="true"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-osgi.xml" tooltip="com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml">
-<persistable path="/com.example.osgi.jta.widget.service/src/main/resources/META-INF/spring/spring-osgi.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" tooltip="example-osgi-jta/pom.xml">
-<persistable path="/example-osgi-jta/pom.xml"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="UserTransaction.class" tooltip="javax.transaction.UserTransaction">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=com.example.osgi.jta.transaction/\/Users\/jesse\/.m2\/repository\/javax\/transaction\/transaction-api\/1.1\/transaction-api-1.1.jar&lt;javax.transaction(UserTransaction.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="MANIFEST.MF" tooltip="/Users/jesse/.m2/repository/com/atomikos/transactions-jta/3.6.5/transactions-jta-3.6.5.jar/META-INF/MANIFEST.MF">
-<persistable element="=com.example.osgi.jta.transaction/\/Users\/jesse\/.m2\/repository\/com\/atomikos\/transactions-jta\/3.6.5\/transactions-jta-3.6.5.jar" path="META-INF/MANIFEST.MF"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="osgi.bnd" tooltip="com.example.osgi.jta.transaction/osgi.bnd">
-<persistable path="/com.example.osgi.jta.transaction/osgi.bnd"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" tooltip="com.example.osgi.jta.transaction/pom.xml">
-<persistable path="/com.example.osgi.jta.transaction/pom.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-osgi.xml" tooltip="com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring-osgi.xml">
-<persistable path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring-osgi.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring.xml" tooltip="com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring.xml">
-<persistable path="/com.example.osgi.jta.transaction/src/main/resources/META-INF/spring/spring.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" tooltip="provision/pom.xml">
-<persistable path="/provision/pom.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" tooltip="example-rss-config-webutil/src/main/webapp/WEB-INF/views/rss/index.jsp">
-<persistable path="/example-rss-config-webutil/src/main/webapp/WEB-INF/views/rss/index.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Convert.java" tooltip="example-rss-service-impl/src/main/java/com/example/rss/service/impl/service/Convert.java">
-<persistable path="/example-rss-service-impl/src/main/java/com/example/rss/service/impl/service/Convert.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RssFeedType.java" tooltip="example-rss-service-api/src/main/java/com/example/rss/service/api/RssFeedType.java">
-<persistable path="/example-rss-service-api/src/main/java/com/example/rss/service/api/RssFeedType.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="create.jsp" tooltip="example-rss-config-webutil/src/main/webapp/WEB-INF/views/rss/create.jsp">
-<persistable path="/example-rss-config-webutil/src/main/webapp/WEB-INF/views/rss/create.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageProducer.java" tooltip="com.example.osgi.jta.consumer/src/main/java/com/example/osgi/jta/consumer/MessageProducer.java">
+<persistable path="/com.example.osgi.jta.consumer/src/main/java/com/example/osgi/jta/consumer/MessageProducer.java"/>
 </file>
 </mruList>
 </workbench>
