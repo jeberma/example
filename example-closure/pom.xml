@@ -11,5 +11,6 @@
     <module>maven-plovr-plugin</module>
     <module>example-plovr</module>
     <module>plovr</module>
+    <module>example-closure-compiler</module>
   </modules>
 </project>

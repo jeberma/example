@@ -70,14 +70,15 @@
 								</buildConfig>
 								<buildConfig>
 									<outputFile>${project.build.outputDirectory}/main-whitespace.js</outputFile>
+									<dependencyFile>${project.build.directory}/deps.js</dependencyFile>
+									<!-- plugin will grab all js and soy files on the paths if inputs is not specified -->
 									<options>
 										{
 											"id": "main-whitespace",
 											"paths": "${basedir}/src/main/js",
-											"inputs": "${basedir}/src/main/js/main.js",
 											"mode": "WHITESPACE",
 											"pretty-print": true,
-											"debug": true
+											"closure-library": "/Users/jesse/Desktop/google-closure/closure-library-read-only/closure/goog"
 										}
 									</options>
 								</buildConfig>
