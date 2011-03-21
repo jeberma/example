@@ -7,9 +7,21 @@
 			<item value="org.maven.ide.eclipse"/>
 		</list>
 	</section>
+	<section name="ShowViewDialog">
+		<item key="DIALOG_X_ORIGIN" value="808"/>
+		<item key="DIALOG_FONT_NAME" value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande"/>
+		<item key="DIALOG_HEIGHT" value="418"/>
+		<item key="DIALOG_Y_ORIGIN" value="274"/>
+		<item key="DIALOG_WIDTH" value="304"/>
+		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.jdt.astview.views.ASTView"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="634"/>
-		<item key="DIALOG_Y_ORIGIN" value="179"/>
+		<item key="DIALOG_X_ORIGIN" value="455"/>
+		<item key="DIALOG_Y_ORIGIN" value="135"/>
 	</section>
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.html.ui.internal.wizard.NewHTMLWizard"/>

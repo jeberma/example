@@ -55,6 +55,9 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 		<list key="rootDirectory">
+			<item value="/Users/jesse/work/example/example-eclipse-jdt"/>
+			<item value="/Users/jesse/work/clutch/clutch-android-parent"/>
+			<item value="/Users/jesse/work/clutch/clutch-parent"/>
 			<item value="/Users/jesse/work/example/example-closure"/>
 			<item value="/Users/jesse/work/example/example-osgi-jta"/>
 			<item value="/Users/jesse/work/example/example-osgi-jta/com.example.osgi.jta.jms"/>

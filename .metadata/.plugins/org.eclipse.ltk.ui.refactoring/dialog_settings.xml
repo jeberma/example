@@ -5,6 +5,8 @@
 		<item key="height" value="400"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="patterns" value="*"/>
 		<item key="deleteSubPackages" value="false"/>
+		<item key="moveWizard.updateQualifiedNames" value="false"/>
 	</section>
 </section>
