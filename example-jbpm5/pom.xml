@@ -19,6 +19,10 @@
 			<url>https://repository.jboss.org/nexus/content/repositories/public-jboss/</url>
 		</repository>
 		<repository>
+			<id>atomikos</id>
+			<url>http://repo.atomikos.com/</url>
+		</repository>
+		<repository>
 			<id>spring-maven-milestone</id>
 			<name>Springframework Maven Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
@@ -31,7 +35,8 @@
 		<cxf.version>2.3.1</cxf.version>
 		<spring.version>3.1.0.M1</spring.version>
 		<slf4j.version>1.6.1</slf4j.version>
-		<jbpm.version>5.0.0</jbpm.version>
+		<jbpm.version>5.1.0.M1</jbpm.version>
+		<atomikos.version>3.6.6</atomikos.version>
 	</properties>
 
 	<dependencies>
@@ -253,10 +258,27 @@
 			<version>1.2.12</version>
 		</dependency>
 		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.connector.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.apache.geronimo.framework</groupId>
 			<artifactId>jee-specs</artifactId>
 			<version>2.2.1</version>
 			<type>pom</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.atomikos</groupId>
+			<artifactId>transactions-jta</artifactId>
+			<version>${atomikos.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.atomikos</groupId>
+			<artifactId>transactions-hibernate3</artifactId>
+			<version>${atomikos.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
