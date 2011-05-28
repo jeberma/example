@@ -7,8 +7,8 @@
 		<item key="ShowStatusLine" value="true"/>
 		<section name="DialogBoundsSettings">
 			<item key="DIALOG_X_ORIGIN" value="507"/>
-			<item key="DIALOG_HEIGHT" value="477"/>
 			<item key="DIALOG_FONT_NAME" value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande"/>
+			<item key="DIALOG_HEIGHT" value="477"/>
 			<item key="DIALOG_Y_ORIGIN" value="168"/>
 			<item key="DIALOG_WIDTH" value="356"/>
 		</section>
@@ -21,8 +21,8 @@
 		<item key="DIALOG_X_ORIGIN" value="724"/>
 		<item key="DIALOG_HEIGHT" value="345"/>
 		<item key="DIALOG_Y_ORIGIN" value="344"/>
-		<item key="TOGGLE_SELECTED" value="true"/>
 		<item key="DIALOG_WIDTH" value="484"/>
+		<item key="TOGGLE_SELECTED" value="true"/>
 	</section>
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.maven.ide.eclipse.wizards.Maven2ProjectWizard"/>
@@ -34,11 +34,11 @@
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 	</section>
+	<section name="org.eclipse.ui.views.problem">
+	</section>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="560"/>
 		<item key="DIALOG_Y_ORIGIN" value="358"/>
-	</section>
-	<section name="org.eclipse.ui.views.problem">
 	</section>
 	<section name="BasicNewProjectResourceWizard">
 	</section>

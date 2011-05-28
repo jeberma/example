@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.maven.plugin.AbstractMojo"/>
-<fullyQualifiedTypeName name="org.plovr.JsInput"/>
-<fullyQualifiedTypeName name="org.plovr.Config"/>
-<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
-<fullyQualifiedTypeName name="com.example.plovr.mojo.JsDependency"/>
-<fullyQualifiedTypeName name="com.example.plovr.mojo.BuildConfig.JsFileScanner"/>
-<fullyQualifiedTypeName name="com.clutch.android.R.layout"/>
-<fullyQualifiedTypeName name="org.slf4j.Logger"/>
-<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
-<fullyQualifiedTypeName name="java.util.concurrent.Callable"/>
-<fullyQualifiedTypeName name="java.util.concurrent.TimeoutException"/>
-<fullyQualifiedTypeName name="android.os.Handler"/>
-<fullyQualifiedTypeName name="android.content.Intent"/>
-<fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.ToStringStyle"/>
 <fullyQualifiedTypeName name="android.content.pm.ApplicationInfo"/>
 <fullyQualifiedTypeName name="android.Manifest"/>
@@ -43,13 +29,8 @@
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.example.jdt.ast.AbstractASTResourceTest"/>
 <fullyQualifiedTypeName name="com.example.jdt.ast.util.AbstractASTResourceTest"/>
-<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.CompilationUnit"/>
-<fullyQualifiedTypeName name="com.example.jdt.ast.util.MethodInvocationsResource"/>
-<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.MethodDeclaration"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.MethodInvocation"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.ast.Argument"/>
-<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.ASTVisitor"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.Expression"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.core.ICompilationUnit"/>
@@ -57,7 +38,26 @@
 <fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.ExpressionStatement"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang.builder.ToStringStyle"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.AST"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.ASTNode"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FilenameUtils"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.ImportDeclaration"/>
+<fullyQualifiedTypeName name="android.provider.Contacts"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.QualifiedName"/>
+<fullyQualifiedTypeName name="com.example.jdt.ast.util.MethodInvocationsResource"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.example.jdt.ast.util.SimpleNameUtils"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.Name"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.IVariableBinding"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.ASTVisitor"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.ASTNode"/>
+<fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Type"/>
+<fullyQualifiedTypeName name="com.example.jdt.ast.util.AbstractCompilationUnitTest"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.CompilationUnit"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.dom.MethodDeclaration"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.internal.corext.dom.ASTNodes"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.internal.ui.text.correction.ASTResolving"/>
+<fullyQualifiedTypeName name="javax.security.auth.callback.Callback"/>
+<fullyQualifiedTypeName name="javax.xml.namespace.QName"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cxf="http://cxf.apache.org/core" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<!-- Load CXF modules from cxf.jar -->
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-http.xml" />
+	<!--  
+	<import resource="classpath:META-INF/cxf/osgi/cxf-extension-osgi.xml" />
+	-->
+	<import resource="classpath:META-INF/cxf/cxf-extension-policy.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-ws-security.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<!-- Enable message logging using the CXF logging feature -->
+	<cxf:bus>
+		<cxf:features>
+			<cxf:logging />
+		</cxf:features>
+	</cxf:bus>
+
+	<bean id="pingServiceSoap" class="com.example.PingServiceSoap" />
+
+	<jaxws:endpoint id="pingServiceEndpoint" implementor="#pingServiceSoap"
+		address="/PingService.jws" wsdlLocation="classpath:/ping.wsdl"
+		endpointName="s:PingPort" serviceName="s:PingService" xmlns:s="http://api.example.org/ping">
+		<jaxws:properties>
+			<entry key="ws-security.signature.properties" value="server-crypto.properties" />
+			<entry key="ws-security.signature.username" value="serverkey" />
+			<entry key="ws-security.encryption.username" value="useReqSigCert" />
+			<entry key="ws-security.callback-handler" value="com.example.ServerCallbackHandler" />
+		</jaxws:properties>
+	</jaxws:endpoint>
+
+</beans>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://api.example.org/ping" targetNamespace="http://api.example.org/ping">
+
+	<!-- Policy for first signing and then encrypting all messages, with the 
+		certificate included in the message from client to server but only a thumbprint 
+		on messages from the server to the client. -->
+	<wsp:Policy wsu:Id="SignEncr"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:wsp="http://www.w3.org/2006/07/ws-policy">
+
+		<wsp:ExactlyOne>
+			<wsp:All>
+				<sp:AsymmetricBinding
+					xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+					<wsp:Policy>
+						<sp:InitiatorToken>
+							<wsp:Policy>
+								<sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+									<wsp:Policy>
+										<sp:RequireThumbprintReference />
+									</wsp:Policy>
+								</sp:X509Token>
+							</wsp:Policy>
+						</sp:InitiatorToken>
+						<sp:RecipientToken>
+							<wsp:Policy>
+								<sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+									<wsp:Policy>
+										<sp:RequireThumbprintReference />
+									</wsp:Policy>
+								</sp:X509Token>
+							</wsp:Policy>
+						</sp:RecipientToken>
+						<sp:AlgorithmSuite>
+							<wsp:Policy>
+								<sp:TripleDesRsa15 />
+
+							</wsp:Policy>
+						</sp:AlgorithmSuite>
+						<sp:Layout>
+							<wsp:Policy>
+								<sp:Strict />
+							</wsp:Policy>
+						</sp:Layout>
+						<sp:IncludeTimestamp />
+						<sp:OnlySignEntireHeadersAndBody />
+					</wsp:Policy>
+				</sp:AsymmetricBinding>
+				<sp:SignedParts
+					xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+					<sp:Body />
+
+				</sp:SignedParts>
+				<sp:EncryptedParts
+					xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+					<sp:Body />
+				</sp:EncryptedParts>
+			</wsp:All>
+		</wsp:ExactlyOne>
+	</wsp:Policy>
+
+	<wsdl:types>
+		<xsd:schema elementFormDefault="qualified"
+			targetNamespace="http://api.example.org/ping">
+			<xsd:element name="PingRequest">
+				<xsd:complexType>
+					<xsd:attribute name="Msg" type="xsd:string" use="required" />
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PingResponse">
+				<xsd:complexType>
+					<xsd:attribute name="Msg" type="xsd:string" use="required" />
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="PingRequestMsg">
+		<wsdl:part name="body" element="tns:PingRequest" />
+	</wsdl:message>
+	<wsdl:message name="PingResponseMsg">
+		<wsdl:part name="body" element="tns:PingResponse" />
+	</wsdl:message>
+
+	<wsdl:portType name="IPingService">
+		<wsdl:operation name="Ping">
+			<wsdl:input message="tns:PingRequestMsg" />
+			<wsdl:output message="tns:PingResponseMsg" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="PingServiceSoap" type="tns:IPingService">
+
+		<wsp:PolicyReference xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+			URI="#SignEncr" />
+			
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="Ping">
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="PingService">
+		<wsdl:port name="PingPort" binding="tns:PingServiceSoap">
+			<soap:address location="http://localhost:8080/ws/PingService.jws" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>

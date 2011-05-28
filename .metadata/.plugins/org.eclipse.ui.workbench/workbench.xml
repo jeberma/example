@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="62" version="2.0">
+<workbench progressCount="75" version="2.0">
 <workbenchAdvisor/>
-<window height="1105" width="1920" x="15" y="22">
+<window height="1105" width="1920" x="7" y="22">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.jdt.ui.JavadocView"/>
 <orientation position="512" view="org.eclipse.jdt.astview.views.ASTView"/>
@@ -12,7 +12,7 @@
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="107" y="26"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="76" y="22"/>
@@ -23,53 +23,68 @@
 <coolItem id="com.aptana.ide.editors.XMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.ide.editors.YMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.ide.editors.actionSet" itemType="typeToolBarContribution" x="54" y="22"/>
-<coolItem id="com.springsource.sts.ide.ui.actionSet.workbench" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="com.springsource.sts.ide.ui.actionSet.workbench" itemType="typeToolBarContribution" x="32" y="26"/>
 <coolItem id="org.codehaus.groovy.eclipse.editor.GroovyEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.compare.CompareEditor" itemType="typePlaceholder" x="76" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="103" y="26"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="32" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="72" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="32" y="26"/>
+<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="72" y="26"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet2" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet3" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet4" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="107" y="26"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="40" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.WorkingSetActionSet" itemType="typeToolBarContribution" x="41" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="142" y="22"/>
-<coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
-<coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.eclipse.ui.WorkingSetActionSet" itemType="typeToolBarContribution" x="41" y="26"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="32" y="26"/>
+<coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="32" y="26"/>
+<coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="32" y="26"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="54" y="22"/>
-<coolItem id="com.springsource.sts.config.ui.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="54" y="26"/>
+<coolItem id="com.springsource.sts.config.ui.DesignToolBar" itemType="typeToolBarContribution" x="104" y="26"/>
 <coolItem id="com.springsource.sts.authoring.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" itemType="typePlaceholder" x="94" y="22"/>
-<coolItem id="org.maven.ide.eclipse.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.maven.ide.eclipse.editor.MavenPomEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.radrails.rails.ui.RailsElementCreationActionSet" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.radrails.rails.ui.railsActions" itemType="typeToolBarContribution" x="98" y="22"/>
 <coolItem id="org.rubypeople.rdt.ui.EditorRubyFile" itemType="typePlaceholder" x="120" y="22"/>
 <coolItem id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView" itemType="typeToolBarContribution" x="115" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="156" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="156" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" itemType="typeToolBarContribution" x="97" y="26"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.springsource.server.ide.ui.bundlemanifest" itemType="typePlaceholder" x="32" y="22"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.springsource.sts.config.ui.editors.SpringConfigEditor" itemType="typePlaceholder" x="32" y="22"/>
-<coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.springsource.sts.config.ui.editors.SpringConfigEditor" itemType="typeToolBarContribution" x="119" y="26"/>
+<coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1254938293567" focus="true" label="Workspace - Java EE">
 <editors>
-<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@e604f5">
-<info part="org.eclipse.ui.internal.EditorStack@e604f5">
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@2cd7c4">
+<info part="org.eclipse.ui.internal.EditorStack@565542">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="4"/>
+<part id="2"/>
+<part id="3"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.internal.EditorStack@2cd7c4" ratio="0.46169493" ratioLeft="681" ratioRight="794" relationship="2" relative="org.eclipse.ui.internal.EditorStack@565542">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
@@ -79,17 +94,44 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MethodInvocationsResource.java" partName="MethodInvocationsResource.java" path="/Users/jesse/work/example/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsResource.java" title="MethodInvocationsResource.java" tooltip="example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsResource.java" workbook="org.eclipse.ui.internal.EditorStack@e604f5">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsResource.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="681" selectionTopPixel="0"/>
+<editor id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" partName="Dashboard" title="Dashboard" tooltip="Dashboard" workbook="org.eclipse.ui.internal.EditorStack@2cd7c4">
+<input factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" openDashboard="true"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MethodInvocations.java" partName="MethodInvocations.java" path="/Users/jesse/work/example/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/MethodInvocations.java" title="MethodInvocations.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/MethodInvocations.java" workbook="org.eclipse.ui.internal.EditorStack@e604f5">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/MethodInvocations.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="242"/>
+<editor id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" partName="example-cxf-ws-security/pom.xml" path="/Users/jesse/work/example/example-cxf-ws-security/pom.xml" title="example-cxf-ws-security/pom.xml" tooltip="example-cxf-ws-security/pom.xml" workbook="org.eclipse.ui.internal.EditorStack@2cd7c4">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/pom.xml"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MethodInvocationsTest.java" partName="MethodInvocationsTest.java" path="/Users/jesse/work/example/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsTest.java" title="MethodInvocationsTest.java" tooltip="example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsTest.java" workbook="org.eclipse.ui.internal.EditorStack@e604f5">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1138" selectionTopPixel="312"/>
+<editor activePart="true" focus="true" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="cxf-client.xml" partName="cxf-client.xml" path="/Users/jesse/work/example/example-cxf-ws-security/src/main/resources/cxf-client.xml" title="cxf-client.xml" tooltip="example-cxf-ws-security/src/main/resources/cxf-client.xml" workbook="org.eclipse.ui.internal.EditorStack@2cd7c4">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/main/resources/cxf-client.xml"/>
+</editor>
+<editor focus="true" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="client-crypto.properties" partName="client-crypto.properties" path="/Users/jesse/work/example/example-cxf-ws-security/src/main/resources/client-crypto.properties" title="client-crypto.properties" tooltip="example-cxf-ws-security/src/main/resources/client-crypto.properties" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/main/resources/client-crypto.properties"/>
+<editorState selectionHorizontalPixel="0" selectionLength="47" selectionOffset="39" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.PropertiesFileEditor" name="server-crypto.properties" partName="server-crypto.properties" path="/Users/jesse/work/example/example-cxf-ws-security/src/main/resources/server-crypto.properties" title="server-crypto.properties" tooltip="example-cxf-ws-security/src/main/resources/server-crypto.properties" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/main/resources/server-crypto.properties"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="266" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerCallbackHandler.java" partName="ServerCallbackHandler.java" path="/Users/jesse/work/example/example-cxf-ws-security/src/main/java/com/example/ServerCallbackHandler.java" title="ServerCallbackHandler.java" tooltip="example-cxf-ws-security/src/main/java/com/example/ServerCallbackHandler.java" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/main/java/com/example/ServerCallbackHandler.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="606" selectionTopPixel="63"/>
+</editor>
+<editor id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="cxf-server.xml" partName="cxf-server.xml" path="/Users/jesse/work/example/example-cxf-ws-security/src/main/resources/cxf-server.xml" title="cxf-server.xml" tooltip="example-cxf-ws-security/src/main/resources/cxf-server.xml" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/main/resources/cxf-server.xml"/>
+</editor>
+<editor id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" name="ping.wsdl" partName="ping.wsdl" path="/Users/jesse/work/example/example-cxf-ws-security/src/main/resources/ping.wsdl" title="ping.wsdl" tooltip="example-cxf-ws-security/src/main/resources/ping.wsdl" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/main/resources/ping.wsdl"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingServiceSoap.java" partName="PingServiceSoap.java" path="/Users/jesse/work/example/example-cxf-ws-security/src/main/java/com/example/PingServiceSoap.java" title="PingServiceSoap.java" tooltip="example-cxf-ws-security/src/main/java/com/example/PingServiceSoap.java" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/main/java/com/example/PingServiceSoap.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="190" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPingService.java" partName="IPingService.java" path="/Users/jesse/work/example/example-cxf-ws-security/target/generated-source/org/example/api/ping/IPingService.java" title="IPingService.java" tooltip="example-cxf-ws-security/target/generated-source/org/example/api/ping/IPingService.java" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/target/generated-source/org/example/api/ping/IPingService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="552" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingServiceSoapIntegrationTest.java" partName="PingServiceSoapIntegrationTest.java" path="/Users/jesse/work/example/example-cxf-ws-security/src/test/java/com/example/PingServiceSoapIntegrationTest.java" title="PingServiceSoapIntegrationTest.java" tooltip="example-cxf-ws-security/src/test/java/com/example/PingServiceSoapIntegrationTest.java" workbook="org.eclipse.ui.internal.EditorStack@565542">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/example-cxf-ws-security/src/test/java/com/example/PingServiceSoapIntegrationTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="872" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -134,6 +176,12 @@
 </view>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
 <viewState failuresOnly="false" layout="1" orientation="2" ratio="324" scroll="false" time="true"/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+</viewState>
 </view>
 <view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
 <viewState/>
@@ -230,7 +278,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (3 items)"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="21"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -241,7 +289,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="com.springsource.sts.config.ui.editors.SpringConfigEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
@@ -312,6 +360,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.jdt.junit.ResultView"/>
 <view id="org.eclipse.jdt.astview.views.ASTView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -334,9 +383,9 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19067575" ratioLeft="364" ratioRight="1545" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6116027" ratioLeft="622" ratioRight="395" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.22577265" ratioLeft="431" ratioRight="1478" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.64503443" ratioLeft="656" ratioRight="361" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
@@ -347,8 +396,8 @@
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
 <page content="org.eclipse.jdt.astview.views.ASTView" label="ASTView"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -360,6 +409,7 @@
 <part id="7"/>
 <part id="8"/>
 <part id="9"/>
+<part id="10"/>
 </presentation>
 </folder>
 </info>
@@ -876,165 +926,124 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/AbstractCompilationUnitTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsResource.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/example-eclipse-jdt/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/MethodInvocations.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/example-cxf-ws-security/src/main/resources/ping.wsdl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-cxf-ws-security/src/main/java/com/example/PingServiceSoap.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-cxf-ws-security/src/test/java/com/example/PingServiceSoapIntegrationTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" path="/example-cxf-ws-security/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/example-cxf-ws-security/src/main/resources/cxf-client.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/example-cxf-ws-security/src/main/resources/cxf-server.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/example-cxf-ws-security/target/generated-source/org/example/api/ping/IPingService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/example-cxf-ws-security/src/main/resources/client-crypto.properties"/>
 </editors>
-<item historyLabel="example-eclipse-jdt/pom.xml" index="3"/>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="2399" y="0"/>
+<item historyLabel="ping.wsdl" index="0"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="example-cxf-ws-security/pom.xml" index="3"/>
+<item historyLabel="cxf-server.xml" index="5"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="ping.wsdl" index="0"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="ping.wsdl" index="0"/>
+<item historyLabel="PingServiceSoap.java" index="1">
+<position info="not_deleted" x="190" y="0"/>
 </item>
-<item historyLabel="MethodInvocationsResource.java" index="2">
-<position info="not_deleted" x="681" y="0"/>
+<item historyLabel="IPingService.java" index="6">
+<position info="not_deleted" x="552" y="12"/>
 </item>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="1510" y="0"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="772" y="0"/>
 </item>
-<item historyLabel="MethodInvocationsResource.java" index="2">
-<position info="not_deleted" x="681" y="0"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="538" y="12"/>
 </item>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="1510" y="0"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="example-cxf-ws-security/pom.xml" index="3"/>
+<item historyLabel="PingServiceSoap.java" index="1">
+<position info="not_deleted" x="190" y="0"/>
 </item>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="1508" y="0"/>
+<item historyLabel="IPingService.java" index="6">
+<position info="not_deleted" x="552" y="12"/>
 </item>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="1379" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="1380" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="1445" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsTest.java" index="0">
-<position info="not_deleted" x="1469" y="0"/>
-</item>
-<item historyLabel="example-eclipse-jdt/pom.xml" index="3"/>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
 <position/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
 <position/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
 <position/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1366" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="1093" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="1093" y="1"/>
+</item>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
 <position/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="example-cxf-ws-security/pom.xml" index="3"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
 <position/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1769" y="0"/>
+<item historyLabel="ping.wsdl" index="0"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="516" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position/>
+<item historyLabel="ping.wsdl" index="0"/>
+<item historyLabel="cxf-client.xml" index="4"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="629" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="627" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position/>
+<item historyLabel="ping.wsdl" index="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="627" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="2915" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="629" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="2934" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="552" y="5"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="2969" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="629" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="2998" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="710" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="3000" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="877" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="3026" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="855" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1585" y="0"/>
+<item historyLabel="PingServiceSoapIntegrationTest.java" index="2">
+<position info="not_deleted" x="872" y="0"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1605" y="0"/>
+<item historyLabel="client-crypto.properties" index="7">
+<position info="not_deleted" x="39" y="47"/>
 </item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1562" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1650" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="2245" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1716" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1767" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="3097" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="3108" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="2715" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsResource.java" index="2">
-<position info="not_deleted" x="681" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1104" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="1098" y="0"/>
-</item>
-<item historyLabel="AbstractCompilationUnitTest.java" index="1">
-<position info="not_deleted" x="625" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsResource.java" index="2">
-<position info="not_deleted" x="681" y="0"/>
-</item>
-<item historyLabel="MethodInvocations.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsResource.java" index="2">
-<position info="not_deleted" x="681" y="0"/>
-</item>
-<item historyLabel="MethodInvocations.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsTest.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MethodInvocationsTest.java" index="5">
-<position/>
-</item>
-<item active="true" historyLabel="MethodInvocationsTest.java" index="5">
-<position info="not_deleted" x="1138" y="0"/>
-</item>
+<item active="true" historyLabel="cxf-client.xml" index="4"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -1042,54 +1051,49 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottomRight"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MethodInvocationsTest.java" tooltip="example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsTest.java">
-<persistable path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsTest.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingServiceSoapIntegrationTest.java" tooltip="example-cxf-ws-security/src/test/java/com/example/PingServiceSoapIntegrationTest.java">
+<persistable path="/example-cxf-ws-security/src/test/java/com/example/PingServiceSoapIntegrationTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MethodInvocations.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/MethodInvocations.java">
-<persistable path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/MethodInvocations.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPingService.java" tooltip="example-cxf-ws-security/target/generated-source/org/example/api/ping/IPingService.java">
+<persistable path="/example-cxf-ws-security/target/generated-source/org/example/api/ping/IPingService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractCompilationUnitTest.java" tooltip="example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/AbstractCompilationUnitTest.java">
-<persistable path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/AbstractCompilationUnitTest.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingServiceSoap.java" tooltip="example-cxf-ws-security/src/main/java/com/example/PingServiceSoap.java">
+<persistable path="/example-cxf-ws-security/src/main/java/com/example/PingServiceSoap.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.maven.ide.eclipse.editor.MavenPomEditor" name="pom.xml" tooltip="example-eclipse-jdt/pom.xml">
-<persistable path="/example-eclipse-jdt/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="cxf-server.xml" tooltip="example-cxf-ws-security/src/main/resources/cxf-server.xml">
+<persistable path="/example-cxf-ws-security/src/main/resources/cxf-server.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TypeDeclarationsTest.java" tooltip="example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/TypeDeclarationsTest.java">
-<persistable path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/TypeDeclarationsTest.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerCallbackHandler.java" tooltip="example-cxf-ws-security/src/main/java/com/example/ServerCallbackHandler.java">
+<persistable path="/example-cxf-ws-security/src/main/java/com/example/ServerCallbackHandler.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ASTParserUtils.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/ASTParserUtils.java">
-<persistable path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/ASTParserUtils.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="server-crypto.properties" tooltip="example-cxf-ws-security/src/main/resources/server-crypto.properties">
+<persistable path="/example-cxf-ws-security/src/main/resources/server-crypto.properties"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="System.class" tooltip="java.lang.System">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=example-eclipse-jdt/\/System\/Library\/Frameworks\/JavaVM.framework\/Versions\/1.5.0\/Classes\/classes.jar&lt;java.lang(System.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" tooltip="example-cxf-ws-security/src/main/webapp/WEB-INF/web.xml">
+<persistable path="/example-cxf-ws-security/src/main/webapp/WEB-INF/web.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Filters.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/Filters.java">
-<persistable path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/Filters.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientCallbackHandler.java" tooltip="example-cxf-ws-security/src/main/java/com/example/ClientCallbackHandler.java">
+<persistable path="/example-cxf-ws-security/src/main/java/com/example/ClientCallbackHandler.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleDataTheft.java" tooltip="example-eclipse-jdt/src/test/java/com/example/android/SimpleDataTheft.java">
-<persistable path="/example-eclipse-jdt/src/test/java/com/example/android/SimpleDataTheft.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="client-crypto.properties" tooltip="example-cxf-ws-security/src/main/resources/client-crypto.properties">
+<persistable path="/example-cxf-ws-security/src/main/resources/client-crypto.properties"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleNames.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/SimpleNames.java">
-<persistable path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/SimpleNames.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" name="ping.wsdl" tooltip="example-cxf-ws-security/src/main/resources/ping.wsdl">
+<persistable path="/example-cxf-ws-security/src/main/resources/ping.wsdl"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IDescendantFilter.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/IDescendantFilter.java">
-<persistable path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/IDescendantFilter.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="cxf-client.xml" tooltip="example-cxf-ws-security/src/main/resources/cxf-client.xml">
+<persistable path="/example-cxf-ws-security/src/main/resources/cxf-client.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TypeDeclarations.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/TypeDeclarations.java">
-<persistable path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/TypeDeclarations.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PingService.java" tooltip="example-cxf-ws-security/target/generated-source/org/example/api/ping/PingService.java">
+<persistable path="/example-cxf-ws-security/target/generated-source/org/example/api/ping/PingService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MethodInvocationsResource.java" tooltip="example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsResource.java">
-<persistable path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodInvocationsResource.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MethodDeclarationsTest.java" tooltip="example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodDeclarationsTest.java">
-<persistable path="/example-eclipse-jdt/src/test/java/com/example/jdt/ast/util/MethodDeclarationsTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ASTCollector.java" tooltip="example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/ASTCollector.java">
-<persistable path="/example-eclipse-jdt/src/main/java/com/example/jdt/ast/util/ASTCollector.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="log4j.properties" tooltip="example-cxf-ws-security/src/main/resources/log4j.properties">
+<persistable path="/example-cxf-ws-security/src/main/resources/log4j.properties"/>
 </file>
 </mruList>
 </workbench>
