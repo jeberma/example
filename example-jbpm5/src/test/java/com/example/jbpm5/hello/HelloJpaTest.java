@@ -39,7 +39,11 @@ public class HelloJpaTest {
 		StatefulKnowledgeSession ksession = 
 			JPAKnowledgeService.newStatefulKnowledgeSession(kbase, null, env);
 		
+		//JPAWorkingMemoryDbLogger logger = new JPAWorkingMemoryDbLogger(ksession);
+		
 		ksession.startProcess("com.example.jbpm5.hello.HelloProcess");
+		
+		//logger.dispose();
 		ksession.dispose();
 	}
 	
