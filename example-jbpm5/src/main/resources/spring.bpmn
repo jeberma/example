@@ -11,7 +11,12 @@
              xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
              xmlns:tns="http://www.jboss.org/drools">
 
+  <itemDefinition id="_idItem" structureRef="String" />
+
   <process processType="Private" isExecutable="true" id="com.example.jbpm5.hello.SpringProcess" name="spring.b" >
+
+    <!-- process variables -->
+    <property id="id" itemSubjectRef="_idItem"/>
 
     <!-- nodes -->
     <scriptTask id="_2" name="Script" scriptFormat="http://www.java.com/java" >
@@ -20,21 +25,21 @@
 	
 bean.sayHello();</script>
     </scriptTask>
-    <parallelGateway id="_9" name="Gateway" gatewayDirection="Converging" />
     <parallelGateway id="_8" name="Gateway" gatewayDirection="Diverging" />
+    <parallelGateway id="_9" name="Gateway" gatewayDirection="Converging" />
     <endEvent id="_6" name="End" >
         <terminateEventDefinition/>
     </endEvent>
     <startEvent id="_1" name="Start" />
     <scriptTask id="_7" name="Script" scriptFormat="http://www.java.com/java" >
-      <script>System.out.println("Hello there");</script>
+      <script>System.out.println("id=" + id);</script>
     </scriptTask>
 
     <!-- connections -->
     <sequenceFlow id="_8-_2" sourceRef="_8" targetRef="_2" />
+    <sequenceFlow id="_1-_8" sourceRef="_1" targetRef="_8" />
     <sequenceFlow id="_7-_9" sourceRef="_7" targetRef="_9" />
     <sequenceFlow id="_2-_9" sourceRef="_2" targetRef="_9" />
-    <sequenceFlow id="_1-_8" sourceRef="_1" targetRef="_8" />
     <sequenceFlow id="_9-_6" sourceRef="_9" targetRef="_6" />
     <sequenceFlow id="_8-_7" sourceRef="_8" targetRef="_7" />
 
@@ -45,11 +50,11 @@ bean.sayHello();</script>
       <bpmndi:BPMNShape bpmnElement="_2" >
         <dc:Bounds x="266" y="34" width="80" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="_9" >
-        <dc:Bounds x="425" y="108" width="48" height="48" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_8" >
         <dc:Bounds x="135" y="110" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_9" >
+        <dc:Bounds x="425" y="108" width="48" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_6" >
         <dc:Bounds x="521" y="114" width="48" height="48" />
@@ -64,6 +69,10 @@ bean.sayHello();</script>
         <di:waypoint x="159" y="134" />
         <di:waypoint x="306" y="58" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_1-_8" >
+        <di:waypoint x="59" y="136" />
+        <di:waypoint x="159" y="134" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_7-_9" >
         <di:waypoint x="302" y="186" />
         <di:waypoint x="449" y="132" />
@@ -71,10 +80,6 @@ bean.sayHello();</script>
       <bpmndi:BPMNEdge bpmnElement="_2-_9" >
         <di:waypoint x="306" y="58" />
         <di:waypoint x="449" y="132" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_1-_8" >
-        <di:waypoint x="59" y="136" />
-        <di:waypoint x="159" y="134" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_9-_6" >
         <di:waypoint x="449" y="132" />
